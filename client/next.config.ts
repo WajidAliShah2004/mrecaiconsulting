@@ -1,8 +1,5 @@
 import type { NextConfig } from 'next';
 
-const nextConfig: NextConfig = {
-  // Static export for IONOS Apache hosting (see public/.htaccess)
-  output: 'export',
-};
+const nextConfig: NextConfig = {};
 
 export default nextConfig;
