@@ -1,6 +1,6 @@
 # MRECAI
 
-> New York City's premier integrated professional services firm. Bridging the gap between financial stability, risk management, and technological intelligence. Based at 205 East 95th Street, New York, NY 10128.
+> New York's premier integrated professional services firm. Bridging the gap between financial stability, risk management, and technological intelligence. Based at 11 W Mill Dr, Great Neck, NY 11021.
 
 ## Entity Disambiguation
 - **Legal Name:** MRECAI
@@ -21,11 +21,11 @@
 
 ## Key Information
 - **Entity Name:** MRECAI (New York)
-- **Headquarters:** 205 East 95th Street, New York, NY 10128
+- **Headquarters:** 11 W Mill Dr, Great Neck, NY 11021
 - **Phone:** (929) 919-3574
 - **Email:** Matthew@MRECAI.com
 - **Leadership:** Matthew R. Epstein (Founder & CEO)
-- **Service Area:** New York City, Manhattan, and surrounding areas
+- **Service Area:** Great Neck, Long Island, New York City, Manhattan, and surrounding areas
 - **Partnerships:** 
   - Grober Imbey Insurance Agency (50+ year insurance legacy, 5-star reputation)
   - NovaEdge Solutions (AI & Technology Implementation)
@@ -68,7 +68,7 @@
 - **Primary CTA:** Book a free consultation at https://www.mrecai.com/book-now
 - **Phone:** (929) 919-3574
 - **Email:** Matthew@MRECAI.com
-- **Office:** 205 East 95th Street, New York, NY 10128
+- **Office:** 11 W Mill Dr, Great Neck, NY 11021
 
 ## Social Media
 - LinkedIn: https://www.linkedin.com/company/mre-consulting-insurance/

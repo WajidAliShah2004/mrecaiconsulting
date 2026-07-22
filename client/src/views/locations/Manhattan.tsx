@@ -12,7 +12,7 @@ const Manhattan = () => {
     <>
       <SEO
         title="Business Services in Manhattan | MRECAI"
-        description="Professional business consulting, bookkeeping, tax preparation, and insurance services in Manhattan, NYC. Upper East Side office. Call (929) 702-2818 for a free consultation."
+        description="Professional business consulting, bookkeeping, tax preparation, and insurance services in Manhattan, NYC. Great Neck office. Call (929) 702-2818 for a free consultation."
         canonical="/locations/manhattan"
         keywords="Manhattan business consulting, bookkeeping Manhattan, tax preparation Manhattan, insurance services Manhattan, Upper East Side business services"
         schema={{
@@ -61,7 +61,7 @@ const Manhattan = () => {
 
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 border border-white/20">
               <p className="text-xl text-gray-200 leading-relaxed">
-                <strong>Your Manhattan business partner for finance, tax, insurance, and technology.</strong> Located on the Upper East Side, we serve businesses and professionals throughout Manhattan with comprehensive consulting services.
+                <strong>Your Manhattan business partner for finance, tax, insurance, and technology.</strong> Located in Great Neck, we serve businesses and professionals throughout Manhattan with comprehensive consulting services.
               </p>
             </div>
 
@@ -69,12 +69,12 @@ const Manhattan = () => {
             <div className="grid md:grid-cols-2 gap-4 mb-8">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
                 <FaMapMarkerAlt className="text-primary-400 text-2xl mb-2" />
-                <div className="text-sm text-gray-300">Upper East Side Office</div>
-                <div className="font-semibold">205 East 95th Street</div>
-                <div className="text-sm">New York, NY 10128</div>
+                <div className="text-sm text-gray-300">Great Neck Office</div>
+                <div className="font-semibold">11 W Mill Dr</div>
+                <div className="text-sm">Great Neck, NY 11021</div>
                 <div className="flex items-center space-x-2 mt-2 text-sm text-primary-300">
                   <FaSubway />
-                  <span>Near 96th St Station (6 train)</span>
+                  <span>Near Great Neck Station (LIRR)</span>
                 </div>
               </div>
 
@@ -235,7 +235,7 @@ const Manhattan = () => {
               Let's Discuss Your Manhattan Business Needs
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Schedule a consultation at our Upper East Side office or meet virtually.
+              Schedule a consultation at our Great Neck office or meet virtually.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

@@ -184,7 +184,7 @@ const FAQ = () => {
     {
       category: 'Location & Availability',
       question: 'Where are you located?',
-      answer: 'We\'re based in New York (205 East 95th Street, NY 10128) but serve clients nationwide through virtual consultations and services.',
+      answer: 'We\'re based at 11 W Mill Dr, Great Neck, NY 11021 but serve clients nationwide through virtual consultations and services.',
     },
     {
       category: 'Location & Availability',

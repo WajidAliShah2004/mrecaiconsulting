@@ -78,7 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               Phone: <a href="tel:+19297022818">+1-929-702-2818</a> | Email:{' '}
               <a href="mailto:Matthew@MRECAI.com">Matthew@MRECAI.com</a>
             </p>
-            <p>Address: 205 East 95th Street, New York, NY 10128</p>
+            <p>Address: 11 W Mill Dr, Great Neck, NY 11021</p>
 
             <h2>Our Services</h2>
             <ul>

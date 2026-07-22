@@ -28,7 +28,7 @@ export const COMPANY_INFO = {
   name: 'MRECAI',
   phone: '929-702-2818',
   email: 'Matthew@MRECAI.com',
-  address: '205 East 95th Street, New York, NY 10128',
+  address: '11 W Mill Dr, Great Neck, NY 11021',
   calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL || 'https://calendly.com/mrecai-consulting',
 };
 

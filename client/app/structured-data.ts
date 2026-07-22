@@ -25,16 +25,16 @@ export const organizationJsonLd = {
   },
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '205 East 95th Street',
-    addressLocality: 'New York',
+    streetAddress: '11 W Mill Dr',
+    addressLocality: 'Great Neck',
     addressRegion: 'NY',
-    postalCode: '10128',
+    postalCode: '11021',
     addressCountry: 'US',
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: '40.7831',
-    longitude: '-73.9712',
+    latitude: '40.7866',
+    longitude: '-73.7290',
   },
   contactPoint: {
     '@type': 'ContactPoint',
@@ -56,7 +56,7 @@ export const organizationJsonLd = {
     description: '50+ year insurance legacy with 5-star reputation',
   },
   disambiguatingDescription:
-    'MRECAI is a New York City-based professional services firm specializing in integrated business consulting, insurance, tax strategy, and AI automation. Not affiliated with MRE Consulting, Ltd (Houston-based Salesforce/Infosys partner).',
+    'MRECAI is a Great Neck, New York-based professional services firm specializing in integrated business consulting, insurance, tax strategy, and AI automation. Not affiliated with MRE Consulting, Ltd (Houston-based Salesforce/Infosys partner).',
   sameAs: [
     'https://www.facebook.com/share/1CeUfmRx4F/',
     'https://www.linkedin.com/company/mre-consulting-insurance/',
@@ -80,10 +80,10 @@ export const personJsonLd = {
     url: 'https://mrecai.com',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '205 East 95th Street',
-      addressLocality: 'New York',
+      streetAddress: '11 W Mill Dr',
+      addressLocality: 'Great Neck',
       addressRegion: 'NY',
-      postalCode: '10128',
+      postalCode: '11021',
       addressCountry: 'US',
     },
   },
@@ -92,7 +92,7 @@ export const personJsonLd = {
   telephone: '+1-929-702-2818',
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'New York',
+    addressLocality: 'Great Neck',
     addressRegion: 'NY',
     addressCountry: 'US',
   },

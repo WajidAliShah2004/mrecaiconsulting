@@ -101,8 +101,8 @@ const NewYorkNY = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
                 <FaMapMarkerAlt className="text-primary-400 text-2xl mb-2" />
                 <div className="text-sm text-gray-300">Our Office</div>
-                <div className="font-semibold">205 East 95th Street</div>
-                <div className="text-sm">New York, NY 10128</div>
+                <div className="font-semibold">11 W Mill Dr</div>
+                <div className="text-sm">Great Neck, NY 11021</div>
               </div>
 
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
@@ -220,7 +220,7 @@ const NewYorkNY = () => {
                 {
                   icon: FaCheckCircle,
                   title: 'In-Person Meetings Available',
-                  description: 'Convenient Upper East Side office location with flexible meeting options for NYC clients.',
+                  description: 'Convenient Great Neck office location with flexible meeting options for NYC clients.',
                 },
                 {
                   icon: FaPhone,
@@ -261,7 +261,7 @@ const NewYorkNY = () => {
               Serving the <span className="text-primary-600">NYC Metro Area</span>
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              While our office is located on the Upper East Side, we proudly serve clients throughout:
+              While our office is located in Great Neck, we proudly serve clients throughout:
             </p>
             <div className="grid md:grid-cols-3 gap-4 text-left">
               {[
@@ -304,7 +304,7 @@ const NewYorkNY = () => {
               Ready to Work with a Local NYC Partner?
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Book a free consultation at our Upper East Side office or schedule a virtual meeting.
+              Book a free consultation at our Great Neck office or schedule a virtual meeting.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
