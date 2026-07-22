@@ -1,12 +1,14 @@
+'use client';
+
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaRobot, FaTimes, FaPaperPlane } from 'react-icons/fa';
 import { sendChatMessage } from '../../services/api';
 import type { ChatMessage } from '../../types';
 
 const AIChat = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
@@ -25,11 +27,14 @@ const AIChat = () => {
   ];
   const [inputMessage, setInputMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [showNotification, setShowNotification] = useState(() => {
-    // Check if user has seen the notification before
+  const [showNotification, setShowNotification] = useState(false);
+
+  // Show the notification only if the user hasn't seen it before.
+  // (Read in an effect: localStorage is unavailable during static prerender.)
+  useEffect(() => {
     const hasSeenNotification = localStorage.getItem('chatbot-notification-seen');
-    return !hasSeenNotification; // Show only if not seen before
-  });
+    if (!hasSeenNotification) setShowNotification(true);
+  }, []);
   const [hasUnreadMessages, setHasUnreadMessages] = useState(false);
   
   // Conversation history for OpenAI context (last 5 messages)
@@ -179,7 +184,7 @@ const AIChat = () => {
 
     // About Company
     if (lowerMessage.includes('about') || lowerMessage.includes('who are you') || lowerMessage.includes('company')) {
-      return 'About MRECAI:\n\n✓ Founded in 2009\n✓ 15+ years of experience\n✓ 500+ satisfied clients\n✓ 98% success rate\n✓ 24/7 service support\n\nWe empower individuals, families, and businesses with expert consulting and insurance solutions.\n\nLearn more: /about';
+      return 'About MRECAI:\n\n✓ Founded in 2024\n✓ 15+ years of experience\n✓ 500+ satisfied clients\n✓ 98% success rate\n✓ 24/7 service support\n\nWe empower individuals, families, and businesses with expert consulting and insurance solutions.\n\nLearn more: /about';
     }
 
     // Founder
@@ -209,7 +214,7 @@ const AIChat = () => {
 
     // Experience
     if (lowerMessage.includes('experience') || lowerMessage.includes('how long') || lowerMessage.includes('years')) {
-      return 'Our Experience:\n\n✓ Founded in 2009 (15+ years)\n✓ 500+ clients served\n✓ Multiple industries\n✓ Proven track record\n✓ Expert team\n\nTrust our experience to help you succeed! Learn more: /about';
+      return 'Our Experience:\n\n✓ Founded in 2024 (industry experience since 2009)\n✓ 500+ clients served\n✓ Multiple industries\n✓ Proven track record\n✓ Expert team\n\nTrust our experience to help you succeed! Learn more: /about';
     }
 
     // Free consultation
@@ -668,7 +673,7 @@ const AIChat = () => {
                               <button
                                 key={index}
                                 onClick={() => {
-                                  navigate(part);
+                                  router.push(part);
                                   setIsOpen(false);
                                 }}
                                 className="underline font-semibold text-primary-600 hover:text-primary-700 transition-colors cursor-pointer"
@@ -716,10 +721,10 @@ const AIChat = () => {
                     <button
                       key={index}
                       onClick={() => {
-                        if (action.action === 'quote') navigate('/intake-forms');
-                        else if (action.action === 'book') navigate('/book-now');
-                        else if (action.action === 'services') navigate('/services');
-                        else if (action.action === 'contact') navigate('/contact');
+                        if (action.action === 'quote') router.push('/intake-forms');
+                        else if (action.action === 'book') router.push('/book-now');
+                        else if (action.action === 'services') router.push('/services');
+                        else if (action.action === 'contact') router.push('/contact');
                         setIsOpen(false);
                       }}
                       className="text-[10px] font-medium text-primary-600 hover:text-primary-700 hover:underline transition-colors"

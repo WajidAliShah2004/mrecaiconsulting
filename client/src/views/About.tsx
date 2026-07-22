@@ -1,0 +1,638 @@
+'use client';
+
+import SEO from '../components/common/SEO';
+import { organizationSchema, breadcrumbSchema } from '../utils/schemas';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { FaBullseye, FaHandshake, FaLightbulb, FaUsers, FaAward, FaRocket, FaChartLine, FaShieldAlt, FaCog, FaCheckCircle, FaClock, FaGlobe, FaPhone, FaUserTie, FaArrowRight, FaCalendarAlt, FaCalculator } from 'react-icons/fa';
+
+const About = () => {
+  return (
+    <>
+      <SEO
+        title="About MRECAI | AI Consulting & Technology Innovation Leaders"
+        description="Learn about MRECAI. Technology-first business transformation firm specializing in AI consulting, custom software development, and digital marketing. Serving 180+ clients since 2024."
+        canonical="/about"
+        keywords="about MRECAI, AI consulting company, software development firm, technology innovation, digital transformation, company history"
+        schema={{
+          '@context': 'https://schema.org',
+          '@graph': [
+            organizationSchema,
+            breadcrumbSchema([
+              { name: 'Home', url: '/' },
+              { name: 'About', url: '/about' },
+            ]),
+          ],
+        }}
+      />
+
+      <div className="pt-20">
+        {/* Hero Section - Redesigned */}
+        <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+          {/* Animated Background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900">
+            <div className="absolute inset-0 bg-gradient-to-tr from-primary-600/20 via-transparent to-primary-500/20"></div>
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute top-0 left-0 w-full h-full" style={{
+                backgroundImage: `radial-gradient(circle at 2px 2px, rgba(0, 168, 232, 0.3) 1px, transparent 0)`,
+                backgroundSize: '50px 50px'
+              }}></div>
+            </div>
+            {/* Floating Orbs */}
+            <div className="absolute top-20 left-10 w-96 h-96 bg-primary-500/30 rounded-full mix-blend-multiply filter blur-3xl animate-float"></div>
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary-400/20 rounded-full mix-blend-multiply filter blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+          </div>
+
+          <div className="container-custom relative z-10 text-white text-center py-16">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <motion.div
+                className="inline-block mb-6"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+              >
+                <span className="inline-flex items-center px-4 py-2 bg-primary-500/20 border border-primary-400/30 rounded-full text-primary-300 text-sm font-semibold">
+                  <FaUsers className="mr-2" />
+                  Trusted by 180+ Clients
+                </span>
+              </motion.div>
+
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+                About <span className="bg-gradient-to-r from-primary-400 via-primary-300 to-primary-500 bg-clip-text text-transparent">MRECAI</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+                Technology-first business transformation through AI consulting, custom software development, and digital innovation
+              </p>
+
+              {/* Stats Row */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-12">
+                {[
+                  { number: '2024', label: 'Founded' },
+                  { number: '180+', label: 'Happy Clients' },
+                  { number: '98%', label: 'Success Rate' },
+                  { number: '24/7', label: 'Support' }
+                ].map((stat, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 + index * 0.1, duration: 0.5 }}
+                    className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20"
+                  >
+                    <div className="text-3xl md:text-4xl font-bold text-primary-400 mb-1">{stat.number}</div>
+                    <div className="text-sm text-gray-300">{stat.label}</div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Learn More Navigation */}
+        <section className="section-padding bg-white border-b border-gray-200">
+          <div className="container-custom">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Explore <span className="gradient-text">More</span>
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Meet our founder and discover our strategic partnerships
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {[
+                {
+                  icon: FaUserTie,
+                  title: 'Meet Our People',
+                  description: 'Learn about our leadership team including Wajid Ali Shah (CTO), Matthew R. Epstein (President & Founder), and Jessie Gwilt (CMO)',
+                  link: '/about/founder',
+                  color: 'from-primary-500 to-primary-600'
+                },
+                {
+                  icon: FaHandshake,
+                  title: 'Strategic Partners',
+                  description: 'Discover our network of trusted partners across insurance, finance, and technology',
+                  link: '/about/partners',
+                  color: 'from-purple-500 to-pink-500'
+                }
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1, duration: 0.5 }}
+                  whileHover={{ y: -8 }}
+                  className="group"
+                >
+                  <Link
+                    href={item.link}
+                    className="block bg-gradient-to-br from-gray-50 to-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all border border-gray-100 h-full"
+                  >
+                    <div className={`w-16 h-16 bg-gradient-to-r ${item.color} rounded-xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform`}>
+                      <item.icon className="text-3xl text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-navy-900 mb-3 group-hover:text-primary-600 transition-colors">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed mb-4">
+                      {item.description}
+                    </p>
+                    <div className="flex items-center text-primary-600 font-semibold group-hover:translate-x-2 transition-transform">
+                      Learn More
+                      <FaArrowRight className="ml-2" />
+                    </div>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Mission - Redesigned */}
+        <section className="section-padding bg-white">
+          <div className="container-custom">
+            <div className="max-w-6xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="text-center mb-12"
+              >
+                <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                  Our <span className="gradient-text">Mission</span>
+                </h2>
+                <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-primary-600 mx-auto rounded-full"></div>
+              </motion.div>
+
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <motion.div
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className="relative"
+                >
+                  <div className="bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl p-8 text-white shadow-2xl">
+                    <FaRocket className="text-5xl mb-4 opacity-80" />
+                    <h3 className="text-2xl font-bold mb-4">Driving Digital Transformation</h3>
+                    <p className="text-lg leading-relaxed opacity-90">
+                      At MRECAI, our mission is to empower businesses with cutting-edge AI solutions,
+                      custom software development, and innovative digital marketing strategies. We transform operations through
+                      intelligent automation and modern technology, backed by comprehensive business support services.
+                    </p>
+                  </div>
+                  {/* Decorative Element */}
+                  <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary-200 rounded-full opacity-20 -z-10"></div>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="space-y-6"
+                >
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+                      <FaUsers className="text-primary-600 text-xl" />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-navy-900 mb-2">For Small & Medium Businesses</h4>
+                      <p className="text-gray-600">AI-powered automation and custom software to scale efficiently</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+                      <FaChartLine className="text-primary-600 text-xl" />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-navy-900 mb-2">For Growth-Stage Companies</h4>
+                      <p className="text-gray-600">Digital marketing, brand development, and technology infrastructure</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+                      <FaAward className="text-primary-600 text-xl" />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-navy-900 mb-2">Complete Business Support</h4>
+                      <p className="text-gray-600">Tax planning, insurance consulting, and financial guidance included</p>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Values - Redesigned */}
+        <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
+          <div className="container-custom">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                Our <span className="gradient-text">Core Values</span>
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                The principles that guide everything we do
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* Excellence */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0, duration: 0.5 }}
+                whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+              >
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-500 to-primary-600 rounded-t-2xl"></div>
+                <motion.div
+                  className="w-16 h-16 bg-primary-50 rounded-xl flex items-center justify-center mb-6 mx-auto"
+                  whileHover={{ rotate: 360, scale: 1.1 }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <FaBullseye className="text-3xl text-primary-600" />
+                </motion.div>
+                <h3 className="text-2xl font-bold mb-4 text-navy-900 text-center group-hover:text-primary-600 transition-colors">
+                  Excellence
+                </h3>
+                <p className="text-gray-600 text-center leading-relaxed">
+                  We strive for excellence in everything we do, delivering top-tier service and results that exceed expectations.
+                </p>
+                <div className="absolute -bottom-2 -right-2 w-20 h-20 bg-gradient-to-r from-primary-500 to-primary-600 opacity-0 group-hover:opacity-10 rounded-full blur-xl transition-opacity duration-300"></div>
+              </motion.div>
+
+              {/* Integrity */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1, duration: 0.5 }}
+                whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+              >
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-green-500 to-emerald-500 rounded-t-2xl"></div>
+                <motion.div
+                  className="w-16 h-16 bg-green-50 rounded-xl flex items-center justify-center mb-6 mx-auto"
+                  whileHover={{ rotate: 360, scale: 1.1 }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <FaHandshake className="text-3xl text-green-600" />
+                </motion.div>
+                <h3 className="text-2xl font-bold mb-4 text-navy-900 text-center group-hover:text-primary-600 transition-colors">
+                  Integrity
+                </h3>
+                <p className="text-gray-600 text-center leading-relaxed">
+                  Honesty and transparency guide our relationships with clients and partners, building trust that lasts.
+                </p>
+                <div className="absolute -bottom-2 -right-2 w-20 h-20 bg-gradient-to-r from-green-500 to-emerald-500 opacity-0 group-hover:opacity-10 rounded-full blur-xl transition-opacity duration-300"></div>
+              </motion.div>
+
+              {/* Innovation */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+                whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+              >
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-t-2xl"></div>
+                <motion.div
+                  className="w-16 h-16 bg-purple-50 rounded-xl flex items-center justify-center mb-6 mx-auto"
+                  whileHover={{ rotate: 360, scale: 1.1 }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <FaLightbulb className="text-3xl text-purple-600" />
+                </motion.div>
+                <h3 className="text-2xl font-bold mb-4 text-navy-900 text-center group-hover:text-primary-600 transition-colors">
+                  Innovation
+                </h3>
+                <p className="text-gray-600 text-center leading-relaxed">
+                  We leverage cutting-edge AI, automation, and modern tech stacks to deliver transformative solutions that drive real business results.
+                </p>
+                <div className="absolute -bottom-2 -right-2 w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 group-hover:opacity-10 rounded-full blur-xl transition-opacity duration-300"></div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Partners Section - Redesigned */}
+        <section className="section-padding bg-white">
+          <div className="container-custom">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                Our <span className="gradient-text">Strategic Partners</span>
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                We collaborate with industry-leading partners to provide comprehensive solutions across
+                all service areas. Our strategic alliances enable us to deliver exceptional value and
+                expertise to every client.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {[
+                {
+                  icon: FaCog,
+                  title: 'NovaEdge Solutions',
+                  description: 'Strategic technology partner providing AI development, software engineering, and digital transformation expertise.',
+                  gradient: 'from-purple-500 to-purple-600'
+                },
+                {
+                  icon: FaShieldAlt,
+                  title: 'Grober Imbey Insurance',
+                  description: 'Over 50 years of excellence in personal and commercial insurance solutions.',
+                  gradient: 'from-blue-600 to-blue-700'
+                },
+                {
+                  icon: FaChartLine,
+                  title: 'Financial Advisors',
+                  description: 'Certified wealth management and financial planning partners for comprehensive support.',
+                  gradient: 'from-green-500 to-emerald-500'
+                },
+                {
+                  icon: FaCalculator,
+                  title: 'Accounting Partners',
+                  description: 'Professional tax preparation, bookkeeping, and financial compliance services.',
+                  gradient: 'from-green-600 to-emerald-600'
+                }
+              ].map((partner, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1, duration: 0.5 }}
+                  whileHover={{ y: -6, transition: { duration: 0.3 } }}
+                  className="group bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-primary-200"
+                >
+                  <motion.div
+                    className={`w-14 h-14 bg-gradient-to-r ${partner.gradient} rounded-lg flex items-center justify-center mb-4 shadow-lg`}
+                    whileHover={{ rotate: 360, scale: 1.1 }}
+                    transition={{ duration: 0.6 }}
+                  >
+                    <partner.icon className="text-2xl text-white" />
+                  </motion.div>
+                  <h3 className="text-lg font-bold mb-2 text-navy-900 group-hover:text-primary-600 transition-colors">
+                    {partner.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {partner.description}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Our Story Timeline */}
+        <section className="section-padding bg-gradient-to-b from-white to-gray-50">
+          <div className="container-custom">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                Our <span className="gradient-text">Journey</span>
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                From humble beginnings to industry leaders
+              </p>
+            </motion.div>
+
+            <div className="max-w-4xl mx-auto">
+              {[
+                {
+                  year: '2024',
+                  title: 'The Beginning',
+                  description: 'MRECAI was founded with a vision to provide personalized, expert consulting and insurance services to individuals, families, and businesses.',
+                  color: 'from-primary-500 to-primary-600'
+                },
+                {
+                  year: '2024',
+                  quarter: 'Q2',
+                  title: 'Rapid Growth',
+                  description: 'Expanded our client base and service offerings, establishing strategic partnerships with industry leaders including Grober Imbey Insurance Agency.',
+                  color: 'from-green-500 to-emerald-500'
+                },
+                {
+                  year: '2024',
+                  quarter: 'Q4',
+                  title: 'AI & Technology Focus',
+                  description: 'Pivoted to technology-first positioning, partnering with NovaEdge Solutions to deliver cutting-edge AI consulting, custom software development, and automation solutions.',
+                  color: 'from-purple-500 to-pink-500'
+                },
+                {
+                  year: '2025',
+                  title: 'Continued Innovation',
+                  description: 'Serving 180+ clients with comprehensive AI solutions, custom software, digital marketing, and creative services, complemented by tax and insurance support.',
+                  color: 'from-orange-500 to-red-500'
+                }
+              ].map((milestone, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1, duration: 0.5 }}
+                  className="relative mb-12 last:mb-0"
+                >
+                  <div className="flex items-start gap-6">
+                    {/* Year Badge */}
+                    <motion.div
+                      className={`flex-shrink-0 w-24 h-24 bg-gradient-to-r ${milestone.color} rounded-2xl flex items-center justify-center shadow-lg`}
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <span className="text-2xl font-bold text-white">{milestone.year}</span>
+                    </motion.div>
+
+                    {/* Content */}
+                    <div className="flex-1 bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                      <h3 className="text-2xl font-bold text-navy-900 mb-2">{milestone.title}</h3>
+                      <p className="text-gray-600 leading-relaxed">{milestone.description}</p>
+                    </div>
+                  </div>
+
+                  {/* Connecting Line */}
+                  {index < 3 && (
+                    <div className="absolute left-12 top-24 w-0.5 h-12 bg-gradient-to-b from-primary-500 to-primary-300"></div>
+                  )}
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Us */}
+        <section className="section-padding bg-white">
+          <div className="container-custom">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                Why Choose <span className="gradient-text">MRECAI</span>
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Your complete technology transformation partner
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              {[
+                {
+                  icon: FaCheckCircle,
+                  title: 'AI-First Approach',
+                  description: 'Cutting-edge AI consulting and automation solutions that transform business operations',
+                  gradient: 'from-purple-500 to-purple-600'
+                },
+                {
+                  icon: FaUsers,
+                  title: 'Expert Technology Team',
+                  description: 'Certified developers, AI specialists, and digital marketing professionals',
+                  gradient: 'from-primary-500 to-primary-600'
+                },
+                {
+                  icon: FaClock,
+                  title: 'Rapid Deployment',
+                  description: 'Fast turnaround on projects without compromising quality or innovation',
+                  gradient: 'from-blue-500 to-blue-600'
+                },
+                {
+                  icon: FaRocket,
+                  title: 'Full-Stack Solutions',
+                  description: 'From AI chatbots to custom software, digital marketing to video production',
+                  gradient: 'from-orange-500 to-red-500'
+                },
+                {
+                  icon: FaGlobe,
+                  title: 'Complete Business Partner',
+                  description: 'Technology services plus tax planning and insurance consulting under one roof',
+                  gradient: 'from-green-500 to-emerald-500'
+                },
+                {
+                  icon: FaAward,
+                  title: 'Proven Results',
+                  description: '180+ successful projects with measurable ROI and business transformation',
+                  gradient: 'from-pink-500 to-rose-500'
+                }
+              ].map((feature, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1, duration: 0.5 }}
+                  whileHover={{ y: -6, transition: { duration: 0.3 } }}
+                  className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
+                >
+                  <motion.div
+                    className={`w-12 h-12 bg-gradient-to-r ${feature.gradient} rounded-lg flex items-center justify-center mb-4 shadow-md`}
+                    whileHover={{ rotate: 360, scale: 1.1 }}
+                    transition={{ duration: 0.6 }}
+                  >
+                    <feature.icon className="text-xl text-white" />
+                  </motion.div>
+                  <h3 className="text-xl font-bold text-navy-900 mb-2">{feature.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="relative section-padding bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900 text-white overflow-hidden">
+          {/* Background Elements */}
+          <div className="absolute inset-0 opacity-20">
+            <div className="absolute top-0 left-0 w-full h-full" style={{
+              backgroundImage: `radial-gradient(circle at 2px 2px, rgba(0, 168, 232, 0.4) 1px, transparent 0)`,
+              backgroundSize: '40px 40px'
+            }}></div>
+          </div>
+          <div className="absolute top-10 left-10 w-72 h-72 bg-primary-500/20 rounded-full mix-blend-multiply filter blur-3xl animate-float"></div>
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-primary-400/15 rounded-full mix-blend-multiply filter blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+
+          <div className="container-custom relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="max-w-4xl mx-auto text-center"
+            >
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Ready to Get Started?
+              </h2>
+              <p className="text-xl text-gray-200 mb-8 leading-relaxed">
+                Let's discuss how we can help you achieve your goals. Schedule a free consultation today.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <motion.a
+                  href="/book-now"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="inline-flex items-center px-8 py-4 bg-white text-navy-900 font-bold rounded-xl shadow-xl hover:shadow-2xl transition-all"
+                >
+                  <FaCalendarAlt className="mr-2" />
+                  Book Free Consultation
+                </motion.a>
+
+                <motion.a
+                  href="tel:929-702-2818"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="inline-flex items-center px-8 py-4 border-2 border-white/40 rounded-xl backdrop-blur-sm hover:bg-white hover:text-navy-900 transition-all font-bold"
+                >
+                  <FaPhone className="mr-3" />
+                  929-702-2818
+                </motion.a>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+      </div>
+    </>
+  );
+};
+
+export default About;
+

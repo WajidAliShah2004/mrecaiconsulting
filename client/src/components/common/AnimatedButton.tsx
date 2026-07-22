@@ -1,6 +1,8 @@
+'use client';
+
 import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { buttonHover } from '../../utils/animations';
 
 interface AnimatedButtonProps {
@@ -78,7 +80,7 @@ export const AnimatedButton = ({
         whileHover="hover"
         whileTap="tap"
       >
-        <Link to={to} className={classes}>
+        <Link href={to} className={classes}>
           {content}
         </Link>
       </motion.div>

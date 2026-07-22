@@ -48,3 +48,12 @@ Thumbs.db
 RAILWAY-SMTP2GO-ENV.txt
 *-CREDENTIALS.txt
 *-ENV.txt
+
+# Next.js
+.next
+next-env.d.ts
+/out
+client/out
+
+# Production env (contains live keys)
+.env.production

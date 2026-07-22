@@ -1,3 +1,5 @@
+'use client';
+
 interface SkeletonProps {
   variant?: 'text' | 'circular' | 'rectangular';
   width?: string;

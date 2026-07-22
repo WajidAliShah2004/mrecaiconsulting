@@ -4,14 +4,14 @@
 export const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': ['Organization', 'ProfessionalService', 'LocalBusiness'],
-  name: 'MRE Consulting & Insurance',
-  alternateName: ['MRECAI', 'MRE Consulting & Insurance NY', 'MRE Consulting & Insurance NYC'],
-  legalName: 'MRE Consulting & Insurance',
+  name: 'MRECAI',
+  alternateName: ['MRE Consulting & Insurance', 'MRECAI NY', 'MRECAI NYC'],
+  legalName: 'MRECAI',
   url: 'https://mrecai.com',
-  logo: 'https://mrecai.com/images/logo.png',
-  image: 'https://mrecai.com/images/logo.png',
+  logo: 'https://mrecai.com/images/logo.jpeg',
+  image: 'https://mrecai.com/images/logo.jpeg',
   description: 'New York-based professional services firm integrating business consulting, insurance services, tax strategy, AI automation, investment management, estate planning, and digital marketing. Serving NYC businesses with comprehensive financial, operational, and technology solutions.',
-  foundingDate: '2009',
+  foundingDate: '2024',
   founder: {
     '@type': 'Person',
     name: 'Matthew R. Epstein',
@@ -32,7 +32,7 @@ export const organizationSchema = {
     ],
     worksFor: {
       '@type': 'Organization',
-      name: 'MRE Consulting & Insurance',
+      name: 'MRECAI',
       url: 'https://mrecai.com'
     }
   },
@@ -181,16 +181,16 @@ export const organizationSchema = {
     url: 'https://groberimbey.com'
   },
   // Disambiguation from other entities
-  disambiguatingDescription: 'MRE Consulting & Insurance is a New York City-based professional services firm specializing in integrated business consulting, insurance, tax strategy, and AI automation. Not affiliated with MRE Consulting, Ltd (Houston-based Salesforce/Infosys partner).',
+  disambiguatingDescription: 'MRECAI is a New York City-based professional services firm specializing in integrated business consulting, insurance, tax strategy, and AI automation. Not affiliated with MRE Consulting, Ltd (Houston-based Salesforce/Infosys partner).',
 };
 
 export const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': ['ProfessionalService', 'LocalBusiness'],
-  name: 'MRE Consulting & Insurance',
-  alternateName: 'MRE Consulting & Insurance NY',
+  name: 'MRECAI',
+  alternateName: 'MRECAI NY',
   slogan: 'Integrated Tax, Insurance, and AI Consulting Services in NYC',
-  image: 'https://mrecai.com/images/logo.png',
+  image: 'https://mrecai.com/images/logo.jpeg',
   '@id': 'https://mrecai.com',
   url: 'https://mrecai.com',
   telephone: '+1-929-702-2818',
@@ -234,16 +234,16 @@ export const localBusinessSchema = {
 export const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'MRE Consulting & Insurance',
-  alternateName: 'MRECAI',
+  name: 'MRECAI',
+  alternateName: 'MRE Consulting & Insurance',
   url: 'https://mrecai.com',
   description: 'Professional business consulting, insurance, tax, AI automation, and financial services',
   publisher: {
     '@type': 'Organization',
-    name: 'MRE Consulting & Insurance',
+    name: 'MRECAI',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://mrecai.com/images/logo.png',
+      url: 'https://mrecai.com/images/logo.jpeg',
     },
   },
   potentialAction: {
@@ -264,7 +264,7 @@ export const serviceSchemas = {
     name: 'Business Consulting & Management',
     provider: {
       '@type': 'Organization',
-      name: 'MRE Consulting & Insurance',
+      name: 'MRECAI',
       url: 'https://mrecai.com',
     },
     areaServed: {
@@ -285,7 +285,7 @@ export const serviceSchemas = {
     name: 'Digital Marketing & Technology Services',
     provider: {
       '@type': 'Organization',
-      name: 'MRE Consulting & Insurance',
+      name: 'MRECAI',
       url: 'https://mrecai.com',
     },
     areaServed: {
@@ -306,7 +306,7 @@ export const serviceSchemas = {
     name: 'Insurance Services & Risk Management',
     provider: {
       '@type': 'Organization',
-      name: 'MRE Consulting & Insurance',
+      name: 'MRECAI',
       url: 'https://mrecai.com',
     },
     areaServed: {
@@ -327,7 +327,7 @@ export const serviceSchemas = {
     name: 'Tax Preparation, Strategy & Accounting',
     provider: {
       '@type': 'Organization',
-      name: 'MRE Consulting & Insurance',
+      name: 'MRECAI',
       url: 'https://mrecai.com',
     },
     areaServed: {
@@ -348,7 +348,7 @@ export const serviceSchemas = {
     name: 'AI Integration & Business Automation',
     provider: {
       '@type': 'Organization',
-      name: 'MRE Consulting & Insurance',
+      name: 'MRECAI',
       url: 'https://mrecai.com',
       partner: {
         '@type': 'Organization',
@@ -374,7 +374,7 @@ export const serviceSchemas = {
     name: 'Workflow Automation & System Integration',
     provider: {
       '@type': 'Organization',
-      name: 'MRE Consulting & Insurance',
+      name: 'MRECAI',
       url: 'https://mrecai.com',
     },
     areaServed: {
@@ -395,7 +395,7 @@ export const serviceSchemas = {
     name: 'Investment Management & Wealth Planning',
     provider: {
       '@type': 'Organization',
-      name: 'MRE Consulting & Insurance',
+      name: 'MRECAI',
       url: 'https://mrecai.com',
     },
     areaServed: {
@@ -421,7 +421,7 @@ export const personSchema = {
   jobTitle: 'President & Founder',
   worksFor: {
     '@type': 'Organization',
-    name: 'MRE Consulting & Insurance',
+    name: 'MRECAI',
     url: 'https://mrecai.com',
     address: {
       '@type': 'PostalAddress',
@@ -457,7 +457,7 @@ export const personSchema = {
     'Financial Planning'
   ],
   alumniOf: 'Business Management',
-  description: 'Founder and President of MRE Consulting & Insurance, a New York-based professional services firm specializing in integrated business consulting, insurance, tax strategy, and AI automation. Not affiliated with Matthew R. Epstein, Trial Attorney at U.S. Department of Labor.',
+  description: 'Founder and President of MRECAI, a New York-based professional services firm specializing in integrated business consulting, insurance, tax strategy, and AI automation. Not affiliated with Matthew R. Epstein, Trial Attorney at U.S. Department of Labor.',
 };
 
 export const breadcrumbSchema = (items: { name: string; url: string }[]) => ({
@@ -504,15 +504,15 @@ export const articleSchema = (article: {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'MRE Consulting & Insurance',
+    name: 'MRECAI',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://mrecai.com/images/logo.png',
+      url: 'https://mrecai.com/images/logo.jpeg',
     },
   },
   datePublished: article.datePublished,
   dateModified: article.dateModified || article.datePublished,
-  image: article.image || 'https://mrecai.com/images/logo.png',
+  image: article.image || 'https://mrecai.com/images/logo.jpeg',
   url: article.url,
   mainEntityOfPage: {
     '@type': 'WebPage',

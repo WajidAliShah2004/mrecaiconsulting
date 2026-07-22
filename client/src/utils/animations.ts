@@ -9,7 +9,7 @@ export const pageTransition: Variants = {
     y: 0,
     transition: {
       duration: 0.5,
-      ease: [0.22, 1, 0.36, 1]
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number]
     }
   },
   exit: { 
@@ -41,7 +41,7 @@ export const fadeInUp: Variants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: [0.22, 1, 0.36, 1]
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number]
     }
   }
 };
@@ -54,7 +54,7 @@ export const fadeInDown: Variants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: [0.22, 1, 0.36, 1]
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number]
     }
   }
 };
@@ -67,7 +67,7 @@ export const fadeInLeft: Variants = {
     x: 0,
     transition: {
       duration: 0.6,
-      ease: [0.22, 1, 0.36, 1]
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number]
     }
   }
 };
@@ -80,7 +80,7 @@ export const fadeInRight: Variants = {
     x: 0,
     transition: {
       duration: 0.6,
-      ease: [0.22, 1, 0.36, 1]
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number]
     }
   }
 };
@@ -93,7 +93,7 @@ export const scaleIn: Variants = {
     scale: 1,
     transition: {
       duration: 0.5,
-      ease: [0.22, 1, 0.36, 1]
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number]
     }
   }
 };
@@ -118,7 +118,7 @@ export const staggerItem: Variants = {
     y: 0,
     transition: {
       duration: 0.5,
-      ease: [0.22, 1, 0.36, 1]
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number]
     }
   }
 };
@@ -162,7 +162,7 @@ export const slideInLeft: Variants = {
     opacity: 1,
     transition: {
       duration: 0.6,
-      ease: [0.22, 1, 0.36, 1]
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number]
     }
   }
 };
@@ -174,7 +174,7 @@ export const slideInRight: Variants = {
     opacity: 1,
     transition: {
       duration: 0.6,
-      ease: [0.22, 1, 0.36, 1]
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number]
     }
   }
 };
@@ -188,7 +188,7 @@ export const rotateIn: Variants = {
     scale: 1,
     transition: {
       duration: 0.7,
-      ease: [0.22, 1, 0.36, 1]
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number]
     }
   }
 };
@@ -258,7 +258,7 @@ export const revealVariants: Variants = {
     clipPath: 'inset(0 0% 0 0)',
     transition: {
       duration: 0.8,
-      ease: [0.22, 1, 0.36, 1]
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number]
     }
   }
 };

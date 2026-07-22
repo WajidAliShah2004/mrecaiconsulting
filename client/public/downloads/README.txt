@@ -1,4 +1,4 @@
-MRE Consulting & Insurance - White Papers
+MRECAI - White Papers
 
 The following white papers are being prepared for download:
 

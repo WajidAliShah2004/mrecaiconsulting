@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteBase /
+
+# Admin editor dynamic routes -> exported placeholder page
+# (the editor reads the record id from the URL after hydration)
+RewriteRule ^admin/blogs/edit/.+$ /admin/blogs/edit/_.html [L]
+RewriteRule ^admin/white-papers/edit/.+$ /admin/white-papers/edit/_.html [L]
+
+# Old deployment used trailing-slash URLs (/about/); redirect them to the
+# canonical extensionless URL
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# Serve the pre-rendered HTML file for extensionless URLs (Next.js static
+# export). Checked against DOCUMENT_ROOT so a leftover directory from the old
+# deployment with the same name cannot shadow the page.
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+ErrorDocument 404 /404.html

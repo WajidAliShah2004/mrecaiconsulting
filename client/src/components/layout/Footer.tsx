@@ -1,4 +1,6 @@
-import { Link } from 'react-router-dom';
+'use client';
+
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
   FaFacebook,
@@ -16,7 +18,7 @@ import {
 } from 'react-icons/fa';
 import { SiTiktok } from 'react-icons/si';
 import { COMPANY_INFO, SOCIAL_LINKS } from '../../utils/constants';
-import logoImage from '../../../images/logo.png';
+import logoImage from '../../../images/logo.jpeg';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -88,15 +90,15 @@ const Footer = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <Link to="/" className="inline-block mb-6 group">
+              <Link href="/" className="inline-block mb-6 group">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.2 }}
                   className="bg-gradient-to-br from-white to-gray-50 rounded-xl p-4 shadow-xl inline-block border-2 border-white/20"
                 >
                   <img
-                    src={logoImage}
-                    alt="MRE Consulting & Insurance"
+                    src={logoImage.src}
+                    alt="MRECAI"
                     className="h-28 w-auto object-contain drop-shadow-md"
                     style={{ filter: 'contrast(1.15) brightness(1.1)' }}
                     loading="lazy"
@@ -143,7 +145,7 @@ const Footer = () => {
                 {quickLinks.map((link, index) => (
                   <li key={index}>
                     <Link
-                      to={link.path}
+                      href={link.path}
                       className="group flex items-center text-gray-300 hover:text-primary-400 transition-all duration-300"
                     >
                       <FaArrowRight className="text-xs mr-2 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
@@ -250,11 +252,11 @@ const Footer = () => {
             <div className="grid md:grid-cols-4 gap-8 items-center">
               <div className="md:col-span-1">
                 <h5 className="text-primary-400 font-bold uppercase tracking-wider text-sm mb-2">Entity Reference</h5>
-                <p className="text-white font-bold text-lg">MRE Consulting & Insurance</p>
+                <p className="text-white font-bold text-lg">MRECAI</p>
               </div>
               <div className="md:col-span-3">
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Headquartered in New York City, MRE Consulting & Insurance is a <strong>technology-first business transformation firm</strong> specializing in <strong>AI consulting, custom software development, digital marketing, and creative services</strong>. We empower businesses with cutting-edge automation, intelligent systems, and modern tech stacks, complemented by comprehensive tax planning and insurance consulting to support sustainable growth.
+                  Headquartered in New York City, MRECAI is a <strong>technology-first business transformation firm</strong> specializing in <strong>AI consulting, custom software development, digital marketing, and creative services</strong>. We empower businesses with cutting-edge automation, intelligent systems, and modern tech stacks, complemented by comprehensive tax planning and insurance consulting to support sustainable growth.
                 </p>
               </div>
             </div>
@@ -270,7 +272,7 @@ const Footer = () => {
             className="text-center"
           >
             <p className="text-gray-400 text-xs max-w-4xl mx-auto leading-relaxed">
-              <strong className="text-gray-300">SMS Disclosure:</strong> SMS messages from MRE Consulting & Insurance are sent only to those who explicitly opt in via our optional SMS consent checkbox. Consent is not required to use our services or contact us. Reply STOP to cancel, HELP for help. Msg & data rates may apply. We do not sell or share your SMS consent or phone number.
+              <strong className="text-gray-300">SMS Disclosure:</strong> SMS messages from MRECAI are sent only to those who explicitly opt in via our optional SMS consent checkbox. Consent is not required to use our services or contact us. Reply STOP to cancel, HELP for help. Msg & data rates may apply. We do not sell or share your SMS consent or phone number.
             </p>
           </motion.div>
         </div>
@@ -285,7 +287,7 @@ const Footer = () => {
               className="text-gray-400 text-sm text-center md:text-left"
             >
               <p className="flex items-center justify-center md:justify-start flex-wrap">
-                <span>&copy; {currentYear} MRE Consulting & Insurance. All rights reserved.</span>
+                <span>&copy; {currentYear} MRECAI. All rights reserved.</span>
                 <span className="mx-2 hidden md:inline">|</span>
                 <span className="flex items-center">
                   Made with <FaHeart className="text-red-500 mx-1 text-xs" /> by{' '}
@@ -307,10 +309,10 @@ const Footer = () => {
               viewport={{ once: true }}
               className="flex items-center space-x-6 text-sm"
             >
-              <Link to="/privacy-policy" className="text-gray-400 hover:text-primary-400 transition-colors">
+              <Link href="/privacy-policy" className="text-gray-400 hover:text-primary-400 transition-colors">
                 Privacy Policy
               </Link>
-              <Link to="/terms-of-service" className="text-gray-400 hover:text-primary-400 transition-colors">
+              <Link href="/terms-of-service" className="text-gray-400 hover:text-primary-400 transition-colors">
                 Terms of Service
               </Link>
             </motion.div>

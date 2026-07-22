@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect } from 'react';
 import { FaCalendarAlt } from 'react-icons/fa';
 import { COMPANY_INFO } from '../../utils/constants';

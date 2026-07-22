@@ -25,11 +25,11 @@ import {
 } from 'react-icons/fa';
 
 export const COMPANY_INFO = {
-  name: 'MRE Consulting & Insurance',
+  name: 'MRECAI',
   phone: '929-702-2818',
   email: 'Matthew@MRECAI.com',
   address: '205 East 95th Street, New York, NY 10128',
-  calendlyUrl: import.meta.env.VITE_CALENDLY_URL || 'https://calendly.com/mrecai-consulting',
+  calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL || 'https://calendly.com/mrecai-consulting',
 };
 
 export const SOCIAL_LINKS = {

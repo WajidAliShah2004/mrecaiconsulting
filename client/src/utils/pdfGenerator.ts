@@ -58,7 +58,7 @@ THE NEW FRONTIER OF EFFICIENCY
 How AI & Automation Are Transforming Every Industry
 ================================================================================
 
-A Flagship Executive Report by MRE Consulting & Insurance
+A Flagship Executive Report by MRECAI
 www.MRECAI.com | 929-702-2818 | Matthew@MRECAI.com
 
 ================================================================================
@@ -140,7 +140,7 @@ PRICING TIERS:
   - 6-12 month payback period
 
 ================================================================================
-WHY MRE CONSULTING & INSURANCE
+WHY MRECAI
 ================================================================================
 
 MRECAI approaches automation as a comprehensive strategy — not just a 
@@ -159,7 +159,7 @@ improvement of 40-60% within the first year of deployment.
 CONTACT INFORMATION
 ================================================================================
 
-MRE Consulting & Insurance
+MRECAI
 Phone: 929-702-2818
 Email: Matthew@MRECAI.com
 Website: www.MRECAI.com
@@ -167,7 +167,7 @@ Website: www.MRECAI.com
 Schedule your FREE consultation today!
 
 ================================================================================
-© 2025 MRE Consulting & Insurance. All rights reserved.
+© 2025 MRECAI. All rights reserved.
 ================================================================================`
   },
   'digital-marketing-reputation': {
@@ -183,7 +183,7 @@ DIGITAL MARKETING, REVIEWS & SOCIAL PRESENCE
 Building the Modern Reputation Engine
 ================================================================================
 
-A Flagship Executive White Paper by MRE Consulting & Insurance
+A Flagship Executive White Paper by MRECAI
 www.MRECAI.com | 929-702-2818 | Matthew@MRECAI.com
 
 ================================================================================
@@ -300,7 +300,7 @@ IMPLEMENTATION: THE MRECAI 6-STEP SYSTEM
 CONTACT INFORMATION
 ================================================================================
 
-MRE Consulting & Insurance
+MRECAI
 Phone: 929-702-2818
 Email: Matthew@MRECAI.com
 Website: www.MRECAI.com
@@ -308,7 +308,7 @@ Website: www.MRECAI.com
 Schedule your FREE Digital Reputation Audit today!
 
 ================================================================================
-© 2025 MRE Consulting & Insurance. All rights reserved.
+© 2025 MRECAI. All rights reserved.
 ================================================================================`
   },
   'future-of-business': {
@@ -324,7 +324,7 @@ THE FUTURE OF BUSINESS
 How AI and Automation Are Transforming Operations
 ================================================================================
 
-A Comprehensive White Paper by MRE Consulting & Insurance
+A Comprehensive White Paper by MRECAI
 www.MRECAI.com | 929-702-2818 | Matthew@MRECAI.com
 
 ================================================================================
@@ -363,7 +363,7 @@ A two-person business can now:
 • Generate contracts, emails, and financial reports instantly
 • Predict future revenue or risks using AI forecasting models
 
-That's what MRE Consulting & Insurance brings to the table: enterprise-grade 
+That's what MRECAI brings to the table: enterprise-grade 
 automation for everyday businesses — safely, securely, and strategically.
 
 ================================================================================
@@ -463,14 +463,14 @@ We don't just deliver technology — we deliver transformation.
 Our approach blends the financial discipline of accountants, the foresight of 
 consultants, and the protection of licensed insurance professionals.
 
-When you work with MRE Consulting & Insurance, you're not just installing 
+When you work with MRECAI, you're not just installing 
 software — you're building an intelligent business.
 
 ================================================================================
 CONTACT INFORMATION
 ================================================================================
 
-MRE Consulting & Insurance
+MRECAI
 Phone: 929-702-2818
 Email: Matthew@MRECAI.com
 Website: www.MRECAI.com
@@ -478,7 +478,7 @@ Website: www.MRECAI.com
 Schedule your FREE consultation today!
 
 ================================================================================
-© 2025 MRE Consulting & Insurance. All rights reserved.
+© 2025 MRECAI. All rights reserved.
 ================================================================================`
   }
 };
@@ -573,7 +573,7 @@ const addCoverPage = (doc: jsPDF, paper: WhitePaperContent): void => {
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(14);
   doc.setTextColor(...paper.color.primary);
-  doc.text('MRE Consulting & Insurance', centerX, yPos, { align: 'center' });
+  doc.text('MRECAI', centerX, yPos, { align: 'center' });
 
   yPos += 8;
   doc.setFont('helvetica', 'normal');
@@ -615,7 +615,7 @@ const addPageHeader = (doc: jsPDF, paper: WhitePaperContent, pageNum: number): v
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(8);
   doc.setTextColor(...PDF_CONFIG.colors.darkGray);
-  doc.text('MRE Consulting & Insurance', margin.left, margin.top - 8);
+  doc.text('MRECAI', margin.left, margin.top - 8);
   
   // Page number
   doc.text(`Page ${pageNum}`, pageWidth - margin.right, margin.top - 8, { align: 'right' });
@@ -635,7 +635,7 @@ const addPageFooter = (doc: jsPDF): void => {
   doc.setFontSize(PDF_CONFIG.fonts.footer.size);
   doc.setTextColor(...PDF_CONFIG.colors.darkGray);
   doc.text(
-    '© 2025 MRE Consulting & Insurance. All rights reserved.',
+    '© 2025 MRECAI. All rights reserved.',
     pageWidth / 2,
     pageHeight - margin.bottom + 10,
     { align: 'center' }
@@ -792,7 +792,7 @@ export const generatePrivacyPolicyPDF = (): void => {
 
   doc.setFontSize(14);
   doc.setFont('helvetica', 'normal');
-  doc.text('MRE Consulting & Insurance', pageWidth / 2, 38, { align: 'center' });
+  doc.text('MRECAI', pageWidth / 2, 38, { align: 'center' });
 
   yPos = 60;
 
@@ -812,7 +812,7 @@ export const generatePrivacyPolicyPDF = (): void => {
   doc.setFont('helvetica', 'bold');
   doc.text('Company:', margin.left + 5, yPos);
   doc.setFont('helvetica', 'normal');
-  doc.text('MRE Consulting & Insurance', margin.left + 45, yPos);
+  doc.text('MRECAI', margin.left + 45, yPos);
 
   yPos += 8;
   doc.setFont('helvetica', 'bold');
@@ -1072,7 +1072,7 @@ export const generatePrivacyPolicyPDF = (): void => {
   doc.setFontSize(9);
   doc.setTextColor(128, 128, 128);
   doc.text(
-    `© ${new Date().getFullYear()} MRE Consulting & Insurance. All rights reserved.`,
+    `© ${new Date().getFullYear()} MRECAI. All rights reserved.`,
     pageWidth / 2,
     yPos,
     { align: 'center' }
@@ -1143,7 +1143,7 @@ export const generateTermsOfServicePDF = (): void => {
 
   doc.setFontSize(14);
   doc.setFont('helvetica', 'normal');
-  doc.text('MRE Consulting & Insurance', pageWidth / 2, 38, { align: 'center' });
+  doc.text('MRECAI', pageWidth / 2, 38, { align: 'center' });
 
   yPos = 60;
 
@@ -1163,7 +1163,7 @@ export const generateTermsOfServicePDF = (): void => {
   doc.setFont('helvetica', 'bold');
   doc.text('Company:', margin.left + 5, yPos);
   doc.setFont('helvetica', 'normal');
-  doc.text('MRE Consulting & Insurance', margin.left + 45, yPos);
+  doc.text('MRECAI', margin.left + 45, yPos);
 
   yPos += 8;
   doc.setFont('helvetica', 'bold');
@@ -1208,7 +1208,7 @@ export const generateTermsOfServicePDF = (): void => {
 
   doc.setTextColor(0, 0, 0);
   addText(
-    'MRE Consulting & Insurance provides financial consulting, insurance brokerage, tax planning, and AI-powered business automation services. All services are subject to availability and may be modified or discontinued at any time.',
+    'MRECAI provides financial consulting, insurance brokerage, tax planning, and AI-powered business automation services. All services are subject to availability and may be modified or discontinued at any time.',
     10
   );
   yPos += 8;
@@ -1225,7 +1225,7 @@ export const generateTermsOfServicePDF = (): void => {
 
   doc.setTextColor(0, 0, 0);
   addText(
-    'MRE Consulting & Insurance offers SMS text messaging services to provide appointment reminders, scheduling updates, customer support, and service-related communications. By providing your mobile phone number and opting in to receive SMS messages, you agree to the following terms:',
+    'MRECAI offers SMS text messaging services to provide appointment reminders, scheduling updates, customer support, and service-related communications. By providing your mobile phone number and opting in to receive SMS messages, you agree to the following terms:',
     10
   );
   yPos += 5;
@@ -1337,7 +1337,7 @@ export const generateTermsOfServicePDF = (): void => {
 
   doc.setTextColor(0, 0, 0);
   addText(
-    'All content, trademarks, and materials on our website are owned by MRE Consulting & Insurance or our licensors. You may not reproduce, distribute, or create derivative works without our express written permission.',
+    'All content, trademarks, and materials on our website are owned by MRECAI or our licensors. You may not reproduce, distribute, or create derivative works without our express written permission.',
     10
   );
   yPos += 8;
@@ -1354,7 +1354,7 @@ export const generateTermsOfServicePDF = (): void => {
 
   doc.setTextColor(0, 0, 0);
   addText(
-    'To the maximum extent permitted by law, MRE Consulting & Insurance shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our services. This includes but is not limited to carrier delays, undelivered messages, technical errors, or third-party system outages related to SMS messaging services.',
+    'To the maximum extent permitted by law, MRECAI shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our services. This includes but is not limited to carrier delays, undelivered messages, technical errors, or third-party system outages related to SMS messaging services.',
     10,
     true
   );
@@ -1430,7 +1430,7 @@ export const generateTermsOfServicePDF = (): void => {
   doc.setFontSize(9);
   doc.setTextColor(128, 128, 128);
   doc.text(
-    `© ${new Date().getFullYear()} MRE Consulting & Insurance. All rights reserved.`,
+    `© ${new Date().getFullYear()} MRECAI. All rights reserved.`,
     pageWidth / 2,
     yPos,
     { align: 'center' }

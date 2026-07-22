@@ -1,6 +1,8 @@
+'use client';
+
 import { motion, AnimatePresence } from 'framer-motion';
 import { ReactNode } from 'react';
-import { useLocation } from 'react-router-dom';
+import { usePathname } from 'next/navigation';
 
 interface PageTransitionProps {
   children: ReactNode;
@@ -16,7 +18,7 @@ const pageVariants = {
     y: 0,
     transition: {
       duration: 0.4,
-      ease: [0.22, 1, 0.36, 1]
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number]
     }
   },
   exit: {
@@ -29,12 +31,12 @@ const pageVariants = {
 };
 
 export const PageTransition = ({ children }: PageTransitionProps) => {
-  const location = useLocation();
+  const pathname = usePathname();
 
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        key={location.pathname}
+        key={pathname}
         initial="initial"
         animate="animate"
         exit="exit"

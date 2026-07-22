@@ -1,9 +1,12 @@
+'use client';
+
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes, FaPhone, FaEnvelope, FaChevronDown } from 'react-icons/fa';
 import { COMPANY_INFO } from '../../utils/constants';
-import logoImage from '../../../images/logo.png';
+import logoImage from '../../../images/logo.jpeg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +19,7 @@ const Navbar = () => {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileLearningOpen, setMobileLearningOpen] = useState(false);
   const [mobileLegalOpen, setMobileLegalOpen] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
 
   useEffect(() => {
     let ticking = false;
@@ -39,7 +42,7 @@ const Navbar = () => {
     setIsOpen(false);
     // Scroll to top when route changes
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [location]);
+  }, [pathname]);
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -71,11 +74,11 @@ const Navbar = () => {
     { name: 'AI & Technology Consulting', path: '/ai-consulting' },
   ];
 
-  const isAboutActive = location.pathname.startsWith('/about') || location.pathname === '/testimonials';
-  const isServicesActive = location.pathname.startsWith('/services') || location.pathname === '/ai-consulting';
-  const isIndustriesActive = location.pathname.startsWith('/industries');
-  const isLearningActive = location.pathname === '/advice-education' || location.pathname.startsWith('/resources');
-  const isLegalActive = location.pathname === '/privacy-policy' || location.pathname === '/terms-of-service';
+  const isAboutActive = pathname.startsWith('/about') || pathname === '/testimonials';
+  const isServicesActive = pathname.startsWith('/services') || pathname === '/ai-consulting';
+  const isIndustriesActive = pathname.startsWith('/industries');
+  const isLearningActive = pathname === '/advice-education' || pathname.startsWith('/resources');
+  const isLegalActive = pathname === '/privacy-policy' || pathname === '/terms-of-service';
 
   return (
     <>
@@ -131,7 +134,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between py-2 xl:py-1">
             {/* Logo - Left Side */}
             <div className="flex items-center flex-shrink-0 z-10">
-              <Link to="/" className="flex items-center group">
+              <Link href="/" className="flex items-center group">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -139,12 +142,12 @@ const Navbar = () => {
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-primary-500/20 to-primary-600/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <img
-                    src={logoImage}
-                    alt="MRE Consulting & Insurance"
+                    src={logoImage.src}
+                    alt="MRECAI"
                     className={`relative transition-all duration-300 ${isScrolled ? 'h-8 sm:h-10 md:h-12 lg:h-14 w-auto' : 'h-10 sm:h-12 md:h-14 lg:h-16 w-auto'
                       } object-contain max-w-[100px] sm:max-w-[120px] md:max-w-[150px] lg:max-w-none`}
                     loading="eager"
-                    {...({ fetchpriority: 'high' } as any)}
+                    fetchPriority="high"
                   />
                 </motion.div>
               </Link>
@@ -155,11 +158,11 @@ const Navbar = () => {
               <div className="flex items-center gap-0 xl:gap-0.5 2xl:gap-1">
                 {/* Home Link */}
                 <Link
-                  to="/"
+                  href="/"
                   className="relative group flex-shrink-0"
                 >
                   <motion.div
-                    className={`px-1.5 xl:px-2 2xl:px-3 py-1 xl:py-1.5 2xl:py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg relative ${location.pathname === '/'
+                    className={`px-1.5 xl:px-2 2xl:px-3 py-1 xl:py-1.5 2xl:py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg relative ${pathname === '/'
                       ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                       : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                       }`}
@@ -206,8 +209,8 @@ const Navbar = () => {
                           {aboutLinks.map((link) => (
                             <Link
                               key={link.path}
-                              to={link.path}
-                              className={`block px-4 py-3 rounded-xl font-semibold transition-all mb-1 ${location.pathname === link.path
+                              href={link.path}
+                              className={`block px-4 py-3 rounded-xl font-semibold transition-all mb-1 ${pathname === link.path
                                 ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-md'
                                 : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                                 }`}
@@ -257,8 +260,8 @@ const Navbar = () => {
                           {servicesLinks.map((link) => (
                             <Link
                               key={link.path}
-                              to={link.path}
-                              className={`block px-4 py-3 rounded-xl font-semibold transition-all mb-1 ${location.pathname === link.path
+                              href={link.path}
+                              className={`block px-4 py-3 rounded-xl font-semibold transition-all mb-1 ${pathname === link.path
                                 ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-md'
                                 : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                                 }`}
@@ -274,11 +277,11 @@ const Navbar = () => {
 
                 {/* Products Link */}
                 <Link
-                  to="/products"
+                  href="/products"
                   className="relative group flex-shrink-0"
                 >
                   <motion.div
-                    className={`px-1.5 xl:px-2 2xl:px-3 py-1 xl:py-1.5 2xl:py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg relative ${location.pathname === '/products'
+                    className={`px-1.5 xl:px-2 2xl:px-3 py-1 xl:py-1.5 2xl:py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg relative ${pathname === '/products'
                       ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                       : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                       }`}
@@ -291,7 +294,7 @@ const Navbar = () => {
 
                 {/* Industries Link */}
                 <Link
-                  to="/industries"
+                  href="/industries"
                   className="relative group flex-shrink-0"
                 >
                   <motion.div
@@ -343,8 +346,8 @@ const Navbar = () => {
                           {learningLinks.map((link) => (
                             <Link
                               key={link.path}
-                              to={link.path}
-                              className={`block px-4 py-3 rounded-xl font-semibold transition-all mb-1 ${location.pathname === link.path
+                              href={link.path}
+                              className={`block px-4 py-3 rounded-xl font-semibold transition-all mb-1 ${pathname === link.path
                                 ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-md'
                                 : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                                 }`}
@@ -362,11 +365,11 @@ const Navbar = () => {
                 {navLinks.slice(1).map((link) => (
                   <Link
                     key={link.path}
-                    to={link.path}
+                    href={link.path}
                     className="relative group flex-shrink-0"
                   >
                     <motion.div
-                      className={`px-1.5 xl:px-2 2xl:px-3 py-1 xl:py-1.5 2xl:py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg relative whitespace-nowrap ${location.pathname === link.path
+                      className={`px-1.5 xl:px-2 2xl:px-3 py-1 xl:py-1.5 2xl:py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg relative whitespace-nowrap ${pathname === link.path
                         ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                         : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                         }`}
@@ -415,8 +418,8 @@ const Navbar = () => {
                           {legalLinks.map((link) => (
                             <Link
                               key={link.path}
-                              to={link.path}
-                              className={`block px-4 py-3 rounded-xl font-semibold transition-all mb-1 ${location.pathname === link.path
+                              href={link.path}
+                              className={`block px-4 py-3 rounded-xl font-semibold transition-all mb-1 ${pathname === link.path
                                 ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-md'
                                 : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                                 }`}
@@ -442,16 +445,16 @@ const Navbar = () => {
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
                   <Link
-                    to="/book-now"
-                    className={`relative px-2 xl:px-3 2xl:px-4 py-1 xl:py-1.5 2xl:py-2 text-white font-bold text-[9px] xl:text-[10px] 2xl:text-xs rounded-lg transition-all duration-300 shadow-lg hover:shadow-2xl inline-flex items-center gap-1 whitespace-nowrap overflow-hidden group ${location.pathname === '/book-now'
+                    href="/book-now"
+                    className={`relative px-2 xl:px-3 2xl:px-4 py-1 xl:py-1.5 2xl:py-2 text-white font-bold text-[9px] xl:text-[10px] 2xl:text-xs rounded-lg transition-all duration-300 shadow-lg hover:shadow-2xl inline-flex items-center gap-1 whitespace-nowrap overflow-hidden group ${pathname === '/book-now'
                       ? 'bg-gradient-to-r from-green-500 to-green-600'
                       : 'bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700'
                       }`}
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                     <span className="relative">
-                      <span className="hidden 2xl:inline">{location.pathname === '/book-now' ? 'You\'re Here!' : 'Book Consultation'}</span>
-                      <span className="2xl:hidden">{location.pathname === '/book-now' ? 'Here!' : 'Book Now'}</span>
+                      <span className="hidden 2xl:inline">{pathname === '/book-now' ? 'You\'re Here!' : 'Book Consultation'}</span>
+                      <span className="2xl:hidden">{pathname === '/book-now' ? 'Here!' : 'Book Now'}</span>
                     </span>
                   </Link>
                 </motion.div>
@@ -494,8 +497,8 @@ const Navbar = () => {
                     transition={{ delay: 0.05, type: "spring", stiffness: 300 }}
                   >
                     <Link
-                      to="/"
-                      className={`block px-5 py-3.5 rounded-xl font-bold transition-all relative ${location.pathname === '/'
+                      href="/"
+                      className={`block px-5 py-3.5 rounded-xl font-bold transition-all relative ${pathname === '/'
                         ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                         : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                         }`}
@@ -538,8 +541,8 @@ const Navbar = () => {
                           {aboutLinks.map((link) => (
                             <Link
                               key={link.path}
-                              to={link.path}
-                              className={`block px-4 py-2.5 rounded-xl text-sm font-semibold transition-all ${location.pathname === link.path
+                              href={link.path}
+                              className={`block px-4 py-2.5 rounded-xl text-sm font-semibold transition-all ${pathname === link.path
                                 ? 'text-white bg-gradient-to-r from-primary-400 to-primary-500 shadow-md'
                                 : 'text-gray-600 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                                 }`}
@@ -586,8 +589,8 @@ const Navbar = () => {
                           {servicesLinks.map((link) => (
                             <Link
                               key={link.path}
-                              to={link.path}
-                              className={`block px-4 py-2.5 rounded-xl text-sm font-semibold transition-all ${location.pathname === link.path
+                              href={link.path}
+                              className={`block px-4 py-2.5 rounded-xl text-sm font-semibold transition-all ${pathname === link.path
                                 ? 'text-white bg-gradient-to-r from-primary-400 to-primary-500 shadow-md'
                                 : 'text-gray-600 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                                 }`}
@@ -607,8 +610,8 @@ const Navbar = () => {
                     transition={{ delay: 0.2, type: "spring", stiffness: 300 }}
                   >
                     <Link
-                      to="/products"
-                      className={`block px-5 py-3.5 rounded-xl font-bold transition-all relative ${location.pathname === '/products'
+                      href="/products"
+                      className={`block px-5 py-3.5 rounded-xl font-bold transition-all relative ${pathname === '/products'
                         ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                         : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                         }`}
@@ -624,7 +627,7 @@ const Navbar = () => {
                     transition={{ delay: 0.25, type: "spring", stiffness: 300 }}
                   >
                     <Link
-                      to="/industries"
+                      href="/industries"
                       className={`block px-5 py-3.5 rounded-xl font-bold transition-all relative ${isIndustriesActive
                         ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                         : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
@@ -668,8 +671,8 @@ const Navbar = () => {
                           {learningLinks.map((link) => (
                             <Link
                               key={link.path}
-                              to={link.path}
-                              className={`block px-4 py-2.5 rounded-xl text-sm font-semibold transition-all ${location.pathname === link.path
+                              href={link.path}
+                              className={`block px-4 py-2.5 rounded-xl text-sm font-semibold transition-all ${pathname === link.path
                                 ? 'text-white bg-gradient-to-r from-primary-400 to-primary-500 shadow-md'
                                 : 'text-gray-600 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                                 }`}
@@ -691,8 +694,8 @@ const Navbar = () => {
                       transition={{ delay: (index + 4) * 0.05, type: "spring", stiffness: 300 }}
                     >
                       <Link
-                        to={link.path}
-                        className={`block px-5 py-3.5 rounded-xl font-bold transition-all relative ${location.pathname === link.path
+                        href={link.path}
+                        className={`block px-5 py-3.5 rounded-xl font-bold transition-all relative ${pathname === link.path
                           ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                           : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                           }`}
@@ -736,8 +739,8 @@ const Navbar = () => {
                           {legalLinks.map((link) => (
                             <Link
                               key={link.path}
-                              to={link.path}
-                              className={`block px-4 py-2.5 rounded-xl text-sm font-semibold transition-all ${location.pathname === link.path
+                              href={link.path}
+                              className={`block px-4 py-2.5 rounded-xl text-sm font-semibold transition-all ${pathname === link.path
                                 ? 'text-white bg-gradient-to-r from-primary-400 to-primary-500 shadow-md'
                                 : 'text-gray-600 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                                 }`}
@@ -764,14 +767,14 @@ const Navbar = () => {
 
                   {/* CTA Button - Separate from navigation, always prominent */}
                   <Link
-                    to="/book-now"
-                    className={`flex items-center justify-center w-full text-center px-5 sm:px-6 py-4 text-white font-bold text-sm sm:text-base rounded-xl shadow-xl hover:shadow-2xl transition-all mt-4 relative overflow-hidden group h-auto leading-normal ${location.pathname === '/book-now'
+                    href="/book-now"
+                    className={`flex items-center justify-center w-full text-center px-5 sm:px-6 py-4 text-white font-bold text-sm sm:text-base rounded-xl shadow-xl hover:shadow-2xl transition-all mt-4 relative overflow-hidden group h-auto leading-normal ${pathname === '/book-now'
                       ? 'bg-gradient-to-r from-green-500 to-green-600'
                       : 'bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700'
                       }`}
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
-                    <span className="relative">{location.pathname === '/book-now' ? 'You\'re on the Booking Page!' : 'Book Consultation'}</span>
+                    <span className="relative">{pathname === '/book-now' ? 'You\'re on the Booking Page!' : 'Book Consultation'}</span>
                   </Link>
                 </div>
               </motion.div>
