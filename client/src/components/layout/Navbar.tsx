@@ -92,31 +92,29 @@ const Navbar = () => {
         Skip to main content
       </a>
 
-      {/* Top Contact Bar - compact utility strip, collapses on scroll */}
+      {/* Top Contact Bar - desktop-only utility strip; collapses on scroll.
+          Hidden below lg, where the nav's quick-dial button and the mobile
+          menu already surface the phone number. */}
       <div
-        className={`fixed inset-x-0 top-0 z-50 bg-gradient-to-r from-navy-900 via-navy-800 to-navy-900 text-white overflow-hidden transition-[height,opacity] duration-300 ${isScrolled ? 'h-0 opacity-0' : 'h-9 sm:h-10 opacity-100'
+        className={`hidden lg:block fixed inset-x-0 top-0 z-50 bg-gradient-to-r from-navy-900 via-navy-800 to-navy-900 text-white overflow-hidden transition-[height,opacity] duration-300 ${isScrolled ? 'h-0 opacity-0' : 'h-8 opacity-100'
           }`}
       >
         <div className="max-w-[1600px] mx-auto h-full px-4 sm:px-6 lg:px-8">
-          <div className="flex h-full justify-between items-center text-[11px] sm:text-xs gap-3">
-            <div className="flex items-center gap-3 sm:gap-6 min-w-0">
+          <div className="flex h-full justify-between items-center text-[11px] gap-3">
+            <div className="flex items-center gap-6 min-w-0">
               <a
                 href={`tel:${COMPANY_INFO.phone}`}
-                className="flex items-center gap-1.5 sm:gap-2 text-white hover:text-primary-300 transition-colors duration-300 group flex-shrink-0"
+                className="flex items-center gap-1.5 text-white hover:text-primary-300 transition-colors duration-300 flex-shrink-0"
               >
-                <div className="p-1 bg-white/10 rounded-md group-hover:bg-primary-500/20 transition-colors">
-                  <FaPhone className="text-[10px] flex-shrink-0" />
-                </div>
+                <FaPhone className="text-[10px] flex-shrink-0 text-primary-300" />
                 <span className="font-medium whitespace-nowrap">{COMPANY_INFO.phone}</span>
               </a>
               <a
                 href={`mailto:${COMPANY_INFO.email}`}
-                className="flex items-center gap-1.5 sm:gap-2 text-white hover:text-primary-300 transition-colors duration-300 group min-w-0"
+                className="flex items-center gap-1.5 text-white hover:text-primary-300 transition-colors duration-300 min-w-0"
               >
-                <div className="p-1 bg-white/10 rounded-md group-hover:bg-primary-500/20 transition-colors">
-                  <FaEnvelope className="text-[10px] flex-shrink-0" />
-                </div>
-                <span className="hidden sm:inline truncate font-medium">{COMPANY_INFO.email}</span>
+                <FaEnvelope className="text-[10px] flex-shrink-0 text-primary-300" />
+                <span className="truncate font-medium">{COMPANY_INFO.email}</span>
               </a>
             </div>
             <div className="hidden xl:flex items-center gap-2 text-primary-300 flex-shrink-0">
@@ -129,12 +127,12 @@ const Navbar = () => {
 
       {/* Main Navigation */}
       <nav
-        className={`fixed inset-x-0 z-40 bg-white/95 backdrop-blur-md shadow-lg transition-[top] duration-300 border-b border-gray-100 ${isScrolled ? 'top-0' : 'top-9 sm:top-10'
+        className={`fixed inset-x-0 z-40 bg-white/95 backdrop-blur-md shadow-lg transition-[top] duration-300 border-b border-gray-100 ${isScrolled ? 'top-0' : 'top-0 lg:top-8'
           }`}
       >
         <div className={`max-w-[1600px] mx-auto px-4 ${isOpen ? 'pb-4' : ''}`}>
           <div
-            className={`flex items-center justify-between gap-3 transition-[height] duration-300 ${isScrolled ? 'h-12 sm:h-14' : 'h-14 sm:h-16'
+            className={`flex items-center justify-between gap-2 sm:gap-3 transition-[height] duration-300 ${isScrolled ? 'h-11 sm:h-12' : 'h-12 sm:h-14'
               }`}
           >
             {/* Logo - Left Side */}
@@ -149,7 +147,7 @@ const Navbar = () => {
                   <img
                     src={logoImage.src}
                     alt="MRECAI"
-                    className={`relative w-auto max-w-none object-contain transition-[height] duration-300 ${isScrolled ? 'h-7 sm:h-9 lg:h-10' : 'h-9 sm:h-11 lg:h-12'
+                    className={`relative w-auto max-w-none object-contain transition-[height] duration-300 ${isScrolled ? 'h-7 sm:h-8 lg:h-9' : 'h-8 sm:h-9 lg:h-10'
                       }`}
                     width={logoImage.width}
                     height={logoImage.height}
@@ -409,7 +407,16 @@ const Navbar = () => {
             </nav>
 
             {/* Right Side: CTA & Mobile Toggle */}
-            <div className="flex items-center gap-3 flex-shrink-0">
+            <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+              {/* Quick-dial - replaces the contact strip below lg */}
+              <a
+                href={`tel:${COMPANY_INFO.phone}`}
+                className="lg:hidden inline-flex items-center justify-center h-9 w-9 sm:h-10 sm:w-10 rounded-xl text-primary-600 bg-primary-50 hover:bg-primary-100 border border-primary-200 transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 flex-shrink-0"
+                aria-label={`Call ${COMPANY_INFO.phone}`}
+              >
+                <FaPhone className="text-sm" />
+              </a>
+
               {/* CTA Button */}
               <div className="hidden xl:block">
                 <motion.div
@@ -438,7 +445,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(!isOpen)}
                 whileTap={{ scale: 0.9 }}
                 whileHover={{ scale: 1.05 }}
-                className="xl:hidden inline-flex items-center justify-center h-10 w-10 sm:h-11 sm:w-11 rounded-xl transition-colors duration-300 text-white bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 shadow-lg hover:shadow-xl border-2 border-primary-400/50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 flex-shrink-0"
+                className="xl:hidden inline-flex items-center justify-center h-9 w-9 sm:h-10 sm:w-10 rounded-xl transition-colors duration-300 text-white bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 shadow-lg hover:shadow-xl border-2 border-primary-400/50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 flex-shrink-0"
                 aria-label={isOpen ? 'Close menu' : 'Open menu'}
                 aria-expanded={isOpen}
               >
@@ -446,7 +453,7 @@ const Navbar = () => {
                   animate={{ rotate: isOpen ? 180 : 0 }}
                   transition={{ type: "spring", stiffness: 400, damping: 15 }}
                 >
-                  {isOpen ? <FaTimes className="text-lg sm:text-xl" /> : <FaBars className="text-lg sm:text-xl" />}
+                  {isOpen ? <FaTimes className="text-base sm:text-lg" /> : <FaBars className="text-base sm:text-lg" />}
                 </motion.div>
               </motion.button>
             </div>
@@ -462,7 +469,7 @@ const Navbar = () => {
                 transition={{ duration: 0.3, type: "spring", stiffness: 300, damping: 25 }}
                 className="xl:hidden mt-2 bg-gradient-to-br from-white via-gray-50 to-white rounded-3xl shadow-2xl overflow-hidden border-2 border-gray-200"
               >
-                <div className="flex flex-col p-4 sm:p-5 space-y-2 max-h-[calc(100vh-9rem)] overflow-y-auto overscroll-contain">
+                <div className="flex flex-col p-4 sm:p-5 space-y-2 max-h-[calc(100vh-7rem)] overflow-y-auto overscroll-contain">
                   {/* Home Link */}
                   <motion.div
                     initial={{ opacity: 0, x: -20 }}
