@@ -12,7 +12,7 @@ const IntegratedPartnerBanner = ({ context = 'general' }: IntegratedPartnerBanne
   const contextMessages = {
     tax: {
       title: 'More Than Just Tax Services',
-      description: 'Your tax strategy works better when it\'s integrated with your insurance, accounting, and business operations. That\'s the MRE advantage.',
+      description: 'Your tax strategy works better when it\'s integrated with your insurance, accounting, and business operations. That\'s the MRECAI advantage.',
       benefits: [
         'Tax strategy aligned with your insurance coverage',
         'Bookkeeping integrated with proactive tax planning',

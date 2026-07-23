@@ -307,7 +307,7 @@ const TaxSavingsChecklist = () => {
                         <div>
                             <h2 className="text-3xl font-bold text-navy-900 mb-6">Why this audit matters for 2026</h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                                With new tax regulations entering the fold, standard "filing" is no longer enough. You need strategy. This checklist is based on actual implementations that have saved MRE clients tens of thousands in annual tax drag.
+                                With new tax regulations entering the fold, standard "filing" is no longer enough. You need strategy. This checklist is based on actual implementations that have saved MRECAI clients tens of thousands in annual tax drag.
                             </p>
                             <div className="flex flex-wrap gap-4">
                                 <Link href="/services/strategic-tax-planning" className="flex items-center text-primary-600 font-bold hover:text-primary-700">

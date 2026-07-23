@@ -94,7 +94,7 @@ const FourPillars = () => {
           className="text-center mt-12"
         >
           <p className="text-lg text-gray-700 mb-6">
-            <strong>The MRE Difference:</strong> One integrated partner for tax, insurance, and wealth strategy
+            <strong>The MRECAI Difference:</strong> One integrated partner for tax, insurance, and wealth strategy
           </p>
         </motion.div>
       </div>

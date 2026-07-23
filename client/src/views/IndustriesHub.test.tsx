@@ -144,8 +144,8 @@ describe('IndustriesHub Page - Task 13 Tests', () => {
     it('should render the "Why Choose Us" section', () => {
       renderWithRouter(<IndustriesHub />);
       
-      // Check for the MRE Advantage section
-      expect(screen.getByText(/The MRE Advantage/i)).toBeInTheDocument();
+      // Check for the MRECAI Advantage section
+      expect(screen.getByText(/The MRECAI Advantage/i)).toBeInTheDocument();
       expect(screen.getByText(/One Partner/i)).toBeInTheDocument();
       expect(screen.getByText(/Total Operational Intelligence/i)).toBeInTheDocument();
     });
@@ -159,7 +159,7 @@ describe('IndustriesHub Page - Task 13 Tests', () => {
   });
 
   describe('Requirement 15 Validation - All Industries Coverage', () => {
-    it('should explicitly state that MRE serves every and all industries', () => {
+    it('should explicitly state that MRECAI serves every and all industries', () => {
       renderWithRouter(<IndustriesHub />);
       
       // Verify the explicit statement about serving all industries

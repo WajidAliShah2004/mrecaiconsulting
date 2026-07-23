@@ -49,7 +49,7 @@ const ServiceMatrix = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
-                        The MRE <span className="gradient-text">Service Stack</span>
+                        The MRECAI <span className="gradient-text">Service Stack</span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                         Three powerful service pillars that transform your business operations.

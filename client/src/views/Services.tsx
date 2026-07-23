@@ -372,7 +372,7 @@ const Services = () => {
               className="mt-20"
             >
               <h3 className="text-3xl font-bold text-center mb-12">
-                Why Choose <span className="gradient-text">MRE Services</span>
+                Why Choose <span className="gradient-text">MRECAI Services</span>
               </h3>
 
               <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -526,13 +526,13 @@ const Services = () => {
                 {
                   name: 'Marcus Johnson',
                   role: 'CEO, TechFlow Solutions',
-                  text: 'MRE restructured our entity and tax strategy from the ground up. We saved over $40K in our first year, and their proactive planning means no more April surprises. Game-changing guidance!',
+                  text: 'MRECAI restructured our entity and tax strategy from the ground up. We saved over $40K in our first year, and their proactive planning means no more April surprises. Game-changing guidance!',
                   rating: 5
                 },
                 {
                   name: 'Rachel Kim',
                   role: 'Founder, Urban Wellness Studio',
-                  text: 'From insurance coverage reviews to clean, real-time books, MRE delivered everything we needed. Their integrated approach saved us time and money. Couldn\'t be happier!',
+                  text: 'From insurance coverage reviews to clean, real-time books, MRECAI delivered everything we needed. Their integrated approach saved us time and money. Couldn\'t be happier!',
                   rating: 5
                 },
                 {

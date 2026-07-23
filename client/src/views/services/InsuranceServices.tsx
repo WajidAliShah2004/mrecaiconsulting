@@ -13,7 +13,7 @@ const faqs = [
     answer: 'We conduct a comprehensive Risk Architecture audit, analyzing your operations, exposure points, and contractual obligations to design a multi-layered defense strategy.',
   },
   {
-    question: 'What is the MRE and Grober Imbey partnership?',
+    question: 'What is the MRECAI and Grober Imbey partnership?',
     answer: 'MRECAI integrates financial and tech strategy with the 50-year legacy of Grober Imbey Insurance Agency, providing clients with access to top-tier carriers and veteran industry expertise.',
   },
   {

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import TaxServicesPage from '@/pages/services/TaxServices';
 
-const title = "Tax Preparation & Consulting | MRE Consulting";
+const title = "Tax Preparation & Consulting | MRECAI Consulting";
 const description = "Expert tax preparation and strategic consulting for businesses and individuals. Minimize liability with proactive planning and year-round compliance support.";
 const canonical = "/services/tax-services";
 
@@ -16,7 +16,7 @@ export function generateMetadata(): Metadata {
       description,
       url: canonical,
       type: 'website',
-      siteName: 'MRE Consulting & Insurance',
+      siteName: 'MRECAI Consulting & Insurance',
       images: ['/og-image.jpg'],
     },
     twitter: { card: 'summary_large_image', title, description, images: ['/twitter-image.jpg'] },

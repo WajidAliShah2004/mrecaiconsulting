@@ -30,7 +30,7 @@ const BlogEditor = () => {
     excerpt: '',
     content: '',
     featuredImage: '',
-    author: 'MRE Team',
+    author: 'MRECAI Team',
     category: 'General',
     tags: '',
     status: 'draft',

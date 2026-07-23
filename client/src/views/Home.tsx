@@ -173,7 +173,7 @@ const Home = () => {
       {/* NEW: Process Flow (How It Works) */}
       <ProcessFlow />
 
-      {/* NEW: MRE Advantage - Consolidated Section */}
+      {/* NEW: MRECAI Advantage - Consolidated Section */}
       <TechnologyAdvantage />
 
       {/* NEW: Executive Leadership (Matthew R. Epstein) */}

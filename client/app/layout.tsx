@@ -110,7 +110,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               health, asset protection, and tax strategy work in perfect synchronization.
             </p>
 
-            <h2>Why Choose MRE?</h2>
+            <h2>Why Choose MRECAI?</h2>
             <ul>
               <li>One partner instead of five separate vendors</li>
               <li>Full-service integration (tax + insurance + finance)</li>

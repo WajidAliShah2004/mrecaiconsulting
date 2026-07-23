@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import TermsOfServicePage from '@/pages/TermsOfService';
 
-const title = "Terms of Service | MRE Consulting & Insurance";
+const title = "Terms of Service | MRECAI Consulting & Insurance";
 const description = "Review the terms of service that govern your use of the MRECAI website and our tax, insurance, accounting, and finance consulting services.";
 const canonical = "/terms-of-service";
 
@@ -15,7 +15,7 @@ export function generateMetadata(): Metadata {
       description,
       url: canonical,
       type: 'website',
-      siteName: 'MRE Consulting & Insurance',
+      siteName: 'MRECAI Consulting & Insurance',
       images: ['/og-image.jpg'],
     },
     twitter: { card: 'summary_large_image', title, description, images: ['/twitter-image.jpg'] },

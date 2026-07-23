@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import ManhattanPage from '@/pages/locations/Manhattan';
 
-const title = "Business Services in Manhattan | MRE Consulting & Insurance";
+const title = "Business Services in Manhattan | MRECAI Consulting";
 const description = "Professional tax preparation, insurance, bookkeeping, and finance consulting services in Manhattan, NYC. Call (929) 702-2818 for a free consultation.";
 const canonical = "/locations/manhattan";
 
@@ -16,7 +16,7 @@ export function generateMetadata(): Metadata {
       description,
       url: canonical,
       type: 'website',
-      siteName: 'MRE Consulting & Insurance',
+      siteName: 'MRECAI Consulting & Insurance',
       images: ['/og-image.jpg'],
     },
     twitter: { card: 'summary_large_image', title, description, images: ['/twitter-image.jpg'] },

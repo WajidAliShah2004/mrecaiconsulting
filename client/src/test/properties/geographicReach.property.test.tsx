@@ -2,7 +2,7 @@
  * Property Test: Geographic Reach Consistency
  * 
  * Feature: website-change-request-implementation
- * Property 2: For any mention of MRE's geographic reach or service area, 
+ * Property 2: For any mention of MRECAI's geographic reach or service area, 
  * the text should explicitly state nationwide or all-50-states availability
  * 
  * Validates: Requirements 2.4

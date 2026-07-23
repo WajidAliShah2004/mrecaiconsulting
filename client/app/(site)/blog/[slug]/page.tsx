@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!post) {
     return { title: { absolute: 'Blog Post Not Found | MRECAI' }, robots: { index: false } };
   }
-  const suffixed = `${post.title} | MRE Consulting & Insurance`;
+  const suffixed = `${post.title} | MRECAI Consulting & Insurance`;
   const title = suffixed.length <= 60 ? suffixed : post.title;
   const description = post.excerpt;
   const canonical = `/blog/${slug}`;
@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description,
       url: canonical,
       type: 'website',
-      siteName: 'MRE Consulting & Insurance',
+      siteName: 'MRECAI Consulting & Insurance',
       images: [post.featured_image || '/og-image.jpg'],
     },
     twitter: { card: 'summary_large_image', title, description },

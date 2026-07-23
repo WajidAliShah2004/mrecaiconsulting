@@ -11,7 +11,7 @@ Status: Ready for Publishing
 ---
 
 # Meta Information
-**Meta Title:** 5 AI Tools Every Small Business Needs in 2026 | MRE Consulting
+**Meta Title:** 5 AI Tools Every Small Business Needs in 2026 | MRECAI Consulting
 **Meta Description:** Discover the best AI tools for small business beyond ChatGPT. Practical automation solutions that save time and money in 2026.
 **Target Keywords:** Best AI tools for small business, AI automation tools 2026, business automation software
 
@@ -136,9 +136,9 @@ Traditional automation follows rigid "if this, then that" logic. Zapier's AI Act
 
 ---
 
-## The "MRE Rule" for Choosing AI Tools
+## The "MRECAI Rule" for Choosing AI Tools
 
-At [MRE Consulting](/about), we help businesses implement AI without the overwhelm. Here's our framework:
+At [MRECAI Consulting](/about), we help businesses implement AI without the overwhelm. Here's our framework:
 
 ### **M**ap Your Pain Points
 Don't chase shiny tools. Identify your biggest time-wasters first. Is it missed leads? Manual data entry? Forgotten follow-ups?
@@ -197,7 +197,7 @@ If you're handling any customer data through these platforms, the answer is yes.
 ---
 
 **About the Author**  
-*Matthew R. Epstein is the Founder & CEO of MRE Consulting & Insurance, a hybrid advisory firm specializing in AI implementation, tax strategy, and risk management for high-growth businesses. With 50+ years of legacy experience through Grober Imbey Insurance and cutting-edge AI expertise via NovaEdge Solution, Matthew helps businesses modernize without the chaos.*
+*Matthew R. Epstein is the Founder & CEO of MRECAI Consulting & Insurance, a hybrid advisory firm specializing in AI implementation, tax strategy, and risk management for high-growth businesses. With 50+ years of legacy experience through Grober Imbey Insurance and cutting-edge AI expertise via NovaEdge Solution, Matthew helps businesses modernize without the chaos.*
 
 ---
 

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import AboutCompanyPage from '@/pages/AboutCompany';
 
 const title = "About Our Company | MRECAI History & Mission";
-const description = "Learn about MRE Consulting & Insurance — our company history, mission, core values, and how we operate to serve 180+ clients across New York and beyond.";
+const description = "Learn about MRECAI Consulting & Insurance — our company history, mission, core values, and how we operate to serve 180+ clients across New York and beyond.";
 const canonical = "/about/company";
 
 export function generateMetadata(): Metadata {
@@ -16,7 +16,7 @@ export function generateMetadata(): Metadata {
       description,
       url: canonical,
       type: 'website',
-      siteName: 'MRE Consulting & Insurance',
+      siteName: 'MRECAI Consulting & Insurance',
       images: ['/og-image.jpg'],
     },
     twitter: { card: 'summary_large_image', title, description, images: ['/twitter-image.jpg'] },

@@ -13,7 +13,7 @@ const AIChat = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       id: '1',
-      text: 'Hi! I\'m the MRE Assistant. 👋\n\nI can help you with:\n• Insurance quotes & coverage\n• Business consulting services\n• Tax & accounting questions\n• Scheduling consultations\n\nHow can I assist you today?',
+      text: 'Hi! I\'m the MRECAI Assistant. 👋\n\nI can help you with:\n• Insurance quotes & coverage\n• Business consulting services\n• Tax & accounting questions\n• Scheduling consultations\n\nHow can I assist you today?',
       sender: 'bot',
       timestamp: new Date(),
     },
@@ -621,7 +621,7 @@ const AIChat = () => {
                     <span className="absolute bottom-0 right-0 w-2 h-2 bg-green-400 rounded-full border border-white"></span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-sm">MRE Assistant</h3>
+                    <h3 className="font-bold text-sm">MRECAI Assistant</h3>
                     <p className="text-[10px] text-white/90 flex items-center gap-1">
                       <span className="w-1 h-1 bg-green-400 rounded-full animate-pulse"></span>
                       Online
@@ -758,7 +758,7 @@ const AIChat = () => {
                 </button>
               </div>
               <p className="text-[9px] text-gray-400 text-center mt-1.5">
-                MRE Consulting &amp; Insurance
+                MRECAI Consulting &amp; Insurance
               </p>
             </div>
           </motion.div>

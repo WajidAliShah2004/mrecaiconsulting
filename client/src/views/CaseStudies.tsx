@@ -26,7 +26,7 @@ const CaseStudies = () => {
         timeReduction: '78%',
         roi: '12x',
       },
-      testimonial: 'MRE transformed our back office from chaos to clarity. The tax savings alone paid for their services 10x over, and the time we saved let us focus on growth.',
+      testimonial: 'MRECAI transformed our back office from chaos to clarity. The tax savings alone paid for their services 10x over, and the time we saved let us focus on growth.',
       services: ['Tax Strategy', 'Bookkeeping', 'Business Consulting'],
     },
     {
@@ -47,7 +47,7 @@ const CaseStudies = () => {
         coverageIncrease: '40%',
         timeToImplement: '3 weeks',
       },
-      testimonial: 'We were overpaying for insurance while being underprotected. MRE\'s audit saved us money and gave us peace of mind.',
+      testimonial: 'We were overpaying for insurance while being underprotected. MRECAI\'s audit saved us money and gave us peace of mind.',
       services: ['Insurance Services', 'Risk Architecture'],
     },
     {
@@ -131,7 +131,7 @@ const CaseStudies = () => {
         annualRecurring: '$120K+',
         timeToComplete: '6 weeks',
       },
-      testimonial: 'We had no idea our design work qualified for R&D credits. MRE found us nearly $400K that went straight back into the business.',
+      testimonial: 'We had no idea our design work qualified for R&D credits. MRECAI found us nearly $400K that went straight back into the business.',
       services: ['Tax Strategy', 'R&D Tax Credits', 'Business Consulting'],
     },
   ];

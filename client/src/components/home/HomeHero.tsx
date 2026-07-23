@@ -225,7 +225,7 @@ const HomeHero = () => {
                         <div className="absolute inset-0 flex items-center justify-center">
                             <div className="relative w-40 h-40 bg-gradient-to-br from-primary-600 to-navy-900 rounded-3xl rotate-45 flex items-center justify-center shadow-[0_0_50px_rgba(0,168,232,0.3)]">
                                 <div className="w-32 h-32 bg-navy-900 rounded-2xl flex items-center justify-center border border-white/10">
-                                    <span className="text-4xl font-black text-white -rotate-45">MRE</span>
+                                    <span className="text-2xl sm:text-3xl font-black tracking-tight text-white -rotate-45 whitespace-nowrap">MRECAI</span>
                                 </div>
                             </div>
                         </div>

@@ -141,7 +141,7 @@ While other consultants scream "Go Faster," MRECAI takes a balanced approach. We
 Right now, your employees are likely using AI tools you don't know about. They might be pasting sensitive client emails into ChatGPT to "rewrite them professionally" or uploading proprietary financial data into a public PDF summarizer.
 
 - **The Risk:** Once data enters a public AI model, it may be used to train that model. Your trade secrets could effectively become public knowledge.
-- **The MRE Solution:** We help you draft AI Governance Policies that define exactly which tools are safe to use and how data must be sanitized before processing.
+- **The MRECAI Solution:** We help you draft AI Governance Policies that define exactly which tools are safe to use and how data must be sanitized before processing.
 
 ### 2. Hallucinations & Liability
 

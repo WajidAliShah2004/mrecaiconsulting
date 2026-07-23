@@ -6,7 +6,7 @@ export const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': ['Organization', 'ProfessionalService', 'LocalBusiness'],
   name: 'MRECAI',
-  alternateName: ['MRE Consulting & Insurance', 'MRECAI NY', 'MRECAI NYC'],
+  alternateName: ['MRECAI Consulting & Insurance', 'MRECAI NY', 'MRECAI NYC'],
   legalName: 'MRECAI',
   url: 'https://mrecai.com',
   logo: 'https://mrecai.com/images/logo.png',

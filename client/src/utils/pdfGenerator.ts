@@ -445,7 +445,7 @@ see measurable savings within the first year and continue compounding the
 benefit every year thereafter.
 
 ================================================================================
-THE MRE PROMISE
+THE MRECAI PROMISE
 ================================================================================
 
 We don't just deliver advice — we deliver transformation.

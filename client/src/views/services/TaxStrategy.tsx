@@ -115,7 +115,7 @@ const TaxStrategy = () => {
             className="max-w-4xl mx-auto"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-12 text-center">
-              What Tax Strategy Looks Like at MRE
+              What Tax Strategy Looks Like at MRECAI
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6">

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import TaxSavingsChecklistPage from '@/pages/resources/TaxSavingsChecklist';
 
-const title = "2026 Tax Savings Checklist | MRE Consulting & Insurance";
+const title = "2026 Tax Savings Checklist | MRECAI Consulting & Insurance";
 const description = "Interactive tax efficiency checklist for business owners. Audit your entity structure, deductions, and credits in five minutes and find missed savings.";
 const canonical = "/resources/tax-savings-checklist";
 
@@ -16,7 +16,7 @@ export function generateMetadata(): Metadata {
       description,
       url: canonical,
       type: 'website',
-      siteName: 'MRE Consulting & Insurance',
+      siteName: 'MRECAI Consulting & Insurance',
       images: ['/og-image.jpg'],
     },
     twitter: { card: 'summary_large_image', title, description, images: ['/twitter-image.jpg'] },

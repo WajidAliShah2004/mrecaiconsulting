@@ -89,7 +89,7 @@ The more legitimate deductions you track, the lower your taxable income. Common 
 - Professional development
 - Health insurance premiums (self-employed)
 
-## The MRE Approach: Tax Strategy, Not Just Compliance
+## The MRECAI Approach: Tax Strategy, Not Just Compliance
 
 Setting aside money is reactive. **Tax strategy is proactive.**
 

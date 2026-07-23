@@ -12,18 +12,18 @@ describe('TechnologyAdvantage', () => {
   describe('Component Rendering', () => {
     it('should render without crashing', () => {
       renderWithRouter(<TechnologyAdvantage />);
-      expect(screen.getByText(/The MRE Advantage/i)).toBeInTheDocument();
+      expect(screen.getByText(/The MRECAI Advantage/i)).toBeInTheDocument();
     });
 
     it('should render the section header', () => {
       renderWithRouter(<TechnologyAdvantage />);
-      expect(screen.getByText(/The MRE Advantage/i)).toBeInTheDocument();
+      expect(screen.getByText(/The MRECAI Advantage/i)).toBeInTheDocument();
       expect(screen.getByText(/Integrated tax, insurance, and finance consulting/i)).toBeInTheDocument();
     });
 
     it('should render the bottom CTA text', () => {
       renderWithRouter(<TechnologyAdvantage />);
-      expect(screen.getByText(/The MRE Difference:/i)).toBeInTheDocument();
+      expect(screen.getByText(/The MRECAI Difference:/i)).toBeInTheDocument();
       expect(screen.getByText(/One integrated partner for tax, insurance, and wealth strategy/i)).toBeInTheDocument();
     });
   });
@@ -184,7 +184,7 @@ describe('TechnologyAdvantage', () => {
     it('should have proper heading hierarchy', () => {
       renderWithRouter(<TechnologyAdvantage />);
 
-      const mainHeading = screen.getByText(/The MRE Advantage/i);
+      const mainHeading = screen.getByText(/The MRECAI Advantage/i);
       expect(mainHeading.tagName).toBe('H2');
 
       const pillarHeadings = screen.getAllByRole('heading', { level: 3 });

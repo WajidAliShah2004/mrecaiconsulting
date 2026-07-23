@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import BusinessConsultingPage from '@/pages/services/BusinessConsulting';
 
-const title = "Business Consulting & Management | MRE Consulting";
+const title = "Business Consulting & Management | MRECAI Consulting";
 const description = "Comprehensive business management consulting that connects finance, tax, insurance, and operations to turn operational chaos into systems and real growth.";
 const canonical = "/services/business-consulting";
 
@@ -16,7 +16,7 @@ export function generateMetadata(): Metadata {
       description,
       url: canonical,
       type: 'website',
-      siteName: 'MRE Consulting & Insurance',
+      siteName: 'MRECAI Consulting & Insurance',
       images: ['/og-image.jpg'],
     },
     twitter: { card: 'summary_large_image', title, description, images: ['/twitter-image.jpg'] },

@@ -32,7 +32,7 @@ describe('Home Page - Task 11 Integration Tests', () => {
       renderWithRouter(<TechnologyAdvantage />);
 
       // Check for the TechnologyAdvantage section heading
-      const heading = screen.getByText(/The MRE Advantage/i);
+      const heading = screen.getByText(/The MRECAI Advantage/i);
       expect(heading).toBeInTheDocument();
     });
 
@@ -93,7 +93,7 @@ describe('Home Page - Task 11 Integration Tests', () => {
       expect(container).toBeInTheDocument();
 
       // Check for the main heading
-      expect(screen.getByText(/The MRE Advantage/i)).toBeInTheDocument();
+      expect(screen.getByText(/The MRECAI Advantage/i)).toBeInTheDocument();
     });
 
     it('should have all required pillar elements', () => {
@@ -112,11 +112,11 @@ describe('Home Page - Task 11 Integration Tests', () => {
       });
     });
 
-    it('should display the MRE Difference message', () => {
+    it('should display the MRECAI Difference message', () => {
       renderWithRouter(<TechnologyAdvantage />);
 
       // Check for the bottom CTA message
-      expect(screen.getByText(/The MRE Difference/i)).toBeInTheDocument();
+      expect(screen.getByText(/The MRECAI Difference/i)).toBeInTheDocument();
       expect(screen.getByText(/One integrated partner for tax, insurance, and wealth strategy/i)).toBeInTheDocument();
     });
   });

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import StrategicTaxPlanningPage from '@/pages/services/StrategicTaxPlanning';
 
-const title = "Strategic Tax Planning & Advisory | MRE Consulting";
+const title = "Strategic Tax Planning & Advisory | MRECAI Consulting";
 const description = "Multi-year tax strategy for business owners and high-net-worth individuals: entity optimization, R&D credits, cost segregation, proactive minimization.";
 const canonical = "/services/strategic-tax-planning";
 
@@ -16,7 +16,7 @@ export function generateMetadata(): Metadata {
       description,
       url: canonical,
       type: 'website',
-      siteName: 'MRE Consulting & Insurance',
+      siteName: 'MRECAI Consulting & Insurance',
       images: ['/og-image.jpg'],
     },
     twitter: { card: 'summary_large_image', title, description, images: ['/twitter-image.jpg'] },

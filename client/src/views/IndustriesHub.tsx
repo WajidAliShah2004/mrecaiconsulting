@@ -380,7 +380,7 @@ const IndustriesHub = () => {
                             viewport={{ once: true }}
                         >
                             <div className="inline-block px-4 py-2 bg-primary-100 rounded-full mb-6">
-                                <span className="text-primary-700 font-semibold text-sm">🏆 The MRE Advantage</span>
+                                <span className="text-primary-700 font-semibold text-sm">🏆 The MRECAI Advantage</span>
                             </div>
 
                             <h2 className="text-3xl md:text-5xl font-bold text-navy-900 mb-6 leading-tight">
@@ -435,7 +435,7 @@ const IndustriesHub = () => {
                                 </div>
 
                                 <blockquote className="text-xl md:text-2xl italic font-serif mb-8 leading-relaxed">
-                                    "By understanding the specific nuances of our industry, MRE didn't just fix our taxes—they streamlined our entire operational engine."
+                                    "By understanding the specific nuances of our industry, MRECAI didn't just fix our taxes—they streamlined our entire operational engine."
                                 </blockquote>
 
                                 <div className="flex items-center gap-4">

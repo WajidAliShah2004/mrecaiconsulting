@@ -92,51 +92,54 @@ const Navbar = () => {
         Skip to main content
       </a>
 
-      {/* Top Contact Bar - Redesigned */}
-      <div className={`fixed w-full z-50 bg-gradient-to-r from-navy-900 via-navy-800 to-navy-900 text-white transition-all duration-300 ${isScrolled ? 'h-0 opacity-0 overflow-hidden' : 'h-auto opacity-100'
-        }`}>
-        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-3">
-          <div className="flex justify-between items-center text-xs sm:text-sm">
-            <div className="flex items-center space-x-4 sm:space-x-8">
+      {/* Top Contact Bar - compact utility strip, collapses on scroll */}
+      <div
+        className={`fixed inset-x-0 top-0 z-50 bg-gradient-to-r from-navy-900 via-navy-800 to-navy-900 text-white overflow-hidden transition-[height,opacity] duration-300 ${isScrolled ? 'h-0 opacity-0' : 'h-9 sm:h-10 opacity-100'
+          }`}
+      >
+        <div className="max-w-[1600px] mx-auto h-full px-4 sm:px-6 lg:px-8">
+          <div className="flex h-full justify-between items-center text-[11px] sm:text-xs gap-3">
+            <div className="flex items-center gap-3 sm:gap-6 min-w-0">
               <a
                 href={`tel:${COMPANY_INFO.phone}`}
-                className="flex items-center space-x-2 text-white hover:text-primary-300 transition-all duration-300 group"
+                className="flex items-center gap-1.5 sm:gap-2 text-white hover:text-primary-300 transition-colors duration-300 group flex-shrink-0"
               >
-                <div className="p-1.5 bg-white/10 rounded-lg group-hover:bg-primary-500/20 transition-all">
-                  <FaPhone className="text-xs flex-shrink-0" />
+                <div className="p-1 bg-white/10 rounded-md group-hover:bg-primary-500/20 transition-colors">
+                  <FaPhone className="text-[10px] flex-shrink-0" />
                 </div>
-                <span className="font-medium">{COMPANY_INFO.phone}</span>
+                <span className="font-medium whitespace-nowrap">{COMPANY_INFO.phone}</span>
               </a>
               <a
                 href={`mailto:${COMPANY_INFO.email}`}
-                className="flex items-center space-x-2 text-white hover:text-primary-300 transition-all duration-300 group"
+                className="flex items-center gap-1.5 sm:gap-2 text-white hover:text-primary-300 transition-colors duration-300 group min-w-0"
               >
-                <div className="p-1.5 bg-white/10 rounded-lg group-hover:bg-primary-500/20 transition-all">
-                  <FaEnvelope className="text-xs flex-shrink-0" />
+                <div className="p-1 bg-white/10 rounded-md group-hover:bg-primary-500/20 transition-colors">
+                  <FaEnvelope className="text-[10px] flex-shrink-0" />
                 </div>
-                <span className="hidden sm:inline truncate max-w-[150px] md:max-w-none font-medium">{COMPANY_INFO.email}</span>
+                <span className="hidden sm:inline truncate font-medium">{COMPANY_INFO.email}</span>
               </a>
             </div>
-            <div className="flex items-center space-x-2 text-primary-300 text-xs hidden xl:flex">
-              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span className="font-semibold">24/7 Service Support Available</span>
+            <div className="hidden xl:flex items-center gap-2 text-primary-300 flex-shrink-0">
+              <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
+              <span className="font-semibold whitespace-nowrap">24/7 Service Support Available</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Main Navigation - Redesigned */}
+      {/* Main Navigation */}
       <nav
-        className={`fixed w-full z-40 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300 border-b border-gray-100 ${isScrolled
-          ? 'top-0 py-1.5 xl:py-1'
-          : 'top-12 py-2 xl:py-1.5'
+        className={`fixed inset-x-0 z-40 bg-white/95 backdrop-blur-md shadow-lg transition-[top] duration-300 border-b border-gray-100 ${isScrolled ? 'top-0' : 'top-9 sm:top-10'
           }`}
       >
-        <div className="max-w-[1600px] mx-auto px-4 relative">
-          <div className="flex items-center justify-between py-2 xl:py-1">
+        <div className={`max-w-[1600px] mx-auto px-4 ${isOpen ? 'pb-4' : ''}`}>
+          <div
+            className={`flex items-center justify-between gap-3 transition-[height] duration-300 ${isScrolled ? 'h-12 sm:h-14' : 'h-14 sm:h-16'
+              }`}
+          >
             {/* Logo - Left Side */}
-            <div className="flex items-center flex-shrink-0 z-10">
-              <Link href="/" className="flex items-center group">
+            <div className="flex items-center flex-shrink-0">
+              <Link href="/" className="flex items-center group" aria-label="MRECAI home">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -146,8 +149,10 @@ const Navbar = () => {
                   <img
                     src={logoImage.src}
                     alt="MRECAI"
-                    className={`relative transition-all duration-300 ${isScrolled ? 'h-8 sm:h-10 md:h-12 lg:h-14 w-auto' : 'h-10 sm:h-12 md:h-14 lg:h-16 w-auto'
-                      } object-contain max-w-[100px] sm:max-w-[120px] md:max-w-[150px] lg:max-w-none`}
+                    className={`relative w-auto max-w-none object-contain transition-[height] duration-300 ${isScrolled ? 'h-7 sm:h-9 lg:h-10' : 'h-9 sm:h-11 lg:h-12'
+                      }`}
+                    width={logoImage.width}
+                    height={logoImage.height}
                     loading="eager"
                     fetchPriority="high"
                   />
@@ -156,15 +161,15 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Navigation - Center */}
-            <nav className="hidden xl:flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 max-w-[60%]">
-              <div className="flex items-center gap-0 xl:gap-0.5 2xl:gap-1">
+            <nav className="hidden xl:flex flex-1 min-w-0 items-center justify-center">
+              <div className="flex items-center gap-0.5 2xl:gap-1">
                 {/* Home Link */}
                 <Link
                   href="/"
                   className="relative group flex-shrink-0"
                 >
                   <motion.div
-                    className={`px-1.5 xl:px-2 2xl:px-3 py-1 xl:py-1.5 2xl:py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg relative ${pathname === '/'
+                    className={`px-2 2xl:px-3 py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg relative ${pathname === '/'
                       ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                       : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                       }`}
@@ -182,7 +187,7 @@ const Navbar = () => {
                   onMouseLeave={() => setAboutDropdownOpen(false)}
                 >
                   <motion.button
-                    className={`px-1.5 xl:px-2 2xl:px-3 py-1 xl:py-1.5 2xl:py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg flex items-center gap-1 relative ${isAboutActive
+                    className={`px-2 2xl:px-3 py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg flex items-center gap-1 relative ${isAboutActive
                       ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                       : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                       }`}
@@ -205,7 +210,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 10, scale: 0.95 }}
                         transition={{ duration: 0.2 }}
-                        className="absolute top-full left-0 mt-2 w-64 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-gray-200 overflow-hidden z-50"
+                        className="absolute top-full left-0 w-64 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-gray-200 overflow-hidden z-50"
                       >
                         <div className="p-2">
                           {aboutLinks.map((link) => (
@@ -233,7 +238,7 @@ const Navbar = () => {
                   onMouseLeave={() => setServicesDropdownOpen(false)}
                 >
                   <motion.button
-                    className={`px-1.5 xl:px-2 2xl:px-3 py-1 xl:py-1.5 2xl:py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg flex items-center gap-1 relative ${isServicesActive
+                    className={`px-2 2xl:px-3 py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg flex items-center gap-1 relative ${isServicesActive
                       ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                       : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                       }`}
@@ -256,7 +261,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 10, scale: 0.95 }}
                         transition={{ duration: 0.2 }}
-                        className="absolute top-full left-0 mt-2 w-72 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-gray-200 overflow-hidden z-50"
+                        className="absolute top-full left-0 w-72 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-gray-200 overflow-hidden z-50"
                       >
                         <div className="p-2">
                           {servicesLinks.map((link) => (
@@ -284,7 +289,7 @@ const Navbar = () => {
                   onMouseLeave={() => setLearningDropdownOpen(false)}
                 >
                   <motion.button
-                    className={`px-1.5 xl:px-2 2xl:px-3 py-1 xl:py-1.5 2xl:py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg flex items-center gap-1 relative ${isLearningActive
+                    className={`px-2 2xl:px-3 py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg flex items-center gap-1 relative ${isLearningActive
                       ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                       : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                       }`}
@@ -308,7 +313,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 10, scale: 0.95 }}
                         transition={{ duration: 0.2 }}
-                        className="absolute top-full left-0 mt-2 w-72 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-gray-200 overflow-hidden z-50"
+                        className="absolute top-full left-0 w-72 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-gray-200 overflow-hidden z-50"
                       >
                         <div className="p-2">
                           {learningLinks.map((link) => (
@@ -337,7 +342,7 @@ const Navbar = () => {
                     className="relative group flex-shrink-0"
                   >
                     <motion.div
-                      className={`px-1.5 xl:px-2 2xl:px-3 py-1 xl:py-1.5 2xl:py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg relative whitespace-nowrap ${pathname === link.path
+                      className={`px-2 2xl:px-3 py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg relative whitespace-nowrap ${pathname === link.path
                         ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                         : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                         }`}
@@ -357,7 +362,7 @@ const Navbar = () => {
                   onMouseLeave={() => setLegalDropdownOpen(false)}
                 >
                   <motion.button
-                    className={`px-1.5 xl:px-2 2xl:px-3 py-1 xl:py-1.5 2xl:py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg flex items-center gap-1 relative ${isLegalActive
+                    className={`px-2 2xl:px-3 py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg flex items-center gap-1 relative ${isLegalActive
                       ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                       : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                       }`}
@@ -380,7 +385,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 10, scale: 0.95 }}
                         transition={{ duration: 0.2 }}
-                        className="absolute top-full left-0 mt-2 w-56 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-gray-200 overflow-hidden z-50"
+                        className="absolute top-full left-0 w-56 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-gray-200 overflow-hidden z-50"
                       >
                         <div className="p-2">
                           {legalLinks.map((link) => (
@@ -404,7 +409,7 @@ const Navbar = () => {
             </nav>
 
             {/* Right Side: CTA & Mobile Toggle */}
-            <div className="flex items-center gap-4 flex-shrink-0 z-10">
+            <div className="flex items-center gap-3 flex-shrink-0">
               {/* CTA Button */}
               <div className="hidden xl:block">
                 <motion.div
@@ -414,7 +419,7 @@ const Navbar = () => {
                 >
                   <Link
                     href="/book-now"
-                    className={`relative px-2 xl:px-3 2xl:px-4 py-1 xl:py-1.5 2xl:py-2 text-white font-bold text-[9px] xl:text-[10px] 2xl:text-xs rounded-lg transition-all duration-300 shadow-lg hover:shadow-2xl inline-flex items-center gap-1 whitespace-nowrap overflow-hidden group ${pathname === '/book-now'
+                    className={`relative px-3 2xl:px-4 py-2 text-white font-bold text-[10px] 2xl:text-xs rounded-lg transition-all duration-300 shadow-lg hover:shadow-2xl inline-flex items-center gap-1 whitespace-nowrap overflow-hidden group ${pathname === '/book-now'
                       ? 'bg-gradient-to-r from-green-500 to-green-600'
                       : 'bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700'
                       }`}
@@ -433,7 +438,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(!isOpen)}
                 whileTap={{ scale: 0.9 }}
                 whileHover={{ scale: 1.05 }}
-                className="xl:hidden p-2.5 sm:p-3 rounded-xl transition-all duration-300 text-white bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 shadow-lg hover:shadow-xl border-2 border-primary-400/50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 flex-shrink-0 z-10"
+                className="xl:hidden inline-flex items-center justify-center h-10 w-10 sm:h-11 sm:w-11 rounded-xl transition-colors duration-300 text-white bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 shadow-lg hover:shadow-xl border-2 border-primary-400/50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 flex-shrink-0"
                 aria-label={isOpen ? 'Close menu' : 'Open menu'}
                 aria-expanded={isOpen}
               >
@@ -441,7 +446,7 @@ const Navbar = () => {
                   animate={{ rotate: isOpen ? 180 : 0 }}
                   transition={{ type: "spring", stiffness: 400, damping: 15 }}
                 >
-                  {isOpen ? <FaTimes className="text-xl sm:text-2xl" /> : <FaBars className="text-xl sm:text-2xl" />}
+                  {isOpen ? <FaTimes className="text-lg sm:text-xl" /> : <FaBars className="text-lg sm:text-xl" />}
                 </motion.div>
               </motion.button>
             </div>
@@ -455,9 +460,9 @@ const Navbar = () => {
                 animate={{ opacity: 1, height: 'auto', scale: 1 }}
                 exit={{ opacity: 0, height: 0, scale: 0.95 }}
                 transition={{ duration: 0.3, type: "spring", stiffness: 300, damping: 25 }}
-                className="xl:hidden mt-4 sm:mt-6 bg-gradient-to-br from-white via-gray-50 to-white rounded-3xl shadow-2xl overflow-hidden border-2 border-gray-200"
+                className="xl:hidden mt-2 bg-gradient-to-br from-white via-gray-50 to-white rounded-3xl shadow-2xl overflow-hidden border-2 border-gray-200"
               >
-                <div className="flex flex-col p-4 sm:p-6 pb-10 space-y-2 max-h-[calc(100vh-120px)] overflow-y-auto">
+                <div className="flex flex-col p-4 sm:p-5 space-y-2 max-h-[calc(100vh-9rem)] overflow-y-auto overscroll-contain">
                   {/* Home Link */}
                   <motion.div
                     initial={{ opacity: 0, x: -20 }}
@@ -466,7 +471,7 @@ const Navbar = () => {
                   >
                     <Link
                       href="/"
-                      className={`block px-5 py-3.5 rounded-xl font-bold transition-all relative ${pathname === '/'
+                      className={`block px-4 py-3 rounded-xl font-bold transition-all relative ${pathname === '/'
                         ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                         : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                         }`}
@@ -483,7 +488,7 @@ const Navbar = () => {
                   >
                     <button
                       onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
-                      className={`w-full flex items-center justify-between px-5 py-3.5 rounded-xl font-bold transition-all ${isAboutActive
+                      className={`w-full flex items-center justify-between px-4 py-3 rounded-xl font-bold transition-all ${isAboutActive
                         ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                         : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                         }`}
@@ -510,7 +515,7 @@ const Navbar = () => {
                             <Link
                               key={link.path}
                               href={link.path}
-                              className={`block px-4 py-2.5 rounded-xl text-sm font-semibold transition-all ${pathname === link.path
+                              className={`block px-4 py-2.5 rounded-lg text-sm font-semibold transition-all ${pathname === link.path
                                 ? 'text-white bg-gradient-to-r from-primary-400 to-primary-500 shadow-md'
                                 : 'text-gray-600 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                                 }`}
@@ -531,7 +536,7 @@ const Navbar = () => {
                   >
                     <button
                       onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                      className={`w-full flex items-center justify-between px-5 py-3.5 rounded-xl font-bold transition-all ${isServicesActive
+                      className={`w-full flex items-center justify-between px-4 py-3 rounded-xl font-bold transition-all ${isServicesActive
                         ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                         : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                         }`}
@@ -558,7 +563,7 @@ const Navbar = () => {
                             <Link
                               key={link.path}
                               href={link.path}
-                              className={`block px-4 py-2.5 rounded-xl text-sm font-semibold transition-all ${pathname === link.path
+                              className={`block px-4 py-2.5 rounded-lg text-sm font-semibold transition-all ${pathname === link.path
                                 ? 'text-white bg-gradient-to-r from-primary-400 to-primary-500 shadow-md'
                                 : 'text-gray-600 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                                 }`}
@@ -579,7 +584,7 @@ const Navbar = () => {
                   >
                     <button
                       onClick={() => setMobileLearningOpen(!mobileLearningOpen)}
-                      className={`w-full flex items-center justify-between px-5 py-3.5 rounded-xl font-bold transition-all ${isLearningActive
+                      className={`w-full flex items-center justify-between px-4 py-3 rounded-xl font-bold transition-all ${isLearningActive
                         ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                         : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                         }`}
@@ -606,7 +611,7 @@ const Navbar = () => {
                             <Link
                               key={link.path}
                               href={link.path}
-                              className={`block px-4 py-2.5 rounded-xl text-sm font-semibold transition-all ${pathname === link.path
+                              className={`block px-4 py-2.5 rounded-lg text-sm font-semibold transition-all ${pathname === link.path
                                 ? 'text-white bg-gradient-to-r from-primary-400 to-primary-500 shadow-md'
                                 : 'text-gray-600 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                                 }`}
@@ -629,7 +634,7 @@ const Navbar = () => {
                     >
                       <Link
                         href={link.path}
-                        className={`block px-5 py-3.5 rounded-xl font-bold transition-all relative ${pathname === link.path
+                        className={`block px-4 py-3 rounded-xl font-bold transition-all relative ${pathname === link.path
                           ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                           : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                           }`}
@@ -647,7 +652,7 @@ const Navbar = () => {
                   >
                     <button
                       onClick={() => setMobileLegalOpen(!mobileLegalOpen)}
-                      className={`w-full flex items-center justify-between px-5 py-3.5 rounded-xl font-bold transition-all ${isLegalActive
+                      className={`w-full flex items-center justify-between px-4 py-3 rounded-xl font-bold transition-all ${isLegalActive
                         ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
                         : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                         }`}
@@ -674,7 +679,7 @@ const Navbar = () => {
                             <Link
                               key={link.path}
                               href={link.path}
-                              className={`block px-4 py-2.5 rounded-xl text-sm font-semibold transition-all ${pathname === link.path
+                              className={`block px-4 py-2.5 rounded-lg text-sm font-semibold transition-all ${pathname === link.path
                                 ? 'text-white bg-gradient-to-r from-primary-400 to-primary-500 shadow-md'
                                 : 'text-gray-600 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
                                 }`}
@@ -687,11 +692,11 @@ const Navbar = () => {
                     </AnimatePresence>
                   </motion.div>
 
-                  <div className="border-t-2 border-gray-200 my-4"></div>
+                  <div className="border-t-2 border-gray-200 my-3"></div>
 
                   <a
                     href={`tel:${COMPANY_INFO.phone}`}
-                    className="flex items-center space-x-3 px-5 py-3.5 text-primary-600 hover:text-white hover:bg-gradient-to-r hover:from-primary-500 hover:to-primary-600 rounded-xl font-bold transition-all shadow-sm hover:shadow-lg"
+                    className="flex items-center space-x-3 px-4 py-3 text-primary-600 hover:text-white hover:bg-gradient-to-r hover:from-primary-500 hover:to-primary-600 rounded-xl font-bold transition-all shadow-sm hover:shadow-lg"
                   >
                     <div className="p-2 bg-primary-100 rounded-lg">
                       <FaPhone />
@@ -702,7 +707,7 @@ const Navbar = () => {
                   {/* CTA Button - Separate from navigation, always prominent */}
                   <Link
                     href="/book-now"
-                    className={`flex items-center justify-center w-full text-center px-5 sm:px-6 py-4 text-white font-bold text-sm sm:text-base rounded-xl shadow-xl hover:shadow-2xl transition-all mt-4 relative overflow-hidden group h-auto leading-normal ${pathname === '/book-now'
+                    className={`flex items-center justify-center w-full text-center px-5 sm:px-6 py-3.5 text-white font-bold text-sm sm:text-base rounded-xl shadow-xl hover:shadow-2xl transition-all mt-3 relative overflow-hidden group h-auto leading-normal ${pathname === '/book-now'
                       ? 'bg-gradient-to-r from-green-500 to-green-600'
                       : 'bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700'
                       }`}

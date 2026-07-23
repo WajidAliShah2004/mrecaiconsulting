@@ -323,7 +323,7 @@ const InsuranceGapChecklist = () => {
                         <div className="bg-navy-900 p-8 rounded-[2rem] text-white">
                             <h4 className="text-2xl font-bold mb-6 flex items-center">
                                 <FaShieldAlt className="mr-3 text-primary-400" />
-                                The MRE Advantage
+                                The MRECAI Advantage
                             </h4>
                             <ul className="space-y-4">
                                 {[

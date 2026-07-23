@@ -20,7 +20,7 @@ const faqs = [
         answer: 'Many practitioners don\'t realize that developing new procedures, techniques, or treatment protocols qualifies for significant federal and state credits. We conduct specialized R&D studies for the medical field.',
     },
     {
-        question: 'How does MRE handle practice insurance audits?',
+        question: 'How does MRECAI handle practice insurance audits?',
         answer: 'We conduct a comprehensive audit of your malpractice, cyber liability, and overhead insurance to ensure you have the maximum protection with no overlapping, redundant premiums.',
     },
     {

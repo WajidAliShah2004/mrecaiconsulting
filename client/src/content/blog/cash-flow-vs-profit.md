@@ -207,7 +207,7 @@ The most powerful tool for avoiding cash crises is a **rolling 13-week cash flow
 - Positive cash flow
 - Business survives and thrives
 
-## The MRE Cash Flow System
+## The MRECAI Cash Flow System
 
 We help clients implement a three-part system:
 

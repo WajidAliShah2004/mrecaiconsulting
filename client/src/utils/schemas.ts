@@ -5,7 +5,7 @@ export const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': ['Organization', 'ProfessionalService', 'LocalBusiness'],
   name: 'MRECAI',
-  alternateName: ['MRE Consulting & Insurance', 'MRECAI NY', 'MRECAI NYC'],
+  alternateName: ['MRECAI Consulting & Insurance', 'MRECAI NY', 'MRECAI NYC'],
   legalName: 'MRECAI',
   url: 'https://mrecai.com',
   logo: 'https://mrecai.com/images/logo.jpeg',
@@ -226,7 +226,7 @@ export const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'MRECAI',
-  alternateName: 'MRE Consulting & Insurance',
+  alternateName: 'MRECAI Consulting & Insurance',
   url: 'https://mrecai.com',
   description: 'Professional tax, insurance, accounting, and finance consulting services',
   publisher: {

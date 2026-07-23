@@ -20,7 +20,7 @@ const faqs = [
         answer: 'Yes. We build accounting systems that track P&L and cash flow at the individual property level, giving you the granular data needed to make informed "buy, hold, or sell" decisions.',
     },
     {
-        question: 'How does MRE protect my real estate assets?',
+        question: 'How does MRECAI protect my real estate assets?',
         answer: 'We coordinate with your legal team to ensure your properties are held in the correct entity structures (LLCs/Trusts) and that your insurance stack (DP3, GL, Umbrella) is architected to protect your total net worth.',
     },
     {

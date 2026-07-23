@@ -25,7 +25,7 @@ describe('In60Seconds', () => {
       expect(screen.getByText(/New York/i)).toBeInTheDocument();
     });
 
-    it('should describe MRE as a full-service tax, insurance, and finance consulting firm', () => {
+    it('should describe MRECAI as a full-service tax, insurance, and finance consulting firm', () => {
       const { container } = render(<In60Seconds />);
 
       expect(container.textContent).toMatch(/full-service tax, insurance, and finance consulting firm/i);

@@ -67,7 +67,7 @@ const TechnologyAdvantage = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
-            The MRE Advantage
+            The MRECAI Advantage
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Integrated tax, insurance, and finance consulting—working together under one roof
@@ -132,7 +132,7 @@ const TechnologyAdvantage = () => {
           className="text-center mt-12"
         >
           <p className="text-lg text-gray-700 mb-6">
-            <strong>The MRE Difference:</strong> One integrated partner for tax, insurance, and wealth strategy
+            <strong>The MRECAI Difference:</strong> One integrated partner for tax, insurance, and wealth strategy
           </p>
         </motion.div>
       </div>

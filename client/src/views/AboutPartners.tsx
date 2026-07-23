@@ -247,7 +247,7 @@ const AboutPartners = () => {
                       the financial services industry.
                     </p>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      This strategic partnership enables MRE to offer comprehensive investment and financial management 
+                      This strategic partnership enables MRECAI to offer comprehensive investment and financial management 
                       services to our clients, combining our expertise in business consulting, insurance, and tax strategy 
                       with sophisticated wealth management and investment planning.
                     </p>
@@ -429,7 +429,7 @@ const AboutPartners = () => {
                       investment and wealth management services as part of a comprehensive financial strategy.
                     </p>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      <strong>MRE handles:</strong> Business consulting, tax strategy, insurance planning, accounting services, 
+                      <strong>MRECAI handles:</strong> Business consulting, tax strategy, insurance planning, accounting services, 
                       and estate consulting.
                     </p>
                     <p className="text-gray-700 leading-relaxed mb-4">
@@ -710,7 +710,7 @@ const AboutPartners = () => {
                       like working with a single full-service firm.
                     </p>
                     <p className="text-gray-700 leading-relaxed font-semibold mb-3">
-                      Together, MRE + GIA deliver:
+                      Together, MRECAI + GIA deliver:
                     </p>
                     <ul className="space-y-2">
                       {[
@@ -733,7 +733,7 @@ const AboutPartners = () => {
                     <p className="text-gray-700 leading-relaxed">
                       This partnership reflects MRECAI's unwavering commitment to deliver 
                       comprehensive protection and strategic insight — not just policies. With GIA's half-century 
-                      of underwriting experience and our consulting expertise, we ensure that every MRE client 
+                      of underwriting experience and our consulting expertise, we ensure that every MRECAI client 
                       receives the right coverage, at the right price, with the right team behind it.
                     </p>
                   </div>
