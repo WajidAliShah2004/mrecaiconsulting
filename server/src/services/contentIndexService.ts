@@ -34,8 +34,8 @@ class ContentIndexService {
         url: '/',
         title: 'MRECAI | Business Consulting & Insurance Services',
         description: 'Expert business consulting, insurance, and AI technology solutions. 15+ years experience, 500+ clients served, 4.9/5 rating.',
-        keywords: ['business consulting', 'insurance services', 'digital marketing', 'tax accounting', 'AI technology'],
-        content: 'MRE Consulting & Insurance provides comprehensive business consulting, insurance services, digital marketing, tax & accounting, AI technology, and automation solutions. Founded in 2009 with 15+ years of experience serving 500+ clients with a 98% success rate.',
+        keywords: ['business consulting', 'insurance services', 'tax accounting', 'AI automation'],
+        content: 'MRE Consulting & Insurance provides comprehensive business consulting, insurance services, tax & accounting, AI consulting, and automation solutions. Founded in 2009 with 15+ years of experience serving 500+ clients with a 98% success rate.',
         lastModified: new Date('2025-10-28'),
         priority: 1.0
       },
@@ -69,9 +69,9 @@ class ContentIndexService {
       {
         url: '/services',
         title: 'Our Services | Business Consulting & Insurance | MRECAI',
-        description: 'Comprehensive services: Business Consulting, Digital Marketing, Insurance, Tax & Accounting, AI Technology, Automation, Web Development.',
-        keywords: ['services', 'business consulting', 'insurance', 'digital marketing', 'tax accounting', 'AI technology', 'automation'],
-        content: 'MRECAI offers 7 comprehensive services: Business Consulting, Digital Marketing, Insurance Services, Tax & Accounting, AI & Technology, Automation, and Web Development. Each service is tailored to meet your unique needs.',
+        description: 'Comprehensive services: Business Consulting, Insurance, Tax & Accounting, AI Consulting, Automation.',
+        keywords: ['services', 'business consulting', 'insurance', 'tax accounting', 'AI consulting', 'automation'],
+        content: 'MRECAI offers 5 comprehensive services: Business Consulting, Insurance Services, Tax & Accounting, AI Consulting, and Automation. Each service is tailored to meet your unique needs.',
         lastModified: new Date('2025-10-28'),
         priority: 0.9
       },
@@ -96,9 +96,9 @@ class ContentIndexService {
       {
         url: '/blog',
         title: 'Blog | Insights & Tips | MRECAI',
-        description: 'Expert insights on business, insurance, tax planning, technology, AI, and digital marketing.',
+        description: 'Expert insights on business, insurance, tax planning, AI, and automation.',
         keywords: ['blog', 'articles', 'business tips', 'insurance advice', 'tax planning'],
-        content: 'Stay informed with our blog featuring expert insights on business strategies, insurance advice, tax planning, technology trends, AI innovations, and digital marketing tips.',
+        content: 'Stay informed with our blog featuring expert insights on business strategies, insurance advice, tax planning, AI innovations, and automation trends.',
         lastModified: new Date('2025-10-28'),
         priority: 0.7
       },
@@ -137,18 +137,6 @@ class ContentIndexService {
         keywords: ['business consulting', 'strategic planning', 'business growth', 'operational efficiency']
       },
       {
-        id: 'digital-marketing',
-        name: 'Digital Marketing',
-        description: 'Comprehensive digital marketing solutions to boost your online presence',
-        features: [
-          'SEO and content marketing',
-          'Social media management',
-          'PPC advertising campaigns',
-          'Analytics and reporting'
-        ],
-        keywords: ['digital marketing', 'SEO', 'social media', 'PPC', 'content marketing']
-      },
-      {
         id: 'insurance-services',
         name: 'Insurance Services',
         description: 'Expert insurance consulting to protect what matters most',
@@ -174,15 +162,14 @@ class ContentIndexService {
       },
       {
         id: 'ai-technology',
-        name: 'AI & Technology',
-        description: 'Cutting-edge AI and technology solutions to modernize your business',
+        name: 'AI Consulting',
+        description: 'Cutting-edge AI solutions to modernize your business',
         features: [
           'AI implementation consulting',
           'Process automation solutions',
-          'Technology stack optimization',
           'Digital transformation strategy'
         ],
-        keywords: ['AI', 'artificial intelligence', 'technology', 'automation', 'digital transformation']
+        keywords: ['AI', 'artificial intelligence', 'automation', 'digital transformation']
       },
       {
         id: 'automation',
@@ -195,18 +182,6 @@ class ContentIndexService {
           'Training and support'
         ],
         keywords: ['automation', 'workflow', 'efficiency', 'integration', 'process automation']
-      },
-      {
-        id: 'web-development',
-        name: 'Web Development',
-        description: 'Custom web solutions that drive results',
-        features: [
-          'Website Design & Development',
-          'E-commerce Solutions',
-          'Web Applications',
-          'Maintenance & Support'
-        ],
-        keywords: ['web development', 'website design', 'e-commerce', 'web applications']
       }
     ];
   }

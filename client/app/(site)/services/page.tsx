@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import ServicesPage from '@/pages/Services';
 
-const title = "AI, Software & Digital Marketing Services | MRECAI";
-const description = "Expert AI consulting, custom software development, digital marketing, design, and video production — plus tax and insurance support, all under one roof.";
+const title = "AI, Tax, Insurance & Business Consulting Services | MRECAI";
+const description = "Expert AI consulting and automation, strategic tax planning, insurance and risk management, bookkeeping, and business consulting — all under one roof.";
 const canonical = "/services";
 
 export function generateMetadata(): Metadata {
   return {
     title: { absolute: title },
     description,
-    keywords: "AI consulting services, custom software development, digital marketing agency, graphic design services, video production, business automation, web development, mobile app development",
+    keywords: "AI consulting services, business automation, tax planning services, tax preparation, insurance consulting, risk management, bookkeeping and accounting, business consulting NYC",
     alternates: { canonical },
     openGraph: {
       title,

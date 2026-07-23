@@ -141,8 +141,8 @@ const StartHere = () => {
     if (counts.tech >= 2 || counts.growth >= 2) {
       return {
         title: 'Growth & Automation Package',
-        description: 'You\'re ready to scale. We\'ll implement AI automation, optimize your marketing, and build systems that support rapid growth.',
-        services: ['AI & Automation', 'Digital Marketing', 'Technology Services'],
+        description: 'You\'re ready to scale. We\'ll implement AI automation, streamline your operations, and build systems that support rapid growth.',
+        services: ['AI & Automation', 'Business Process Automation', 'Business Consulting'],
         cta: 'Accelerate Your Growth',
         route: '/services/ai-driven-growth',
       };

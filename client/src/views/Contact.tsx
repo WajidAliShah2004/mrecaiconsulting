@@ -184,10 +184,10 @@ const Contact = () => {
   return (
     <>
       <SEO
-        title="Contact MRECAI | AI Consulting & Software Development Inquiry"
-        description="Contact MRECAI for AI consulting, custom software development, and digital marketing services. Call 929-702-2818 or email Matthew@MRECAI.com. Free consultation available."
+        title="Contact MRECAI | AI, Tax & Insurance Consulting Inquiry"
+        description="Contact MRECAI for AI consulting, tax planning, insurance, and business consulting services. Call 929-702-2818 or email Matthew@MRECAI.com. Free consultation available."
         canonical="/contact"
-        keywords="contact MRECAI, AI consulting inquiry, software development quote, digital marketing consultation, technology services contact"
+        keywords="contact MRECAI, AI consulting inquiry, tax planning consultation, insurance quote, business consulting contact"
         schema={{
           '@context': 'https://schema.org',
           '@graph': [
@@ -509,9 +509,8 @@ const Contact = () => {
                         <option value="general">General Inquiry</option>
                         <option value="insurance">Insurance Services</option>
                         <option value="consulting">Business Consulting</option>
-                        <option value="technology">AI & Technology</option>
+                        <option value="technology">AI & Automation</option>
                         <option value="tax">Tax & Accounting</option>
-                        <option value="marketing">Digital Marketing</option>
                         <option value="other">Other</option>
                       </select>
                     </div>

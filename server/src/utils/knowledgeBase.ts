@@ -21,7 +21,7 @@ class KnowledgeBase implements KnowledgeBaseResponse {
     
     // Services - General
     if (lowerMessage.includes('service') || lowerMessage.includes('what do you do') || lowerMessage.includes('what do you offer')) {
-      return 'We offer comprehensive services:\n\n💼 Business Consulting - Strategic planning & growth\n📱 Digital Marketing - SEO, social media, PPC\n🛡️ Insurance Services - Personal & commercial coverage\n💰 Tax & Accounting - Planning & preparation\n🤖 AI & Technology - Implementation & consulting\n⚙️ Automation - Workflow optimization\n\nVisit /services for detailed information!';
+      return 'We offer comprehensive services:\n\n💼 Business Consulting - Strategic planning & growth\n🛡️ Insurance Services - Personal & commercial coverage\n💰 Tax & Accounting - Planning & preparation\n🤖 AI Consulting - Implementation & strategy\n⚙️ Automation - Workflow optimization\n\nVisit /services for detailed information!';
     }
     
     // Insurance - General

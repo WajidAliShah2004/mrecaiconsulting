@@ -114,7 +114,7 @@ const AIChat = () => {
 
     // Services - General
     if (lowerMessage.includes('service') || lowerMessage.includes('what do you do') || lowerMessage.includes('what do you offer')) {
-      return 'We offer comprehensive services:\n\n💼 Business Consulting - Strategic planning & growth\n📱 Digital Marketing - SEO, social media, PPC\n🛡️ Insurance Services - Personal & commercial coverage\n💰 Tax & Accounting - Planning & preparation\n🤖 AI & Technology - Implementation & consulting\n⚙️ Automation - Workflow optimization\n\nVisit /services for detailed information!';
+      return 'We offer comprehensive services:\n\n💼 Business Consulting - Strategic planning & growth\n🛡️ Insurance Services - Personal & commercial coverage\n💰 Tax & Accounting - Planning & preparation\n🤖 AI Consulting - Implementation & strategy\n⚙️ Automation - Workflow optimization\n\nVisit /services for detailed information!';
     }
 
     // Business Consulting
@@ -122,9 +122,9 @@ const AIChat = () => {
       return 'Our Business Consulting services include:\n\n✓ Strategic planning & execution\n✓ Financial analysis & forecasting\n✓ Operational efficiency optimization\n✓ Growth strategy development\n✓ Market analysis\n✓ Business process improvement\n\nBook a free consultation at /book-now to discuss your business goals!';
     }
 
-    // Digital Marketing
+    // Digital Marketing (no longer offered)
     if (lowerMessage.includes('marketing') || lowerMessage.includes('seo') || lowerMessage.includes('social media') || lowerMessage.includes('advertising')) {
-      return 'Our Digital Marketing services:\n\n📈 SEO & content marketing\n📱 Social media management\n💻 PPC advertising campaigns\n📊 Analytics & reporting\n🎯 Brand strategy\n📧 Email marketing\n\nLet\'s grow your online presence! Book a consultation: /book-now';
+      return 'We no longer offer digital marketing services. 🙏\n\nWhat we can help with instead:\n\n🤖 AI & Automation - 24/7 lead engagement & follow-up\n💼 Business Consulting - Growth strategy\n💰 Tax & Accounting\n🛡️ Insurance & Risk\n\nExplore our services: /services or book a consultation: /book-now';
     }
 
     // Insurance - General
@@ -239,7 +239,7 @@ const AIChat = () => {
 
     // Strategic Partners - Specific
     if (lowerMessage.includes('novaedge') || lowerMessage.includes('nova edge')) {
-      return 'NovaEdge Solutions Partnership:\n\n✓ 15+ years in software development\n✓ AI-driven digital transformation\n✓ Full-stack development expertise\n✓ Cloud infrastructure & DevOps\n✓ Custom enterprise software\n\nTogether we deliver cutting-edge AI solutions! Learn more: /about/partners';
+      return 'NovaEdge Solutions Partnership:\n\n✓ AI-driven digital transformation\n✓ AI implementation & automation expertise\n\nTogether we deliver cutting-edge AI solutions! Learn more: /about/partners';
     }
 
     if (lowerMessage.includes('gia') || lowerMessage.includes('grober') || lowerMessage.includes('imbey')) {
@@ -276,9 +276,9 @@ const AIChat = () => {
       return 'Cyber Liability Insurance:\n\n✓ Data breach protection\n✓ Ransomware coverage\n✓ Business interruption\n✓ Legal & notification costs\n✓ Essential for all businesses\n\nProtect your digital assets! Get a quote: /intake-forms';
     }
 
-    // Web Development
-    if (lowerMessage.includes('web') || lowerMessage.includes('website') || lowerMessage.includes('development')) {
-      return 'Web Development Services:\n\n✓ Custom website design & development\n✓ E-commerce solutions\n✓ Web applications\n✓ Responsive & mobile-friendly\n✓ SEO optimized\n✓ Maintenance & support\n\nLet\'s build your online presence! Book consultation: /book-now';
+    // Web/Software Development (no longer offered)
+    if (lowerMessage.includes('web') || lowerMessage.includes('website') || lowerMessage.includes('development') || lowerMessage.includes('software')) {
+      return 'We no longer offer web or software development services. 🙏\n\nWhat we can help with instead:\n\n🤖 AI & Automation - Intelligent systems & integrations\n💼 Business Consulting\n💰 Tax & Accounting\n🛡️ Insurance & Risk\n\nExplore our services: /services or book a consultation: /book-now';
     }
 
     // Workflow Automation
@@ -298,7 +298,7 @@ const AIChat = () => {
 
     // Small Business
     if (lowerMessage.includes('small business') || lowerMessage.includes('startup')) {
-      return 'Small Business Solutions:\n\n✓ Business formation & planning\n✓ Insurance packages\n✓ Tax planning & preparation\n✓ Bookkeeping & payroll\n✓ Digital marketing\n✓ Technology consulting\n\nComplete support for your business! Book consultation: /book-now';
+      return 'Small Business Solutions:\n\n✓ Business formation & planning\n✓ Insurance packages\n✓ Tax planning & preparation\n✓ Bookkeeping & payroll\n✓ AI & automation consulting\n\nComplete support for your business! Book consultation: /book-now';
     }
 
     // Growth Strategy

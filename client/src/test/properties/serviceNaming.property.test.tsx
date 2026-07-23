@@ -70,12 +70,7 @@ const canonicalServiceNames = [
   ...SERVICES.map(s => s.title),
   ...SERVICES_EXPANDED.map(s => s.title),
   // Additional canonical service names
-  'Website Development',
-  'Custom Software Development',
   'AI Consulting & Automation',
-  'Digital Marketing',
-  'Graphic Design',
-  'Video Production',
   'Business Process Automation',
   'Tax Preparation',
   'Bookkeeping',
@@ -95,30 +90,6 @@ const serviceNameVariations: Record<string, string[]> = {
     'Artificial Intelligence Consulting',
     'AI Services',
     'Automation Services',
-  ],
-  'Custom Software Development': [
-    'Software Development',
-    'Custom Development',
-    'Software Engineering',
-    'App Development',
-  ],
-  'Digital Marketing': [
-    'Online Marketing',
-    'Internet Marketing',
-    'Web Marketing',
-    'Marketing Services',
-  ],
-  'Graphic Design & Branding': [
-    'Graphic Design',
-    'Design Services',
-    'Branding Services',
-    'Visual Design',
-  ],
-  'Video Production & Editing': [
-    'Video Production',
-    'Video Editing',
-    'Video Services',
-    'Multimedia Production',
   ],
   'Tax Preparation & Compliance': [
     'Tax Preparation',
@@ -447,9 +418,9 @@ describe('Property 3: Service Naming Consistency', () => {
   it('should contain key canonical service names on appropriate pages', () => {
     const keyServices = [
       'AI Consulting & Automation',
-      'Custom Software Development',
-      'Digital Marketing',
-      'Website Development',
+      'Business Process Automation',
+      'Tax Strategy & Accounting',
+      'Insurance & Risk Architecture',
     ];
     
     const { container } = renderPageWithRouter(Home);

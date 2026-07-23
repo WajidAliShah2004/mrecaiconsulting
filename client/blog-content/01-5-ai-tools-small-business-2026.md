@@ -209,4 +209,3 @@ If you're handling any customer data through these platforms, the answer is yes.
 **Services:**
 - [AI & Technology Consulting](/services/ai-consulting)
 - [Business Management Consulting](/services/business-consulting)
-- [Technology Services](/services/technology)

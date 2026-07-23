@@ -101,7 +101,7 @@ const AboutCompany = () => {
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
                     MRECAI is a forward-thinking firm dedicated to empowering individuals,
                     families, and businesses with comprehensive consulting and insurance solutions. Founded in 2024,
-                    we bring together expertise in business consulting, digital marketing, insurance services,
+                    we bring together expertise in business consulting, insurance services,
                     tax and accounting, and cutting-edge AI technology.
                   </p>
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">

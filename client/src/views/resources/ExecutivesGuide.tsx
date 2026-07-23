@@ -149,7 +149,7 @@ const ExecutivesGuide = () => {
                                 <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
                                     <FaRocket className="text-3xl text-primary-500 mb-4" />
                                     <h4 className="font-bold text-navy-900 mb-2 italic">2. Client Acquisition</h4>
-                                    <p className="text-sm">Intelligent Intake Systems engage visitors 24/7, qualify leads, and schedule meetings directly. Built with <Link href="/services/digital-marketing" className="text-primary-600 hover:underline">Modern Web Dev</Link>.</p>
+                                    <p className="text-sm">Intelligent Intake Systems engage visitors 24/7, qualify leads, and schedule meetings directly. Built with <Link href="/services/ai-driven-growth" className="text-primary-600 hover:underline">AI Automation</Link>.</p>
                                 </div>
                                 <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
                                     <FaChartBar className="text-3xl text-primary-500 mb-4" />

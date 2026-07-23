@@ -10,7 +10,7 @@ export const organizationSchema = {
   url: 'https://mrecai.com',
   logo: 'https://mrecai.com/images/logo.jpeg',
   image: 'https://mrecai.com/images/logo.jpeg',
-  description: 'New York-based professional services firm integrating business consulting, insurance services, tax strategy, AI automation, investment management, estate planning, and digital marketing. Serving NYC businesses with comprehensive financial, operational, and technology solutions.',
+  description: 'New York-based professional services firm integrating business consulting, insurance services, tax strategy, AI automation, investment management, and estate planning. Serving NYC businesses with comprehensive financial and operational solutions.',
   foundingDate: '2024',
   founder: {
     '@type': 'Person',
@@ -89,9 +89,6 @@ export const organizationSchema = {
     'Wealth Management',
     'Estate Planning',
     'Estate Consulting',
-    'Digital Marketing',
-    'SEO',
-    'Social Media Marketing',
     'Risk Management',
     'Financial Planning',
     'Bookkeeping',
@@ -272,27 +269,6 @@ export const serviceSchemas = {
       name: 'United States',
     },
     description: 'Strategic business consulting services including planning, financial analysis, operational optimization, cash flow management, KPI tracking, and scalable systems development.',
-    offers: {
-      '@type': 'Offer',
-      availability: 'https://schema.org/InStock',
-      priceCurrency: 'USD',
-    },
-  },
-  digitalMarketing: {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    serviceType: 'Digital Marketing',
-    name: 'Digital Marketing & Technology Services',
-    provider: {
-      '@type': 'Organization',
-      name: 'MRECAI',
-      url: 'https://mrecai.com',
-    },
-    areaServed: {
-      '@type': 'Country',
-      name: 'United States',
-    },
-    description: 'Comprehensive digital marketing solutions including SEO, social media management, content marketing, PPC advertising, website development, and conversion optimization.',
     offers: {
       '@type': 'Offer',
       availability: 'https://schema.org/InStock',

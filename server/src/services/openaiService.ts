@@ -109,16 +109,7 @@ SERVICE CATEGORIES:
    - Growth strategy and market analysis
    - Risk management and compliance
 
-2. Digital Marketing
-   - SEO (Search Engine Optimization)
-   - Content marketing and strategy
-   - Social media management
-   - PPC advertising (Google Ads, Facebook Ads)
-   - Analytics and performance tracking
-   - Brand strategy and positioning
-   - Email marketing campaigns
-
-3. Insurance Services
+2. Insurance Services
    - Homeowners Insurance
    - Auto Insurance (Personal & Commercial)
    - Commercial Insurance (Business coverage)
@@ -126,28 +117,27 @@ SERVICE CATEGORIES:
    - Condo Insurance
    - Professional Liability (E&O - Errors & Omissions)
 
-4. Tax & Accounting
+3. Tax & Accounting
    - Tax planning and preparation
    - Bookkeeping and payroll services
    - Financial statements and reporting
    - IRS representation and audit support
 
-5. AI & Technology Solutions
+4. AI & Automation Solutions
    - AI implementation consulting
    - Process automation and optimization
-   - Technology stack optimization
    - Digital transformation strategy
    - Custom automation development
    - Workflow automation
    - Integration with existing systems
 
+NOTE: MRECAI does NOT offer software development, web/app development, digital marketing, graphic design, or video production services. If asked about these, politely explain they are not part of our offerings and suggest our AI, consulting, tax, or insurance services instead.
+
 STRATEGIC PARTNERS:
 
 NovaEdge Solutions:
-- 15+ years in software development
 - AI-driven digital transformation
-- Full-stack development expertise
-- Custom software solutions
+- AI implementation and automation expertise
 
 Grober Imbey Insurance Agency (GIA):
 - 50+ years experience (founded 1970s)
@@ -179,7 +169,7 @@ KEY MESSAGING POINTS:
 - Free initial consultation (no obligation)
 - 24/7 service support
 - Transparent pricing, no hidden fees
-- Comprehensive solutions (consulting + insurance + technology)
+- Comprehensive solutions (consulting + insurance + tax + AI)
 - Proven track record (98% success rate, 500+ clients)
 - Cutting-edge AI and automation expertise
 - Personalized, client-focused approach

@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaRobot, FaCode, FaBullhorn, FaChartLine, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
+import { FaRobot, FaCalculator, FaShieldAlt, FaChartLine, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
 import { IconType } from 'react-icons';
 
@@ -26,28 +26,28 @@ const pillars: TechPillar[] = [
     link: '/services/ai-driven-growth'
   },
   {
-    icon: FaCode,
-    title: 'Custom Software Development',
-    description: 'Build powerful web applications, mobile apps, and custom software solutions tailored to your unique business needs.',
-    features: ['Web Applications', 'Mobile Apps', 'Website Development', 'API Integration'],
+    icon: FaCalculator,
+    title: 'Tax Strategy & Accounting',
+    description: 'Proactive tax planning, precise preparation, and full-cycle bookkeeping that keep more of what you earn.',
+    features: ['Strategic Tax Planning', 'Tax Preparation', 'Bookkeeping & Accounting', 'Financial Reporting'],
     color: 'from-blue-500 to-blue-600',
     bgColor: 'bg-blue-50',
-    link: '/services/technology'
+    link: '/services/tax-strategy'
   },
   {
-    icon: FaBullhorn,
-    title: 'Digital Marketing & Design',
-    description: 'Data-driven marketing strategies, stunning graphic design, professional video editing, and brand development that converts.',
-    features: ['SEO & Digital Marketing', 'Graphic Design', 'Video Production', 'Brand Development'],
+    icon: FaShieldAlt,
+    title: 'Insurance & Risk Architecture',
+    description: 'Comprehensive risk management across personal and commercial coverage, identifying gaps before they become losses.',
+    features: ['Strategic Risk Audits', 'Commercial Liability', 'Personal Lines', 'Cyber Coverage'],
     color: 'from-pink-500 to-pink-600',
     bgColor: 'bg-pink-50',
-    link: '/services/digital-marketing'
+    link: '/services/risk-architecture'
   },
   {
     icon: FaChartLine,
     title: 'Business Support Services',
-    description: 'Strategic tax planning, comprehensive insurance, bookkeeping, and financial consulting to support your growth.',
-    features: ['Tax & Accounting', 'Insurance Consulting', 'Business Consulting', 'Investment Management'],
+    description: 'Business consulting, investment management, and financial planning to support your growth.',
+    features: ['Business Consulting', 'Investment Management', 'Fractional COO Services', 'Financial Planning'],
     color: 'from-green-500 to-green-600',
     bgColor: 'bg-green-50',
     link: '/services'
@@ -67,7 +67,7 @@ const TechnologyAdvantage = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
-            Our 4-Pillar Technology Advantage
+            Our 4-Pillar Business Advantage
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Comprehensive AI-powered solutions to transform, automate, and scale your business
@@ -132,7 +132,7 @@ const TechnologyAdvantage = () => {
           className="text-center mt-12"
         >
           <p className="text-lg text-gray-700 mb-6">
-            <strong>The MRE Difference:</strong> Full-stack technology partner with business expertise
+            <strong>The MRE Difference:</strong> One integrated partner for AI, tax, insurance, and business strategy
           </p>
         </motion.div>
       </div>

@@ -4,9 +4,9 @@ import '../src/index.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://mrecai.com'),
-  title: 'AI Consulting, Software Development & Marketing | MRECAI',
+  title: 'AI Consulting, Tax, Insurance & Business Services | MRECAI',
   description:
-    'Premier AI consulting and software development firm in NYC. Custom AI solutions, web and mobile apps, digital marketing, plus tax and insurance support.',
+    'Premier AI consulting and business services firm in NYC. Custom AI automation, strategic tax planning, insurance and risk management, and business consulting.',
   authors: [{ name: 'MRECAI' }],
   robots: {
     index: true,
@@ -101,9 +101,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <li>
                 <strong>Estate Consulting:</strong> Estate planning and asset protection
               </li>
-              <li>
-                <strong>Digital Marketing:</strong> SEO, social media, and digital growth strategies
-              </li>
             </ul>
 
             <h2>About Us</h2>
@@ -117,7 +114,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <h2>Why Choose MRE?</h2>
             <ul>
               <li>One partner instead of five separate vendors</li>
-              <li>Full-service integration (finance + tax + insurance + tech + AI)</li>
+              <li>Full-service integration (finance + tax + insurance + AI)</li>
               <li>50+ years of insurance expertise through Grober Imbey partnership</li>
               <li>AI-first approach to business automation</li>
               <li>Risk management combined with technology implementation</li>

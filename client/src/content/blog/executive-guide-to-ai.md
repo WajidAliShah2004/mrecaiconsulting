@@ -69,7 +69,7 @@ By automating the "grunt work" of compliance, you free up your accountant to foc
 
 ### 2. Customer Acquisition: The 24/7 Sales Agent
 
-**Relevant Service:** [Web Development & Automation](/services/digital-marketing)
+**Relevant Service:** [AI & Automation](/services/ai-driven-growth)
 
 Your website should be your best salesperson. However, traditional "Contact Us" forms are where leads go to die. If a potential client contacts you at 8:00 PM on a Friday and doesn't hear back until Monday morning, you have likely lost them to a competitor.
 

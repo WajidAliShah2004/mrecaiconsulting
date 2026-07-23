@@ -362,8 +362,8 @@ describe('Property 5: Content Deduplication', () => {
     // Look for patterns that might indicate duplicate tech content
     const techKeywords = [
       'AI Consulting',
-      'Custom Software',
-      'Digital Marketing',
+      'Tax Strategy',
+      'Insurance & Risk',
       'Business Support',
     ];
     

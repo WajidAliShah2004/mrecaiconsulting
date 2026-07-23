@@ -16,8 +16,6 @@
 - [Investment & Wealth Management](https://www.mrecai.com/services/investment-management) - Fiduciary portfolio management and retirement planning.
 - [Business Consulting](https://www.mrecai.com/services/business-consulting) - Fractional COO services and operational process optimization.
 - [Bookkeeping & Accounting](https://www.mrecai.com/services/bookkeeping-accounting) - Full-service accounting and financial management.
-- [Digital Marketing](https://www.mrecai.com/services/digital-marketing) - SEO, social media, and digital growth strategies.
-- [Technology Services](https://www.mrecai.com/services/technology) - Custom web development and digital infrastructure.
 
 ## Key Information
 - **Entity Name:** MRECAI (New York)
@@ -40,7 +38,7 @@
 
 ## Differentiators
 - One integrated partner instead of five separate vendors
-- Full-service integration (finance + tax + insurance + tech + AI)
+- Full-service integration (finance + tax + insurance + AI)
 - 50+ years of insurance expertise through Grober Imbey partnership
 - AI-first approach to business automation
 - Risk management combined with technology implementation

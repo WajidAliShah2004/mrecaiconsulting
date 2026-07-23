@@ -17,10 +17,10 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="AI Consulting, Software Development & Digital Marketing | MRECAI"
-        description="Premier AI consulting and software development firm. Custom AI solutions, web/mobile apps, digital marketing, automation, plus tax and insurance support. 180+ clients, 4.9/5 rating. Book your free consultation."
+        title="AI Consulting, Tax, Insurance & Business Services | MRECAI"
+        description="Premier AI consulting and business services firm. Custom AI automation, strategic tax planning, insurance and risk management, plus business consulting. 180+ clients, 4.9/5 rating. Book your free consultation."
         canonical="/"
-        keywords="AI consulting, software development, digital marketing, business automation, custom software development, AI chatbots, web development, app development"
+        keywords="AI consulting, business automation, AI chatbots, tax planning, tax preparation, insurance consulting, risk management, bookkeeping, business consulting"
         schema={{
           '@context': 'https://schema.org',
           '@graph': [
@@ -668,13 +668,13 @@ const Home = () => {
               {
                 name: "Michael Rodriguez",
                 role: "Founder, Urban Fitness Co.",
-                text: "The team developed our mobile app and integrated it with our booking system. Plus their digital marketing campaigns tripled our online leads. They're a true full-stack partner.",
+                text: "The team automated our booking follow-ups with AI, so no lead ever slips through. Missed-call text-backs alone tripled our online leads. They're a true growth partner.",
                 result: "3x lead generation"
               },
               {
                 name: "Jennifer Park",
                 role: "Owner, Park Design Studio",
-                text: "From custom software to video editing and tax planning - MRE handles it all. Having one partner for tech, marketing, and business support has been a game changer for our growth.",
+                text: "From AI automation to tax planning and insurance - MRE handles it all. Having one partner for AI, tax, and business support has been a game changer for our growth.",
                 result: "Complete business transformation"
               }
             ].map((testimonial, i) => (

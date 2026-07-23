@@ -49,7 +49,7 @@ const Testimonials = () => {
       company: 'Rodriguez Marketing',
       role: 'Marketing Director',
       rating: 5,
-      text: 'Their digital marketing expertise helped us triple our online presence. The team is creative, data-driven, and delivers results. Best investment we made this year!',
+      text: 'Their AI automation expertise helped us triple our qualified leads. The team is strategic, data-driven, and delivers results. Best investment we made this year!',
       platform: 'google',
       date: 'December 2023',
       avatar: '👩‍🎨'

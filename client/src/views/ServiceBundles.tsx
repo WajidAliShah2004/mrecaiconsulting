@@ -121,8 +121,8 @@ const bundles: ServiceBundle[] = [
     gradient: 'from-purple-500 to-purple-600',
     services: [
       'AI & Automation Consulting',
-      'Digital Marketing',
-      'Technology Services',
+      'Business Process Automation',
+      'Workflow Optimization',
       'CRM Integration',
     ],
     benefits: [
@@ -144,7 +144,7 @@ const bundles: ServiceBundle[] = [
     id: 'comprehensive',
     name: 'Comprehensive Business Package',
     tagline: 'Complete Business Management',
-    description: 'Our most complete offering - integrated finance, tax, insurance, and technology solutions working together seamlessly.',
+    description: 'Our most complete offering - integrated finance, tax, insurance, and AI automation solutions working together seamlessly.',
     icon: FaStar,
     color: 'gold',
     gradient: 'from-yellow-500 to-orange-500',

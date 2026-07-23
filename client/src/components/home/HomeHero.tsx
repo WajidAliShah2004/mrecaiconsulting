@@ -105,7 +105,7 @@ const HomeHero = () => {
                             transition={{ duration: 0.8, delay: 0.4 }}
                             className="text-base sm:text-lg md:text-xl text-gray-300 max-w-lg leading-relaxed font-light"
                         >
-                            Transform your business with cutting-edge AI consulting, custom software development, digital marketing, and automation solutions. Plus comprehensive tax and insurance support.
+                            Transform your business with cutting-edge AI consulting and automation solutions. Plus comprehensive tax, insurance, and business support.
                         </motion.p>
                     </div>
 

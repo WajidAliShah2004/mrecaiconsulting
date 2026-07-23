@@ -124,18 +124,6 @@
             "icon": "FaBriefcase"
         },
         {
-            "id": "digital-marketing",
-            "name": "Digital Marketing",
-            "description": "Comprehensive digital marketing solutions",
-            "features": [
-                "SEO and content marketing",
-                "Social media management",
-                "PPC advertising campaigns",
-                "Analytics and reporting"
-            ],
-            "icon": "FaMobileAlt"
-        },
-        {
             "id": "insurance-services",
             "name": "Insurance Services",
             "description": "Expert insurance consulting",
@@ -190,18 +178,6 @@
                 "Training and support"
             ],
             "icon": "FaCogs"
-        },
-        {
-            "id": "web-development",
-            "name": "Web Development",
-            "description": "Custom web solutions",
-            "features": [
-                "Website Design & Development",
-                "E-commerce Solutions",
-                "Web Applications",
-                "Maintenance & Support"
-            ],
-            "icon": "FaGlobe"
         }
     ],
     "intakeForms": [
@@ -247,7 +223,7 @@
         "coverage": [
             "Greetings",
             "Hours & Availability",
-            "Services (all 7)",
+            "Services (all 5)",
             "Insurance (all types)",
             "Pricing",
             "Contact Information",
@@ -306,7 +282,6 @@
         "keywords": [
             "business consulting",
             "insurance services",
-            "digital marketing",
             "tax accounting",
             "AI technology",
             "business automation",
@@ -426,7 +401,7 @@
                 "Business consulting",
                 "Commercial insurance",
                 "Tax services",
-                "Marketing"
+                "Automation"
             ]
         },
         {

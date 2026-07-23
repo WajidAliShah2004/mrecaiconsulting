@@ -10,10 +10,10 @@ const About = () => {
   return (
     <>
       <SEO
-        title="About MRECAI | AI Consulting & Technology Innovation Leaders"
-        description="Learn about MRECAI. Technology-first business transformation firm specializing in AI consulting, custom software development, and digital marketing. Serving 180+ clients since 2024."
+        title="About MRECAI | AI Consulting & Business Services Leaders"
+        description="Learn about MRECAI. AI-first business transformation firm specializing in AI consulting, tax strategy, insurance, and business consulting. Serving 180+ clients since 2024."
         canonical="/about"
-        keywords="about MRECAI, AI consulting company, software development firm, technology innovation, digital transformation, company history"
+        keywords="about MRECAI, AI consulting company, tax planning firm, insurance consulting, business transformation, company history"
         schema={{
           '@context': 'https://schema.org',
           '@graph': [
@@ -65,7 +65,7 @@ const About = () => {
                 About <span className="bg-gradient-to-r from-primary-400 via-primary-300 to-primary-500 bg-clip-text text-transparent">MRECAI</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-                Technology-first business transformation through AI consulting, custom software development, and digital innovation
+                AI-first business transformation through AI consulting, tax strategy, insurance, and business advisory
               </p>
 
               {/* Stats Row */}
@@ -189,9 +189,9 @@ const About = () => {
                     <FaRocket className="text-5xl mb-4 opacity-80" />
                     <h3 className="text-2xl font-bold mb-4">Driving Digital Transformation</h3>
                     <p className="text-lg leading-relaxed opacity-90">
-                      At MRECAI, our mission is to empower businesses with cutting-edge AI solutions,
-                      custom software development, and innovative digital marketing strategies. We transform operations through
-                      intelligent automation and modern technology, backed by comprehensive business support services.
+                      At MRECAI, our mission is to empower businesses with cutting-edge AI solutions
+                      and intelligent automation. We transform operations through smart systems and process
+                      optimization, backed by comprehensive tax, insurance, and business support services.
                     </p>
                   </div>
                   {/* Decorative Element */}
@@ -211,7 +211,7 @@ const About = () => {
                     </div>
                     <div>
                       <h4 className="text-xl font-bold text-navy-900 mb-2">For Small & Medium Businesses</h4>
-                      <p className="text-gray-600">AI-powered automation and custom software to scale efficiently</p>
+                      <p className="text-gray-600">AI-powered automation and smart systems to scale efficiently</p>
                     </div>
                   </div>
 
@@ -221,7 +221,7 @@ const About = () => {
                     </div>
                     <div>
                       <h4 className="text-xl font-bold text-navy-900 mb-2">For Growth-Stage Companies</h4>
-                      <p className="text-gray-600">Digital marketing, brand development, and technology infrastructure</p>
+                      <p className="text-gray-600">Growth strategy, process automation, and operational consulting</p>
                     </div>
                   </div>
 
@@ -451,14 +451,14 @@ const About = () => {
                 {
                   year: '2024',
                   quarter: 'Q4',
-                  title: 'AI & Technology Focus',
-                  description: 'Pivoted to technology-first positioning, partnering with NovaEdge Solutions to deliver cutting-edge AI consulting, custom software development, and automation solutions.',
+                  title: 'AI & Automation Focus',
+                  description: 'Pivoted to AI-first positioning, partnering with NovaEdge Solutions to deliver cutting-edge AI consulting and automation solutions.',
                   color: 'from-purple-500 to-pink-500'
                 },
                 {
                   year: '2025',
                   title: 'Continued Innovation',
-                  description: 'Serving 180+ clients with comprehensive AI solutions, custom software, digital marketing, and creative services, complemented by tax and insurance support.',
+                  description: 'Serving 180+ clients with comprehensive AI and automation solutions, complemented by tax, insurance, and business consulting support.',
                   color: 'from-orange-500 to-red-500'
                 }
               ].map((milestone, index) => (
@@ -511,7 +511,7 @@ const About = () => {
                 Why Choose <span className="gradient-text">MRECAI</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Your complete technology transformation partner
+                Your complete business transformation partner
               </p>
             </motion.div>
 
@@ -525,8 +525,8 @@ const About = () => {
                 },
                 {
                   icon: FaUsers,
-                  title: 'Expert Technology Team',
-                  description: 'Certified developers, AI specialists, and digital marketing professionals',
+                  title: 'Expert Advisory Team',
+                  description: 'AI specialists, tax strategists, and licensed insurance professionals',
                   gradient: 'from-primary-500 to-primary-600'
                 },
                 {
@@ -537,14 +537,14 @@ const About = () => {
                 },
                 {
                   icon: FaRocket,
-                  title: 'Full-Stack Solutions',
-                  description: 'From AI chatbots to custom software, digital marketing to video production',
+                  title: 'Integrated Solutions',
+                  description: 'From AI chatbots and automation to tax strategy and risk protection',
                   gradient: 'from-orange-500 to-red-500'
                 },
                 {
                   icon: FaGlobe,
                   title: 'Complete Business Partner',
-                  description: 'Technology services plus tax planning and insurance consulting under one roof',
+                  description: 'AI consulting plus tax planning and insurance consulting under one roof',
                   gradient: 'from-green-500 to-emerald-500'
                 },
                 {

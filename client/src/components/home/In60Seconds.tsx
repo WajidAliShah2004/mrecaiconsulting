@@ -31,48 +31,18 @@ const In60Seconds = () => {
           {/* AI-Optimized Description */}
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              <strong>MRECAI</strong> is a technology-first business based in <strong>New York</strong> that helps individuals, families and businesses in all 50 states.
+              <strong>MRECAI</strong> is an AI-first professional services firm based in <strong>New York</strong> that helps individuals, families and businesses in all 50 states.
             </p>
 
-            {/* PRIMARY SERVICES - Technology & Creative */}
+            {/* PRIMARY SERVICES - AI & Automation */}
             <div className="mb-6">
-              <h3 className="text-lg font-bold text-primary-700 mb-3 text-left">Technology & Creative Services</h3>
+              <h3 className="text-lg font-bold text-primary-700 mb-3 text-left">AI & Automation Services</h3>
               <div className="grid md:grid-cols-2 gap-4 text-left">
                 <div className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-gray-700"><strong>AI Consulting & Automation</strong> - Intelligent systems and 24/7 automation</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-gray-700"><strong>Custom Software Development</strong> - Web apps, mobile apps, and integrations</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-gray-700"><strong>Website Development</strong> - Professional websites and web applications</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-gray-700"><strong>Digital Marketing & SEO</strong> - Growth strategies and online presence</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-gray-700"><strong>Graphic Design & Branding</strong> - Visual identity and marketing materials</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-gray-700"><strong>Video Production & Editing</strong> - Professional video content creation</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -122,7 +92,7 @@ const In60Seconds = () => {
 
             <div className="bg-primary-50 border-l-4 border-primary-600 p-6 rounded-r-lg">
               <p className="text-lg text-gray-800 font-medium">
-                <strong>Our Advantage:</strong> Complete technology transformation partner with comprehensive business support—eliminating the need for multiple vendors and ensuring everything works together seamlessly.
+                <strong>Our Advantage:</strong> One integrated partner for AI, tax, insurance, and business strategy—eliminating the need for multiple vendors and ensuring everything works together seamlessly.
               </p>
             </div>
           </div>

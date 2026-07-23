@@ -12,7 +12,7 @@ export const organizationJsonLd = {
   logo: 'https://mrecai.com/images/logo.jpeg',
   image: 'https://mrecai.com/images/logo.jpeg',
   description:
-    'New York-based professional services firm integrating business consulting, insurance services, tax strategy, AI automation, investment management, estate planning, and digital marketing.',
+    'New York-based professional services firm integrating business consulting, insurance services, tax strategy, AI automation, investment management, and estate planning.',
   slogan: 'Integrated Tax, Insurance, and AI Consulting Services in NYC',
   foundingDate: '2024',
   founder: {

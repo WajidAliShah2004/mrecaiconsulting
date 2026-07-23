@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaRobot, FaCode, FaBullhorn, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
+import { FaRobot, FaCalculator, FaShieldAlt, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
 
 const matrixItems = [
@@ -16,24 +16,24 @@ const matrixItems = [
         link: '/services/ai-driven-growth'
     },
     {
-        title: 'Software Development',
-        description: 'Custom web applications, mobile apps, and enterprise software built with modern tech stacks to solve your unique business challenges.',
-        icon: FaCode,
+        title: 'Tax & Accounting',
+        description: 'Strategic tax planning, precise preparation, and full-cycle bookkeeping that turn your financials into a management tool.',
+        icon: FaCalculator,
         color: 'text-blue-600',
         bgColor: 'bg-blue-50',
         borderColor: 'border-blue-100',
-        features: ['Web Applications', 'Mobile Apps', 'API Integration'],
-        link: '/services/technology'
+        features: ['Strategic Tax Planning', 'Tax Preparation', 'Bookkeeping & Accounting'],
+        link: '/services/tax-strategy'
     },
     {
-        title: 'Digital Marketing & Creative',
-        description: 'Full-service digital marketing, stunning graphic design, professional video editing, and brand development that drives results.',
-        icon: FaBullhorn,
+        title: 'Insurance & Risk',
+        description: 'Comprehensive risk architecture across personal and commercial coverage, identifying gaps before they become losses.',
+        icon: FaShieldAlt,
         color: 'text-pink-600',
         bgColor: 'bg-pink-50',
         borderColor: 'border-pink-100',
-        features: ['SEO & Digital Marketing', 'Graphic Design', 'Video Production'],
-        link: '/services/digital-marketing'
+        features: ['Risk Audits', 'Commercial Coverage', 'Personal Lines'],
+        link: '/services/risk-architecture'
     }
 ];
 
@@ -49,10 +49,10 @@ const ServiceMatrix = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
-                        The MRE <span className="gradient-text">Technology Stack</span>
+                        The MRE <span className="gradient-text">Service Stack</span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                        Three powerful technology pillars that transform your business operations.
+                        Three powerful service pillars that transform your business operations.
                     </p>
                 </motion.div>
 

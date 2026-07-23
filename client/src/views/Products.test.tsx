@@ -31,7 +31,7 @@ describe('Products Page', () => {
         'Insurance Consulting',
         'Business Consulting',
         'AI & Technology Consulting',
-        'Digital Marketing'
+        'Business Process Automation'
       ];
 
       expectedServices.forEach(service => {
@@ -119,7 +119,7 @@ describe('Products Page', () => {
         'Insurance Consulting',
         'Business Consulting',
         'AI & Technology Consulting',
-        'Digital Marketing'
+        'Business Process Automation'
       ];
       
       services.forEach(service => {

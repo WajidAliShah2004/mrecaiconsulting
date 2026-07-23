@@ -1,6 +1,6 @@
 /**
  * Unit Tests for Service Helper Utilities
- * 
+ *
  * Tests the service categorization and sorting functions to ensure
  * consistent service ordering throughout the application.
  */
@@ -22,20 +22,20 @@ describe('categorizeService', () => {
     expect(categorizeService('automation')).toBe('primary');
   });
 
-  it('should categorize technology-services as primary service', () => {
-    expect(categorizeService('technology-services')).toBe('primary');
+  it('should categorize retired technology-services as secondary', () => {
+    expect(categorizeService('technology-services')).toBe('secondary');
   });
 
-  it('should categorize digital-marketing as primary service', () => {
-    expect(categorizeService('digital-marketing')).toBe('primary');
+  it('should categorize retired digital-marketing as secondary', () => {
+    expect(categorizeService('digital-marketing')).toBe('secondary');
   });
 
-  it('should categorize graphic-design as primary service', () => {
-    expect(categorizeService('graphic-design')).toBe('primary');
+  it('should categorize retired graphic-design as secondary', () => {
+    expect(categorizeService('graphic-design')).toBe('secondary');
   });
 
-  it('should categorize video-editing as primary service', () => {
-    expect(categorizeService('video-editing')).toBe('primary');
+  it('should categorize retired video-editing as secondary', () => {
+    expect(categorizeService('video-editing')).toBe('secondary');
   });
 
   it('should categorize tax-accounting as secondary service', () => {
@@ -61,30 +61,28 @@ describe('sortServicesByCategory', () => {
       { id: 'tax-accounting', title: 'Tax Services' },
       { id: 'ai-technology', title: 'AI Consulting' },
       { id: 'insurance-services', title: 'Insurance' },
-      { id: 'digital-marketing', title: 'Digital Marketing' }
+      { id: 'automation', title: 'Automation' }
     ];
 
     const sorted = sortServicesByCategory(services);
 
     expect(sorted[0].id).toBe('ai-technology');
-    expect(sorted[1].id).toBe('digital-marketing');
+    expect(sorted[1].id).toBe('automation');
     expect(sorted[2].id).toBe('tax-accounting');
     expect(sorted[3].id).toBe('insurance-services');
   });
 
   it('should maintain order within same category', () => {
     const services = [
-      { id: 'digital-marketing', title: 'Digital Marketing' },
-      { id: 'ai-technology', title: 'AI Consulting' },
-      { id: 'automation', title: 'Automation' }
+      { id: 'automation', title: 'Automation' },
+      { id: 'ai-technology', title: 'AI Consulting' }
     ];
 
     const sorted = sortServicesByCategory(services);
 
     // All are primary, so order should be maintained
-    expect(sorted[0].id).toBe('digital-marketing');
+    expect(sorted[0].id).toBe('automation');
     expect(sorted[1].id).toBe('ai-technology');
-    expect(sorted[2].id).toBe('automation');
   });
 
   it('should handle empty array', () => {
@@ -96,13 +94,13 @@ describe('sortServicesByCategory', () => {
   it('should handle array with only primary services', () => {
     const services = [
       { id: 'ai-technology', title: 'AI Consulting' },
-      { id: 'digital-marketing', title: 'Digital Marketing' }
+      { id: 'automation', title: 'Automation' }
     ];
 
     const sorted = sortServicesByCategory(services);
     expect(sorted).toHaveLength(2);
     expect(sorted[0].id).toBe('ai-technology');
-    expect(sorted[1].id).toBe('digital-marketing');
+    expect(sorted[1].id).toBe('automation');
   });
 
   it('should handle array with only secondary services', () => {
@@ -148,7 +146,6 @@ describe('filterServicesByCategory', () => {
   const services = [
     { id: 'ai-technology', title: 'AI Consulting' },
     { id: 'tax-accounting', title: 'Tax Services' },
-    { id: 'digital-marketing', title: 'Digital Marketing' },
     { id: 'insurance-services', title: 'Insurance' },
     { id: 'automation', title: 'Automation' }
   ];
@@ -156,10 +153,9 @@ describe('filterServicesByCategory', () => {
   it('should filter only primary services', () => {
     const primary = filterServicesByCategory(services, 'primary');
 
-    expect(primary).toHaveLength(3);
+    expect(primary).toHaveLength(2);
     expect(primary.map(s => s.id)).toEqual([
       'ai-technology',
-      'digital-marketing',
       'automation'
     ]);
   });
@@ -177,7 +173,7 @@ describe('filterServicesByCategory', () => {
   it('should return empty array when no services match category', () => {
     const onlyPrimary = [
       { id: 'ai-technology', title: 'AI Consulting' },
-      { id: 'digital-marketing', title: 'Digital Marketing' }
+      { id: 'automation', title: 'Automation' }
     ];
 
     const secondary = filterServicesByCategory(onlyPrimary, 'secondary');

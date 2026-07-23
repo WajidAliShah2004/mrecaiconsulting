@@ -4,16 +4,15 @@
  * Provides utility functions for service categorization and sorting
  * to maintain consistent service ordering throughout the application.
  * 
- * Primary Services (Technology-First): AI Consulting, Automation, Software Development,
- * Digital Marketing, Graphic Design, Video Editing
- * 
+ * Primary Services (AI-First): AI Consulting, Automation
+ *
  * Secondary Services (Complementary): Tax Services, Insurance Services, and other
  * financial services
  */
 
 /**
  * Service category type
- * - primary: Technology-first services (AI, Software, Digital Marketing, etc.)
+ * - primary: AI-first services (AI Consulting, Automation)
  * - secondary: Complementary financial services (Tax, Insurance, etc.)
  */
 export type ServiceCategory = 'primary' | 'secondary';
@@ -29,23 +28,19 @@ export interface CategorizedService {
 }
 
 /**
- * List of Primary Service IDs (Technology-First)
+ * List of Primary Service IDs (AI-First)
  */
 const PRIMARY_SERVICE_IDS = [
   'ai-technology',
-  'automation',
-  'technology-services',
-  'digital-marketing',
-  'graphic-design',
-  'video-editing'
+  'automation'
 ] as const;
 
 /**
  * Categorizes a service by its ID
- * 
+ *
  * @param serviceId - The unique identifier of the service
- * @returns 'primary' for technology services, 'secondary' for financial services
- * 
+ * @returns 'primary' for AI and automation services, 'secondary' for financial services
+ *
  * @example
  * categorizeService('ai-technology') // returns 'primary'
  * categorizeService('tax-accounting') // returns 'secondary'

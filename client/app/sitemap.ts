@@ -13,16 +13,12 @@ const SERVICE_PAGES = [
   '/services/insurance',
   '/services/tax-services',
   '/services/investment-management',
-  '/services/digital-marketing',
   '/services/bookkeeping-accounting',
   '/services/tax-preparation',
   '/services/tax-strategy',
   '/services/strategic-tax-planning',
   '/services/risk-architecture',
   '/services/ai-driven-growth',
-  '/services/technology',
-  '/services/graphic-design',
-  '/services/video-production',
   '/ai-consulting',
 ];
 

@@ -1,12 +1,8 @@
 import {
   FaBriefcase,
-  FaMobileAlt,
   FaShieldAlt,
   FaChartBar,
   FaRobot,
-  FaCogs,
-  FaGlobe,
-  FaBullseye,
   FaBolt,
   FaLightbulb,
   FaHandshake,
@@ -15,7 +11,6 @@ import {
   FaCalculator,
   FaFileInvoiceDollar,
   FaLandmark,
-  FaLaptopCode,
   FaHardHat,
   FaStethoscope,
   FaHome,
@@ -53,54 +48,6 @@ export const SERVICES = [
       'Process automation & workflows',
       'Machine learning solutions',
       'AI strategy & implementation'
-    ]
-  },
-  {
-    id: 'software-development',
-    title: 'Custom Software Development',
-    description: 'Build powerful web applications, mobile apps, and enterprise software tailored to your needs.',
-    icon: FaLaptopCode,
-    features: [
-      'Custom web applications',
-      'Mobile app development',
-      'API development & integration',
-      'Cloud infrastructure & DevOps'
-    ]
-  },
-  {
-    id: 'digital-marketing',
-    title: 'Digital Marketing',
-    description: 'Data-driven marketing strategies including SEO, PPC, social media, and content marketing.',
-    icon: FaMobileAlt,
-    features: [
-      'SEO & content marketing',
-      'Social media management',
-      'PPC advertising campaigns',
-      'Marketing automation'
-    ]
-  },
-  {
-    id: 'graphic-design',
-    title: 'Graphic Design & Branding',
-    description: 'Professional graphic design, brand identity, and visual content that makes your business stand out.',
-    icon: FaGlobe,
-    features: [
-      'Logo & brand identity design',
-      'Marketing materials & collateral',
-      'Social media graphics',
-      'UI/UX design'
-    ]
-  },
-  {
-    id: 'video-editing',
-    title: 'Video Production & Editing',
-    description: 'Professional video editing, motion graphics, and video content creation for marketing and social media.',
-    icon: FaCogs,
-    features: [
-      'Video editing & post-production',
-      'Motion graphics & animation',
-      'Social media video content',
-      'Promotional videos'
     ]
   },
   {
@@ -149,16 +96,16 @@ export const REASONS_TO_CHOOSE = [
     link: '/services/ai-driven-growth'
   },
   {
-    icon: FaLaptopCode,
-    title: 'Full-Stack Development',
-    description: 'Custom software, web, and mobile apps built with modern tech',
-    link: '/services/technology'
+    icon: FaCalculator,
+    title: 'Strategic Tax Expertise',
+    description: 'Proactive tax planning and preparation that keeps more of what you earn',
+    link: '/services/tax-strategy'
   },
   {
-    icon: FaBullseye,
-    title: 'Results-Driven Marketing',
-    description: 'Digital marketing and creative services that drive real ROI',
-    link: '/services/digital-marketing'
+    icon: FaShieldAlt,
+    title: 'Insurance & Risk Protection',
+    description: 'Comprehensive coverage and risk architecture for business and personal assets',
+    link: '/services/risk-architecture'
   },
   {
     icon: FaBolt,
@@ -169,7 +116,7 @@ export const REASONS_TO_CHOOSE = [
   {
     icon: FaHandshake,
     title: 'Complete Business Partner',
-    description: 'Tech, marketing, tax, and insurance - all under one roof',
+    description: 'AI, consulting, tax, and insurance - all under one roof',
     link: '/about'
   },
   {
@@ -192,7 +139,7 @@ export const BLOG_CATEGORIES = [
 
 // Expanded services with comprehensive details for the redesigned Services page
 export const SERVICES_EXPANDED = [
-  // PRIMARY SERVICES (Technology & Creative)
+  // PRIMARY SERVICES (AI & Automation)
   {
     id: 'ai-automation',
     title: 'AI Consulting & Automation',
@@ -208,74 +155,6 @@ export const SERVICES_EXPANDED = [
       'Missed-call text back systems'
     ],
     detailedDescription: 'In the modern economy, speed is the primary currency. We deploy AI systems that engage your leads instantly, ensuring you never miss an opportunity while reducing your manual workload.',
-    isPrimary: true
-  },
-  {
-    id: 'technology-services',
-    title: 'Custom Software Development',
-    description: 'High-performance web applications, mobile apps, and custom software solutions built with modern tech stacks.',
-    icon: FaLaptopCode,
-    link: '/services/technology',
-    features: [
-      'Custom Web Applications',
-      'Mobile App Development',
-      'API Development & Integration',
-      'Cloud Infrastructure',
-      'CRM & ERP Implementation',
-      'Legacy System Modernization'
-    ],
-    detailedDescription: 'Technology should be your business advantage, not a bottleneck. We build and maintain the digital infrastructure that connects your finance, operations, and marketing into a unified engine.',
-    isPrimary: true
-  },
-  {
-    id: 'digital-marketing',
-    title: 'Digital Marketing & SEO',
-    description: 'Data-driven marketing strategies including SEO, social media management, PPC advertising, and content marketing.',
-    icon: FaMobileAlt,
-    link: '/services/digital-marketing',
-    features: [
-      'Search Engine Optimization (SEO)',
-      'Social Media Management',
-      'PPC Advertising Campaigns',
-      'Content Marketing Strategy',
-      'Email Marketing Automation',
-      'Performance Analytics'
-    ],
-    detailedDescription: 'We move beyond vanity metrics to focus on revenue. Our marketing systems are designed to feed into our AI automation, creating a seamless path from "click" to "closed sale".',
-    isPrimary: true
-  },
-  {
-    id: 'graphic-design',
-    title: 'Graphic Design & Branding',
-    description: 'Professional graphic design services including logo design, brand identity, marketing materials, and social media graphics.',
-    icon: FaGlobe,
-    link: '/services/graphic-design',
-    features: [
-      'Logo & Brand Identity Design',
-      'Marketing Materials & Collateral',
-      'Social Media Graphics',
-      'UI/UX Design',
-      'Infographics & Data Visualization',
-      'Brand Refresh & Modernization'
-    ],
-    detailedDescription: 'Professional graphic design services that elevate your brand. We create visuals that make your business stand out and communicate your message effectively across all platforms.',
-    isPrimary: true
-  },
-  {
-    id: 'video-production',
-    title: 'Video Production & Editing',
-    description: 'Professional video production and editing services including promotional videos, social media content, and motion graphics.',
-    icon: FaCogs,
-    link: '/services/video-production',
-    features: [
-      'Promotional Videos',
-      'Social Media Video Content',
-      'Explainer Videos',
-      'Professional Video Editing',
-      'Motion Graphics & Animation',
-      'Event Coverage'
-    ],
-    detailedDescription: 'Transform your message with compelling video content. From concept to final delivery, we create professional videos that engage your audience and drive results across all platforms.',
     isPrimary: true
   },
   {

@@ -30,32 +30,33 @@ describe('Home Page - Task 11 Integration Tests', () => {
   describe('11.1 - TechnologyAdvantage Component Integration', () => {
     it('should render TechnologyAdvantage component', () => {
       renderWithRouter(<TechnologyAdvantage />);
-      
+
       // Check for the TechnologyAdvantage section heading
-      const heading = screen.getByText(/Our 4-Pillar Technology Advantage/i);
+      const heading = screen.getByText(/Our 4-Pillar Business Advantage/i);
       expect(heading).toBeInTheDocument();
     });
 
     it('should display all 4 pillars in TechnologyAdvantage section', () => {
       renderWithRouter(<TechnologyAdvantage />);
-      
+
       // Check for all 4 pillar titles
       expect(screen.getByText(/AI Consulting & Automation/i)).toBeInTheDocument();
-      expect(screen.getByText(/Custom Software Development/i)).toBeInTheDocument();
-      expect(screen.getByText(/Digital Marketing & Design/i)).toBeInTheDocument();
+      expect(screen.getByText(/Tax Strategy & Accounting/i)).toBeInTheDocument();
+      expect(screen.getByText(/Insurance & Risk Architecture/i)).toBeInTheDocument();
       expect(screen.getByText(/Business Support Services/i)).toBeInTheDocument();
     });
 
-    it('should include Website Development in Custom Software pillar', () => {
-      renderWithRouter(<TechnologyAdvantage />);
-      
-      // Check that Website Development is listed as a feature
-      expect(screen.getByText(/Website Development/i)).toBeInTheDocument();
+    it('should not display removed software or creative service pillars', () => {
+      const { container } = renderWithRouter(<TechnologyAdvantage />);
+      const text = container.textContent || '';
+
+      expect(text).not.toMatch(/Custom Software Development/i);
+      expect(text).not.toMatch(/Digital Marketing/i);
     });
 
     it('should have links to service pages from each pillar', () => {
       renderWithRouter(<TechnologyAdvantage />);
-      
+
       // Check for "Learn More" links (there should be 4, one for each pillar)
       const learnMoreLinks = screen.getAllByText(/Learn More/i);
       expect(learnMoreLinks.length).toBe(4);
@@ -63,21 +64,21 @@ describe('Home Page - Task 11 Integration Tests', () => {
 
     it('should display pillar descriptions', () => {
       renderWithRouter(<TechnologyAdvantage />);
-      
+
       // Check for key description text from each pillar
       expect(screen.getByText(/Deploy intelligent AI systems/i)).toBeInTheDocument();
-      expect(screen.getByText(/Build powerful web applications/i)).toBeInTheDocument();
-      expect(screen.getByText(/Data-driven marketing strategies/i)).toBeInTheDocument();
-      expect(screen.getByText(/Strategic tax planning/i)).toBeInTheDocument();
+      expect(screen.getByText(/Proactive tax planning/i)).toBeInTheDocument();
+      expect(screen.getByText(/Comprehensive risk management/i)).toBeInTheDocument();
+      expect(screen.getByText(/Business consulting, investment management/i)).toBeInTheDocument();
     });
 
     it('should display features for each pillar', () => {
       renderWithRouter(<TechnologyAdvantage />);
-      
+
       // Check for specific features from different pillars (using unique features)
       expect(screen.getByText(/AI Chatbots & Agents/i)).toBeInTheDocument();
-      expect(screen.getByText(/API Integration/i)).toBeInTheDocument();
-      expect(screen.getByText(/Video Production/i)).toBeInTheDocument();
+      expect(screen.getByText(/Tax Preparation/i)).toBeInTheDocument();
+      expect(screen.getByText(/Cyber Coverage/i)).toBeInTheDocument();
       expect(screen.getByText(/Investment Management/i)).toBeInTheDocument();
     });
   });
@@ -85,25 +86,25 @@ describe('Home Page - Task 11 Integration Tests', () => {
   describe('11.2 - Component Structure Verification', () => {
     it('should render with proper section structure', () => {
       const { container } = renderWithRouter(<TechnologyAdvantage />);
-      
+
       // Verify the component renders without errors
       expect(container).toBeInTheDocument();
-      
+
       // Check for the main heading
-      expect(screen.getByText(/Our 4-Pillar Technology Advantage/i)).toBeInTheDocument();
+      expect(screen.getByText(/Our 4-Pillar Business Advantage/i)).toBeInTheDocument();
     });
 
     it('should have all required pillar elements', () => {
       renderWithRouter(<TechnologyAdvantage />);
-      
+
       // Verify all 4 pillars are rendered with their titles
       const pillarTitles = [
         'AI Consulting & Automation',
-        'Custom Software Development',
-        'Digital Marketing & Design',
+        'Tax Strategy & Accounting',
+        'Insurance & Risk Architecture',
         'Business Support Services'
       ];
-      
+
       pillarTitles.forEach(title => {
         expect(screen.getByText(title)).toBeInTheDocument();
       });
@@ -111,10 +112,10 @@ describe('Home Page - Task 11 Integration Tests', () => {
 
     it('should display the MRE Difference message', () => {
       renderWithRouter(<TechnologyAdvantage />);
-      
+
       // Check for the bottom CTA message
       expect(screen.getByText(/The MRE Difference/i)).toBeInTheDocument();
-      expect(screen.getByText(/Full-stack technology partner with business expertise/i)).toBeInTheDocument();
+      expect(screen.getByText(/One integrated partner for AI, tax, insurance, and business strategy/i)).toBeInTheDocument();
     });
   });
 });

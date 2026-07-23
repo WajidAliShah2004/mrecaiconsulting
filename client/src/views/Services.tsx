@@ -16,16 +16,15 @@ const Services = () => {
   return (
     <>
       <SEO
-        title="AI Consulting, Software Development & Digital Marketing Services | MRECAI"
-        description="Expert AI consulting, custom software development, digital marketing, graphic design, video production, and business automation. Plus tax and insurance support. 180+ successful projects delivered."
+        title="AI Consulting, Tax, Insurance & Business Services | MRECAI"
+        description="Expert AI consulting and automation, strategic tax planning, insurance and risk management, bookkeeping, and business consulting. 180+ successful projects delivered."
         canonical="/services"
-        keywords="AI consulting services, custom software development, digital marketing agency, graphic design services, video production, business automation, web development, mobile app development"
+        keywords="AI consulting services, business automation, tax planning services, tax preparation, insurance consulting, risk management, bookkeeping and accounting, business consulting NYC"
         schema={{
           '@context': 'https://schema.org',
           '@graph': [
             serviceSchemas.aiTechnology,
             serviceSchemas.automation,
-            serviceSchemas.digitalMarketing,
             serviceSchemas.businessConsulting,
             serviceSchemas.taxAccounting,
             serviceSchemas.insurance,
@@ -103,7 +102,7 @@ const Services = () => {
               </h1>
 
               <p className="text-xl text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto">
-                Transform your business with cutting-edge AI consulting, custom software development, digital marketing, and creative services. Plus comprehensive business support.
+                Transform your business with cutting-edge AI consulting and automation. Plus comprehensive tax, insurance, and business support.
               </p>
             </motion.div>
           </div>
@@ -124,10 +123,10 @@ const Services = () => {
                 PRIMARY SERVICES
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                Technology & <span className="gradient-text">Creative Services</span>
+                AI & <span className="gradient-text">Automation Services</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Our core expertise in AI, software development, digital marketing, and creative services
+                Our core expertise in AI consulting, intelligent automation, and process optimization
               </p>
             </motion.div>
 
@@ -375,7 +374,7 @@ const Services = () => {
               className="mt-20"
             >
               <h3 className="text-3xl font-bold text-center mb-12">
-                Why Choose <span className="gradient-text">MRE Technology Services</span>
+                Why Choose <span className="gradient-text">MRE Services</span>
               </h3>
 
               <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -402,10 +401,10 @@ const Services = () => {
                     <span className="text-2xl">⚡</span>
                   </div>
                   <h4 className="text-xl font-bold text-navy-900 mb-3">
-                    Full-Stack Expertise
+                    Integrated Expertise
                   </h4>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    From AI consulting to software development, marketing, and business support - we're your complete technology partner.
+                    From AI consulting to tax, insurance, and business support - we're your complete business partner.
                   </p>
                 </motion.div>
 
@@ -535,13 +534,13 @@ const Services = () => {
                 {
                   name: 'Rachel Kim',
                   role: 'Founder, Urban Wellness Studio',
-                  text: 'From our mobile app to video marketing campaigns, MRE delivered everything we needed. Their full-stack approach saved us time and money. Couldn\'t be happier!',
+                  text: 'From automated scheduling to clean, real-time books, MRE delivered everything we needed. Their integrated approach saved us time and money. Couldn\'t be happier!',
                   rating: 5
                 },
                 {
                   name: 'James Martinez',
                   role: 'Director, Martinez Consulting Group',
-                  text: 'The automation systems they implemented saved us 20+ hours per week. Plus their graphic design work elevated our brand. True technology partners who understand business!',
+                  text: 'The automation systems they implemented saved us 20+ hours per week. Plus their tax strategy uncovered savings we didn\'t know existed. True partners who understand business!',
                   rating: 5
                 }
               ].map((testimonial, index) => (
@@ -594,7 +593,7 @@ const Services = () => {
                 Ready to Transform Your Business with AI?
               </h2>
               <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-                Schedule a free consultation to discuss your technology needs and discover how we can help
+                Schedule a free consultation to discuss your business needs and discover how we can help
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

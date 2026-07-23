@@ -6,6 +6,13 @@ RewriteBase /
 RewriteRule ^admin/blogs/edit/.+$ /admin/blogs/edit/_.html [L]
 RewriteRule ^admin/white-papers/edit/.+$ /admin/white-papers/edit/_.html [L]
 
+# Retired service pages (software development / creative offerings dropped
+# July 2026) — permanent redirect to the services hub
+RewriteRule ^services/technology/?$ /services [R=301,L]
+RewriteRule ^services/graphic-design/?$ /services [R=301,L]
+RewriteRule ^services/video-production/?$ /services [R=301,L]
+RewriteRule ^services/digital-marketing/?$ /services [R=301,L]
+
 # Old deployment used trailing-slash URLs (/about/); redirect them to the
 # canonical extensionless URL
 RewriteCond %{DOCUMENT_ROOT}/$1.html -f

@@ -46,13 +46,12 @@ const Footer = () => {
 
   const services = [
     'AI Consulting & Automation',
-    'Custom Software Development',
-    'Digital Marketing & SEO',
-    'Graphic Design & Branding',
-    'Video Production & Editing',
     'Business Process Automation',
-    'Tax & Accounting Support',
-    'Insurance Consulting'
+    'Business Consulting',
+    'Tax Planning & Preparation',
+    'Bookkeeping & Accounting',
+    'Insurance & Risk Architecture',
+    'Investment Management'
   ];
 
   const socialLinks = [
@@ -108,7 +107,7 @@ const Footer = () => {
               </Link>
 
               <p className="text-gray-300 mb-6 leading-relaxed">
-                Transforming businesses with AI-powered solutions, custom software development, and cutting-edge digital marketing.
+                Transforming businesses with AI-powered automation, strategic tax planning, and comprehensive insurance and business consulting.
               </p>
 
               {/* Social Media */}
@@ -256,7 +255,7 @@ const Footer = () => {
               </div>
               <div className="md:col-span-3">
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Headquartered in New York City, MRECAI is a <strong>technology-first business transformation firm</strong> specializing in <strong>AI consulting, custom software development, digital marketing, and creative services</strong>. We empower businesses with cutting-edge automation, intelligent systems, and modern tech stacks, complemented by comprehensive tax planning and insurance consulting to support sustainable growth.
+                  Headquartered in New York City, MRECAI is an <strong>AI-first business transformation firm</strong> specializing in <strong>AI consulting, business automation, tax strategy, and insurance consulting</strong>. We empower businesses with cutting-edge automation and intelligent systems, complemented by comprehensive tax planning, bookkeeping, and risk management to support sustainable growth.
                 </p>
               </div>
             </div>
