@@ -6,12 +6,11 @@ import { supabase } from '../../lib/supabase';
 import { FaUpload, FaSpinner } from 'react-icons/fa';
 
 const categories = [
-  'AI & Automation',
-  'Digital Marketing',
-  'Business Transformation',
+  'Business Consulting',
   'Insurance',
   'Tax Planning',
-  'Technology',
+  'Accounting & Bookkeeping',
+  'Financial Planning',
   'General'
 ];
 
@@ -360,7 +359,7 @@ const WhitePaperEditor = () => {
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               value={formData.tags}
               onChange={(e) => setFormData({ ...formData, tags: e.target.value })}
-              placeholder="AI, Automation, Business Strategy"
+              placeholder="Insurance, Tax, Business Strategy"
             />
           </div>
 

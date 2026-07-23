@@ -82,7 +82,7 @@ const HomeHero = () => {
                             MRECAI
                         </span>
                         <span className="text-white/80 text-xs font-semibold uppercase tracking-wider">
-                            AI & Tech Innovation
+                            Tax • Insurance • Finance
                         </span>
                     </motion.div>
 
@@ -94,9 +94,9 @@ const HomeHero = () => {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-[1.1] tracking-tight"
                         >
-                            AI-Powered Business <br />
+                            Your Tax, Insurance & <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 via-white to-primary-400 bg-300% animate-gradient">
-                                Transformation
+                                Finance Consulting Partner
                             </span>
                         </motion.h1>
                         <motion.p
@@ -105,7 +105,7 @@ const HomeHero = () => {
                             transition={{ duration: 0.8, delay: 0.4 }}
                             className="text-base sm:text-lg md:text-xl text-gray-300 max-w-lg leading-relaxed font-light"
                         >
-                            Transform your business with cutting-edge AI consulting and automation solutions. Plus comprehensive tax, insurance, and business support.
+                            Grow with confidence through strategic tax planning, comprehensive insurance protection, and expert financial guidance—bookkeeping, accounting, and wealth planning from one trusted partner.
                         </motion.p>
                     </div>
 
@@ -195,10 +195,10 @@ const HomeHero = () => {
                         >
                             <div className="flex items-center gap-2 sm:gap-3">
                                 <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center text-base sm:text-lg shadow-lg">
-                                    🤖
+                                    💼
                                 </div>
                                 <div>
-                                    <p className="text-xs text-gray-300">AI Solutions Deployed</p>
+                                    <p className="text-xs text-gray-300">Engagements Delivered</p>
                                     <p className="text-lg sm:text-xl font-bold text-white">150+</p>
                                 </div>
                             </div>
@@ -212,11 +212,11 @@ const HomeHero = () => {
                         >
                             <div className="flex items-center gap-2 sm:gap-3">
                                 <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-base sm:text-lg shadow-lg">
-                                    ⚡
+                                    🛡️
                                 </div>
                                 <div>
-                                    <p className="text-xs text-gray-300">Efficiency Increase</p>
-                                    <p className="text-lg sm:text-xl font-bold text-white">300%</p>
+                                    <p className="text-xs text-gray-300">Policies Optimized</p>
+                                    <p className="text-lg sm:text-xl font-bold text-white">300+</p>
                                 </div>
                             </div>
                         </motion.div>

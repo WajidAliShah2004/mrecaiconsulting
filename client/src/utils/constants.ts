@@ -2,7 +2,6 @@ import {
   FaBriefcase,
   FaShieldAlt,
   FaChartBar,
-  FaRobot,
   FaBolt,
   FaLightbulb,
   FaHandshake,
@@ -39,38 +38,14 @@ export const SOCIAL_LINKS = {
 
 export const SERVICES = [
   {
-    id: 'ai-consulting',
-    title: 'AI Consulting & Automation',
-    description: 'Deploy intelligent AI agents, chatbots, and automation systems that work 24/7 to scale your business.',
-    icon: FaRobot,
-    features: [
-      'AI chatbots & virtual agents',
-      'Process automation & workflows',
-      'Machine learning solutions',
-      'AI strategy & implementation'
-    ]
-  },
-  {
-    id: 'business-automation',
-    title: 'Business Process Automation',
-    description: 'Streamline operations with intelligent workflow automation and system integrations.',
-    icon: FaBolt,
-    features: [
-      'Workflow automation design',
-      'CRM & ERP integration',
-      'Custom automation solutions',
-      'System optimization'
-    ]
-  },
-  {
     id: 'tax-accounting',
-    title: 'Tax & Accounting Support',
-    description: 'Professional tax planning and accounting services to support your business growth.',
+    title: 'Tax Planning & Preparation',
+    description: 'Proactive tax planning and precise preparation that keep more of what you earn.',
     icon: FaChartBar,
     features: [
       'Tax planning & preparation',
-      'Bookkeeping services',
-      'Financial reporting',
+      'Strategic tax reduction',
+      'Multi-state compliance',
       'IRS representation'
     ]
   },
@@ -81,20 +56,38 @@ export const SERVICES = [
     icon: FaShieldAlt,
     features: [
       'Business insurance coverage',
-      'Cyber liability protection',
+      'Personal lines (Home, Auto, Umbrella)',
       'Risk assessment',
       'Policy optimization'
+    ]
+  },
+  {
+    id: 'bookkeeping-accounting',
+    title: 'Bookkeeping & Accounting',
+    description: 'Full-cycle accounting operations that professionalize your financial reporting and keep you compliant.',
+    icon: FaCalculator,
+    features: [
+      'Daily bookkeeping & categorization',
+      'Real-time financial reporting',
+      'Bank & credit card reconciliation',
+      'Month-end close'
+    ]
+  },
+  {
+    id: 'business-consulting',
+    title: 'Business Management Consulting',
+    description: 'Financial and operational guidance that turns growing businesses into scalable, professional organizations.',
+    icon: FaBriefcase,
+    features: [
+      'Operational systems development',
+      'Cash flow management',
+      'KPI & metrics tracking',
+      'Fractional COO services'
     ]
   }
 ];
 
 export const REASONS_TO_CHOOSE = [
-  {
-    icon: FaRobot,
-    title: 'AI & Automation Experts',
-    description: 'Cutting-edge AI solutions and automation systems that work 24/7',
-    link: '/services/ai-driven-growth'
-  },
   {
     icon: FaCalculator,
     title: 'Strategic Tax Expertise',
@@ -108,15 +101,21 @@ export const REASONS_TO_CHOOSE = [
     link: '/services/risk-architecture'
   },
   {
+    icon: FaBriefcase,
+    title: 'Finance Consulting Experts',
+    description: 'Bookkeeping, accounting, and financial consulting that give you clarity and control',
+    link: '/services/bookkeeping-accounting'
+  },
+  {
     icon: FaBolt,
-    title: 'Rapid Deployment',
-    description: 'Fast turnaround on projects without compromising quality',
+    title: 'Responsive Service',
+    description: 'Fast turnaround on engagements without compromising quality',
     link: '/services'
   },
   {
     icon: FaHandshake,
-    title: 'Complete Business Partner',
-    description: 'AI, consulting, tax, and insurance - all under one roof',
+    title: 'Complete Financial Partner',
+    description: 'Tax, insurance, and finance consulting - all under one roof',
     link: '/about'
   },
   {
@@ -131,51 +130,13 @@ export const BLOG_CATEGORIES = [
   'Business Tips',
   'Insurance Advice',
   'Tax Planning',
-  'Technology',
-  'AI & Automation',
-  'Digital Marketing',
+  'Financial Planning',
   'General'
 ];
 
 // Expanded services with comprehensive details for the redesigned Services page
 export const SERVICES_EXPANDED = [
-  // PRIMARY SERVICES (AI & Automation)
-  {
-    id: 'ai-automation',
-    title: 'AI Consulting & Automation',
-    description: 'Deploy intelligent AI agents, chatbots, and automation systems that work 24/7 to scale your business without adding headcount.',
-    icon: FaRobot,
-    link: '/services/ai-driven-growth',
-    features: [
-      'AI chatbots & virtual agents',
-      'Process automation & workflows',
-      'Machine learning solutions',
-      'AI strategy & implementation',
-      '24/7 lead reactivation',
-      'Missed-call text back systems'
-    ],
-    detailedDescription: 'In the modern economy, speed is the primary currency. We deploy AI systems that engage your leads instantly, ensuring you never miss an opportunity while reducing your manual workload.',
-    isPrimary: true
-  },
-  {
-    id: 'business-automation',
-    title: 'Business Process Automation',
-    description: 'Streamline operations with intelligent workflow automation, system integrations, and process optimization.',
-    icon: FaBolt,
-    link: '/services/ai-driven-growth',
-    features: [
-      'Workflow Automation Design',
-      'CRM & ERP Integration',
-      'Custom Automation Solutions',
-      'System Optimization',
-      'API Integrations',
-      'Process Documentation'
-    ],
-    detailedDescription: 'Eliminate repetitive tasks and streamline your operations with intelligent automation. We design and implement systems that save time, reduce errors, and allow your team to focus on high-value work.',
-    isPrimary: true
-  },
-  
-  // SECONDARY SERVICES (Business Support)
+  // PRIMARY SERVICES (Tax, Insurance & Finance)
   {
     id: 'accounting-services',
     title: 'Bookkeeping & Accounting',
@@ -223,7 +184,7 @@ export const SERVICES_EXPANDED = [
       'Year-round tax advisory'
     ],
     detailedDescription: 'Tax strategy is different from tax preparation. We look ahead to identify significant savings opportunities before the tax year ends, helping you keep more of what you earn.',
-    isPrimary: false
+    isPrimary: true
   },
   {
     id: 'business-management',
@@ -255,7 +216,7 @@ export const SERVICES_EXPANDED = [
       'Policy gap analysis'
     ],
     detailedDescription: 'We don\'t just sell policies; we architect protection. By auditing your existing coverage against your specific risk profile, we ensure you have the right protection at the right price.',
-    isPrimary: false
+    isPrimary: true
   },
 
   {
@@ -290,14 +251,14 @@ export const INDUSTRIES = [
     ],
     solutions: [
       'Real-time job costing and progress billing (AIA) to accelerate collections',
-      'AI-powered missed-call text-back systems to capture emergency leads 24/7'
+      'Contractor-focused insurance reviews to stabilize workers comp and liability premiums'
     ],
     features: [
       'Job costing & profitability analysis',
       'Progress billing (AIA)',
       'Workers comp & GL audit support',
-      'AI lead reactivation for old quotes',
-      'Sales-to-Operations process automation'
+      'Certificate of insurance (COI) support',
+      'Cash flow & collections strategy'
     ]
   },
   {
@@ -312,12 +273,12 @@ export const INDUSTRIES = [
     ],
     solutions: [
       'Medical billing optimization and denial management systems',
-      'HIPAA-compliant AI appointment scheduling and patient communication'
+      'Malpractice and cyber liability coverage reviews tailored to healthcare'
     ],
     features: [
       'Medical billing & revenue cycle support',
-      'HIPAA-compliant AI agents',
-      'Practice growth automation',
+      'Malpractice coverage reviews',
+      'Practice growth advisory',
       'Specialized tax credits (R&D)',
       'Insurance risk audits'
     ]
@@ -334,7 +295,7 @@ export const INDUSTRIES = [
     ],
     solutions: [
       'Cost segregation studies and 1031 exchange strategy to defer taxes',
-      'Property-level P&L dashboards with automated rent collection tracking'
+      'Property-level P&L dashboards with rent collection tracking'
     ],
     features: [
       'Cost segregation coordination',
@@ -356,12 +317,12 @@ export const INDUSTRIES = [
     ],
     solutions: [
       'Real-time utilization tracking and margin analysis by project',
-      'Fractional COO services and workflow automation to scale operations'
+      'Fractional COO services and standardized processes to scale operations'
     ],
     features: [
       'Fractional COO & strategy',
       'Utilization & margin tracking',
-      'Project management automation',
+      'Project profitability systems',
       'Strategic tax planning',
       'Executive liability protection'
     ]
@@ -377,13 +338,13 @@ export const INDUSTRIES = [
       'Inventory management across multiple sales channels'
     ],
     solutions: [
-      'Automated sales tax nexus monitoring and filing services',
+      'Sales tax nexus monitoring and filing services across every state you sell in',
       'Multi-channel inventory accounting with real-time sync and margin tracking'
     ],
     features: [
       'Multi-channel inventory accounting',
       'Sales tax nexus management',
-      'AI customer support agents',
+      'Product liability & cargo coverage',
       'Margin-based marketing ROI',
       'Working capital strategy'
     ]
@@ -399,13 +360,13 @@ export const INDUSTRIES = [
       'Lead intake inefficiency and missed consultation opportunities'
     ],
     solutions: [
-      'Trust accounting systems with automated compliance monitoring',
-      'AI-powered lead intake and qualification with instant consultation scheduling'
+      'Trust accounting systems with rigorous compliance monitoring',
+      'Streamlined client intake processes and consultation scheduling'
     ],
     features: [
       'Trust accounting compliance',
       'Partner compensation structures',
-      'Intelligent lead intake AI',
+      'Client intake process design',
       'Professional liability review',
       'Operations modernization'
     ]

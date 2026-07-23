@@ -68,7 +68,7 @@ const AboutCompany = () => {
                 About <span className="bg-gradient-to-r from-primary-400 via-primary-300 to-primary-500 bg-clip-text text-transparent">Our Company</span>
               </h1>
               <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-                Building the future of consulting and insurance services
+                Building the future of tax, insurance, and finance consulting
               </p>
             </motion.div>
           </div>
@@ -100,15 +100,15 @@ const AboutCompany = () => {
                 >
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
                     MRECAI is a forward-thinking firm dedicated to empowering individuals,
-                    families, and businesses with comprehensive consulting and insurance solutions. Founded in 2024,
-                    we bring together expertise in business consulting, insurance services,
-                    tax and accounting, and cutting-edge AI technology.
+                    families, and businesses with comprehensive tax, insurance, and finance consulting solutions. Founded in 2024,
+                    we bring together expertise in tax and accounting, insurance services,
+                    financial consulting, and wealth planning through strategic partners.
                   </p>
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                    Our approach combines traditional consulting excellence with innovative technology solutions,
-                    ensuring our clients stay ahead in an ever-evolving business landscape. We leverage cutting-edge
-                    technologies including <strong>Python</strong> for automation, <strong>TensorFlow</strong> for AI
-                    implementation, and <strong>QuickBooks API</strong> for seamless accounting integrations. We believe in building
+                    Our approach combines traditional consulting excellence with modern financial tools,
+                    ensuring our clients stay ahead in an ever-evolving business landscape. We build streamlined
+                    systems around platforms like <strong>QuickBooks Online</strong> for real-time reporting and
+                    seamless accounting operations. We believe in building
                     lasting partnerships based on trust, transparency, and measurable results.
                   </p>
                   <p className="text-lg text-gray-700 leading-relaxed">
@@ -129,7 +129,7 @@ const AboutCompany = () => {
                     { icon: FaUsers, text: '180+ satisfied clients across multiple industries' },
                     { icon: FaAward, text: 'Expert team with extensive industry experience' },
                     { icon: FaCheckCircle, text: '98% client success rate' },
-                    { icon: FaRocket, text: 'Cutting-edge AI and automation solutions' }
+                    { icon: FaRocket, text: 'Consulting, tax, and insurance under one roof' }
                   ].map((item, index) => (
                     <motion.div
                       key={index}
@@ -177,9 +177,9 @@ const AboutCompany = () => {
                 <FaBullseye className="text-6xl mb-6 mx-auto opacity-80" />
                 <h3 className="text-3xl font-bold mb-6 text-center">Our Mission Statement</h3>
                 <p className="text-xl leading-relaxed text-center opacity-95">
-                  To empower our clients with innovative, personalized solutions that drive growth, efficiency,
-                  and security. We are committed to delivering exceptional service, leveraging cutting-edge
-                  technology, and building lasting partnerships that create measurable value for individuals,
+                  To empower our clients with practical, personalized solutions that drive growth, efficiency,
+                  and security. We are committed to delivering exceptional service, applying deep professional
+                  expertise, and building lasting partnerships that create measurable value for individuals,
                   families, and businesses.
                 </p>
               </motion.div>
@@ -189,17 +189,17 @@ const AboutCompany = () => {
                   {
                     icon: FaBullseye,
                     title: 'Vision',
-                    description: 'To be the most trusted and innovative consulting and insurance partner, recognized for transforming businesses through technology and expertise.'
+                    description: 'To be the most trusted tax, insurance, and finance consulting partner, recognized for transforming businesses through strategy, protection, and expertise.'
                   },
                   {
                     icon: FaRocket,
                     title: 'Goals',
-                    description: 'Expand our service offerings, embrace emerging technologies, and help 1,000+ clients achieve their business and personal financial goals by 2030.'
+                    description: 'Expand our service offerings, deepen our advisory expertise, and help 1,000+ clients achieve their business and personal financial goals by 2030.'
                   },
                   {
                     icon: FaLightbulb,
                     title: 'Objectives',
-                    description: 'Deliver measurable ROI, maintain 98%+ client satisfaction, and continuously innovate our service delivery through AI and automation.'
+                    description: 'Deliver measurable results, maintain 98%+ client satisfaction, and continuously refine our service delivery through streamlined systems and expert support.'
                   }
                 ].map((item, index) => (
                   <motion.div
@@ -286,7 +286,7 @@ const AboutCompany = () => {
                   <FaLightbulb className="text-white text-2xl" />
                 </div>
                 <h3 className="text-xl font-bold text-navy-900 mb-3">Innovation</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">We embrace cutting-edge technology and creative solutions to solve challenges.</p>
+                <p className="text-gray-600 text-sm leading-relaxed">We embrace fresh thinking and creative solutions to solve challenges.</p>
               </motion.div>
 
               {/* Client-Focused */}
@@ -343,7 +343,7 @@ const AboutCompany = () => {
                 {
                   step: '03',
                   title: 'Implementation',
-                  description: 'We execute the plan with precision, leveraging our expertise and technology to deliver results.',
+                  description: 'We execute the plan with precision, leveraging our expertise and proven processes to deliver results.',
                   icon: FaRocket
                 },
                 {
@@ -423,7 +423,7 @@ const AboutCompany = () => {
                   year: '2024',
                   quarter: 'Q1',
                   title: 'The Beginning',
-                  description: 'MRECAI was founded with a vision to provide personalized, expert consulting and insurance services to individuals, families, and businesses.',
+                  description: 'MRECAI was founded with a vision to provide personalized, expert tax, insurance, and finance consulting services to individuals, families, and businesses.',
                   color: 'from-primary-500 to-primary-600'
                 },
                 {
@@ -436,15 +436,15 @@ const AboutCompany = () => {
                 {
                   year: '2024',
                   quarter: 'Q3',
-                  title: 'Technology Innovation',
-                  description: 'Partnered with NovaEdge Solutions to integrate AI and automation capabilities, modernizing our service delivery and client experience.',
+                  title: 'Service Expansion',
+                  description: 'Expanded our tax planning, bookkeeping, and risk advisory capabilities, modernizing our service delivery and client experience.',
                   color: 'from-purple-500 to-pink-500'
                 },
                 {
                   year: '2025',
                   quarter: '',
                   title: 'Continued Growth',
-                  description: 'Serving 180+ clients with 98% success rate, expanding services across consulting, insurance, technology, and financial solutions.',
+                  description: 'Serving 180+ clients with 98% success rate, expanding services across consulting, insurance, tax, and financial solutions.',
                   color: 'from-orange-500 to-red-500'
                 }
               ].map((milestone, index) => (

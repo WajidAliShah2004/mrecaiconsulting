@@ -17,10 +17,10 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="AI Consulting, Tax, Insurance & Business Services | MRECAI"
-        description="Premier AI consulting and business services firm. Custom AI automation, strategic tax planning, insurance and risk management, plus business consulting. 180+ clients, 4.9/5 rating. Book your free consultation."
+        title="Tax, Insurance & Finance Consulting | MRECAI"
+        description="Premier tax, insurance, and finance consulting firm. Strategic tax planning and preparation, insurance and risk management, and bookkeeping, accounting, and financial consulting. 180+ clients, 4.9/5 rating. Book your free consultation."
         canonical="/"
-        keywords="AI consulting, business automation, AI chatbots, tax planning, tax preparation, insurance consulting, risk management, bookkeeping, business consulting"
+        keywords="tax consulting, tax planning, tax preparation, insurance consulting, risk management, finance consulting, bookkeeping, accounting services"
         schema={{
           '@context': 'https://schema.org',
           '@graph': [
@@ -167,13 +167,13 @@ const Home = () => {
         </div >
       </section >
 
-      {/* NEW: In 60 Seconds - AI Reference Block */}
+      {/* NEW: In 60 Seconds - Firm Overview Block */}
       <In60Seconds />
 
       {/* NEW: Process Flow (How It Works) */}
       <ProcessFlow />
 
-      {/* NEW: Technology Advantage - Consolidated Section */}
+      {/* NEW: MRE Advantage - Consolidated Section */}
       <TechnologyAdvantage />
 
       {/* NEW: Executive Leadership (Matthew R. Epstein) */}
@@ -217,7 +217,7 @@ const Home = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Your complete technology and business transformation partner
+              Your complete tax, insurance, and finance consulting partner
             </motion.p>
           </div>
 
@@ -661,21 +661,21 @@ const Home = () => {
             {[
               {
                 name: "Sarah Chen",
-                role: "CEO, TechStart Solutions",
-                text: "MRE built us a custom AI chatbot that handles 80% of our customer inquiries automatically. Our response time went from hours to seconds, and customer satisfaction is through the roof.",
-                result: "80% automation achieved"
+                role: "Owner, Chen Dental Group",
+                text: "MRECAI restructured our entity and built a proactive tax plan that saved us over $40,000 in the first year alone. They caught deductions and credits our old accountant never even mentioned.",
+                result: "$40K+ first-year tax savings"
               },
               {
                 name: "Michael Rodriguez",
-                role: "Founder, Urban Fitness Co.",
-                text: "The team automated our booking follow-ups with AI, so no lead ever slips through. Missed-call text-backs alone tripled our online leads. They're a true growth partner.",
-                result: "3x lead generation"
+                role: "Founder, Rodriguez Contracting",
+                text: "Their insurance audit uncovered coverage gaps that could have sunk us, then they cut our premiums by nearly 30%. Workers comp audits are finally painless. A true partner in every sense.",
+                result: "30% premium reduction"
               },
               {
                 name: "Jennifer Park",
                 role: "Owner, Park Design Studio",
-                text: "From AI automation to tax planning and insurance - MRE handles it all. Having one partner for AI, tax, and business support has been a game changer for our growth.",
-                result: "Complete business transformation"
+                text: "From bookkeeping cleanup to tax planning and insurance - MRECAI handles it all. We finally have clean books, real cash flow visibility, and one accountable partner for everything.",
+                result: "Complete financial clarity"
               }
             ].map((testimonial, i) => (
               <motion.div

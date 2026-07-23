@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import ManhattanPage from '@/pages/locations/Manhattan';
 
 const title = "Business Services in Manhattan | MRE Consulting & Insurance";
-const description = "Professional business consulting, bookkeeping, tax preparation, and insurance services in Manhattan, NYC. Call (929) 702-2818 for a free consultation.";
+const description = "Professional tax preparation, insurance, bookkeeping, and finance consulting services in Manhattan, NYC. Call (929) 702-2818 for a free consultation.";
 const canonical = "/locations/manhattan";
 
 export function generateMetadata(): Metadata {

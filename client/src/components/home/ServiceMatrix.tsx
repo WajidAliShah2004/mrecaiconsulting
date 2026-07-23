@@ -1,19 +1,19 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaRobot, FaCalculator, FaShieldAlt, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
+import { FaBriefcase, FaCalculator, FaShieldAlt, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
 
 const matrixItems = [
     {
-        title: 'AI & Automation',
-        description: 'Deploy intelligent AI agents, chatbots, and automation systems that work 24/7 to engage customers, qualify leads, and streamline operations.',
-        icon: FaRobot,
+        title: 'Business Consulting',
+        description: 'Strategic guidance and operational systems that professionalize your business, sharpen decision-making, and set the stage for scalable growth.',
+        icon: FaBriefcase,
         color: 'text-purple-600',
         bgColor: 'bg-purple-50',
         borderColor: 'border-purple-100',
-        features: ['AI Chatbots & Agents', 'Process Automation', 'Machine Learning Solutions'],
-        link: '/services/ai-driven-growth'
+        features: ['Strategic Planning', 'Operational Systems', 'Fractional COO Services'],
+        link: '/services/business-consulting'
     },
     {
         title: 'Tax & Accounting',

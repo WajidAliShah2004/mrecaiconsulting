@@ -16,15 +16,13 @@ const Services = () => {
   return (
     <>
       <SEO
-        title="AI Consulting, Tax, Insurance & Business Services | MRECAI"
-        description="Expert AI consulting and automation, strategic tax planning, insurance and risk management, bookkeeping, and business consulting. 180+ successful projects delivered."
+        title="Tax, Insurance & Finance Consulting Services | MRECAI"
+        description="Expert strategic tax planning and preparation, insurance and risk management, bookkeeping and accounting, and wealth planning. 180+ successful projects delivered."
         canonical="/services"
-        keywords="AI consulting services, business automation, tax planning services, tax preparation, insurance consulting, risk management, bookkeeping and accounting, business consulting NYC"
+        keywords="tax consulting services, tax planning services, tax preparation, insurance consulting, risk management, finance consulting, bookkeeping and accounting, tax consultant NYC"
         schema={{
           '@context': 'https://schema.org',
           '@graph': [
-            serviceSchemas.aiTechnology,
-            serviceSchemas.automation,
             serviceSchemas.businessConsulting,
             serviceSchemas.taxAccounting,
             serviceSchemas.insurance,
@@ -98,11 +96,11 @@ const Services = () => {
               className="max-w-5xl mx-auto text-center"
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                AI-Powered <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-200">Technology Solutions</span>
+                Integrated <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-200">Tax, Insurance & Finance Solutions</span>
               </h1>
 
               <p className="text-xl text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto">
-                Transform your business with cutting-edge AI consulting and automation. Plus comprehensive tax, insurance, and business support.
+                Keep more of what you earn and protect what you have built. Strategic tax planning, comprehensive insurance coverage, and expert financial consulting under one roof.
               </p>
             </motion.div>
           </div>
@@ -123,10 +121,10 @@ const Services = () => {
                 PRIMARY SERVICES
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                AI & <span className="gradient-text">Automation Services</span>
+                Tax & <span className="gradient-text">Insurance Services</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Our core expertise in AI consulting, intelligent automation, and process optimization
+                Our core expertise in advanced tax strategy and insurance & risk architecture
               </p>
             </motion.div>
 
@@ -225,13 +223,13 @@ const Services = () => {
               className="text-center mb-16"
             >
               <div className="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-bold mb-4">
-                BUSINESS SUPPORT SERVICES
+                FINANCE & BUSINESS SERVICES
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                Comprehensive <span className="gradient-text">Business Support</span>
+                Comprehensive <span className="gradient-text">Financial Support</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Tax planning, insurance consulting, and financial services to support your growth
+                Bookkeeping and accounting, tax preparation, business consulting, and wealth planning to support your growth
               </p>
             </motion.div>
 
@@ -330,7 +328,7 @@ const Services = () => {
               ))}
             </div>
 
-            {/* AI Consulting Highlight */}
+            {/* Advanced Tax Strategy Highlight */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -346,17 +344,17 @@ const Services = () => {
                     </div>
                   </div>
                   <h3 className="text-3xl md:text-4xl font-bold text-center mb-4">
-                    🤖 AI Consulting & Automation Services
+                    Advanced Tax Strategy Services
                   </h3>
                   <p className="text-xl text-center text-white/90 mb-8 max-w-3xl mx-auto">
-                    Deploy intelligent AI agents, chatbots, and automation systems that work 24/7. From strategy to implementation, we transform your business with cutting-edge AI technology.
+                    Keep more of what you earn with proactive, year-round tax planning. From R&D credits and cost segregation to entity optimization, we engineer meaningful reductions in your effective tax rate.
                   </p>
                   <div className="flex justify-center">
                     <Link
-                      href="/ai-consulting"
+                      href="/services/tax-strategy"
                       className="inline-flex items-center px-8 py-4 bg-white text-purple-600 font-bold rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-105"
                     >
-                      Explore AI Consulting Services
+                      Explore Tax Strategy Services
                       <FaArrowRight className="ml-2" />
                     </Link>
                   </div>
@@ -365,7 +363,7 @@ const Services = () => {
             </motion.div>
 
             {/* Additional Services Grid */}
-            {/* Why Choose Our Technology Services */}
+            {/* Why Choose Our Services */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -383,13 +381,13 @@ const Services = () => {
                   className="bg-gradient-to-br from-purple-50 to-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all border border-purple-100"
                 >
                   <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
-                    <span className="text-2xl">🤖</span>
+                    <span className="text-2xl">📊</span>
                   </div>
                   <h4 className="text-xl font-bold text-navy-900 mb-3">
-                    AI-First Approach
+                    Systems-First Approach
                   </h4>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    We integrate AI and automation into every solution, ensuring your business stays ahead of the curve with cutting-edge technology.
+                    We build repeatable systems and processes into every engagement, ensuring your business runs smoothly without depending on any one person.
                   </p>
                 </motion.div>
 
@@ -404,7 +402,7 @@ const Services = () => {
                     Integrated Expertise
                   </h4>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    From AI consulting to tax, insurance, and business support - we're your complete business partner.
+                    From tax and insurance to accounting and business consulting support - we're your complete financial partner.
                   </p>
                 </motion.div>
 
@@ -528,19 +526,19 @@ const Services = () => {
                 {
                   name: 'Marcus Johnson',
                   role: 'CEO, TechFlow Solutions',
-                  text: 'MRE built us a custom AI chatbot that handles customer inquiries 24/7. Our response time dropped from hours to seconds, and customer satisfaction skyrocketed. Game-changing technology!',
+                  text: 'MRE restructured our entity and tax strategy from the ground up. We saved over $40K in our first year, and their proactive planning means no more April surprises. Game-changing guidance!',
                   rating: 5
                 },
                 {
                   name: 'Rachel Kim',
                   role: 'Founder, Urban Wellness Studio',
-                  text: 'From automated scheduling to clean, real-time books, MRE delivered everything we needed. Their integrated approach saved us time and money. Couldn\'t be happier!',
+                  text: 'From insurance coverage reviews to clean, real-time books, MRE delivered everything we needed. Their integrated approach saved us time and money. Couldn\'t be happier!',
                   rating: 5
                 },
                 {
                   name: 'James Martinez',
                   role: 'Director, Martinez Consulting Group',
-                  text: 'The automation systems they implemented saved us 20+ hours per week. Plus their tax strategy uncovered savings we didn\'t know existed. True partners who understand business!',
+                  text: 'The operational systems they implemented saved us 20+ hours per week. Plus their tax strategy uncovered savings we didn\'t know existed. True partners who understand business!',
                   rating: 5
                 }
               ].map((testimonial, index) => (
@@ -590,7 +588,7 @@ const Services = () => {
               className="max-w-4xl mx-auto text-center"
             >
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Ready to Transform Your Business with AI?
+                Ready to Transform Your Business?
               </h2>
               <p className="text-xl text-gray-200 mb-8 leading-relaxed">
                 Schedule a free consultation to discuss your business needs and discover how we can help

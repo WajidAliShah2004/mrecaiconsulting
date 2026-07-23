@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import AboutPage from '@/pages/About';
 
-const title = "About MRECAI | AI Consulting & Technology Leaders";
-const description = "Learn about MRE Consulting & Insurance, an AI-first business transformation firm offering AI consulting, tax strategy, insurance, and business consulting.";
+const title = "About MRECAI | Consulting, Tax & Insurance Experts";
+const description = "Learn about MRECAI, an integrated firm offering tax strategy and preparation, insurance consulting, and bookkeeping, accounting, and finance consulting services.";
 const canonical = "/about";
 
 export function generateMetadata(): Metadata {
   return {
     title: { absolute: title },
     description,
-    keywords: "about MRECAI, AI consulting company, tax planning firm, insurance consulting, business transformation, company history",
+    keywords: "about MRECAI, business consulting company, tax planning firm, insurance consulting, accounting services, company history",
     alternates: { canonical },
     openGraph: {
       title,

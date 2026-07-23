@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 860" font-family="Montserrat, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12294a"/>
+      <stop offset="35%" stop-color="#2c5f8a"/>
+      <stop offset="60%" stop-color="#2e8fa3"/>
+      <stop offset="100%" stop-color="#12294a"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1d4e79"/>
+      <stop offset="55%" stop-color="#2e8fa3"/>
+      <stop offset="100%" stop-color="#45b8c8"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#16355e"/>
+      <stop offset="100%" stop-color="#3ba8bd"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1d3a5f"/>
+      <stop offset="55%" stop-color="#2c6f96"/>
+      <stop offset="100%" stop-color="#3a9ab2"/>
+    </linearGradient>
+    <radialGradient id="swirlGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7fdbe8"/>
+      <stop offset="60%" stop-color="#2e8fa3"/>
+      <stop offset="100%" stop-color="#16355e"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ===================== SHIELD ===================== -->
+  <path d="M500,64
+           C552,92 606,104 662,98
+           C676,224 664,338 500,478
+           C336,338 324,224 338,98
+           C394,104 448,92 500,64 Z"
+        fill="url(#shieldGrad)" stroke="#0d1f38" stroke-width="3"/>
+  <!-- ribbon swooshes on the border -->
+  <path d="M355,142 C351,240 372,314 460,412" fill="none" stroke="url(#accentGrad)" stroke-width="12" stroke-linecap="round" opacity="0.5"/>
+  <path d="M645,142 C649,240 628,314 540,412" fill="none" stroke="#45b8c8" stroke-width="8" stroke-linecap="round" opacity="0.35"/>
+  <!-- Inner white field -->
+  <path d="M500,92
+           C546,115 592,126 638,122
+           C649,230 637,326 500,446
+           C363,326 351,230 362,122
+           C408,126 454,115 500,92 Z"
+        fill="#ffffff"/>
+  <!-- Inner accent stroke -->
+  <path d="M500,104
+           C542,124 584,134 626,131
+           C635,228 623,316 500,428
+           C377,316 365,228 374,131
+           C416,134 458,124 500,104 Z"
+        fill="none" stroke="url(#accentGrad)" stroke-width="6" opacity="0.55"/>
+
+  <!-- ===================== NETWORK ===================== -->
+  <g stroke="#35729c" stroke-width="3" stroke-linecap="round" opacity="0.95">
+    <line x1="415" y1="185" x2="455" y2="142"/>
+    <line x1="455" y1="142" x2="515" y2="128"/>
+    <line x1="515" y1="128" x2="572" y2="158"/>
+    <line x1="455" y1="142" x2="478" y2="194"/>
+    <line x1="515" y1="128" x2="478" y2="194"/>
+    <line x1="572" y1="158" x2="540" y2="188"/>
+    <line x1="540" y1="188" x2="478" y2="194"/>
+    <line x1="415" y1="185" x2="478" y2="194"/>
+    <line x1="415" y1="185" x2="432" y2="242"/>
+    <line x1="432" y1="242" x2="478" y2="194"/>
+  </g>
+  <g fill="#16355e">
+    <circle cx="415" cy="185" r="7"/>
+    <circle cx="455" cy="142" r="6"/>
+    <circle cx="515" cy="128" r="8"/>
+    <circle cx="572" cy="158" r="6"/>
+    <circle cx="540" cy="188" r="5"/>
+    <circle cx="432" cy="242" r="6"/>
+  </g>
+  <circle cx="515" cy="128" r="12" fill="none" stroke="#45b8c8" stroke-width="2"/>
+  <circle cx="478" cy="194" r="9" fill="#2e8fa3"/>
+  <circle cx="478" cy="194" r="3.5" fill="#ffffff"/>
+
+  <!-- ===================== SWIRL ===================== -->
+  <circle cx="500" cy="286" r="36" fill="url(#swirlGrad)"/>
+  <path d="M500,286 m-26,0 a26,26 0 1,1 26,26 a17,17 0 1,0 17,-17 a9,9 0 1,1 -9,-9"
+        fill="none" stroke="#eaf9fc" stroke-width="4.5" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="500" cy="286" r="4" fill="#ffffff"/>
+
+  <!-- ===================== GEAR ===================== -->
+  <g transform="translate(585,335)">
+    <g fill="url(#accentGrad)">
+      <rect x="-8" y="-54" width="16" height="18" rx="4"/>
+      <rect x="-8" y="-54" width="16" height="18" rx="4" transform="rotate(30)"/>
+      <rect x="-8" y="-54" width="16" height="18" rx="4" transform="rotate(60)"/>
+      <rect x="-8" y="-54" width="16" height="18" rx="4" transform="rotate(90)"/>
+      <rect x="-8" y="-54" width="16" height="18" rx="4" transform="rotate(120)"/>
+      <rect x="-8" y="-54" width="16" height="18" rx="4" transform="rotate(150)"/>
+      <rect x="-8" y="-54" width="16" height="18" rx="4" transform="rotate(180)"/>
+      <rect x="-8" y="-54" width="16" height="18" rx="4" transform="rotate(210)"/>
+      <rect x="-8" y="-54" width="16" height="18" rx="4" transform="rotate(240)"/>
+      <rect x="-8" y="-54" width="16" height="18" rx="4" transform="rotate(270)"/>
+      <rect x="-8" y="-54" width="16" height="18" rx="4" transform="rotate(300)"/>
+      <rect x="-8" y="-54" width="16" height="18" rx="4" transform="rotate(330)"/>
+    </g>
+    <circle r="38" fill="url(#accentGrad)"/>
+    <circle r="38" fill="none" stroke="#16355e" stroke-width="3" opacity="0.4"/>
+    <circle cx="0" cy="-26" r="4" fill="#dff4f8" opacity="0.9"/>
+    <circle cx="26" cy="0" r="4" fill="#dff4f8" opacity="0.9"/>
+    <circle cx="0" cy="26" r="4" fill="#dff4f8" opacity="0.9"/>
+    <circle cx="-26" cy="0" r="4" fill="#dff4f8" opacity="0.9"/>
+    <circle r="16" fill="#ffffff"/>
+    <circle r="16" fill="none" stroke="#16355e" stroke-width="4"/>
+  </g>
+
+  <!-- ===================== GROWTH ARROW ===================== -->
+  <path d="M390,410 C424,376 446,338 466,306 L499,344 C534,300 560,264 582,234"
+        fill="none" stroke="url(#arrowGrad)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="620,188 554,210 596,254" fill="#2e8fa3"/>
+
+  <!-- ===================== MICROCHIP ===================== -->
+  <g transform="translate(452,374)">
+    <g fill="#16355e">
+      <rect x="-16" y="-46" width="8" height="14" rx="3"/>
+      <rect x="-4"  y="-46" width="8" height="14" rx="3"/>
+      <rect x="8"   y="-46" width="8" height="14" rx="3"/>
+      <rect x="-16" y="32"  width="8" height="14" rx="3"/>
+      <rect x="-4"  y="32"  width="8" height="14" rx="3"/>
+      <rect x="8"   y="32"  width="8" height="14" rx="3"/>
+      <rect x="-46" y="-16" width="14" height="8" rx="3"/>
+      <rect x="-46" y="-4"  width="14" height="8" rx="3"/>
+      <rect x="-46" y="8"   width="14" height="8" rx="3"/>
+      <rect x="32"  y="-16" width="14" height="8" rx="3"/>
+      <rect x="32"  y="-4"  width="14" height="8" rx="3"/>
+      <rect x="32"  y="8"   width="14" height="8" rx="3"/>
+    </g>
+    <rect x="-34" y="-34" width="68" height="68" rx="10" fill="url(#shieldGrad)" stroke="#0d1f38" stroke-width="2"/>
+    <rect x="-17" y="-17" width="34" height="34" rx="5" fill="none" stroke="#7fdbe8" stroke-width="3.5"/>
+    <path d="M-17,-17 L-25,-25 M17,-17 L25,-25 M-17,17 L-25,25 M17,17 L25,25" stroke="#7fdbe8" stroke-width="3" stroke-linecap="round"/>
+    <circle r="4.5" fill="#7fdbe8"/>
+  </g>
+
+  <!-- ===================== WORDMARK ===================== -->
+  <text x="500" y="602" text-anchor="middle" font-size="132" font-weight="800" letter-spacing="8"
+        fill="url(#textGrad)">MRECAI</text>
+  <rect x="330" y="628" width="340" height="4" rx="2" fill="url(#accentGrad)" opacity="0.6"/>
+  <text x="500" y="692" text-anchor="middle" font-size="52" font-weight="700"
+        fill="#16324f">Matthew R. Epstein</text>
+  <text x="500" y="762" text-anchor="middle" font-size="42" font-weight="500"
+        fill="#1d3a5f">Consulting&#160;&#160;&#8226;&#160;&#160;AI&#160;&#160;&#8226;&#160;&#160;Technology&#160;&#160;&#8226;&#160;&#160;Insurance</text>
+</svg>

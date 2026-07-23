@@ -2,10 +2,11 @@
 
 import SEO from '../components/common/SEO';
 import { motion } from 'framer-motion';
-import { FaDownload, FaFileAlt, FaCalculator, FaCheckCircle, FaRocket, FaIndustry, FaBullhorn, FaSpinner, FaArrowRight, FaChartBar, FaShieldAlt } from 'react-icons/fa';
+import { FaDownload, FaFileAlt, FaCalculator, FaCheckCircle, FaRocket, FaBriefcase, FaLightbulb, FaSpinner, FaArrowRight, FaChartBar, FaShieldAlt } from 'react-icons/fa';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { supabase, WhitePaper } from '../lib/supabase';
+import { generateAndDownloadPDF } from '../utils/pdfGenerator';
 
 const Resources = () => {
   const [whitepapers, setWhitepapers] = useState<any[]>([]);
@@ -14,16 +15,16 @@ const Resources = () => {
 
   // Icon mapping
   const iconMap: any = {
-    'ai-automation-frontier': FaRocket,
-    'digital-marketing-reputation': FaBullhorn,
-    'future-of-business': FaIndustry
+    'tax-strategy-playbook': FaLightbulb,
+    'business-risk-blueprint': FaShieldAlt,
+    'financial-clarity-guide': FaChartBar
   };
 
   // Color mapping
   const colorMap: any = {
-    'ai-automation-frontier': 'from-primary-500 to-primary-600',
-    'digital-marketing-reputation': 'from-green-500 to-emerald-600',
-    'future-of-business': 'from-purple-500 to-pink-600'
+    'tax-strategy-playbook': 'from-primary-500 to-primary-600',
+    'business-risk-blueprint': 'from-green-500 to-emerald-600',
+    'financial-clarity-guide': 'from-purple-500 to-pink-600'
   };
 
   useEffect(() => {
@@ -113,49 +114,49 @@ const Resources = () => {
 
   const fallbackWhitepapers = [
     {
-      id: 'ai-automation-frontier',
-      title: 'The New Frontier of Efficiency: How AI & Automation Are Transforming Every Industry',
-      description: 'Comprehensive analysis of AI and automation opportunities across 20+ industries with ROI benchmarks from McKinsey, PwC, Gartner, Deloitte, and IBM.',
-      icon: FaRocket,
+      id: 'tax-strategy-playbook',
+      title: 'The Small Business Tax Strategy Playbook: Proven Ways to Lower Your Effective Rate',
+      description: 'Comprehensive guide to entity optimization, R&D credits, cost segregation, and retirement plan strategies that keep more of what you earn.',
+      icon: FaLightbulb,
       pages: '50+',
-      topics: ['AI Implementation', 'Automation ROI', 'Industry Analysis', 'Case Studies'],
+      topics: ['Entity Optimization', 'Tax Credits', 'Cost Segregation', 'Case Studies'],
       color: 'from-primary-500 to-primary-600'
     },
     {
-      id: 'digital-marketing-reputation',
-      title: 'Digital Marketing, Reviews & Social Presence: Building the Modern Reputation Engine',
-      description: 'Complete guide to building digital trust, managing online reputation, and implementing the 5 pillars of modern growth.',
-      icon: FaBullhorn,
+      id: 'business-risk-blueprint',
+      title: 'The Business Risk Blueprint: Closing Coverage Gaps Before They Become Losses',
+      description: 'Complete guide to auditing your insurance coverage, protecting business and personal assets, and building a risk architecture that scales.',
+      icon: FaShieldAlt,
       pages: '45+',
-      topics: ['Digital Marketing', 'Reputation Management', 'SEO Strategy', 'Social Media'],
+      topics: ['Coverage Gap Analysis', 'Liability Protection', 'Cyber Risk', 'Policy Optimization'],
       color: 'from-green-500 to-emerald-600'
     },
     {
-      id: 'future-of-business',
-      title: 'The Future of Business: How AI and Automation Are Transforming Operations',
-      description: 'Strategic guide to implementing ChatGPT, LLMs, and automation systems with security, compliance, and ROI frameworks.',
-      icon: FaIndustry,
+      id: 'financial-clarity-guide',
+      title: 'From Messy Books to Management Tool: The Owner\'s Guide to Financial Clarity',
+      description: 'Strategic guide to professionalizing your bookkeeping, reading your financial statements, and using KPIs to drive better decisions.',
+      icon: FaChartBar,
       pages: '40+',
-      topics: ['ChatGPT Integration', 'Business Transformation', 'Compliance', 'Implementation'],
+      topics: ['Financial Reporting', 'Cash Flow', 'KPI Tracking', 'Month-End Close'],
       color: 'from-purple-500 to-pink-600'
     }
   ];
 
   const tools = [
     {
-      id: 'roi-calculator',
-      title: 'AI & Automation ROI Calculator',
-      description: 'Calculate your potential savings and efficiency gains from implementing AI and automation in your business.',
+      id: 'tax-savings-snapshot',
+      title: 'Free Tax Savings Snapshot',
+      description: 'Get a personalized tax savings snapshot in 10 minutes. Discover deductions, credits, and strategies to reduce your tax burden.',
       icon: FaCalculator,
-      link: '/tools/roi-calculator',
+      link: '/resources/tax-savings-snapshot',
       color: 'from-blue-500 to-blue-600'
     },
     {
-      id: 'readiness-assessment',
-      title: 'Digital Readiness Assessment',
-      description: 'Evaluate your business\'s readiness for digital transformation and identify key opportunities.',
-      icon: FaCheckCircle,
-      link: '/tools/readiness-assessment',
+      id: 'service-match-quiz',
+      title: 'Service Match Quiz',
+      description: 'Answer 4 quick questions to discover which consulting, tax, and insurance services fit your business best.',
+      icon: FaBriefcase,
+      link: '/start-here',
       color: 'from-orange-500 to-red-600'
     },
     {
@@ -178,22 +179,22 @@ const Resources = () => {
 
   const guides = [
     {
-      title: 'Industry-Specific Automation Guides',
+      title: 'Industry-Specific Guides',
       items: [
-        'Accounting & Tax Firms Automation Guide',
-        'Insurance Agency Digital Transformation',
-        'Real Estate Technology Implementation',
-        'Construction Project Management Automation',
-        'Healthcare Revenue Cycle Optimization'
+        'Contractor Cash Flow & Job Costing Guide',
+        'Medical Practice Financial Health Guide',
+        'Real Estate Investor Tax Strategy Guide',
+        'Professional Services Profitability Guide',
+        'Retail & eCommerce Sales Tax Guide'
       ]
     },
     {
-      title: 'Implementation Checklists',
+      title: 'Planning Checklists',
       items: [
-        'AI Implementation Checklist (90-Day)',
-        'Digital Marketing Launch Checklist',
-        'Automation Readiness Assessment',
-        'Compliance & Security Checklist'
+        'Year-End Tax Planning Checklist (90-Day)',
+        'New Entity Setup Checklist',
+        'Insurance Coverage Review Checklist',
+        'Month-End Close Checklist'
       ]
     }
   ];
@@ -202,9 +203,9 @@ const Resources = () => {
     <>
       <SEO
         title="Resources & Downloads | White Papers, Guides & Tools | MRECAI"
-        description="Download free white papers, industry guides, and use our ROI calculators. Expert insights on AI, automation, digital marketing, and business transformation."
+        description="Download free white papers, industry guides, and use our interactive checklists. Expert insights on tax strategy, insurance, accounting, and business growth."
         canonical="/resources"
-        keywords="white papers, business guides, ROI calculator, automation guide, AI implementation, digital transformation resources"
+        keywords="white papers, business guides, tax savings checklist, insurance gap audit, tax planning resources, small business consulting resources"
       />
 
       <div className="pt-20">
@@ -260,7 +261,7 @@ const Resources = () => {
               className="mb-20"
             >
               <Link
-                href="/resources/executives-guide-to-ai"
+                href="/resources/tax-savings-snapshot"
                 className="group relative overflow-hidden bg-gradient-to-r from-navy-900 via-navy-800 to-navy-900 rounded-2xl border border-primary-500/30 p-8 md:p-12 block hover:shadow-2xl hover:shadow-primary-500/10 transition-all"
               >
                 <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:rotate-12 transition-transform">
@@ -270,27 +271,27 @@ const Resources = () => {
                 <div className="relative z-10 grid md:grid-cols-2 gap-8 items-center">
                   <div>
                     <span className="inline-block px-4 py-1 bg-primary-500/20 text-primary-400 rounded-full text-sm font-bold mb-4 uppercase tracking-widest">
-                      Featured Pillar Page
+                      Featured Resource
                     </span>
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 italic italic font-bold">
-                      The Executive’s Guide to AI: <br />
-                      <span className="text-primary-400">Automate Without Increasing Risk</span>
+                      The 2026 Tax Savings Snapshot: <br />
+                      <span className="text-primary-400">Stop Overpaying the IRS</span>
                     </h2>
                     <p className="text-gray-300 text-lg mb-6 leading-relaxed italic italic font-medium">
-                      Confused by the AI hype? Learn how to implement practical automation in your business to save time and money while keeping your data secure.
+                      Most business owners leave money on the table every year. Take our 10-minute assessment to uncover the deductions, credits, and strategies you may be missing.
                     </p>
                     <div className="inline-flex items-center text-primary-400 font-bold text-lg group-hover:translate-x-2 transition-transform italic italic italic font-bold">
-                      Read the Full Guide <FaArrowRight className="ml-2" />
+                      Get Your Free Snapshot <FaArrowRight className="ml-2" />
                     </div>
                   </div>
                   <div className="hidden md:flex justify-end">
                     <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 rounded-xl max-w-sm italic italic font-medium">
                       <h4 className="text-white font-bold mb-3 italic font-bold">What's Inside:</h4>
                       <ul className="space-y-2 text-gray-400 text-sm italic italic">
-                        <li className="flex items-center italic italic"><FaCheckCircle className="text-primary-500 mr-2 flex-shrink-0" /> The M.R.E. Implementation Framework</li>
-                        <li className="flex items-center italic italic"><FaCheckCircle className="text-primary-500 mr-2 flex-shrink-0" /> AI Risk & Insurance Gap Analysis</li>
-                        <li className="flex items-center italic italic"><FaCheckCircle className="text-primary-500 mr-2 flex-shrink-0" /> 3 Immediate Automation Wins for 2026</li>
-                        <li className="flex items-center italic italic"><FaCheckCircle className="text-primary-500 mr-2 flex-shrink-0" /> Operational ROI Benchmarks</li>
+                        <li className="flex items-center italic italic"><FaCheckCircle className="text-primary-500 mr-2 flex-shrink-0" /> Personalized savings opportunities</li>
+                        <li className="flex items-center italic italic"><FaCheckCircle className="text-primary-500 mr-2 flex-shrink-0" /> Entity Structure & Deduction Review</li>
+                        <li className="flex items-center italic italic"><FaCheckCircle className="text-primary-500 mr-2 flex-shrink-0" /> 3 Immediate Tax Wins for 2026</li>
+                        <li className="flex items-center italic italic"><FaCheckCircle className="text-primary-500 mr-2 flex-shrink-0" /> Year-Round Planning Benchmarks</li>
                       </ul>
                     </div>
                   </div>
@@ -309,7 +310,7 @@ const Resources = () => {
                 Flagship <span className="gradient-text">White Papers</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto italic italic font-medium">
-                Comprehensive research and insights backed by data from McKinsey, PwC, Gartner, Deloitte, and IBM
+                Comprehensive research and insights to help you run a more profitable, better-protected business
               </p>
             </motion.div>
 
@@ -360,7 +361,7 @@ const Resources = () => {
 
                       {/* Download Button */}
                       <button
-                        onClick={() => handleDownload(paper.id, paper.pdf_url, paper.pdf_filename || `${paper.slug}.pdf`)}
+                        onClick={() => paper.pdf_url ? handleDownload(paper.id, paper.pdf_url, paper.pdf_filename || `${paper.slug}.pdf`) : generateAndDownloadPDF(paper.slug || paper.id)}
                         disabled={downloading === paper.id}
                         className={`w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r ${paper.color} text-white font-semibold rounded-lg hover:shadow-lg transition-all group-hover:scale-105 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed`}
                       >

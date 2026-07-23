@@ -43,23 +43,23 @@ const ExecutiveLeadership = () => {
                         </h3>
                         <p className="text-xl text-purple-600 font-semibold mb-6">Chief Technology Officer</p>
                         <p className="text-xl text-gray-700 leading-relaxed mb-8 font-medium">
-                            "Technology should empower businesses, not complicate them. We build intelligent systems that work seamlessly behind the scenes."
+                            "Great tools should empower businesses, not complicate them. We build the operational backbone that works seamlessly behind the scenes."
                         </p>
                         <p className="text-gray-700 leading-relaxed mb-8">
-                            With 15 years of software engineering experience, Wajid Ali Shah serves as the CTO of MRECAI and CEO of NovaEdge Solutions. His expertise spans AI development, website development, desktop application development, mobile app development, and automation solutions—delivering enterprise-grade technology that empowers businesses to scale efficiently.
+                            With 15 years of systems and engineering experience, Wajid Ali Shah serves as the CTO of MRECAI and CEO of NovaEdge Solutions. He oversees the firm's internal tools, secure client platforms, and reporting infrastructure—keeping the operations behind our consulting, tax, and insurance work running reliably at scale.
                         </p>
                         <p className="text-gray-700 leading-relaxed mb-8">
-                            Throughout his career, Wajid has architected comprehensive technology solutions across diverse industries, from startups to established enterprises. He specializes in transforming complex business challenges into elegant, automated systems that drive measurable results and operational excellence.
+                            Throughout his career, Wajid has built and managed operational infrastructure across diverse industries, from startups to established enterprises. He specializes in turning complex back-office challenges into streamlined, dependable systems that support measurable results and operational excellence.
                         </p>
 
                         <div className="space-y-4 mb-8">
                             {[
                                 'CTO of MRECAI',
                                 'CEO of NovaEdge Solutions',
-                                '15 years of software engineering experience',
-                                'Expert in AI, web, desktop, and mobile app development',
-                                'Specializes in automation and digital transformation',
-                                'Architect of enterprise-grade technology solutions'
+                                '15 years of systems engineering experience',
+                                'Oversees the firm\'s internal tools and client platforms',
+                                'Specializes in streamlined, dependable operations',
+                                'Ensures secure, reliable infrastructure behind every engagement'
                             ].map((item, index) => (
                                 <div key={index} className="flex items-center space-x-3">
                                     <FaCheckCircle className="text-purple-500 flex-shrink-0" />
@@ -119,7 +119,7 @@ const ExecutiveLeadership = () => {
                             </div>
 
                             <div className="mt-8 pt-8 border-t border-white/10 italic text-gray-300">
-                                "Innovation is not just about technology—it's about transforming possibilities into reality through intelligent automation."
+                                "Great client service depends on great systems—our job is to make the back office invisible so advisors can focus on clients."
                             </div>
                         </div>
 
@@ -200,7 +200,7 @@ const ExecutiveLeadership = () => {
                             {[
                                 'Founder of MRECAI',
                                 'Expert in integrated risk and financial architecture',
-                                'Pioneer in small business AI implementation strategy',
+                                'Trusted strategist in small business tax and protection planning',
                                 'Advisor to 180+ clients across NY and beyond'
                             ].map((item, index) => (
                                 <div key={index} className="flex items-center space-x-3">

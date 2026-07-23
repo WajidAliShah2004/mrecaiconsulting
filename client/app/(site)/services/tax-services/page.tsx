@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import TaxServicesPage from '@/pages/services/TaxServices';
 
 const title = "Tax Preparation & Consulting | MRE Consulting";
-const description = "Expert tax preparation and strategic consulting for businesses and individuals. Minimize liability with proactive planning and automated compliance solutions.";
+const description = "Expert tax preparation and strategic consulting for businesses and individuals. Minimize liability with proactive planning and year-round compliance support.";
 const canonical = "/services/tax-services";
 
 export function generateMetadata(): Metadata {

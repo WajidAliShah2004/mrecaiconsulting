@@ -79,7 +79,7 @@ describe('ProcessFlow', () => {
     it('should render Assess step description correctly', () => {
       render(<ProcessFlow />);
       
-      expect(screen.getByText('Comprehensive audit of your financial, risk, and technology systems to identify gaps.')).toBeInTheDocument();
+      expect(screen.getByText('Comprehensive audit of your financial, risk, and operational systems to identify gaps.')).toBeInTheDocument();
     });
 
     it('should render Plan step description correctly', () => {

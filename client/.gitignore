@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+dist/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# TypeScript
+tsconfig.tsbuildinfo
+
+# Editor / IDE
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# OS / temp files
+Thumbs.db
+.DS_Store
+~$*
+*.log

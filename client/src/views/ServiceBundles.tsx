@@ -112,39 +112,39 @@ const bundles: ServiceBundle[] = [
     route: '/services/risk-architecture',
   },
   {
-    id: 'growth-automation',
-    name: 'Growth & Automation Package',
-    tagline: 'Scale Your Business with AI',
-    description: 'Leverage AI and automation to streamline operations, generate more leads, and scale your business efficiently.',
+    id: 'growth-consulting',
+    name: 'Growth & Operations Package',
+    tagline: 'Scale Your Business with Systems',
+    description: 'Hands-on management consulting to streamline operations, strengthen cash flow, and scale your business efficiently.',
     icon: FaRocket,
     color: 'purple',
     gradient: 'from-purple-500 to-purple-600',
     services: [
-      'AI & Automation Consulting',
-      'Business Process Automation',
-      'Workflow Optimization',
-      'CRM Integration',
+      'Business Management Consulting',
+      'Operational Systems Development',
+      'KPI & Metrics Tracking',
+      'Fractional COO Services',
     ],
     benefits: [
-      'Automated lead generation',
+      'Documented, repeatable processes',
       'Streamlined operations',
       'Increased efficiency',
       'Scalable systems',
     ],
     idealFor: [
-      'Tech-savvy businesses',
+      'Owner-dependent businesses',
       'Companies ready to scale',
       'Businesses with manual processes',
       'Growth-focused entrepreneurs',
     ],
     pricing: 'Starting at $1,000/month',
-    route: '/services/ai-driven-growth',
+    route: '/services/business-consulting',
   },
   {
     id: 'comprehensive',
     name: 'Comprehensive Business Package',
     tagline: 'Complete Business Management',
-    description: 'Our most complete offering - integrated finance, tax, insurance, and AI automation solutions working together seamlessly.',
+    description: 'Our most complete offering - integrated finance, tax, insurance, and management consulting solutions working together seamlessly.',
     icon: FaStar,
     color: 'gold',
     gradient: 'from-yellow-500 to-orange-500',
@@ -152,7 +152,7 @@ const bundles: ServiceBundle[] = [
       'All Foundation Services',
       'All Tax Optimization Services',
       'All Risk Protection Services',
-      'All Growth & Automation Services',
+      'All Growth & Operations Services',
     ],
     benefits: [
       'One integrated team',
@@ -177,7 +177,7 @@ const ServiceBundles = () => {
     <>
       <SEO
         title="Service Bundles - Packaged Solutions | MRECAI"
-        description="Choose from our pre-packaged service bundles designed for different business needs. Foundation, Tax Optimization, Risk Protection, Growth & Automation, or Comprehensive packages."
+        description="Choose from our pre-packaged service bundles designed for different business needs. Foundation, Tax Optimization, Risk Protection, Growth & Operations, or Comprehensive packages."
         canonical="/service-bundles"
         keywords="service packages, business bundles, tax and accounting packages, insurance bundles, business consulting packages"
       />

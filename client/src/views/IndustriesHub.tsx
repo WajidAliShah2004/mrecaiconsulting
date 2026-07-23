@@ -396,7 +396,7 @@ const IndustriesHub = () => {
                                 {[
                                     { title: 'Integrated Finance & Tax', desc: 'Seamless compliance and strategic planning' },
                                     { title: 'Risk & Insurance Management', desc: 'Comprehensive protection strategies' },
-                                    { title: 'AI & Technology Implementation', desc: 'Custom automation solutions' },
+                                    { title: 'Bookkeeping & Accounting', desc: 'Clean books and real-time financial reporting' },
                                     { title: 'Legacy Heritage', desc: '50+ years of combined experience' }
                                 ].map((item, i) => (
                                     <motion.div
@@ -435,7 +435,7 @@ const IndustriesHub = () => {
                                 </div>
 
                                 <blockquote className="text-xl md:text-2xl italic font-serif mb-8 leading-relaxed">
-                                    "By understanding the specific nuances of our industry, MRE didn't just fix our taxes—they streamlined our entire operational engine using AI."
+                                    "By understanding the specific nuances of our industry, MRE didn't just fix our taxes—they streamlined our entire operational engine."
                                 </blockquote>
 
                                 <div className="flex items-center gap-4">

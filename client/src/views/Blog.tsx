@@ -16,11 +16,10 @@ const Blog = () => {
 
   const categories = [
     { id: 'all', name: 'All Posts', icon: FaBookOpen },
-    { id: 'Technology', name: 'Technology', icon: FaFire },
+    { id: 'Business Tips', name: 'Business Tips', icon: FaFire },
     { id: 'Tax Planning', name: 'Tax Planning', icon: FaTags },
     { id: 'Insurance Advice', name: 'Insurance', icon: FaNewspaper },
-    { id: 'Business Tips', name: 'Business Tips', icon: FaBookOpen },
-    { id: 'AI & Automation', name: 'AI & Automation', icon: FaFire }
+    { id: 'Financial Planning', name: 'Financial Planning', icon: FaBookOpen }
   ];
 
   useEffect(() => {
@@ -49,19 +48,19 @@ const Blog = () => {
   const placeholderPosts: BlogType[] = [
     {
       id: '1',
-      title: '5 Ways AI Can Transform Your Business',
-      slug: '5-ways-ai-transform-business',
-      excerpt: 'Discover how artificial intelligence is revolutionizing business operations and driving growth across industries.',
+      title: '5 Systems Every Growing Business Needs',
+      slug: '5-systems-every-growing-business-needs',
+      excerpt: 'Discover the operational systems that turn founder-dependent businesses into scalable, professional organizations.',
       content: '',
-      category: 'Technology',
+      category: 'Business Tips',
       author: 'MRECAI Team',
       read_time: 5,
-      featured_image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop',
+      featured_image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop',
       status: 'published',
       published_at: '2024-01-15',
       created_at: '2024-01-15',
       updated_at: '2024-01-15',
-      tags: ['AI', 'Business', 'Innovation']
+      tags: ['Systems', 'Business', 'Growth']
     },
     {
       id: '2',
@@ -97,11 +96,11 @@ const Blog = () => {
     },
     {
       id: '4',
-      title: 'Digital Marketing Trends for Small Businesses',
-      slug: 'digital-marketing-trends-small-business',
-      excerpt: 'Stay ahead of the curve with these essential digital marketing strategies for 2024.',
+      title: 'Cash Flow Management for Small Businesses',
+      slug: 'cash-flow-management-small-business',
+      excerpt: 'Stay ahead of the curve with these essential cash flow forecasting and collections strategies.',
       content: '',
-      category: 'Technology',
+      category: 'Financial Planning',
       author: 'MRECAI Team',
       read_time: 8,
       featured_image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop',
@@ -109,7 +108,7 @@ const Blog = () => {
       published_at: '2023-12-28',
       created_at: '2023-12-28',
       updated_at: '2023-12-28',
-      tags: ['Marketing', 'Digital', 'Strategy']
+      tags: ['Cash Flow', 'Finance', 'Strategy']
     },
     {
       id: '5',
@@ -117,7 +116,7 @@ const Blog = () => {
       slug: 'business-accounting-basics',
       excerpt: 'Master the fundamentals of business accounting to make better financial decisions.',
       content: '',
-      category: 'Tax Planning',
+      category: 'Business Tips',
       author: 'MRECAI Team',
       read_time: 6,
       featured_image: 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&h=500&fit=crop',
@@ -129,11 +128,11 @@ const Blog = () => {
     },
     {
       id: '6',
-      title: 'Cybersecurity Best Practices for Businesses',
-      slug: 'cybersecurity-best-practices',
-      excerpt: 'Protect your business from cyber threats with these essential security measures.',
+      title: 'Cyber Liability Insurance: Does Your Business Need It?',
+      slug: 'cyber-liability-insurance-guide',
+      excerpt: 'Protect your business from the financial fallout of cyber incidents with the right coverage.',
       content: '',
-      category: 'Technology',
+      category: 'Insurance Advice',
       author: 'MRECAI Team',
       read_time: 7,
       featured_image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=500&fit=crop',
@@ -141,7 +140,7 @@ const Blog = () => {
       published_at: '2023-12-15',
       created_at: '2023-12-15',
       updated_at: '2023-12-15',
-      tags: ['Security', 'Technology', 'Business']
+      tags: ['Insurance', 'Cyber Risk', 'Business']
     }
   ];
 
@@ -170,16 +169,16 @@ const Blog = () => {
     <>
       <SEO
         title="Blog & Insights | Expert Business Advice | MRECAI"
-        description="Expert advice and insights on business consulting, technology, insurance, and tax planning. Stay informed with the latest industry trends and best practices."
+        description="Expert advice and insights on tax planning, insurance, accounting, and finance consulting. Stay informed with the latest industry trends and best practices."
         canonical="/blog"
-        keywords="business blog, consulting advice, insurance tips, tax planning, technology insights, business strategy"
+        keywords="business blog, consulting advice, insurance tips, tax planning, financial planning insights, business strategy"
         schema={{
           '@context': 'https://schema.org',
           '@graph': [
             {
               '@type': 'Blog',
               name: 'MRECAI Blog',
-              description: 'Expert advice and insights on business, technology, insurance, and tax planning',
+              description: 'Expert advice and insights on business, accounting, insurance, and tax planning',
             },
             breadcrumbSchema([
               { name: 'Home', url: '/' },

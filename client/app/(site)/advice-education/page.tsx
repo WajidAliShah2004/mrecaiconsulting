@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import AdviceEducationPage from '@/pages/AdviceEducation';
 
 const title = "Advice & Education | White Papers & Insights | MRECAI";
-const description = "Download free white papers and industry insights on AI, automation, digital marketing, and business transformation, backed by McKinsey, PwC, and Gartner.";
+const description = "Download free white papers and industry insights on business strategy, tax planning, insurance, and financial management for growing businesses.";
 const canonical = "/advice-education";
 
 export function generateMetadata(): Metadata {
   return {
     title: { absolute: title },
     description,
-    keywords: "white papers, business education, AI insights, automation guide, digital marketing education, industry research",
+    keywords: "white papers, business education, tax planning insights, insurance guides, financial management education, industry research",
     alternates: { canonical },
     openGraph: {
       title,

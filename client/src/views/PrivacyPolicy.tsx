@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
   const sections = [
     {
       title: "Scope & Acceptance",
-      content: "This Privacy Policy explains how we collect, use, disclose, and protect information when you visit our website, communicate with us, or use our consulting and insurance services (the \"Services\"). By interacting with the Services, you agree to this Policy to the maximum extent permitted by law."
+      content: "This Privacy Policy explains how we collect, use, disclose, and protect information when you visit our website, communicate with us, or use our tax, insurance, and finance consulting services (the \"Services\"). By interacting with the Services, you agree to this Policy to the maximum extent permitted by law."
     },
     {
       title: "What We Collect",
@@ -34,7 +34,7 @@ export default function PrivacyPolicy() {
         { label: "Technical/Usage", desc: "IP address, device/OS/browser, pages viewed, timestamps, session IDs, approximate location, cookie and pixel data." },
         { label: "Content & Files", desc: "messages, recordings (with notice), forms, uploads, signatures." },
         { label: "Partner/Carrier Data", desc: "quoting status, bind/issue information, endorsements." },
-        { label: "AI Interaction Data", desc: "preference signals, form responses, engagement context derived from AI-assisted workflows." }
+        { label: "Interaction Data", desc: "preference signals, form responses, engagement context derived from our digital tools and workflows." }
       ]
     },
     {

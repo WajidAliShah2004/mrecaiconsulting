@@ -46,16 +46,16 @@ const PDF_CONFIG = {
 
 const whitePaperContents: Record<string, WhitePaperContent> = {
   'ai-automation-frontier': {
-    title: 'The New Frontier of Efficiency',
-    subtitle: 'How AI & Automation Are Transforming Every Industry',
-    filename: 'AI-Automation-Frontier-MRECAI.pdf',
+    title: 'The Integrated Advantage',
+    subtitle: 'How Unified Consulting, Tax & Insurance Strengthen Every Industry',
+    filename: 'Integrated-Advantage-MRECAI.pdf',
     color: {
       primary: [0, 168, 232],
       secondary: [14, 165, 233]
     },
     content: `================================================================================
-THE NEW FRONTIER OF EFFICIENCY
-How AI & Automation Are Transforming Every Industry
+THE INTEGRATED ADVANTAGE
+How Unified Consulting, Tax & Insurance Strengthen Every Industry
 ================================================================================
 
 A Flagship Executive Report by MRECAI
@@ -65,95 +65,91 @@ www.MRECAI.com | 929-702-2818 | Matthew@MRECAI.com
 EXECUTIVE SUMMARY
 ================================================================================
 
-The world has entered the Age of Applied Intelligence. What began as 
-experimental AI models has become the foundation for how businesses create 
-and capture value.
+Most growing businesses manage their finances in silos: one vendor for
+bookkeeping, another for taxes, a third for insurance, and no one looking
+at the whole picture. The result is missed deductions, coverage gaps, and
+strategy built on incomplete information.
 
-KEY GLOBAL FINDINGS:
-• $15.7 trillion in global GDP potential from automation by 2030 
-  (McKinsey Global AI Report 2025)
-• 45% of daily business operations are automatable with existing technology 
-  (PwC Automation Outlook 2025)
-• 42% average efficiency gain and 37% cost reduction in firms using 
-  AI-enhanced workflows (Gartner Automation Survey 2024)
-• 250-400% ROI over two years for early adopters 
-  (Deloitte Intelligent Automation Benchmark 2025)
+KEY FINDINGS:
+• Businesses that coordinate tax, accounting, and risk strategy routinely
+  uncover five- and six-figure savings hidden between their advisors
+• Most small and mid-sized firms overpay on taxes simply because planning
+  happens at filing time instead of year-round
+• Coverage gaps are most often discovered at claim time — when it is too late
+• A single integrated advisory team eliminates the blind spots created by
+  fragmented vendors
 
 ================================================================================
 THE OPPORTUNITY FOR BUSINESSES
 ================================================================================
 
-Mid-sized and small enterprises stand to benefit most. Historically, automation 
-was reserved for Fortune 500 budgets; today, cloud platforms and AI tools allow 
-firms of any size to deploy enterprise-grade efficiency solutions within weeks 
-at a fraction of the cost.
+Mid-sized and small enterprises stand to benefit most. Historically,
+coordinated financial strategy was reserved for companies large enough to
+staff a full finance department. Today, an integrated advisory partner gives
+firms of any size CFO-level visibility at a fraction of the cost.
 
-AUTOMATION CREATES VALUE IN THREE DIMENSIONS:
-1. Operational Efficiency – Eliminating manual processes and reducing labor costs
-2. Decision Intelligence – AI-driven analytics improve forecasting and planning
-3. Client Experience – Personalization and speed increase conversion and retention
-
-================================================================================
-TIER 1 INDUSTRIES - HIGHEST ROI POTENTIAL
-================================================================================
-
-1. ACCOUNTING & TAX FIRMS
-   • Pain Points: Manual data entry, reconciliations, deadline management
-   • ROI: 35-55% cost reduction, 2-3× productivity gain
-   • Payback Period: 3-6 months
-
-2. INSURANCE AGENCIES & BROKERAGES
-   • Pain Points: Manual renewals, quoting delays, scattered data
-   • ROI: 30-50% cost reduction, 40% efficiency gain
-   • Payback Period: 4-8 months
-
-3. REAL ESTATE & PROPERTY MANAGEMENT
-   • Pain Points: Missed leads, duplicate paperwork, tenant follow-up
-   • ROI: 38% efficiency gain, faster closings
-   • Payback Period: 6-9 months
-
-4. CONSTRUCTION & CONTRACTING
-   • Pain Points: Bidding delays, compliance paperwork, project overruns
-   • ROI: 42% efficiency gain, 17% higher profit margins
-   • Payback Period: 6-9 months
-
-5. HEALTHCARE REVENUE CYCLE
-   • Pain Points: Claim denials, eligibility verification, billing
-   • ROI: 35% cost reduction, 50-70% productivity gain
-   • Payback Period: 4-8 months
+INTEGRATION CREATES VALUE IN THREE DIMENSIONS:
+1. Financial Clarity – Clean books and real-time reporting drive better decisions
+2. Tax Efficiency – Proactive, year-round planning reduces effective tax rates
+3. Risk Protection – Coverage architecture that matches your actual exposure
 
 ================================================================================
-IMPLEMENTATION FRAMEWORK
+INDUSTRIES WITH THE HIGHEST UPSIDE
 ================================================================================
 
-PRICING TIERS:
-• Small Business (1-25 staff): $7,500-$25,000
-  - Single-department automation
-  - 3-5 month payback period
-  
-• Mid-Market (26-250 staff): $25,000-$75,000
-  - Multi-department integration
-  - 5-8 month payback period
-  
-• Enterprise (250+ staff): $100,000-$500,000+
-  - Organization-wide transformation
-  - 6-12 month payback period
+1. CONTRACTORS & HOME SERVICES
+   • Pain Points: Cash flow gaps, workers comp audits, premium volatility
+   • Our Approach: Job costing, progress billing (AIA), insurance reviews
+   • Outcome: Faster collections and stabilized premiums
+
+2. MEDICAL & HEALTHCARE PRACTICES
+   • Pain Points: Reimbursement delays, malpractice exposure, compliance
+   • Our Approach: Revenue cycle support, coverage reviews, tax credits
+   • Outcome: Healthier margins and audit-ready books
+
+3. REAL ESTATE INVESTORS
+   • Pain Points: High tax burden, multi-property accounting complexity
+   • Our Approach: Cost segregation, 1031 strategy, property-level P&L
+   • Outcome: Deferred taxes and clear portfolio visibility
+
+4. PROFESSIONAL SERVICES FIRMS
+   • Pain Points: Unclear project profitability, scaling challenges
+   • Our Approach: Utilization tracking, fractional COO, tax planning
+   • Outcome: Higher margins and scalable operations
+
+5. RETAIL & ECOMMERCE
+   • Pain Points: Multi-state sales tax nexus, inventory complexity
+   • Our Approach: Nexus monitoring, inventory accounting, coverage review
+   • Outcome: Compliance across every state you sell in
+
+================================================================================
+ENGAGEMENT FRAMEWORK
+================================================================================
+
+HOW ENGAGEMENTS TYPICALLY BEGIN:
+• Foundation Review
+  - Books, filings, and policies assessed for gaps and quick wins
+
+• Strategy Roadmap
+  - Prioritized plan across tax, accounting, insurance, and operations
+
+• Ongoing Advisory
+  - Year-round execution, reporting, and quarterly strategy reviews
 
 ================================================================================
 WHY MRECAI
 ================================================================================
 
-MRECAI approaches automation as a comprehensive strategy — not just a 
-technical upgrade. We combine expertise in consulting, accounting, insurance, 
-and AI implementation to help clients:
+MRECAI approaches your business as one interconnected system — not a set of
+disconnected vendors. We combine expertise in consulting, accounting, tax,
+and insurance to help clients:
 
-• Identify high-impact automation opportunities through audits and ROI modeling
-• Design secure, compliant process frameworks tailored to each industry
-• Deploy AI tools that integrate seamlessly with existing systems
+• Identify high-impact savings opportunities through audits and planning
+• Design compliant financial and risk frameworks tailored to each industry
+• Coordinate tax, accounting, and coverage decisions so nothing falls through
 • Quantify results through financial metrics and continuous performance reviews
 
-Our clients achieve an average cost reduction of 30-45% and productivity 
-improvement of 40-60% within the first year of deployment.
+One partner. One strategy. Every angle covered.
 
 ================================================================================
 CONTACT INFORMATION
@@ -215,8 +211,8 @@ Core elements: Mobile-first UX, on-page/technical SEO, sub-2.5s loads,
 clear CTAs, analytics
 
 PILLAR 2 — REVIEW & REPUTATION MANAGEMENT
-Automated requests and professional responses turn satisfied clients into 
-public advocates.
+Consistent review requests and professional responses turn satisfied clients
+into public advocates.
 
 Benefits: Trust signals, local SEO lift, higher close rates
 Core tactics: Post-service SMS/email requests, response templates, unified 
@@ -234,8 +230,8 @@ Most visitors don't convert on first contact. Retargeting and nurturing bring
 them back.
 
 Benefits: Recover lost traffic; +30-50% conversion lift
-Core systems: Service-specific landing pages, CRM capture, automated email/SMS, 
-retargeting ads
+Core systems: Service-specific landing pages, CRM capture, scheduled email/SMS
+follow-up, retargeting ads
 
 PILLAR 5 — ANALYTICS & CONTINUOUS IMPROVEMENT
 You can't improve what you can't measure.
@@ -267,22 +263,22 @@ INDUSTRY OPPORTUNITIES
 
 PROFESSIONAL SERVICES (Accounting, Legal, Consulting)
 • Challenge: Low visibility; referral dependence
-• Opportunity: SEO, thought-leadership content, review automation
+• Opportunity: SEO, thought-leadership content, structured review requests
 • Expected Outcome: Increased inquiries, higher perceived expertise
 
 REAL ESTATE & PROPERTY MANAGEMENT
 • Challenge: Inconsistent listings; slow response
-• Opportunity: Geo-targeted SEO, video tours, inquiry bots
+• Opportunity: Geo-targeted SEO, video tours, rapid inquiry response
 • Expected Outcome: Faster closings, more leads, improved local ranking
 
 INSURANCE & FINANCIAL ADVISORY
 • Challenge: Outdated sites; low differentiation
-• Opportunity: Local SEO for intent queries, automated review triggers
+• Opportunity: Local SEO for intent queries, consistent review requests
 • Expected Outcome: 2-3× increase in quote submissions
 
 CONSTRUCTION/HOME SERVICES
 • Challenge: Referral-only marketing; weak visuals
-• Opportunity: Before/after showcases, Google Local Ads, automated reviews
+• Opportunity: Before/after showcases, Google Local Ads, steady review requests
 • Expected Outcome: +50% calls; higher lead quality
 
 ================================================================================
@@ -293,7 +289,7 @@ IMPLEMENTATION: THE MRECAI 6-STEP SYSTEM
 2. STRATEGY: Revenue-focused roadmap aligned to goals, budget, and capacity
 3. INFRASTRUCTURE: Build/refine the foundations
 4. LAUNCH & OPTIMIZATION: Test and tune for conversion
-5. AUTOMATION & INTEGRATION: Reputation never sleeps
+5. CONSISTENCY & INTEGRATION: Reputation never sleeps
 6. MONITORING & REPORTING: Correlate activity to finance outcomes
 
 ================================================================================
@@ -313,7 +309,7 @@ Schedule your FREE Digital Reputation Audit today!
   },
   'future-of-business': {
     title: 'The Future of Business',
-    subtitle: 'How AI and Automation Are Transforming Operations',
+    subtitle: 'How Integrated Financial Strategy Transforms Operations',
     filename: 'Future-of-Business-MRECAI.pdf',
     color: {
       primary: [168, 85, 247],
@@ -321,7 +317,7 @@ Schedule your FREE Digital Reputation Audit today!
     },
     content: `================================================================================
 THE FUTURE OF BUSINESS
-How AI and Automation Are Transforming Operations
+How Integrated Financial Strategy Transforms Operations
 ================================================================================
 
 A Comprehensive White Paper by MRECAI
@@ -331,140 +327,476 @@ www.MRECAI.com | 929-702-2818 | Matthew@MRECAI.com
 EXECUTIVE SUMMARY
 ================================================================================
 
-We are entering the most significant business transformation era since the 
-Industrial Revolution — one powered not by machinery, but by intelligence.
+The businesses that win the next decade will not be the ones with the most
+vendors — they will be the ones with the clearest financial picture.
 
-Artificial Intelligence (AI) and automation are redefining how businesses 
-operate, scale, and compete. What once required massive teams or corporate 
-budgets can now be achieved with a few well-designed AI workflows and 
-automated systems — often yielding faster growth, fewer errors, and higher 
-profitability.
+Integrated financial strategy — where consulting, accounting, tax, and
+insurance decisions are made together — is redefining how businesses operate,
+scale, and compete. What once required a full internal finance department can
+now be achieved through a single coordinated advisory partner, often yielding
+faster growth, fewer errors, and higher profitability.
 
 KEY INSIGHTS:
-• AI could add over $13 trillion to global GDP by 2030 (McKinsey & Company)
-• PwC estimates AI could boost business productivity by up to 40%
-• 70% of small and mid-sized businesses still haven't implemented any 
-  meaningful automation
-• 80% of early AI adopters report measurable cost savings or productivity 
-  gains in under one year (IBM Global AI Report)
+• Most business owners meet their tax preparer once a year — and it costs them;
+  year-round planning consistently outperforms filing-season scrambles
+• Coverage gaps are typically discovered at claim time, when the damage is done
+• Businesses with clean, current books make faster and better decisions
+• Firms that coordinate tax, accounting, and risk strategy keep more of what
+  they earn — every single year
 
 ================================================================================
-WHY AI IS THE GREAT EQUALIZER
+WHY INTEGRATION IS THE GREAT EQUALIZER
 ================================================================================
 
-For decades, advanced technology was reserved for Fortune 500 corporations.
+For decades, coordinated financial leadership was reserved for corporations
+with in-house CFOs, controllers, and risk managers.
 
-Today, AI tools such as ChatGPT, Zapier, and OpenAI APIs have made automation 
-affordable and accessible to every entrepreneur.
+Today, an integrated advisory model makes that discipline affordable and
+accessible to every entrepreneur.
 
 A two-person business can now:
-• Automate client intake, scheduling, and billing
-• Respond to leads 24/7 via a chatbot
-• Generate contracts, emails, and financial reports instantly
-• Predict future revenue or risks using AI forecasting models
+• Run on clean, current books with real-time financial reporting
+• Plan taxes proactively instead of reacting every April
+• Protect assets with coverage architected to its actual risk profile
+• Make growth decisions backed by CFO-level analysis
 
-That's what MRECAI brings to the table: enterprise-grade 
-automation for everyday businesses — safely, securely, and strategically.
+That's what MRECAI brings to the table: enterprise-grade financial
+discipline for everyday businesses — safely, securely, and strategically.
 
 ================================================================================
-IMPLEMENTING CHATGPT AND ADVANCED AI MODELS
+THE FOUR PILLARS OF AN INTEGRATED STRATEGY
 ================================================================================
 
-ChatGPT and other large language models (LLMs) are redefining the modern 
-workplace. They understand context, generate natural language, and perform 
-complex cognitive tasks that once required human staff.
+PILLAR ONE: BUSINESS MANAGEMENT CONSULTING
+Operational systems, cash flow management, KPI tracking, and fractional COO
+leadership that turn founder-dependent chaos into process-driven growth.
 
-EVERYDAY BUSINESS USE CASES:
-• Client Communication: Handle FAQs, intake, and basic customer service 24/7
-• Sales & Follow-Up: Write emails, proposals, and quotes tailored to each lead
-• Internal Support: Draft reports, policies, and meeting summaries
-• Data Interpretation: Summarize insurance policies, contracts, or financial 
-  reports
-• Employee Training: Create custom onboarding and help-desk assistants
+PILLAR TWO: BOOKKEEPING & ACCOUNTING
+Daily categorization, reconciliations, and month-end close that transform
+messy books into a management tool you can actually run the business on.
 
-MRECAI'S CHATGPT INTEGRATION FRAMEWORK:
-• AI responds instantly to web or email inquiries
-• It scores leads by quality and readiness
-• It updates your CRM, alerts your team, and sends personalized follow-ups
-• It tracks every interaction for compliance and reporting
+PILLAR THREE: TAX PLANNING & ADVANCED STRATEGY
+Year-round planning, R&D credits, cost segregation, and entity optimization
+that meaningfully reduce your effective tax rate.
 
-Result: Faster conversions, higher satisfaction, and zero missed opportunities.
+PILLAR FOUR: INSURANCE & RISK ARCHITECTURE
+Commercial and personal coverage audited against your real exposure — so gaps
+are found before a claim, not after.
 
 ================================================================================
 SECURITY, PRIVACY, AND COMPLIANCE
 ================================================================================
 
-Our implementations adhere to:
-• HIPAA for medical clients
+Our engagements adhere to:
+• HIPAA considerations for medical clients
 • GLBA for financial institutions
 • IRS Publication 4557 for tax data
 • State data privacy laws
 
-All systems are encrypted, cloud-based, and compliant — because your data 
-security is non-negotiable.
+Your financial records are handled with strict confidentiality — because your
+data security is non-negotiable.
 
 ================================================================================
 THE INDUSTRY OPPORTUNITY MATRIX
 ================================================================================
 
-ACCOUNTING & TAX FIRMS
-Pain Points: Manual data entry, missed deadlines
-AI Solutions: Automated categorization, reminders, dashboards
-ROI: 3-6 months payback
+CONTRACTORS & HOME SERVICES
+Pain Points: Cash flow gaps, comp audits, premium volatility
+Our Solutions: Job costing, progress billing, insurance reviews
+Outcome: Faster collections, stabilized premiums
 
-INSURANCE AGENCIES
-Pain Points: Renewals, quoting, data entry
-AI Solutions: Chatbots, loss run automation, AI quoting
-ROI: 4-8 months payback
+MEDICAL PRACTICES
+Pain Points: Reimbursement delays, compliance, malpractice exposure
+Our Solutions: Revenue cycle support, coverage reviews, R&D credits
+Outcome: Healthier margins, audit-ready books
 
-REAL ESTATE
-Pain Points: Lead follow-up, forms, property management
-AI Solutions: CRM automation, contract generation, rent tracking
-ROI: 6-9 months payback
+REAL ESTATE INVESTORS
+Pain Points: High tax burden, multi-property complexity
+Our Solutions: Cost segregation, 1031 strategy, property-level P&L
+Outcome: Deferred taxes, portfolio clarity
 
-CONSTRUCTION
-Pain Points: Project oversight, bids, compliance
-AI Solutions: Job costing, scheduling, forecasting
-ROI: 6-9 months payback
-
-HEALTHCARE
-Pain Points: Documentation, billing, scheduling
-AI Solutions: AI transcription, billing bots, scheduling
-ROI: 9-12 months payback
+PROFESSIONAL SERVICES
+Pain Points: Unclear project profitability, scaling pains
+Our Solutions: Utilization tracking, fractional COO, tax planning
+Outcome: Higher margins, scalable operations
 
 LEGAL PRACTICES
-Pain Points: Document overload, calendar management
-AI Solutions: Contract summarization, AI intake
-ROI: 6-8 months payback
+Pain Points: Trust accounting compliance, partner compensation
+Our Solutions: IOLTA-compliant systems, compensation structures
+Outcome: Compliance confidence, cleaner economics
 
 E-COMMERCE & RETAIL
-Pain Points: Customer service, content
-AI Solutions: Chatbots, personalized marketing
-ROI: 3-6 months payback
+Pain Points: Multi-state sales tax, inventory complexity
+Our Solutions: Nexus management, inventory accounting
+Outcome: Compliance in every state you sell in
 
 ================================================================================
-PREDICTING ROI AND SCALING PROFITABLY
+BUILDING ROI AND SCALING PROFITABLY
 ================================================================================
 
-Business Size              Monthly Savings    Efficiency Gain    Payback Period
-Sole Proprietor            $2,000-$5,000      30-40%            1-2 months
-Small Firm (5-20)          $10,000-$25,000    50-60%            3-6 months
-Mid-Market (20-100)        $25,000-$100,000   60-75%            6-12 months
+An integrated engagement typically progresses through three stages:
 
-By implementing automation strategically, most MRECAI clients achieve ROI in 
-under 6 months and continue compounding efficiency every quarter thereafter.
+1. Foundation: Books cleaned up, filings current, coverage gaps identified
+2. Optimization: Tax strategy implemented, reporting cadence established
+3. Growth: Quarterly advisory, KPI reviews, and proactive planning
+
+By coordinating strategy across every financial function, most MRECAI clients
+see measurable savings within the first year and continue compounding the
+benefit every year thereafter.
 
 ================================================================================
 THE MRE PROMISE
 ================================================================================
 
-We don't just deliver technology — we deliver transformation.
+We don't just deliver advice — we deliver transformation.
 
-Our approach blends the financial discipline of accountants, the foresight of 
+Our approach blends the financial discipline of accountants, the foresight of
 consultants, and the protection of licensed insurance professionals.
 
-When you work with MRECAI, you're not just installing 
-software — you're building an intelligent business.
+When you work with MRECAI, you're not just hiring another
+vendor — you're building a financially intelligent business.
+
+================================================================================
+CONTACT INFORMATION
+================================================================================
+
+MRECAI
+Phone: 929-702-2818
+Email: Matthew@MRECAI.com
+Website: www.MRECAI.com
+
+Schedule your FREE consultation today!
+
+================================================================================
+© 2025 MRECAI. All rights reserved.
+================================================================================`
+  },
+  'tax-strategy-playbook': {
+    title: 'The Small Business Tax Strategy Playbook',
+    subtitle: 'Proven Ways to Lower Your Effective Rate',
+    filename: 'Tax-Strategy-Playbook-MRECAI.pdf',
+    color: {
+      primary: [0, 168, 232],
+      secondary: [14, 165, 233]
+    },
+    content: `================================================================================
+THE SMALL BUSINESS TAX STRATEGY PLAYBOOK
+Proven Ways to Lower Your Effective Rate
+================================================================================
+
+An Executive Report by MRECAI
+www.MRECAI.com | 929-702-2818 | Matthew@MRECAI.com
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+Most business owners meet their tax advisor once a year — at filing time,
+when it is too late to change anything. Tax strategy is different from tax
+preparation: it happens before the year ends, and it is where the real
+savings live.
+
+KEY FINDINGS:
+• The largest tax savings come from decisions made months before filing:
+  entity structure, timing of purchases, and retirement plan design
+• Many owners operate under an entity structure they outgrew years ago
+• R&D credits and cost segregation are routinely missed by businesses
+  that qualify for them
+• A year-round planning calendar turns tax from a spring emergency into
+  a managed, predictable expense
+
+================================================================================
+ENTITY STRUCTURE OPTIMIZATION
+================================================================================
+
+Your entity type determines how every dollar of profit is taxed.
+
+THE MAIN OPTIONS:
+1. Sole Proprietorship / Single-Member LLC – Simple, but all profit is
+   subject to self-employment tax
+2. S Corporation – Splits income into salary and distributions, often
+   reducing self-employment tax meaningfully at the right profit level
+3. C Corporation – A flat corporate rate and fringe-benefit advantages,
+   best in specific reinvestment-heavy situations
+4. Partnership / Multi-Member LLC – Flexible allocations for multi-owner
+   businesses
+
+WHEN TO RE-EVALUATE:
+• Profit has grown past the level your current structure was chosen for
+• You are adding partners, investors, or a second business
+• You are planning a sale, succession, or major asset purchase
+
+================================================================================
+CREDITS AND ACCELERATED DEDUCTIONS
+================================================================================
+
+R&D TAX CREDITS:
+Businesses that improve products, processes, or techniques may qualify —
+not just laboratories. Qualifying activity is documented through wages,
+supplies, and contractor costs tied to experimentation.
+
+COST SEGREGATION:
+Owners of commercial or rental property can often accelerate depreciation
+by separating building components into shorter recovery periods, creating
+significant early-year deductions.
+
+SECTION 179 AND BONUS DEPRECIATION:
+Equipment and vehicle purchases can frequently be deducted faster than
+standard depreciation schedules allow — if the purchase is timed well.
+
+================================================================================
+RETIREMENT PLANS AS TAX STRATEGY
+================================================================================
+
+Retirement plans are among the most reliable deductions available:
+
+• SEP IRA – Simple to set up, contributions scale with profit
+• Solo 401(k) – Higher limits for owner-only businesses
+• Defined Benefit Plan – The largest potential deductions for
+  high-income owners with consistent profits
+
+The right plan depends on your income level, employee count, and
+cash flow — and the decision must be made before year-end.
+
+================================================================================
+THE YEAR-ROUND PLANNING CALENDAR
+================================================================================
+
+Q1 – Review prior year results; set entity and payroll strategy
+Q2 – Mid-year projection; adjust estimated payments
+Q3 – Evaluate credits, purchases, and retirement plan design
+Q4 – Execute year-end moves before the window closes
+
+================================================================================
+WHY MRECAI
+================================================================================
+
+MRECAI combines tax strategy with accounting and risk planning, so every
+recommendation reflects your complete financial picture. Our clients
+routinely identify five-figure annual savings through coordinated,
+proactive planning.
+
+================================================================================
+CONTACT INFORMATION
+================================================================================
+
+MRECAI
+Phone: 929-702-2818
+Email: Matthew@MRECAI.com
+Website: www.MRECAI.com
+
+Schedule your FREE consultation today!
+
+================================================================================
+© 2025 MRECAI. All rights reserved.
+================================================================================`
+  },
+  'business-risk-blueprint': {
+    title: 'The Business Risk Blueprint',
+    subtitle: 'Closing Coverage Gaps Before They Become Losses',
+    filename: 'Business-Risk-Blueprint-MRECAI.pdf',
+    color: {
+      primary: [16, 185, 129],
+      secondary: [5, 150, 105]
+    },
+    content: `================================================================================
+THE BUSINESS RISK BLUEPRINT
+Closing Coverage Gaps Before They Become Losses
+================================================================================
+
+A Flagship White Paper by MRECAI
+www.MRECAI.com | 929-702-2818 | Matthew@MRECAI.com
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+Most businesses discover their coverage gaps at the worst possible moment:
+claim time. Policies bought years ago rarely keep pace with how a business
+actually grows — new services, new vehicles, new employees, new contracts.
+
+KEY FINDINGS:
+• The most damaging gaps are usually exclusions and limits the owner
+  never knew about, not missing policies
+• Premiums often rise from poor policy structure, not true risk
+• Personal and business assets are frequently intertwined in ways
+  that expose both
+• An annual risk audit costs nothing and routinely uncovers exposures
+  that would have been uninsured losses
+
+================================================================================
+THE 10 MOST COMMON COVERAGE GAPS WE FIND
+================================================================================
+
+1. General liability limits that have not kept pace with revenue
+2. Missing or inadequate umbrella coverage over business and personal lines
+3. No cyber liability despite storing client or payment data
+4. Errors & omissions exclusions that carve out core services
+5. Underinsured commercial property and equipment values
+6. Workers compensation classifications that trigger audit surprises
+7. Personal vehicles used for business without proper endorsement
+8. Key person risk with no life or disability coverage in place
+9. Contracts requiring coverage the current policy does not provide
+10. Home-based business activity excluded by homeowners policies
+
+================================================================================
+THE RISK AUDIT FRAMEWORK
+================================================================================
+
+STEP 1 – INVENTORY:
+List every policy, limit, deductible, and exclusion across business and
+personal lines. Most owners have never seen all of it in one place.
+
+STEP 2 – EXPOSURE MAPPING:
+Compare coverage against how the business operates today: revenue, payroll,
+property, contracts, and data handled.
+
+STEP 3 – GAP ANALYSIS:
+Identify where exposures exceed limits, where exclusions bite, and where
+policies overlap or duplicate.
+
+STEP 4 – ARCHITECTURE:
+Restructure coverage so business, personal, and umbrella policies work
+together — often improving protection while reducing total premium.
+
+================================================================================
+CYBER LIABILITY ESSENTIALS
+================================================================================
+
+If your business stores customer information, invoices electronically, or
+banks online, cyber exposure is real:
+
+• Breach response and notification costs
+• Funds transfer fraud and social engineering losses
+• Business interruption from system outages
+• Third-party liability for compromised client data
+
+================================================================================
+PROTECTING PERSONAL ASSETS
+================================================================================
+
+Business risk does not stop at the office door. A proper architecture
+coordinates:
+
+• Entity structure and asset titling
+• Umbrella liability across home, auto, and business
+• Life and disability coverage matched to family and business obligations
+
+================================================================================
+WHY MRECAI
+================================================================================
+
+MRECAI audits coverage the way an underwriter would — then negotiates the
+way your advocate should. Because we also manage our clients' books and tax
+strategy, we see exposures other brokers miss.
+
+================================================================================
+CONTACT INFORMATION
+================================================================================
+
+MRECAI
+Phone: 929-702-2818
+Email: Matthew@MRECAI.com
+Website: www.MRECAI.com
+
+Schedule your FREE risk audit today!
+
+================================================================================
+© 2025 MRECAI. All rights reserved.
+================================================================================`
+  },
+  'financial-clarity-guide': {
+    title: 'From Messy Books to Management Tool',
+    subtitle: "The Owner's Guide to Financial Clarity",
+    filename: 'Financial-Clarity-Guide-MRECAI.pdf',
+    color: {
+      primary: [168, 85, 247],
+      secondary: [147, 51, 234]
+    },
+    content: `================================================================================
+FROM MESSY BOOKS TO MANAGEMENT TOOL
+The Owner's Guide to Financial Clarity
+================================================================================
+
+A Comprehensive Guide by MRECAI
+www.MRECAI.com | 929-702-2818 | Matthew@MRECAI.com
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+Bookkeeping is usually treated as a compliance chore — something done
+after the fact so taxes can be filed. But clean, current books are the
+single most underused management tool in small business.
+
+KEY FINDINGS:
+• Owners who review accurate monthly financials make measurably better
+  pricing, hiring, and purchasing decisions
+• Most "cash flow problems" are actually visibility problems
+• A disciplined month-end close turns the P&L from a historical record
+  into a steering wheel
+• A handful of well-chosen KPIs outperforms a dashboard of vanity metrics
+
+================================================================================
+READING YOUR P&L LIKE AN OPERATOR
+================================================================================
+
+WHAT TO LOOK AT EVERY MONTH:
+1. Gross margin by service or product line — not just total revenue
+2. Payroll as a percentage of revenue, trended over time
+3. Fixed overhead vs. variable costs — know your true break-even
+4. Net profit vs. owner cash draw — profit is not the same as cash
+
+RED FLAGS IN THE NUMBERS:
+• Revenue growing while margin shrinks
+• "Miscellaneous" or uncategorized expenses accumulating
+• Receivables aging past your stated payment terms
+
+================================================================================
+CASH FLOW FORECASTING
+================================================================================
+
+A 13-week rolling cash forecast answers the question every owner asks:
+"Can I afford this?"
+
+THE SIMPLE VERSION:
+• Start with today's bank balance
+• Add expected collections by week, based on real receivable aging
+• Subtract payroll, rent, taxes, and scheduled payables by week
+• Watch for the low-water mark — that is your real constraint
+
+================================================================================
+KPIs WORTH TRACKING
+================================================================================
+
+BY BUSINESS TYPE:
+• Service firms – Utilization, effective hourly rate, project margin
+• Contractors – Job costing variance, backlog, collection days
+• Retail/eCommerce – Inventory turns, contribution margin, return rate
+• Practices – Revenue per provider, denial rate, days in A/R
+
+Pick three to five. Review them monthly against targets.
+
+================================================================================
+THE MONTH-END CLOSE ROADMAP
+================================================================================
+
+STEP 1 – Reconcile every bank and credit card account
+STEP 2 – Categorize all transactions; clear the uncategorized list
+STEP 3 – Review receivables and payables aging
+STEP 4 – Post payroll, loan, and depreciation entries
+STEP 5 – Produce the P&L, balance sheet, and cash summary
+STEP 6 – Review against budget and KPIs — and decide something
+
+A disciplined close takes days, not weeks — and gets faster every month.
+
+================================================================================
+WHY MRECAI
+================================================================================
+
+MRECAI's accounting team professionalizes your books, then puts them to
+work: real-time reporting, KPI tracking, and cash flow forecasts that
+feed directly into your tax and growth strategy.
 
 ================================================================================
 CONTACT INFORMATION
@@ -852,7 +1184,7 @@ export const generatePrivacyPolicyPDF = (): void => {
 
   doc.setTextColor(0, 0, 0);
   addText(
-    'This Privacy Policy explains how we collect, use, disclose, and protect information when you visit our website, communicate with us, or use our consulting and insurance services (the "Services"). By interacting with the Services, you agree to this Policy to the maximum extent permitted by law.',
+    'This Privacy Policy explains how we collect, use, disclose, and protect information when you visit our website, communicate with us, or use our tax, insurance, and finance consulting services (the "Services"). By interacting with the Services, you agree to this Policy to the maximum extent permitted by law.',
     10
   );
   yPos += 8;
@@ -874,7 +1206,7 @@ export const generatePrivacyPolicyPDF = (): void => {
     { label: 'Technical/Usage:', desc: 'IP address, device/OS/browser, pages viewed, timestamps, session IDs, approximate location, cookie and pixel data.' },
     { label: 'Content & Files:', desc: 'messages, recordings (with notice), forms, uploads, signatures.' },
     { label: 'Partner/Carrier Data:', desc: 'quoting status, bind/issue information, endorsements.' },
-    { label: 'AI Interaction Data:', desc: 'preference signals, form responses, engagement context derived from AI-assisted workflows.' }
+    { label: 'Engagement Data:', desc: 'preference signals, form responses, and engagement context from our website and communications.' }
   ];
 
   collectItems.forEach(item => {
@@ -1208,7 +1540,7 @@ export const generateTermsOfServicePDF = (): void => {
 
   doc.setTextColor(0, 0, 0);
   addText(
-    'MRECAI provides financial consulting, insurance brokerage, tax planning, and AI-powered business automation services. All services are subject to availability and may be modified or discontinued at any time.',
+    'MRECAI provides tax planning and preparation, insurance brokerage, bookkeeping and accounting, and business management consulting services. All services are subject to availability and may be modified or discontinued at any time.',
     10
   );
   yPos += 8;

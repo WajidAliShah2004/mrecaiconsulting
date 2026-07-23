@@ -71,12 +71,14 @@ const Navbar = () => {
 
   const servicesLinks = [
     { name: 'All Services', path: '/services' },
-    { name: 'AI & Technology Consulting', path: '/ai-consulting' },
+    { name: 'Tax Services', path: '/services/tax-services' },
+    { name: 'Insurance & Risk', path: '/services/risk-architecture' },
+    { name: 'Bookkeeping & Accounting', path: '/services/bookkeeping-accounting' },
+    { name: 'Business Consulting', path: '/services/business-consulting' },
   ];
 
   const isAboutActive = pathname.startsWith('/about') || pathname === '/testimonials';
-  const isServicesActive = pathname.startsWith('/services') || pathname === '/ai-consulting';
-  const isIndustriesActive = pathname.startsWith('/industries');
+  const isServicesActive = pathname.startsWith('/services');
   const isLearningActive = pathname === '/advice-education' || pathname.startsWith('/resources');
   const isLegalActive = pathname === '/privacy-policy' || pathname === '/terms-of-service';
 
@@ -274,40 +276,6 @@ const Navbar = () => {
                     )}
                   </AnimatePresence>
                 </div>
-
-                {/* Products Link */}
-                <Link
-                  href="/products"
-                  className="relative group flex-shrink-0"
-                >
-                  <motion.div
-                    className={`px-1.5 xl:px-2 2xl:px-3 py-1 xl:py-1.5 2xl:py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg relative ${pathname === '/products'
-                      ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
-                      : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
-                      }`}
-                    whileHover={{ y: -2, scale: 1.05 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                  >
-                    Our Products
-                  </motion.div>
-                </Link>
-
-                {/* Industries Link */}
-                <Link
-                  href="/industries"
-                  className="relative group flex-shrink-0"
-                >
-                  <motion.div
-                    className={`px-1.5 xl:px-2 2xl:px-3 py-1 xl:py-1.5 2xl:py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg relative ${isIndustriesActive
-                      ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
-                      : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
-                      }`}
-                    whileHover={{ y: -2, scale: 1.05 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                  >
-                    Industries
-                  </motion.div>
-                </Link>
 
                 {/* Learning Center Dropdown */}
                 <div
@@ -601,40 +569,6 @@ const Navbar = () => {
                         </motion.div>
                       )}
                     </AnimatePresence>
-                  </motion.div>
-
-                  {/* Mobile Industries Link */}
-                  <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.2, type: "spring", stiffness: 300 }}
-                  >
-                    <Link
-                      href="/products"
-                      className={`block px-5 py-3.5 rounded-xl font-bold transition-all relative ${pathname === '/products'
-                        ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
-                        : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
-                        }`}
-                    >
-                      Our Products
-                    </Link>
-                  </motion.div>
-
-                  {/* Mobile Industries Link */}
-                  <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.25, type: "spring", stiffness: 300 }}
-                  >
-                    <Link
-                      href="/industries"
-                      className={`block px-5 py-3.5 rounded-xl font-bold transition-all relative ${isIndustriesActive
-                        ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
-                        : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
-                        }`}
-                    >
-                      Industries
-                    </Link>
                   </motion.div>
 
                   {/* Mobile Learning Center Dropdown */}

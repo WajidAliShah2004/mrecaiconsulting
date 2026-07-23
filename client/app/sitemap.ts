@@ -5,8 +5,8 @@ import { supabase } from '@/lib/supabase';
 // next-sitemap@4 cannot read Next 16 build manifests, so the native metadata
 // route is used instead. Priorities per SEO spec:
 //   homepage daily/1.0 · service pages weekly/0.8 · everything else monthly/0.6
-// Admin routes, /404 and the /services/ai-automation duplicate (canonical:
-// /ai-consulting) are intentionally omitted.
+// Admin routes, /404, and retired AI/automation routes (now redirects) are
+// intentionally omitted.
 
 const SERVICE_PAGES = [
   '/services/business-consulting',
@@ -18,8 +18,6 @@ const SERVICE_PAGES = [
   '/services/tax-strategy',
   '/services/strategic-tax-planning',
   '/services/risk-architecture',
-  '/services/ai-driven-growth',
-  '/ai-consulting',
 ];
 
 const OTHER_PAGES = [
@@ -28,15 +26,7 @@ const OTHER_PAGES = [
   '/about/founder',
   '/about/partners',
   '/services',
-  '/products',
   '/service-bundles',
-  '/industries',
-  '/industries/contractors',
-  '/industries/medical-practices',
-  '/industries/real-estate',
-  '/industries/professional-services',
-  '/industries/ecommerce',
-  '/industries/legal-services',
   '/testimonials',
   '/blog',
   '/advice-education',
@@ -49,12 +39,9 @@ const OTHER_PAGES = [
   '/privacy-policy',
   '/terms-of-service',
   '/resources',
-  '/resources/executives-guide-to-ai',
   '/resources/tax-savings-checklist',
   '/resources/insurance-gap-checklist',
   '/resources/tax-savings-snapshot',
-  '/tools/roi-calculator',
-  '/tools/readiness-assessment',
   '/locations/new-york-ny',
   '/locations/manhattan',
   '/case-studies',

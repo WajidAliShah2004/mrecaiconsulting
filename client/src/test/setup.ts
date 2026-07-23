@@ -11,6 +11,27 @@ import * as matchers from '@testing-library/jest-dom/matchers';
 // Extend Vitest's expect with jest-dom matchers
 expect.extend(matchers);
 
+// Mock next/navigation so components using useRouter/usePathname/useParams
+// can render outside a mounted Next.js app router (avoids
+// "invariant expected app router to be mounted" errors in jsdom tests)
+vi.mock('next/navigation', () => ({
+  useRouter: () => ({
+    push: vi.fn(),
+    replace: vi.fn(),
+    prefetch: vi.fn(),
+    back: vi.fn(),
+    forward: vi.fn(),
+    refresh: vi.fn(),
+  }),
+  usePathname: () => '/',
+  useParams: () => ({}),
+  useSearchParams: () => new URLSearchParams(),
+  useSelectedLayoutSegment: () => null,
+  useSelectedLayoutSegments: () => [],
+  redirect: vi.fn(),
+  notFound: vi.fn(),
+}));
+
 // Mock IntersectionObserver for Framer Motion
 global.IntersectionObserver = class IntersectionObserver {
   observe = vi.fn();

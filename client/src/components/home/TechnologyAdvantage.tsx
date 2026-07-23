@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaRobot, FaCalculator, FaShieldAlt, FaChartLine, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
+import { FaBriefcase, FaCalculator, FaShieldAlt, FaChartLine, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
 import { IconType } from 'react-icons';
 
@@ -16,15 +16,6 @@ interface TechPillar {
 }
 
 const pillars: TechPillar[] = [
-  {
-    icon: FaRobot,
-    title: 'AI Consulting & Automation',
-    description: 'Deploy intelligent AI systems and automation workflows that work 24/7 to scale your business without adding headcount.',
-    features: ['AI Chatbots & Agents', 'Process Automation', 'Machine Learning Solutions'],
-    color: 'from-purple-500 to-purple-600',
-    bgColor: 'bg-purple-50',
-    link: '/services/ai-driven-growth'
-  },
   {
     icon: FaCalculator,
     title: 'Tax Strategy & Accounting',
@@ -45,12 +36,21 @@ const pillars: TechPillar[] = [
   },
   {
     icon: FaChartLine,
-    title: 'Business Support Services',
-    description: 'Business consulting, investment management, and financial planning to support your growth.',
-    features: ['Business Consulting', 'Investment Management', 'Fractional COO Services', 'Financial Planning'],
+    title: 'Investment & Wealth Planning',
+    description: 'Holistic wealth management delivered through strategic partners with CFP® and CFA credentials.',
+    features: ['Portfolio Management', 'Retirement Planning', 'Fiduciary Wealth Advisory', 'Financial Planning'],
     color: 'from-green-500 to-green-600',
     bgColor: 'bg-green-50',
-    link: '/services'
+    link: '/services/investment-management'
+  },
+  {
+    icon: FaBriefcase,
+    title: 'Business Management Consulting',
+    description: 'Strategic guidance and operational systems that turn growing businesses into scalable, professional organizations.',
+    features: ['Operational Systems Development', 'Cash Flow Management', 'Fractional COO Services'],
+    color: 'from-purple-500 to-purple-600',
+    bgColor: 'bg-purple-50',
+    link: '/services/business-consulting'
   },
 ];
 
@@ -67,10 +67,10 @@ const TechnologyAdvantage = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
-            Our 4-Pillar Business Advantage
+            The MRE Advantage
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive AI-powered solutions to transform, automate, and scale your business
+            Integrated tax, insurance, and finance consulting—working together under one roof
           </p>
         </motion.div>
 
@@ -132,7 +132,7 @@ const TechnologyAdvantage = () => {
           className="text-center mt-12"
         >
           <p className="text-lg text-gray-700 mb-6">
-            <strong>The MRE Difference:</strong> One integrated partner for AI, tax, insurance, and business strategy
+            <strong>The MRE Difference:</strong> One integrated partner for tax, insurance, and wealth strategy
           </p>
         </motion.div>
       </div>

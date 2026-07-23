@@ -106,8 +106,8 @@ describe('HomeHero', () => {
         </RouterWrapper>
       );
       
-      expect(screen.getByText(/AI-Powered Business/i)).toBeInTheDocument();
-      expect(screen.getByText(/Transformation/i)).toBeInTheDocument();
+      expect(screen.getByText(/Your Tax, Insurance &/i)).toBeInTheDocument();
+      expect(screen.getByText(/Finance Consulting Partner/i)).toBeInTheDocument();
     });
 
     it('should render the company badge', () => {

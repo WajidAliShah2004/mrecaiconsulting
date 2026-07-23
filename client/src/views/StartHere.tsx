@@ -57,12 +57,12 @@ const questions: Question[] = [
   },
   {
     id: 4,
-    question: 'How tech-savvy is your business?',
+    question: 'How organized are your business systems?',
     options: [
       { text: 'Still using spreadsheets for everything', value: 'basic', icon: '📝' },
       { text: 'Have some tools but not integrated', value: 'intermediate', icon: '🔧' },
-      { text: 'Pretty automated, want to optimize', value: 'advanced', icon: '🤖' },
-      { text: 'Ready for AI and automation', value: 'cutting-edge', icon: '🚀' },
+      { text: 'Solid processes, want to optimize', value: 'advanced', icon: '⚙️' },
+      { text: 'Ready to scale with expert guidance', value: 'cutting-edge', icon: '🚀' },
     ],
   },
 ];
@@ -140,11 +140,11 @@ const StartHere = () => {
 
     if (counts.tech >= 2 || counts.growth >= 2) {
       return {
-        title: 'Growth & Automation Package',
-        description: 'You\'re ready to scale. We\'ll implement AI automation, streamline your operations, and build systems that support rapid growth.',
-        services: ['AI & Automation', 'Business Process Automation', 'Business Consulting'],
+        title: 'Growth & Operations Package',
+        description: 'You\'re ready to scale. We\'ll streamline your operations, strengthen your cash flow, and build systems that support rapid growth.',
+        services: ['Business Management Consulting', 'Operational Systems Development', 'KPI & Metrics Tracking'],
         cta: 'Accelerate Your Growth',
-        route: '/services/ai-driven-growth',
+        route: '/services/business-consulting',
       };
     }
 
@@ -152,7 +152,7 @@ const StartHere = () => {
     return {
       title: 'Comprehensive Business Package',
       description: 'You need integrated support across multiple areas. Our full-service approach ensures everything works together seamlessly.',
-      services: ['Business Consulting', 'Tax Services', 'Insurance Services', 'AI Automation'],
+      services: ['Business Consulting', 'Tax Services', 'Insurance Services', 'Bookkeeping & Accounting'],
       cta: 'See All Services',
       route: '/services',
     };

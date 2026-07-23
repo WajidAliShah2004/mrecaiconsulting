@@ -8,9 +8,9 @@ export const organizationSchema = {
   alternateName: ['MRE Consulting & Insurance', 'MRECAI NY', 'MRECAI NYC'],
   legalName: 'MRECAI',
   url: 'https://mrecai.com',
-  logo: 'https://mrecai.com/images/logo.png',
-  image: 'https://mrecai.com/images/logo.png',
-  description: 'New York-based professional services firm integrating business consulting, insurance services, tax strategy, AI automation, investment management, and estate planning. Serving NYC businesses with comprehensive financial and operational solutions.',
+  logo: 'https://mrecai.com/images/logo.jpeg',
+  image: 'https://mrecai.com/images/logo.jpeg',
+  description: 'New York-based tax, insurance, and finance consulting firm integrating tax strategy and preparation, insurance services, bookkeeping and accounting, investment management, and estate planning. Serving NYC businesses and families with comprehensive financial solutions.',
   foundingDate: '2024',
   founder: {
     '@type': 'Person',
@@ -26,7 +26,7 @@ export const organizationSchema = {
       'Business Consulting',
       'Insurance Services',
       'Tax Strategy',
-      'AI Automation',
+      'Bookkeeping & Accounting',
       'Investment Management',
       'Estate Planning'
     ],
@@ -82,9 +82,9 @@ export const organizationSchema = {
     'Tax Preparation',
     'Tax Strategy',
     'Tax Planning',
-    'AI Automation',
-    'Business Automation',
-    'Artificial Intelligence',
+    'R&D Tax Credits',
+    'Cost Segregation',
+    'Entity Structure Optimization',
     'Investment Management',
     'Wealth Management',
     'Estate Planning',
@@ -93,10 +93,10 @@ export const organizationSchema = {
     'Financial Planning',
     'Bookkeeping',
     'Accounting',
-    'Technology Consulting',
-    'CRM Implementation',
-    'Process Automation',
-    'Workflow Optimization',
+    'Cash Flow Management',
+    'Operational Systems Development',
+    'KPI Tracking',
+    'Fractional COO Services',
   ],
   sameAs: [
     'https://www.facebook.com/share/1CeUfmRx4F/',
@@ -115,8 +115,8 @@ export const organizationSchema = {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Business Consulting',
-          description: 'Strategic business consulting, planning, and operational optimization',
+          name: 'Tax Services',
+          description: 'Tax preparation, planning, and strategy for individuals and businesses',
         },
       },
       {
@@ -131,16 +131,16 @@ export const organizationSchema = {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Tax Services',
-          description: 'Tax preparation, planning, and strategy for individuals and businesses',
+          name: 'Business Consulting',
+          description: 'Financial and strategic business consulting, planning, and operational optimization',
         },
       },
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'AI Automation',
-          description: 'AI implementation, process automation, and technology integration',
+          name: 'Bookkeeping & Accounting',
+          description: 'Full-cycle bookkeeping, financial reporting, and month-end close for growing businesses',
         },
       },
     ],
@@ -164,12 +164,6 @@ export const organizationSchema = {
         reviewCount: '100+'
       }
     },
-    {
-      '@type': 'Organization',
-      name: 'NovaEdge Solutions',
-      description: 'AI and technology implementation partner',
-      url: 'https://novaedgesolutions.co/',
-    },
   ],
   memberOf: {
     '@type': 'Organization',
@@ -178,7 +172,7 @@ export const organizationSchema = {
     url: 'https://groberimbey.com'
   },
   // Disambiguation from other entities
-  disambiguatingDescription: 'MRECAI is a Great Neck, New York-based professional services firm specializing in integrated business consulting, insurance, tax strategy, and AI automation. Not affiliated with MRE Consulting, Ltd (Houston-based Salesforce/Infosys partner).',
+  disambiguatingDescription: 'MRECAI is a Great Neck, New York-based professional services firm specializing in integrated business consulting, insurance, tax strategy, and accounting. Not affiliated with MRE Consulting, Ltd (Houston-based Salesforce/Infosys partner).',
 };
 
 export const localBusinessSchema = {
@@ -186,8 +180,8 @@ export const localBusinessSchema = {
   '@type': ['ProfessionalService', 'LocalBusiness'],
   name: 'MRECAI',
   alternateName: 'MRECAI NY',
-  slogan: 'Integrated Tax, Insurance, and AI Consulting Services in NYC',
-  image: 'https://mrecai.com/images/logo.png',
+  slogan: 'Integrated Tax, Insurance & Finance Consulting in NYC',
+  image: 'https://mrecai.com/images/logo.jpeg',
   '@id': 'https://mrecai.com',
   url: 'https://mrecai.com',
   telephone: '+1-929-702-2818',
@@ -234,13 +228,13 @@ export const websiteSchema = {
   name: 'MRECAI',
   alternateName: 'MRE Consulting & Insurance',
   url: 'https://mrecai.com',
-  description: 'Professional business consulting, insurance, tax, AI automation, and financial services',
+  description: 'Professional tax, insurance, accounting, and finance consulting services',
   publisher: {
     '@type': 'Organization',
     name: 'MRECAI',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://mrecai.com/images/logo.png',
+      url: 'https://mrecai.com/images/logo.jpeg',
     },
   },
   potentialAction: {
@@ -317,37 +311,11 @@ export const serviceSchemas = {
       priceCurrency: 'USD',
     },
   },
-  aiTechnology: {
+  bookkeepingAccounting: {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    serviceType: 'AI & Technology Solutions',
-    name: 'AI Integration & Business Automation',
-    provider: {
-      '@type': 'Organization',
-      name: 'MRECAI',
-      url: 'https://mrecai.com',
-      partner: {
-        '@type': 'Organization',
-        name: 'NovaEdge Solutions',
-        url: 'https://novaedgesolutions.co/',
-      },
-    },
-    areaServed: {
-      '@type': 'Country',
-      name: 'United States',
-    },
-    description: 'Cutting-edge AI implementation, process automation, and technology consulting services. Includes 24/7 AI sales agents, workflow automation, CRM integration, lead response systems, and custom AI solutions. Powered by NovaEdge Solutions.',
-    offers: {
-      '@type': 'Offer',
-      availability: 'https://schema.org/InStock',
-      priceCurrency: 'USD',
-    },
-  },
-  automation: {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    serviceType: 'Business Automation',
-    name: 'Workflow Automation & System Integration',
+    serviceType: 'Bookkeeping & Accounting',
+    name: 'Bookkeeping & Accounting Services',
     provider: {
       '@type': 'Organization',
       name: 'MRECAI',
@@ -357,7 +325,7 @@ export const serviceSchemas = {
       '@type': 'Country',
       name: 'United States',
     },
-    description: 'Workflow automation design, system integration, and custom automation development. Eliminate manual tasks, reduce errors, and scale operations efficiently.',
+    description: 'Full-cycle bookkeeping and accounting operations including daily transaction categorization, bank reconciliation, real-time financial reporting, and month-end close for growing businesses.',
     offers: {
       '@type': 'Offer',
       availability: 'https://schema.org/InStock',
@@ -426,14 +394,14 @@ export const personSchema = {
     'Business Consulting',
     'Insurance Services',
     'Tax Strategy',
-    'AI Automation',
+    'Bookkeeping & Accounting',
     'Investment Management',
     'Estate Planning',
     'Risk Management',
     'Financial Planning'
   ],
   alumniOf: 'Business Management',
-  description: 'Founder and President of MRECAI, a New York-based professional services firm specializing in integrated business consulting, insurance, tax strategy, and AI automation. Not affiliated with Matthew R. Epstein, Trial Attorney at U.S. Department of Labor.',
+  description: 'Founder and President of MRECAI, a New York-based tax, insurance, and finance consulting firm specializing in integrated tax strategy, insurance, and accounting. Not affiliated with Matthew R. Epstein, Trial Attorney at U.S. Department of Labor.',
 };
 
 export const breadcrumbSchema = (items: { name: string; url: string }[]) => ({
@@ -483,12 +451,12 @@ export const articleSchema = (article: {
     name: 'MRECAI',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://mrecai.com/images/logo.png',
+      url: 'https://mrecai.com/images/logo.jpeg',
     },
   },
   datePublished: article.datePublished,
   dateModified: article.dateModified || article.datePublished,
-  image: article.image || 'https://mrecai.com/images/logo.png',
+  image: article.image || 'https://mrecai.com/images/logo.jpeg',
   url: article.url,
   mainEntityOfPage: {
     '@type': 'WebPage',

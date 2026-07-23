@@ -12,12 +12,12 @@ const faqs = [
         answer: 'We don\'t replace your billing team; we provide the financial oversight and revenue cycle analysis that ensures your billing data correctly reflects in your practice\'s clinical profitability.',
     },
     {
-        question: 'Are your AI agents HIPAA compliant?',
-        answer: 'Yes. We deploy enterprise-grade AI infrastructure that meets HIPAA standards for data encryption, privacy, and secure handling of PHI (Protected Health Information).',
+        question: 'Does my practice need cyber liability coverage?',
+        answer: 'Almost certainly. Practices hold Protected Health Information (PHI), making them prime targets for breaches. We review your cyber liability coverage alongside HIPAA obligations to ensure a data incident never threatens the practice.',
     },
     {
         question: 'Can you help with R&D tax credits for medical practices?',
-        answer: 'Many practitioners don\'t realize that developing new procedures or custom software qualifies for significant federal and state credits. We conduct specialized R&D studies for the medical field.',
+        answer: 'Many practitioners don\'t realize that developing new procedures, techniques, or treatment protocols qualifies for significant federal and state credits. We conduct specialized R&D studies for the medical field.',
     },
     {
         question: 'How does MRE handle practice insurance audits?',
@@ -34,9 +34,9 @@ const MedicalPractices = () => {
         <>
             <SEO
                 title="Accounting & Strategy for Medical Practices | Healthcare | MRECAI"
-                description="Specialized financial and tech solutions for private medical practices. HIPAA-compliant AI, revenue cycle management, and practice growth strategy."
+                description="Specialized financial solutions for private medical practices. Malpractice coverage reviews, revenue cycle management, and practice growth strategy."
                 canonical="/industries/medical-practices"
-                keywords="medical practice accounting, healthcare consulting, doctors tax strategy, HIPAA AI agents, private practice growth NYC, medical billing audit"
+                keywords="medical practice accounting, healthcare consulting, doctors tax strategy, malpractice insurance review, private practice growth NYC, medical billing audit"
             />
 
             {/* Hero Section */}
@@ -69,7 +69,7 @@ const MedicalPractices = () => {
 
                         <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 border border-white/20">
                             <p className="text-xl text-gray-200 leading-relaxed">
-                                We bridge the gap between clinical excellence and fiscal health. From <strong>HIPAA-compliant AI automation</strong> to advanced revenue cycle management, we protect your practice so you can focus on care.
+                                We bridge the gap between clinical excellence and fiscal health. From <strong>malpractice and cyber coverage reviews</strong> to advanced revenue cycle management, we protect your practice so you can focus on care.
                             </p>
                         </div>
 
@@ -115,8 +115,8 @@ const MedicalPractices = () => {
                             },
                             {
                                 icon: FaLaptopMedical,
-                                title: 'HIPAA-Compliant AI',
-                                description: 'Secure AI agents to handle scheduling, intake pre-screening, and 24/7 patient inquiries safely.',
+                                title: 'HIPAA & Compliance Advisory',
+                                description: 'Guidance on privacy obligations, documentation, and vendor compliance so your practice stays audit-ready without slowing patient care.',
                             },
                             {
                                 icon: FaUserShield,

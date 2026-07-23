@@ -23,7 +23,7 @@ const FAQ = () => {
     {
       category: 'General',
       question: 'What services does MRECAI offer?',
-      answer: 'We offer comprehensive business solutions including Tax Services, Insurance, Bookkeeping & Accounting, Business Consulting, AI & Automation Consulting, Investment Management, and Estate Planning. We\'re your one-stop partner for all business needs.',
+      answer: 'We offer comprehensive solutions including Tax Services, Insurance & Risk Architecture, Bookkeeping & Accounting, Business Management Consulting, Investment & Wealth Planning, and Estate Planning. We\'re your one-stop partner for tax, insurance, and finance needs.',
     },
     {
       category: 'General',
@@ -38,7 +38,7 @@ const FAQ = () => {
     {
       category: 'General',
       question: 'What makes MRECAI different from other firms?',
-      answer: 'We\'re an integrated partner offering finance, tax, insurance, technology, and growth services—all working together. Instead of managing multiple vendors, you get one team, one strategy, and one partner you can trust.',
+      answer: 'We\'re an integrated partner offering consulting, tax, accounting, insurance, and growth services—all working together. Instead of managing multiple vendors, you get one team, one strategy, and one partner you can trust.',
     },
 
     // Bookkeeping & Accounting
@@ -98,8 +98,8 @@ const FAQ = () => {
     },
     {
       category: 'Insurance',
-      question: 'Does my General Liability policy cover AI mistakes?',
-      answer: 'Probably not. Most standard General Liability policies were written before generative AI existed and may contain exclusions for "software errors" or "algorithmic decision making." You likely need Tech E&O coverage.',
+      question: 'Does my General Liability policy cover professional mistakes?',
+      answer: 'Probably not. General Liability covers bodily injury and property damage—errors in your professional work or advice typically fall under Professional Liability (E&O). We review your policies to identify gaps like this before they become losses.',
     },
     {
       category: 'Insurance',
@@ -112,26 +112,26 @@ const FAQ = () => {
       answer: 'Yes. Through our partnership with Grober Imbey, we provide private client services including umbrella policies, high-value property protection, and estate protection strategies.',
     },
 
-    // AI & Technology
+    // Investment & Wealth Planning
     {
-      category: 'AI & Technology',
-      question: 'Is custom AI consulting too expensive for a small business?',
-      answer: 'Not anymore. In 2026, the cost of technology has dropped significantly. Most tools we implement cost less than a standard software subscription. The real cost is the labor hours you\'re currently wasting on manual work.',
+      category: 'Investment & Wealth Planning',
+      question: 'Do you offer investment and wealth planning?',
+      answer: 'Yes. Investment and financial management services are delivered through our strategic partners holding CFP® and CFA credentials, fully coordinated with your tax, insurance, and business strategy.',
     },
     {
-      category: 'AI & Technology',
-      question: 'Will automating tasks replace my employees?',
-      answer: 'AI replaces tasks, not people. It handles robotic work (copy-pasting, sorting, calculating) so your human team can focus on high-value work like client strategy, relationship building, and creative problem solving.',
+      category: 'Investment & Wealth Planning',
+      question: 'Who actually manages my investments?',
+      answer: 'Our credentialed CFP®/CFA partner handles portfolio management, retirement planning, and asset allocation, while MRECAI coordinates the tax, insurance, and business side—so every decision works together.',
     },
     {
-      category: 'AI & Technology',
-      question: 'How do I know my data is safe with AI tools?',
-      answer: 'Security is our foundation. Unlike generic tech agencies, we view everything through an insurance and risk-management lens. We use enterprise-grade wrappers for AI tools to ensure your data is never used to train public models.',
+      category: 'Investment & Wealth Planning',
+      question: 'Can you help with retirement planning?',
+      answer: 'Absolutely. 401(k) optimization, IRA strategies, pension analysis, and retirement income planning are core parts of our wealth planning services.',
     },
     {
-      category: 'AI & Technology',
-      question: 'Is AI automation right for every business?',
-      answer: 'No. If lead volume is less than 10 per month, manual follow-up is often superior. We\'ll honestly assess whether automation makes sense for your specific situation.',
+      category: 'Investment & Wealth Planning',
+      question: 'Do I need a large portfolio to get started?',
+      answer: 'No. We work with clients at every stage—from building a first financial plan to managing complex, multi-generational wealth. We\'ll honestly assess what level of planning makes sense for your situation.',
     },
 
     // Business Consulting
@@ -209,7 +209,7 @@ const FAQ = () => {
     'Bookkeeping & Accounting',
     'Tax Services',
     'Insurance',
-    'AI & Technology',
+    'Investment & Wealth Planning',
     'Business Consulting',
     'Pricing & Payment',
     'Process & Timeline',
@@ -233,9 +233,9 @@ const FAQ = () => {
     <>
       <SEO
         title="Frequently Asked Questions | FAQ | MRECAI"
-        description="Find answers to common questions about our services, pricing, process, and more. Get the information you need about business consulting, tax services, insurance, and AI technology."
+        description="Find answers to common questions about our services, pricing, process, and more. Get the information you need about tax services, insurance, finance consulting, and wealth planning."
         canonical="/faq"
-        keywords="FAQ, frequently asked questions, business consulting questions, tax services FAQ, insurance questions, AI consulting FAQ"
+        keywords="FAQ, frequently asked questions, business consulting questions, tax services FAQ, insurance questions, bookkeeping FAQ"
         schema={{
           '@context': 'https://schema.org',
           '@graph': [

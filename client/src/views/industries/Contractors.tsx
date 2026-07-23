@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { FaHardHat, FaCheckCircle, FaCalculator, FaShieldAlt, FaChartLine, FaCogs, FaArrowRight } from 'react-icons/fa';
+import { FaHardHat, FaCheckCircle, FaCalculator, FaShieldAlt, FaChartLine, FaFileInvoiceDollar, FaArrowRight } from 'react-icons/fa';
 import SEO from '../../components/common/SEO';
 import { TrustBar, ProcessFlow } from '../../components/common';
 
@@ -20,8 +20,8 @@ const faqs = [
         answer: 'Absolutely. We manage your certificates of insurance (COIs), track subcontractor compliance, and organize your payroll data to ensure your annual audits are seamless and error-free.',
     },
     {
-        question: 'How can AI help my home services business?',
-        answer: 'We deploy AI agents that handle missed calls via text-back, reactivate old quotes that didn\'t close, and automate appointment scheduling, ensuring you never lose a lead while your crews are in the field.',
+        question: 'How do you help contractors close cash flow gaps between projects?',
+        answer: 'We build collections strategies, progress billing schedules, and cash flow forecasts that smooth out the gap between project completion and payment, so you can make payroll and buy materials without stress.',
     },
     {
         question: 'What is the "Contractor Gap Analysis"?',
@@ -34,7 +34,7 @@ const Contractors = () => {
         <>
             <SEO
                 title="Accounting & Strategy for Contractors | Home Services | MRECAI"
-                description="Specialized financial and tech solutions for HVAC, plumbing, and general contractors. Job costing, AIA billing, and AI lead reactivation for home services."
+                description="Specialized financial management and risk protection for HVAC, plumbing, and general contractors. Job costing, AIA billing, and insurance audit support for home services."
                 canonical="/industries/contractors"
                 keywords="contractor accounting, construction tax strategy, HVAC business consulting, plumbing business growth, AIA billing NYC, contractor insurance audit"
             />
@@ -69,7 +69,7 @@ const Contractors = () => {
 
                         <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 border border-white/20">
                             <p className="text-xl text-gray-200 leading-relaxed">
-                                In the trades, your profit is won or lost in the field. We provide the <strong>operational intelligence</strong>—from job costing to AI missed-call recovery—that ensures your hard work turns into measurable wealth.
+                                In the trades, your profit is won or lost in the field. We provide the <strong>financial and risk backbone</strong>—from job costing to insurance audit support—that ensures your hard work turns into measurable wealth.
                             </p>
                         </div>
 
@@ -119,9 +119,9 @@ const Contractors = () => {
                                 description: 'Proactive management of payroll classes and certificates to lower audit exposure and premiums.',
                             },
                             {
-                                icon: FaCogs,
-                                title: 'AI Lead Recovery',
-                                description: 'Automated "Missed-Call Text Back" systems to catch every emergency lead while your technicians are busy.',
+                                icon: FaFileInvoiceDollar,
+                                title: 'Cash Flow & Collections Strategy',
+                                description: 'Structured invoicing, retainage tracking, and collections systems that close the gap between finished work and money in the bank.',
                             },
                             {
                                 icon: FaChartLine,

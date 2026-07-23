@@ -1,16 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaRobot, FaCalculator, FaShieldAlt, FaChartLine } from 'react-icons/fa';
+import { FaBriefcase, FaCalculator, FaShieldAlt, FaChartLine } from 'react-icons/fa';
 
 const pillars = [
-  {
-    icon: FaRobot,
-    title: 'AI Consulting & Automation',
-    description: 'Deploy intelligent AI systems and automation workflows that work 24/7 to scale your business without adding headcount.',
-    color: 'from-purple-500 to-purple-600',
-    bgColor: 'bg-purple-50',
-  },
   {
     icon: FaCalculator,
     title: 'Tax Strategy & Accounting',
@@ -27,10 +20,17 @@ const pillars = [
   },
   {
     icon: FaChartLine,
-    title: 'Business Support Services',
-    description: 'Business consulting, investment management, and financial planning to support your growth.',
+    title: 'Investment & Wealth Planning',
+    description: 'Holistic wealth management delivered through strategic partners with CFP® and CFA credentials.',
     color: 'from-green-500 to-green-600',
     bgColor: 'bg-green-50',
+  },
+  {
+    icon: FaBriefcase,
+    title: 'Business Management Consulting',
+    description: 'Financial and operational guidance that turns growing businesses into scalable, professional organizations.',
+    color: 'from-purple-500 to-purple-600',
+    bgColor: 'bg-purple-50',
   },
 ];
 
@@ -47,10 +47,10 @@ const FourPillars = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
-            Our 4-Pillar Business Advantage
+            Our 4-Pillar Advantage
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive AI-powered solutions to transform, automate, and scale your business
+            Comprehensive tax, insurance, and finance consulting solutions to protect and scale your business
           </p>
         </motion.div>
 
@@ -94,7 +94,7 @@ const FourPillars = () => {
           className="text-center mt-12"
         >
           <p className="text-lg text-gray-700 mb-6">
-            <strong>The MRE Difference:</strong> One integrated partner for AI, tax, insurance, and business strategy
+            <strong>The MRE Difference:</strong> One integrated partner for tax, insurance, and wealth strategy
           </p>
         </motion.div>
       </div>

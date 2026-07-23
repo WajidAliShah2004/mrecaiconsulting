@@ -16,7 +16,7 @@ const Testimonials = () => {
       company: 'Tech Innovations Inc.',
       role: 'CEO',
       rating: 5,
-      text: 'MRECAI Consulting transformed our business operations with their AI and automation solutions. We saw a 40% increase in efficiency within the first quarter. Their team is professional, knowledgeable, and always available.',
+      text: 'MRECAI Consulting transformed our business operations with their systems-first consulting approach. We saw a 40% increase in efficiency within the first quarter. Their team is professional, knowledgeable, and always available.',
       platform: 'google',
       date: 'January 2024',
       avatar: '👨‍💼'
@@ -49,7 +49,7 @@ const Testimonials = () => {
       company: 'Rodriguez Marketing',
       role: 'Marketing Director',
       rating: 5,
-      text: 'Their AI automation expertise helped us triple our qualified leads. The team is strategic, data-driven, and delivers results. Best investment we made this year!',
+      text: 'Their tax strategy expertise saved us tens of thousands this year. The team is strategic, data-driven, and delivers results. Best investment we made this year!',
       platform: 'google',
       date: 'December 2023',
       avatar: '👩‍🎨'
@@ -104,7 +104,7 @@ const Testimonials = () => {
       company: 'Wilson Automotive',
       role: 'Owner',
       rating: 5,
-      text: 'Best consulting firm we\'ve worked with. Their AI solutions revolutionized our inventory management. The results speak for themselves - 35% cost reduction!',
+      text: 'Best consulting firm we\'ve worked with. Their guidance revolutionized our inventory and cost management. The results speak for themselves - 35% cost reduction!',
       platform: 'google',
       date: 'October 2023',
       avatar: '🚗'

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import ServiceBundlesPage from '@/pages/ServiceBundles';
 
 const title = "Service Bundles - Packaged Solutions | MRECAI";
-const description = "Choose from pre-packaged service bundles built for your business: Foundation, Tax Optimization, Risk Protection, Growth & Automation, or Comprehensive.";
+const description = "Choose from pre-packaged service bundles built for your business: Foundation, Tax Optimization, Risk Protection, Growth & Operations, or Comprehensive.";
 const canonical = "/service-bundles";
 
 export function generateMetadata(): Metadata {

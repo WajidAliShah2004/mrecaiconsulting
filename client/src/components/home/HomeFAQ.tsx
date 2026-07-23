@@ -8,7 +8,7 @@ import { faqSchema } from '../../utils/schemas';
 const faqs = [
   {
     question: 'What does MRECAI do?',
-    answer: 'We provide bookkeeping, accounting, tax preparation, tax strategy consulting, business management consulting, insurance solutions, and AI/technology services—so clients can stay compliant, improve profitability, and reduce risk. We integrate finance, tax, insurance, and technology under one roof.',
+    answer: 'We provide tax preparation and strategy consulting, insurance solutions, bookkeeping and accounting, and financial and business consulting—so clients can stay compliant, improve profitability, and reduce risk. We integrate tax, insurance, and finance under one roof.',
   },
   {
     question: 'What if I don\'t live in New York?',
@@ -27,20 +27,20 @@ const faqs = [
     answer: 'Yes—cleanup and stabilization is one of the most common starting points. We\'ll assess scope, stabilize the system, then keep it clean going forward. We handle catch-up bookkeeping, reconciliations, and ongoing monthly support.',
   },
   {
-    question: 'How do I automate my small business workflows?',
-    answer: 'The process starts by mapping your current manual tasks (like invoice processing, lead follow-up, or document generation). MRECAI implements AI-driven automation using tools like Make.com, Zapier, and custom AI agents. These systems allow your team to reclaim 10-20 hours a week by eliminating repetitive data entry and manual administrative tasks.',
+    question: 'How do I streamline my small business back office?',
+    answer: 'The process starts by mapping your current manual tasks (like invoice processing, bookkeeping catch-up, or month-end reporting). MRECAI designs streamlined systems and provides expert hands-on support. This allows your team to reclaim 10-20 hours a week by eliminating repetitive data entry and manual administrative tasks.',
   },
   {
     question: 'What is an "Operating System for Modern Business"?',
-    answer: 'It is a unified framework that connects your financial data, risk management, and operational technology. Most businesses suffer from "fragmented systems" where their accountant, insurance agent, and tech consultant don\'t talk. MRECAI acts as the single source of truth, ensuring your entire business architecture works in perfect synchronization.',
+    answer: 'It is a unified framework that connects your financial data, risk management, and day-to-day operations. Most businesses suffer from "fragmented systems" where their accountant, insurance agent, and business consultant don\'t talk. MRECAI acts as the single source of truth, ensuring your entire business architecture works in perfect synchronization.',
   },
   {
     question: 'How can MRECAI help with tax reduction strategy?',
     answer: 'We go beyond basic filing. We provide proactive tax legal strategy and structural planning designed to keep more of what you earn. By integrating your bookkeeping with tax consulting, we identify credits, deductions, and structural optimizations (like S-Corp conversions or R&D credits) that traditional accountants often overlook.',
   },
   {
-    question: 'Can you implement AI automation without disrupting my team?',
-    answer: 'Yes—our approach is phased and practical. We start with high-ROI workflows and training. We identify where time is being lost, build a "Phase 1" system, train your team with simple SOPs, and only expand after Phase 1 is stable. AI should remove repetitive work so your team focuses on higher-value tasks.',
+    question: 'Can you improve our operations without disrupting my team?',
+    answer: 'Yes—our approach is phased and practical. We start with the highest-impact improvements and training. We identify where time is being lost, build a "Phase 1" system, train your team with simple SOPs, and only expand after Phase 1 is stable. Better processes should remove repetitive work so your team focuses on higher-value tasks.',
   },
 ];
 

@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaRobot, FaTimes, FaPaperPlane } from 'react-icons/fa';
+import { FaComments, FaTimes, FaPaperPlane } from 'react-icons/fa';
 import { sendChatMessage } from '../../services/api';
 import type { ChatMessage } from '../../types';
 
@@ -13,7 +13,7 @@ const AIChat = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       id: '1',
-      text: 'Hi! I\'m your MRECAI AI assistant. 👋\n\nI can help you with:\n• Insurance quotes & coverage\n• Business consulting services\n• Scheduling consultations\n• Answering questions about our services\n\nHow can I assist you today?',
+      text: 'Hi! I\'m the MRE Assistant. 👋\n\nI can help you with:\n• Insurance quotes & coverage\n• Business consulting services\n• Tax & accounting questions\n• Scheduling consultations\n\nHow can I assist you today?',
       sender: 'bot',
       timestamp: new Date(),
     },
@@ -37,7 +37,7 @@ const AIChat = () => {
   }, []);
   const [hasUnreadMessages, setHasUnreadMessages] = useState(false);
   
-  // Conversation history for OpenAI context (last 5 messages)
+  // Conversation history for assistant context (last 5 messages)
   const [conversationHistory, setConversationHistory] = useState<Array<{
     role: 'user' | 'assistant';
     content: string;
@@ -104,7 +104,7 @@ const AIChat = () => {
 
     // Greetings
     if (lowerMessage.match(/^(hi|hello|hey|good morning|good afternoon|good evening)$/)) {
-      return 'Hello! 👋 Welcome to MRECAI. I\'m here to help you with:\n• Insurance quotes & coverage\n• Business consulting\n• Scheduling consultations\n• Answering questions\n\nWhat can I help you with today?';
+      return 'Hello! 👋 Welcome to MRECAI. I\'m here to help you with:\n• Insurance quotes & coverage\n• Business consulting\n• Tax & accounting\n• Scheduling consultations\n\nWhat can I help you with today?';
     }
 
     // Hours/Availability
@@ -114,7 +114,7 @@ const AIChat = () => {
 
     // Services - General
     if (lowerMessage.includes('service') || lowerMessage.includes('what do you do') || lowerMessage.includes('what do you offer')) {
-      return 'We offer comprehensive services:\n\n💼 Business Consulting - Strategic planning & growth\n🛡️ Insurance Services - Personal & commercial coverage\n💰 Tax & Accounting - Planning & preparation\n🤖 AI Consulting - Implementation & strategy\n⚙️ Automation - Workflow optimization\n\nVisit /services for detailed information!';
+      return 'We offer comprehensive services:\n\n💰 Tax Planning & Preparation - Strategy, filing & IRS representation\n🛡️ Insurance & Risk Architecture - Personal & commercial coverage\n📒 Bookkeeping & Accounting - Financial clarity & compliance\n💼 Business Management Consulting - Financial systems, strategy & growth\n📈 Investment & Wealth Planning - Through our strategic partners\n\nVisit /services for detailed information!';
     }
 
     // Business Consulting
@@ -124,7 +124,7 @@ const AIChat = () => {
 
     // Digital Marketing (no longer offered)
     if (lowerMessage.includes('marketing') || lowerMessage.includes('seo') || lowerMessage.includes('social media') || lowerMessage.includes('advertising')) {
-      return 'We no longer offer digital marketing services. 🙏\n\nWhat we can help with instead:\n\n🤖 AI & Automation - 24/7 lead engagement & follow-up\n💼 Business Consulting - Growth strategy\n💰 Tax & Accounting\n🛡️ Insurance & Risk\n\nExplore our services: /services or book a consultation: /book-now';
+      return 'We no longer offer digital marketing services. 🙏\n\nWhat we can help with instead:\n\n💼 Business Consulting - Growth strategy & operations\n💰 Tax Planning & Preparation\n📒 Bookkeeping & Accounting\n🛡️ Insurance & Risk\n\nExplore our services: /services or book a consultation: /book-now';
     }
 
     // Insurance - General
@@ -157,9 +157,9 @@ const AIChat = () => {
       return 'Tax & Accounting Services:\n\n💰 Tax planning & preparation\n📊 Bookkeeping & payroll\n📈 Financial statement preparation\n🏛️ IRS representation\n💼 Business tax services\n👤 Individual tax services\n\nLet\'s optimize your finances! Book consultation: /book-now';
     }
 
-    // AI & Technology
-    if (lowerMessage.includes('ai') || lowerMessage.includes('artificial intelligence') || lowerMessage.includes('technology') || lowerMessage.includes('automation')) {
-      return 'AI & Technology Solutions:\n\n🤖 AI implementation consulting\n⚙️ Process automation\n🔧 Technology stack optimization\n📱 Digital transformation strategy\n🔄 Workflow automation\n🚀 Custom automation development\n\nModernize your operations! Learn more: /services';
+    // AI & Automation (no longer offered)
+    if (lowerMessage.match(/\bai\b/) || lowerMessage.includes('artificial intelligence') || lowerMessage.includes('chatbot') || lowerMessage.includes('automation')) {
+      return 'We no longer offer AI or automation services. 🙏\n\nWhat we can help with instead:\n\n💼 Business Consulting - Systems & operational efficiency\n💰 Tax Planning & Preparation\n📒 Bookkeeping & Accounting\n🛡️ Insurance & Risk\n\nExplore our services: /services or book a consultation: /book-now';
     }
 
     // Pricing
@@ -184,7 +184,7 @@ const AIChat = () => {
 
     // About Company
     if (lowerMessage.includes('about') || lowerMessage.includes('who are you') || lowerMessage.includes('company')) {
-      return 'About MRECAI:\n\n✓ Founded in 2024\n✓ 15+ years of experience\n✓ 500+ satisfied clients\n✓ 98% success rate\n✓ 24/7 service support\n\nWe empower individuals, families, and businesses with expert consulting and insurance solutions.\n\nLearn more: /about';
+      return 'About MRECAI:\n\n✓ Founded in 2024\n✓ 15+ years of experience\n✓ 500+ satisfied clients\n✓ 98% success rate\n✓ 24/7 service support\n\nWe empower individuals, families, and businesses with expert tax, insurance, and finance consulting solutions.\n\nLearn more: /about';
     }
 
     // Founder
@@ -194,7 +194,7 @@ const AIChat = () => {
 
     // Partners
     if (lowerMessage.includes('partner') || lowerMessage.includes('carrier')) {
-      return 'Our Strategic Partners:\n\n💻 NovaEdge Solutions - AI & Technology\n🛡️ Grober Imbey Insurance Agency (GIA)\n💰 Financial Advisors\n📊 Accounting Partners\n⚖️ Legal Partners\n\nWe work with industry leaders to provide you the best service. Learn more: /about/partners';
+      return 'Our Strategic Partners:\n\n🛡️ Grober Imbey Insurance Agency (GIA)\n💰 Financial Advisors\n📊 Accounting Partners\n⚖️ Legal Partners\n\nWe work with industry leaders to provide you the best service. Learn more: /about/partners';
     }
 
     // Location
@@ -239,7 +239,7 @@ const AIChat = () => {
 
     // Strategic Partners - Specific
     if (lowerMessage.includes('novaedge') || lowerMessage.includes('nova edge')) {
-      return 'NovaEdge Solutions Partnership:\n\n✓ AI-driven digital transformation\n✓ AI implementation & automation expertise\n\nTogether we deliver cutting-edge AI solutions! Learn more: /about/partners';
+      return 'Our Strategic Partners:\n\n✓ Insurance, financial, accounting & legal partners\n✓ Industry leaders working alongside our team\n\nLearn more about who we work with: /about/partners';
     }
 
     if (lowerMessage.includes('gia') || lowerMessage.includes('grober') || lowerMessage.includes('imbey')) {
@@ -278,12 +278,12 @@ const AIChat = () => {
 
     // Web/Software Development (no longer offered)
     if (lowerMessage.includes('web') || lowerMessage.includes('website') || lowerMessage.includes('development') || lowerMessage.includes('software')) {
-      return 'We no longer offer web or software development services. 🙏\n\nWhat we can help with instead:\n\n🤖 AI & Automation - Intelligent systems & integrations\n💼 Business Consulting\n💰 Tax & Accounting\n🛡️ Insurance & Risk\n\nExplore our services: /services or book a consultation: /book-now';
+      return 'We no longer offer web or software development services. 🙏\n\nWhat we can help with instead:\n\n💼 Business Consulting\n💰 Tax Planning & Preparation\n📒 Bookkeeping & Accounting\n🛡️ Insurance & Risk\n\nExplore our services: /services or book a consultation: /book-now';
     }
 
-    // Workflow Automation
+    // Workflow / Operations
     if (lowerMessage.includes('workflow') || lowerMessage.includes('automate')) {
-      return 'Workflow Automation Services:\n\n✓ Process automation design\n✓ Integration with existing systems\n✓ Custom automation development\n✓ Training & support\n✓ Efficiency optimization\n✓ Cost reduction\n\nStreamline your operations! Learn more: /services';
+      return 'Operational Efficiency Consulting:\n\n✓ Operational systems development\n✓ Process improvement & documentation\n✓ KPI & metrics tracking\n✓ Cash flow management\n✓ Fractional COO services\n\nStreamline your operations! Learn more: /services/business-consulting';
     }
 
     // Financial Planning
@@ -298,12 +298,12 @@ const AIChat = () => {
 
     // Small Business
     if (lowerMessage.includes('small business') || lowerMessage.includes('startup')) {
-      return 'Small Business Solutions:\n\n✓ Business formation & planning\n✓ Insurance packages\n✓ Tax planning & preparation\n✓ Bookkeeping & payroll\n✓ AI & automation consulting\n\nComplete support for your business! Book consultation: /book-now';
+      return 'Small Business Solutions:\n\n✓ Business formation & planning\n✓ Insurance packages\n✓ Tax planning & preparation\n✓ Bookkeeping & payroll\n✓ Operational systems & growth consulting\n\nComplete support for your business! Book consultation: /book-now';
     }
 
     // Growth Strategy
     if (lowerMessage.includes('growth') || lowerMessage.includes('scale') || lowerMessage.includes('expand')) {
-      return 'Business Growth Services:\n\n✓ Strategic planning\n✓ Market analysis\n✓ Financial forecasting\n✓ Operational optimization\n✓ Technology implementation\n✓ Marketing strategy\n\nLet\'s grow your business! Book consultation: /book-now';
+      return 'Business Growth Services:\n\n✓ Strategic planning\n✓ Market analysis\n✓ Financial forecasting\n✓ Operational optimization\n✓ KPI & metrics tracking\n✓ Profitability optimization\n\nLet\'s grow your business! Book consultation: /book-now';
     }
 
     // Claims Support
@@ -348,7 +348,7 @@ const AIChat = () => {
 
     // Technology Companies
     if (lowerMessage.includes('tech company') || lowerMessage.includes('software company') || lowerMessage.includes('saas')) {
-      return 'Technology Company Services:\n\n✓ Tech E&O insurance\n✓ Cyber liability\n✓ IP protection\n✓ Technology consulting\n✓ AI implementation\n✓ Automation solutions\n\nComplete tech company support! Book consultation: /book-now';
+      return 'Technology Company Services:\n\n✓ Tech E&O insurance\n✓ Cyber liability\n✓ R&D tax credit studies\n✓ Bookkeeping & accounting\n✓ Growth & operations consulting\n\nComplete tech company support! Book consultation: /book-now';
     }
 
     // Response Time
@@ -378,12 +378,12 @@ const AIChat = () => {
 
     // Blog/Resources
     if (lowerMessage.includes('blog') || lowerMessage.includes('article') || lowerMessage.includes('tips') || lowerMessage.includes('advice')) {
-      return 'Check out our blog for valuable insights:\n\n📝 Business tips & strategies\n📝 Insurance advice\n📝 Tax planning guides\n📝 Technology trends\n📝 AI & automation insights\n\nVisit our blog: /blog';
+      return 'Check out our blog for valuable insights:\n\n📝 Business tips & strategies\n📝 Insurance advice\n📝 Tax planning guides\n📝 Financial planning insights\n\nVisit our blog: /blog';
     }
 
     // Why Choose Us
     if (lowerMessage.includes('why choose') || lowerMessage.includes('why you') || lowerMessage.includes('what makes you different')) {
-      return 'Why Choose MRECAI:\n\n✓ 15+ years of experience (since 2009)\n✓ 500+ satisfied clients\n✓ 98% success rate\n✓ 24/7 service support\n✓ Expert team\n✓ Innovative AI solutions\n✓ Personalized service\n✓ Proven track record\n\nLearn more: /about';
+      return 'Why Choose MRECAI:\n\n✓ 15+ years of experience (since 2009)\n✓ 500+ satisfied clients\n✓ 98% success rate\n✓ 24/7 service support\n✓ Expert team\n✓ Consulting, tax, accounting & insurance under one roof\n✓ Personalized service\n✓ Proven track record\n\nLearn more: /about';
     }
 
     // Success Rate
@@ -398,12 +398,12 @@ const AIChat = () => {
 
     // Comparison/Competitors
     if (lowerMessage.includes('compare') || lowerMessage.includes('difference') || lowerMessage.includes('vs') || lowerMessage.includes('versus')) {
-      return 'What Sets Us Apart:\n\n✓ Comprehensive services (consulting + insurance)\n✓ AI & technology expertise\n✓ 24/7 availability\n✓ Personalized attention\n✓ 15+ years experience\n✓ Strategic partnerships\n✓ Proven results (98% success rate)\n\nExperience the MRECAI difference! Book consultation: /book-now';
+      return 'What Sets Us Apart:\n\n✓ Comprehensive services (consulting + insurance)\n✓ Tax & accounting expertise\n✓ 24/7 availability\n✓ Personalized attention\n✓ 15+ years experience\n✓ Strategic partnerships\n✓ Proven results (98% success rate)\n\nExperience the MRECAI difference! Book consultation: /book-now';
     }
 
     // Credentials/Certifications
     if (lowerMessage.includes('credential') || lowerMessage.includes('certification') || lowerMessage.includes('licensed') || lowerMessage.includes('qualified')) {
-      return 'Our Credentials:\n\n✓ Licensed insurance professionals\n✓ Certified business consultants\n✓ Google Analytics & Ads certified\n✓ AI & automation specialists\n✓ 15+ years combined experience\n✓ Partnerships with top carriers\n\nTrust our expertise! Learn more: /about/founder';
+      return 'Our Credentials:\n\n✓ Licensed insurance professionals\n✓ Certified business consultants\n✓ Tax & accounting specialists\n✓ 15+ years combined experience\n✓ Partnerships with top carriers\n\nTrust our expertise! Learn more: /about/founder';
     }
 
     // Testimonials/Case Studies
@@ -550,9 +550,9 @@ const AIChat = () => {
             }
           }}
           className="relative bg-gradient-to-r from-primary-500 to-primary-600 text-white p-3 sm:p-4 rounded-full shadow-lg hover:shadow-xl transition-all w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center"
-          aria-label="Open AI Chat"
+          aria-label="Open chat"
         >
-          {isOpen ? <FaTimes className="text-xl sm:text-2xl" /> : <FaRobot className="text-xl sm:text-2xl" />}
+          {isOpen ? <FaTimes className="text-xl sm:text-2xl" /> : <FaComments className="text-xl sm:text-2xl" />}
 
           {/* Notification Badge - shows for initial notification or unread messages */}
           {(showNotification || hasUnreadMessages) && !isOpen && (
@@ -588,11 +588,11 @@ const AIChat = () => {
               </button>
               <div className="flex items-start space-x-3 pr-6">
                 <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
-                  <FaRobot className="text-white text-lg" />
+                  <FaComments className="text-white text-lg" />
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="font-bold text-navy-900 text-sm mb-1">Need Help?</p>
-                  <p className="text-xs text-gray-600 leading-relaxed">Chat with our AI assistant to get started</p>
+                  <p className="text-xs text-gray-600 leading-relaxed">Chat with us to get started</p>
                 </div>
               </div>
             </motion.div>
@@ -616,12 +616,12 @@ const AIChat = () => {
                 <div className="flex items-center gap-2">
                   <div className="relative">
                     <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                      <FaRobot className="text-base" />
+                      <FaComments className="text-base" />
                     </div>
                     <span className="absolute bottom-0 right-0 w-2 h-2 bg-green-400 rounded-full border border-white"></span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-sm">AI Assistant</h3>
+                    <h3 className="font-bold text-sm">MRE Assistant</h3>
                     <p className="text-[10px] text-white/90 flex items-center gap-1">
                       <span className="w-1 h-1 bg-green-400 rounded-full animate-pulse"></span>
                       Online
@@ -656,7 +656,7 @@ const AIChat = () => {
                 >
                   {message.sender === 'bot' && (
                     <div className="w-6 h-6 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center flex-shrink-0 mb-0.5">
-                      <FaRobot className="text-white text-[10px]" />
+                      <FaComments className="text-white text-[10px]" />
                     </div>
                   )}
                   <div
@@ -700,7 +700,7 @@ const AIChat = () => {
                   className="flex justify-start items-end gap-1.5"
                 >
                   <div className="w-6 h-6 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center flex-shrink-0 mb-0.5">
-                    <FaRobot className="text-white text-[10px]" />
+                    <FaComments className="text-white text-[10px]" />
                   </div>
                   <div className="bg-white border border-gray-200 rounded-2xl rounded-bl-md px-3 py-1.5 shadow-sm">
                     <div className="flex gap-1">
@@ -758,7 +758,7 @@ const AIChat = () => {
                 </button>
               </div>
               <p className="text-[9px] text-gray-400 text-center mt-1.5">
-                Powered by AI
+                MRE Consulting &amp; Insurance
               </p>
             </div>
           </motion.div>

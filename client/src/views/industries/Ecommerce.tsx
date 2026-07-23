@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { FaShoppingCart, FaCheckCircle, FaBoxOpen, FaGlobeAmericas, FaChartPie, FaStore, FaArrowRight } from 'react-icons/fa';
+import { FaShieldAlt, FaCheckCircle, FaBoxOpen, FaGlobeAmericas, FaChartPie, FaStore, FaArrowRight } from 'react-icons/fa';
 import SEO from '../../components/common/SEO';
 import { TrustBar, ProcessFlow } from '../../components/common';
 
@@ -13,11 +13,11 @@ const faqs = [
     },
     {
         question: 'Can you assist with Sales Tax Nexus management?',
-        answer: 'Yes. We monitor your economic nexus across all 50 states and coordinate with sales tax automation tools to ensure you are registered, collecting, and filing correctly to avoid massive state penalties.',
+        answer: 'Yes. We monitor your economic nexus across all 50 states and manage your registrations and filings to ensure you are registered, collecting, and remitting correctly to avoid massive state penalties.',
     },
     {
-        question: 'How can AI agents improve my eCommerce business?',
-        answer: 'We deploy AI customer support agents that handle status inquiries, technical product questions, and returns 24/7, significantly reducing your overhead while increasing conversion rates.',
+        question: 'What insurance coverage does my eCommerce business need?',
+        answer: 'We review your exposure across product liability, cargo and inventory-in-transit, and cyber risk, then architect coverage that protects your margins without paying for policies you don\'t need.',
     },
     {
         question: 'What is "Margin-Based Marketing ROI"?',
@@ -34,7 +34,7 @@ const Ecommerce = () => {
         <>
             <SEO
                 title="Accounting & Strategy for Retail & eCommerce | MRECAI"
-                description="Data-driven infrastructure for modern retailers. Inventory-based tax strategy, multi-channel nexus management, and AI customer support for eCommerce."
+                description="Data-driven infrastructure for modern retailers. Inventory-based tax strategy, multi-channel nexus management, and product liability coverage for eCommerce."
                 canonical="/industries/ecommerce"
                 keywords="eCommerce accounting, Shopify tax strategy, Amazon FBA consulting, sales tax nexus management, inventory COGS tracking, retail profit optimization"
             />
@@ -69,7 +69,7 @@ const Ecommerce = () => {
 
                         <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 border border-white/20">
                             <p className="text-xl text-gray-200 leading-relaxed">
-                                In eCommerce, scale is only valuable if your margins survive the growth. We provide the <strong>technical infrastructure</strong>—from multi-channel COGS tracking to AI support agents—that ensures your bottom line keeps up with your Shopify dashboard.
+                                In eCommerce, scale is only valuable if your margins survive the growth. We provide the <strong>financial infrastructure</strong>—from multi-channel COGS tracking to product liability coverage—that ensures your bottom line keeps up with your Shopify dashboard.
                             </p>
                         </div>
 
@@ -102,7 +102,7 @@ const Ecommerce = () => {
                             eCommerce Operational Intelligence
                         </h2>
                         <p className="text-lg text-gray-600">
-                            Connecting your inventory, your tax liability, and your AI sales tools into a single engine.
+                            Connecting your inventory, your tax liability, and your risk coverage into a single engine.
                         </p>
                     </div>
 
@@ -116,7 +116,7 @@ const Ecommerce = () => {
                             {
                                 icon: FaGlobeAmericas,
                                 title: 'Sales Tax Nexus Management',
-                                description: 'Proactive monitoring and automated filing for every state where your sales require registration and compliance.',
+                                description: 'Proactive monitoring and managed filing for every state where your sales require registration and compliance.',
                             },
                             {
                                 icon: FaChartPie,
@@ -129,9 +129,9 @@ const Ecommerce = () => {
                                 description: 'Direct syncing between Shopify, Amazon, and your accounting platform to eliminate manual data entry errors.',
                             },
                             {
-                                icon: FaShoppingCart,
-                                title: 'AI Conversion Support',
-                                description: 'Intelligent AI agents that recover abandoned carts and answer product questions to drive higher ROAS.',
+                                icon: FaShieldAlt,
+                                title: 'Product Liability & Cargo Coverage',
+                                description: 'Coverage architecture for product liability, inventory in transit, and cyber exposure that protects every order you ship.',
                             },
                             {
                                 icon: FaCheckCircle,

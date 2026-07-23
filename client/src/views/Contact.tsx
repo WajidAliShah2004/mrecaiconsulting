@@ -184,10 +184,10 @@ const Contact = () => {
   return (
     <>
       <SEO
-        title="Contact MRECAI | AI, Tax & Insurance Consulting Inquiry"
-        description="Contact MRECAI for AI consulting, tax planning, insurance, and business consulting services. Call 929-702-2818 or email Matthew@MRECAI.com. Free consultation available."
+        title="Contact MRECAI | Tax, Insurance & Finance Inquiry"
+        description="Contact MRECAI for tax planning, insurance, accounting, and finance consulting services. Call 929-702-2818 or email Matthew@MRECAI.com. Free consultation available."
         canonical="/contact"
-        keywords="contact MRECAI, AI consulting inquiry, tax planning consultation, insurance quote, business consulting contact"
+        keywords="contact MRECAI, business consulting inquiry, tax planning consultation, insurance quote, accounting services contact"
         schema={{
           '@context': 'https://schema.org',
           '@graph': [
@@ -220,7 +220,7 @@ const Contact = () => {
                 Get in <span className="bg-gradient-to-r from-primary-400 via-primary-300 to-primary-500 bg-clip-text text-transparent">Touch</span>
               </h1>
               <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-                Ready to transform your business with AI and technology? Let's discuss your project and goals.
+                Ready to strengthen your business with expert guidance? Let's discuss your goals and next steps.
               </p>
             </motion.div>
           </div>
@@ -509,7 +509,7 @@ const Contact = () => {
                         <option value="general">General Inquiry</option>
                         <option value="insurance">Insurance Services</option>
                         <option value="consulting">Business Consulting</option>
-                        <option value="technology">AI & Automation</option>
+                        <option value="investment">Investment & Wealth Planning</option>
                         <option value="tax">Tax & Accounting</option>
                         <option value="other">Other</option>
                       </select>

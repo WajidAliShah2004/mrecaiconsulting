@@ -4,9 +4,9 @@ import '../src/index.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://mrecai.com'),
-  title: 'AI Consulting, Tax, Insurance & Business Services | MRECAI',
+  title: 'Tax, Insurance & Finance Consulting | MRECAI',
   description:
-    'Premier AI consulting and business services firm in NYC. Custom AI automation, strategic tax planning, insurance and risk management, and business consulting.',
+    'Full-service tax, insurance, and finance consulting firm in NYC. Strategic tax planning and preparation, comprehensive insurance and risk management, and bookkeeping, accounting, and financial consulting.',
   authors: [{ name: 'MRECAI' }],
   robots: {
     index: true,
@@ -72,7 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div style={{ padding: 40, fontFamily: 'Arial, sans-serif', maxWidth: 1200, margin: '0 auto' }}>
             <h1>MRECAI</h1>
             <p>
-              <strong>Full-Service Professional Services Firm</strong>
+              <strong>Tax, Insurance & Finance Consulting</strong>
             </p>
             <p>
               Phone: <a href="tel:+19297022818">+1-929-702-2818</a> | Email:{' '}
@@ -83,17 +83,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <h2>Our Services</h2>
             <ul>
               <li>
-                <strong>Business Consulting:</strong> Strategic planning, financial analysis, and operational
-                optimization
+                <strong>Tax Services:</strong> Tax preparation, planning, and strategy for individuals and businesses
               </li>
               <li>
                 <strong>Insurance Services:</strong> Personal and commercial insurance coverage and risk management
               </li>
               <li>
-                <strong>Tax Services:</strong> Tax preparation, planning, and strategy for individuals and businesses
+                <strong>Bookkeeping & Accounting:</strong> Full-cycle bookkeeping, financial reporting, and month-end close
               </li>
               <li>
-                <strong>AI Automation:</strong> AI implementation, process automation, and technology integration
+                <strong>Financial & Business Consulting:</strong> Cash flow management, financial analysis, and strategic planning
               </li>
               <li>
                 <strong>Investment Management:</strong> Portfolio management and wealth planning
@@ -105,19 +104,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
             <h2>About Us</h2>
             <p>
-              MRECAI is a full-service professional services firm that integrates finance, tax,
-              insurance, and technology under one roof. Founded in 2024, we serve small to mid-sized enterprises
-              (SMEs) by eliminating operational silos and ensuring that financial health, asset protection, and growth
-              technologies work in perfect synchronization.
+              MRECAI is a full-service tax, insurance, and finance consulting firm that integrates tax, accounting,
+              insurance, and financial consulting under one roof. Founded in 2024, we serve individuals, families,
+              and small to mid-sized enterprises (SMEs) by eliminating operational silos and ensuring that financial
+              health, asset protection, and tax strategy work in perfect synchronization.
             </p>
 
             <h2>Why Choose MRE?</h2>
             <ul>
               <li>One partner instead of five separate vendors</li>
-              <li>Full-service integration (finance + tax + insurance + AI)</li>
+              <li>Full-service integration (tax + insurance + finance)</li>
               <li>50+ years of insurance expertise through Grober Imbey partnership</li>
-              <li>AI-first approach to business automation</li>
-              <li>Risk management combined with technology implementation</li>
+              <li>Proactive, strategy-first approach to advisory</li>
+              <li>Risk management combined with hands-on business consulting</li>
             </ul>
 
             <h2>Contact Us</h2>

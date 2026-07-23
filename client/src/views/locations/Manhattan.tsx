@@ -61,7 +61,7 @@ const Manhattan = () => {
 
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 border border-white/20">
               <p className="text-xl text-gray-200 leading-relaxed">
-                <strong>Your Manhattan business partner for finance, tax, insurance, and technology.</strong> Located in Great Neck, we serve businesses and professionals throughout Manhattan with comprehensive consulting services.
+                <strong>Your Manhattan business partner for consulting, tax, accounting, and insurance.</strong> Located in Great Neck, we serve businesses and professionals throughout Manhattan with comprehensive consulting services.
               </p>
             </div>
 
@@ -146,9 +146,9 @@ const Manhattan = () => {
                 link: '/services/insurance',
               },
               {
-                title: 'AI Automation for NYC Firms',
-                description: 'Technology implementation and AI automation to help Manhattan businesses scale efficiently.',
-                link: '/services/ai-automation',
+                title: 'Risk & Insurance Reviews',
+                description: 'Coverage audits across GL, E&O, and cyber liability to protect Manhattan businesses from costly gaps.',
+                link: '/services/risk-architecture',
               },
               {
                 title: 'Strategic Tax Planning',

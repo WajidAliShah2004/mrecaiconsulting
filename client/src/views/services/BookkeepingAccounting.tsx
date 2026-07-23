@@ -214,8 +214,8 @@ const BookkeepingAccounting = () => {
                 <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                   <FaCheck className="text-2xl text-purple-600" />
                 </div>
-                <h3 className="text-lg font-bold text-navy-900 mb-2">Automation</h3>
-                <p className="text-gray-600">Data capture is faster and audit-ready with smart workflows</p>
+                <h3 className="text-lg font-bold text-navy-900 mb-2">Efficiency</h3>
+                <p className="text-gray-600">Data capture is faster and audit-ready with streamlined workflows</p>
               </div>
             </div>
           </motion.div>

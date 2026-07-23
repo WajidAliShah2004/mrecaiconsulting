@@ -30,8 +30,8 @@ describe('Products Page', () => {
         'Bookkeeping & Accounting',
         'Insurance Consulting',
         'Business Consulting',
-        'AI & Technology Consulting',
-        'Business Process Automation'
+        'Advanced Tax Strategy',
+        'Investment & Wealth Planning'
       ];
 
       expectedServices.forEach(service => {
@@ -74,7 +74,7 @@ describe('Products Page', () => {
       // Use getAllByText since "YOUR PIPELINE" appears multiple times
       const pipelineHeadings = screen.getAllByText(/YOUR PIPELINE/i);
       expect(pipelineHeadings.length).toBeGreaterThan(0);
-      expect(screen.getByText(/FULLY AUTOMATED/i)).toBeInTheDocument();
+      expect(screen.getByText(/FULLY HANDLED/i)).toBeInTheDocument();
     });
 
     it('should display Core Capabilities section clearly', () => {
@@ -88,7 +88,7 @@ describe('Products Page', () => {
       renderWithProviders(<Products />);
       
       expect(screen.getByText('RELENTLESS LEAD DISCOVERY')).toBeInTheDocument();
-      expect(screen.getByText('AI THAT ACTUALLY THINKS')).toBeInTheDocument();
+      expect(screen.getByText('SCREENING THAT ACTUALLY THINKS')).toBeInTheDocument();
       expect(screen.getByText('PROOF OF VALUE ON FIRST CONTACT')).toBeInTheDocument();
       expect(screen.getByText('ENGINEERED FOR SCALE')).toBeInTheDocument();
     });
@@ -118,8 +118,8 @@ describe('Products Page', () => {
         'Bookkeeping & Accounting',
         'Insurance Consulting',
         'Business Consulting',
-        'AI & Technology Consulting',
-        'Business Process Automation'
+        'Advanced Tax Strategy',
+        'Investment & Wealth Planning'
       ];
       
       services.forEach(service => {
@@ -136,7 +136,7 @@ describe('Products Page', () => {
       // Atlas features should be clearly labeled and separated
       const features = [
         'RELENTLESS LEAD DISCOVERY',
-        'AI THAT ACTUALLY THINKS',
+        'SCREENING THAT ACTUALLY THINKS',
         'PROOF OF VALUE ON FIRST CONTACT',
         'ENGINEERED FOR SCALE'
       ];

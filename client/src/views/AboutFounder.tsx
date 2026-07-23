@@ -137,19 +137,19 @@ const AboutFounder = () => {
                     <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-r-lg mb-8">
                       <FaQuoteLeft className="text-purple-500 text-3xl mb-4" />
                       <p className="text-lg text-gray-700 italic leading-relaxed">
-                        "Technology should empower businesses, not complicate them. We build intelligent systems that work seamlessly behind the scenes."
+                        "Technology should empower businesses, not complicate them. We build reliable systems that work seamlessly behind the scenes."
                       </p>
                     </div>
 
                     <h3 className="text-2xl font-bold text-navy-900 mb-4">About Wajid Ali Shah</h3>
                     <p className="text-gray-700 leading-relaxed mb-6">
-                      With 15 years of software engineering experience, <strong>Wajid Ali Shah</strong> serves as the Chief Technology Officer of MRECAI and CEO of NovaEdge Solutions. His expertise spans AI development, website development, desktop application development, mobile app development, and automation solutions—delivering enterprise-grade technology that empowers businesses to scale efficiently.
+                      With 15 years of software engineering experience, <strong>Wajid Ali Shah</strong> serves as the Chief Technology Officer of MRECAI and CEO of NovaEdge Solutions. His expertise spans web, desktop, and mobile application development—delivering the dependable infrastructure that keeps MRECAI's client service running smoothly.
                     </p>
                     <p className="text-gray-700 leading-relaxed mb-6">
-                      Throughout his career, Wajid has architected comprehensive technology solutions across diverse industries, from startups to established enterprises. He specializes in transforming complex business challenges into elegant, automated systems that drive measurable results and operational excellence.
+                      Throughout his career, Wajid has architected comprehensive technology solutions across diverse industries, from startups to established enterprises. He specializes in transforming complex business challenges into elegant, efficient systems that drive measurable results and operational excellence.
                     </p>
                     <p className="text-gray-700 leading-relaxed mb-6">
-                      As CTO of A.T.L.A.S Engine (Advanced Targeting & Automation System), Wajid continues to push the boundaries of what's possible with intelligent automation, helping businesses leverage cutting-edge technology to achieve their strategic goals.
+                      At MRECAI, Wajid leads the internal platforms and infrastructure that support our consulting, tax, and insurance teams—so every client benefits from fast, secure, and dependable service.
                     </p>
 
                     <div className="space-y-4 mb-8">
@@ -157,9 +157,9 @@ const AboutFounder = () => {
                         'CTO of MRECAI',
                         'CEO of NovaEdge Solutions',
                         '15 years of software engineering experience',
-                        'Expert in AI, web, desktop, and mobile app development',
-                        'Specializes in automation and digital transformation',
-                        'CTO of A.T.L.A.S Engine (Advanced Targeting & Automation System)',
+                        'Expert in web, desktop, and mobile app development',
+                        'Specializes in secure, scalable business systems',
+                        'Leads MRECAI\'s internal platforms and infrastructure',
                         'Architect of enterprise-grade technology solutions'
                       ].map((item, index) => (
                         <div key={index} className="flex items-center space-x-3">
@@ -249,13 +249,13 @@ const AboutFounder = () => {
                     <div className="bg-primary-50 border-l-4 border-primary-500 p-6 rounded-r-lg mb-8">
                       <FaQuoteLeft className="text-primary-500 text-3xl mb-4" />
                       <p className="text-lg text-gray-700 italic leading-relaxed">
-                        "My vision is to create a consulting and insurance firm that truly puts clients first, 
-                        leveraging technology and innovation to deliver exceptional results while maintaining 
+                        "My vision is to create a tax, insurance, and finance consulting firm that truly puts clients first,
+                        leveraging expertise and innovation to deliver exceptional results while maintaining
                         the personal touch that makes all the difference."
                       </p>
                     </div>
                     <p className="text-gray-700 leading-relaxed mb-6">
-                      <strong>Matthew R. Epstein</strong> is an accomplished entrepreneur, consultant, and licensed insurance broker who blends financial expertise with innovative technology solutions. A graduate of the <strong>University at Buffalo</strong>, Matthew earned both his <strong>Bachelor's and Master's degrees in Accounting and Finance</strong>, graduating <strong>Summa Cum Laude</strong> and <strong>Magna Cum Laude</strong>.
+                      <strong>Matthew R. Epstein</strong> is an accomplished entrepreneur, consultant, and licensed insurance broker who blends financial expertise with strategic business insight. A graduate of the <strong>University at Buffalo</strong>, Matthew earned both his <strong>Bachelor's and Master's degrees in Accounting and Finance</strong>, graduating <strong>Summa Cum Laude</strong> and <strong>Magna Cum Laude</strong>.
                     </p>
 
                     <p className="text-gray-700 leading-relaxed mb-6">
@@ -263,7 +263,7 @@ const AboutFounder = () => {
                     </p>
 
                     <p className="text-gray-700 leading-relaxed mb-6">
-                      Now, as a <strong>licensed Property & Casualty and Life, Accident & Health Insurance Broker</strong>, Matthew leads MRECAI full-time — helping individuals and businesses achieve smarter financial decisions, stronger protection, and lasting success through comprehensive, personalized consulting and insurance solutions.
+                      Now, as a <strong>licensed Property & Casualty and Life, Accident & Health Insurance Broker</strong>, Matthew leads MRECAI full-time — helping individuals and businesses achieve smarter financial decisions, stronger protection, and lasting success through comprehensive, personalized tax, insurance, and finance consulting solutions.
                     </p>
 
                     <h3 className="text-2xl font-bold text-navy-900 mb-4 mt-8">My Journey — From Numbers to Innovation</h3>
@@ -288,7 +288,7 @@ const AboutFounder = () => {
                     </p>
 
                     <p className="text-gray-700 leading-relaxed mb-6">
-                      Today, I'm proud to lead a full-service firm that helps individuals and businesses navigate everything from tax planning and accounting to insurance, automation, and AI-driven consulting. What started as a vision to simplify financial decision-making has grown into a mission — to help every client achieve confidence, clarity, and control over their financial world.
+                      Today, I'm proud to lead a full-service firm that helps individuals and businesses navigate everything from tax planning and accounting to insurance, risk management, and business consulting. What started as a vision to simplify financial decision-making has grown into a mission — to help every client achieve confidence, clarity, and control over their financial world.
                     </p>
                   </div>
                 </motion.div>
@@ -353,7 +353,7 @@ const AboutFounder = () => {
                   items: [
                     'Financial Expertise & Strategic Consulting',
                     'Insurance Solutions & Risk Management',
-                    'AI & Technology Implementation',
+                    'Business Systems & Process Improvement',
                     'Tax Planning & Accounting Services'
                   ],
                   color: 'from-orange-500 to-red-500'
@@ -498,13 +498,13 @@ const AboutFounder = () => {
                 >
                   <h3 className="text-2xl font-bold mb-4">Vision for MRECAI</h3>
                   <p className="text-lg leading-relaxed opacity-95 mb-4">
-                    To build the most trusted and innovative consulting and insurance firm, recognized for 
+                    To build the most trusted and innovative tax, insurance, and finance consulting firm, recognized for
                     transforming businesses and protecting families through technology, expertise, and 
                     unwavering commitment to client success.
                   </p>
                   <p className="text-lg leading-relaxed opacity-95">
-                    By 2030, we aim to serve over 1,000 clients, expand our service offerings, and become 
-                    the go-to partner for businesses seeking to leverage AI and automation for growth.
+                    By 2030, we aim to serve over 1,000 clients, expand our service offerings, and become
+                    the go-to partner for businesses seeking expert guidance and lasting protection.
                   </p>
                 </motion.div>
 

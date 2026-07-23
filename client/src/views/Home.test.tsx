@@ -32,7 +32,7 @@ describe('Home Page - Task 11 Integration Tests', () => {
       renderWithRouter(<TechnologyAdvantage />);
 
       // Check for the TechnologyAdvantage section heading
-      const heading = screen.getByText(/Our 4-Pillar Business Advantage/i);
+      const heading = screen.getByText(/The MRE Advantage/i);
       expect(heading).toBeInTheDocument();
     });
 
@@ -40,10 +40,10 @@ describe('Home Page - Task 11 Integration Tests', () => {
       renderWithRouter(<TechnologyAdvantage />);
 
       // Check for all 4 pillar titles
-      expect(screen.getByText(/AI Consulting & Automation/i)).toBeInTheDocument();
+      expect(screen.getByText(/Business Management Consulting/i)).toBeInTheDocument();
       expect(screen.getByText(/Tax Strategy & Accounting/i)).toBeInTheDocument();
       expect(screen.getByText(/Insurance & Risk Architecture/i)).toBeInTheDocument();
-      expect(screen.getByText(/Business Support Services/i)).toBeInTheDocument();
+      expect(screen.getByText(/Investment & Wealth Planning/i)).toBeInTheDocument();
     });
 
     it('should not display removed software or creative service pillars', () => {
@@ -52,6 +52,8 @@ describe('Home Page - Task 11 Integration Tests', () => {
 
       expect(text).not.toMatch(/Custom Software Development/i);
       expect(text).not.toMatch(/Digital Marketing/i);
+      expect(text).not.toMatch(/AI Consulting/i);
+      expect(text).not.toMatch(/Automation/i);
     });
 
     it('should have links to service pages from each pillar', () => {
@@ -66,20 +68,20 @@ describe('Home Page - Task 11 Integration Tests', () => {
       renderWithRouter(<TechnologyAdvantage />);
 
       // Check for key description text from each pillar
-      expect(screen.getByText(/Deploy intelligent AI systems/i)).toBeInTheDocument();
+      expect(screen.getByText(/Strategic guidance and operational systems/i)).toBeInTheDocument();
       expect(screen.getByText(/Proactive tax planning/i)).toBeInTheDocument();
       expect(screen.getByText(/Comprehensive risk management/i)).toBeInTheDocument();
-      expect(screen.getByText(/Business consulting, investment management/i)).toBeInTheDocument();
+      expect(screen.getByText(/Holistic wealth management/i)).toBeInTheDocument();
     });
 
     it('should display features for each pillar', () => {
       renderWithRouter(<TechnologyAdvantage />);
 
       // Check for specific features from different pillars (using unique features)
-      expect(screen.getByText(/AI Chatbots & Agents/i)).toBeInTheDocument();
+      expect(screen.getByText(/Fractional COO Services/i)).toBeInTheDocument();
       expect(screen.getByText(/Tax Preparation/i)).toBeInTheDocument();
       expect(screen.getByText(/Cyber Coverage/i)).toBeInTheDocument();
-      expect(screen.getByText(/Investment Management/i)).toBeInTheDocument();
+      expect(screen.getByText(/Portfolio Management/i)).toBeInTheDocument();
     });
   });
 
@@ -91,7 +93,7 @@ describe('Home Page - Task 11 Integration Tests', () => {
       expect(container).toBeInTheDocument();
 
       // Check for the main heading
-      expect(screen.getByText(/Our 4-Pillar Business Advantage/i)).toBeInTheDocument();
+      expect(screen.getByText(/The MRE Advantage/i)).toBeInTheDocument();
     });
 
     it('should have all required pillar elements', () => {
@@ -99,10 +101,10 @@ describe('Home Page - Task 11 Integration Tests', () => {
 
       // Verify all 4 pillars are rendered with their titles
       const pillarTitles = [
-        'AI Consulting & Automation',
+        'Business Management Consulting',
         'Tax Strategy & Accounting',
         'Insurance & Risk Architecture',
-        'Business Support Services'
+        'Investment & Wealth Planning'
       ];
 
       pillarTitles.forEach(title => {
@@ -115,7 +117,7 @@ describe('Home Page - Task 11 Integration Tests', () => {
 
       // Check for the bottom CTA message
       expect(screen.getByText(/The MRE Difference/i)).toBeInTheDocument();
-      expect(screen.getByText(/One integrated partner for AI, tax, insurance, and business strategy/i)).toBeInTheDocument();
+      expect(screen.getByText(/One integrated partner for tax, insurance, and wealth strategy/i)).toBeInTheDocument();
     });
   });
 });

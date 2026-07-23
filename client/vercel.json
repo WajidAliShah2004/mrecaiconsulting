@@ -1,4 +1,15 @@
 {
+  "redirects": [
+    { "source": "/ai-consulting", "destination": "/services", "permanent": true },
+    { "source": "/services/ai-automation", "destination": "/services", "permanent": true },
+    { "source": "/services/ai-driven-growth", "destination": "/services/business-consulting", "permanent": true },
+    { "source": "/tools/readiness-assessment", "destination": "/book-now", "permanent": true },
+    { "source": "/tools/roi-calculator", "destination": "/resources", "permanent": true },
+    { "source": "/resources/executives-guide-to-ai", "destination": "/resources", "permanent": true },
+    { "source": "/products", "destination": "/services", "permanent": true },
+    { "source": "/industries", "destination": "/services", "permanent": true },
+    { "source": "/industries/:path*", "destination": "/services", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",

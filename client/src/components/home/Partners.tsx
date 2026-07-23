@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaShieldAlt, FaRobot } from 'react-icons/fa';
+import { FaShieldAlt, FaLaptopCode } from 'react-icons/fa';
 
 const Partners = () => {
     return (
@@ -34,7 +34,7 @@ const Partners = () => {
                         rel="noopener noreferrer"
                     >
                         <div className="w-10 h-10 bg-primary-600 rounded flex items-center justify-center text-white group-hover:bg-navy-900 transition-colors">
-                            <FaRobot />
+                            <FaLaptopCode />
                         </div>
                         <div className="text-left">
                             <div className="text-xs text-gray-400 font-bold uppercase tracking-tighter">Technology Partner</div>

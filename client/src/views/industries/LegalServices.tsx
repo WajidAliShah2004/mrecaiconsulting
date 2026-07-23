@@ -16,8 +16,8 @@ const faqs = [
         answer: 'Yes. We design and manage complex partner draw systems, equity splits, and performance-based bonus structures that align with the long-term growth of the firm.',
     },
     {
-        question: 'How can AI modernize my law practice?',
-        answer: 'We deploy intelligent lead intake AI that pre-screens potential clients, handles initial appointment scheduling, and automates follow-ups, ensuring your attorneys spend time only on high-value billable work.',
+        question: 'How do you improve client intake at my law practice?',
+        answer: 'We redesign your intake process—consultation scheduling, conflict checks, and engagement letters—so qualified matters move from first call to signed retainer quickly, and your attorneys spend time only on high-value billable work.',
     },
     {
         question: 'What is the "Legal Professional Liability" review?',
@@ -34,9 +34,9 @@ const LegalServices = () => {
         <>
             <SEO
                 title="Accounting & Strategy for Law Firms | Legal Services | MRECAI"
-                description="Specialized back-office and tax management for law firms. Trust accounting compliance, partner compensation, and AI lead intake for legal practices."
+                description="Specialized back-office and tax management for law firms. Trust accounting compliance, partner compensation, and professional liability review for legal practices."
                 canonical="/industries/legal-services"
-                keywords="law firm accounting, legal practice consulting, IOLTA compliance NYC, partner compensation strategy, law firm AI automation, legal professional liability"
+                keywords="law firm accounting, legal practice consulting, IOLTA compliance NYC, partner compensation strategy, law firm operations, legal professional liability"
             />
 
             {/* Hero Section */}
@@ -69,7 +69,7 @@ const LegalServices = () => {
 
                         <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 border border-white/20">
                             <p className="text-xl text-gray-200 leading-relaxed">
-                                Legal practices face unique risks, from IOLTA compliance to partner liability. We provide the <strong>specialized back-office</strong>—integrating finance, insurance, and AI intake—that allows your partners to focus on the law.
+                                Legal practices face unique risks, from IOLTA compliance to partner liability. We provide the <strong>specialized back-office</strong>—integrating finance, insurance, and client intake—that allows your partners to focus on the law.
                             </p>
                         </div>
 
@@ -102,7 +102,7 @@ const LegalServices = () => {
                             Legal Operational Intelligence
                         </h2>
                         <p className="text-lg text-gray-600">
-                            Precise financial management and modern automation designed for the legal profession.
+                            Precise financial management and modern operations designed for the legal profession.
                         </p>
                     </div>
 
@@ -120,8 +120,8 @@ const LegalServices = () => {
                             },
                             {
                                 icon: FaFileSignature,
-                                title: 'Intelligent Intake AI',
-                                description: 'Automated lead intake and pre-screening AI to ensure your attorneys only speak with qualified, high-value potential clients.',
+                                title: 'Client Intake Process Design',
+                                description: 'Structured intake and pre-screening workflows to ensure your attorneys only speak with qualified, high-value potential clients.',
                             },
                             {
                                 icon: FaUserShield,

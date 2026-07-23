@@ -34,7 +34,7 @@ export default function Products() {
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
                 YOUR PIPELINE.<br />
-                <span className="text-primary-400">FULLY AUTOMATED.</span>
+                <span className="text-primary-400">FULLY HANDLED.</span>
               </h1>
 
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 mb-6 md:mb-8 border border-white/20">
@@ -132,7 +132,7 @@ export default function Products() {
                 Comprehensive Business Services
               </h2>
               <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-                MRECAI delivers integrated solutions across finance, risk management, and AI automation to help your business thrive.
+                MRECAI delivers integrated solutions across finance, risk management, and business consulting to help your business thrive.
               </p>
             </div>
 
@@ -146,8 +146,8 @@ export default function Products() {
                   'Bookkeeping & Accounting',
                   'Insurance Consulting',
                   'Business Consulting',
-                  'AI & Technology Consulting',
-                  'Business Process Automation'
+                  'Advanced Tax Strategy',
+                  'Investment & Wealth Planning'
                 ].map((service, index) => (
                   <motion.div
                     key={index}
@@ -238,9 +238,9 @@ export default function Products() {
               {
                 num: '02',
                 icon: '🧠',
-                title: 'AI THAT ACTUALLY THINKS',
+                title: 'SCREENING THAT ACTUALLY THINKS',
                 description: 'Forget passive scrapers. ATLAS actively reasons about every prospect — weighing them against your exact criteria, reading social signals, and flagging recent trigger events like funding rounds, leadership changes, or product launches.',
-                tag: 'Real-Time LLM Evaluation'
+                tag: 'Real-Time Prospect Evaluation'
               },
               {
                 num: '03',
@@ -397,7 +397,7 @@ export default function Products() {
               Ready to Deploy ATLAS?
             </h2>
             <p className="text-base md:text-lg text-gray-700 mb-8">
-              Contact MRECAI Technology to learn how ATLAS can transform your sales pipeline.
+              Contact MRECAI to learn how ATLAS can transform your sales pipeline.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import DownloadServicesGuidePage from '@/pages/DownloadServicesGuide';
 
 const title = "Download Services Guide | Free PDF | MRECAI";
-const description = "Download our comprehensive services guide and explore our tax, insurance, technology, and business consulting solutions. Claim your free PDF copy today.";
+const description = "Download our comprehensive services guide and explore our tax, insurance, accounting, and finance consulting solutions. Claim your free PDF copy today.";
 const canonical = "/download-services-guide";
 
 export function generateMetadata(): Metadata {

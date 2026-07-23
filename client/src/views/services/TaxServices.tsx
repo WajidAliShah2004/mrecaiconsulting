@@ -35,7 +35,7 @@ const TaxServices = () => {
     <>
       <SEO
         title="Tax Preparation & Consulting | Business & Individual Tax | MRECAI"
-        description="Expert tax preparation and strategic consulting for businesses and individuals. Minimize liability with proactive planning and automated compliance solutions."
+        description="Expert tax preparation and strategic consulting for businesses and individuals. Minimize liability with proactive planning and year-round compliance support."
         canonical="/services/tax-services"
         keywords="tax preparation, tax consulting, small business taxes, individual tax return, IRS representation, tax strategy NYC, tax compliance"
         schema={{

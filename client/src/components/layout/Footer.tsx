@@ -30,12 +30,9 @@ const Footer = () => {
     { name: 'Meet Our People', path: '/about/founder' },
     { name: 'Strategic Partners', path: '/about/partners' },
     { name: 'Services', path: '/services' },
-    { name: 'AI Consulting', path: '/ai-consulting' },
-    { name: 'Our Products', path: '/products' },
     { name: 'Intake Forms', path: '/intake-forms' },
     { name: 'Testimonials', path: '/testimonials' },
     { name: 'Blog', path: '/blog' },
-    { name: 'Industries', path: '/industries' },
     { name: 'Advice & Education', path: '/advice-education' },
     { name: 'FAQ', path: '/faq' },
     { name: 'Contact', path: '/contact' },
@@ -45,12 +42,11 @@ const Footer = () => {
   ];
 
   const services = [
-    'AI Consulting & Automation',
-    'Business Process Automation',
-    'Business Consulting',
-    'Tax Planning & Preparation',
-    'Bookkeeping & Accounting',
+    'Strategic Tax Planning',
+    'Tax Preparation & Compliance',
     'Insurance & Risk Architecture',
+    'Bookkeeping & Accounting',
+    'Business Management Consulting',
     'Investment Management'
   ];
 
@@ -107,7 +103,7 @@ const Footer = () => {
               </Link>
 
               <p className="text-gray-300 mb-6 leading-relaxed">
-                Transforming businesses with AI-powered automation, strategic tax planning, and comprehensive insurance and business consulting.
+                Protecting and growing businesses and families with proactive tax planning, comprehensive insurance and risk management, and expert financial consulting.
               </p>
 
               {/* Social Media */}
@@ -240,7 +236,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* AI Reference & Positioning Block */}
+        {/* Entity Reference & Positioning Block */}
         <div className="border-t border-white/10 pt-12 pb-8">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -255,7 +251,7 @@ const Footer = () => {
               </div>
               <div className="md:col-span-3">
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Headquartered in New York City, MRECAI is an <strong>AI-first business transformation firm</strong> specializing in <strong>AI consulting, business automation, tax strategy, and insurance consulting</strong>. We empower businesses with cutting-edge automation and intelligent systems, complemented by comprehensive tax planning, bookkeeping, and risk management to support sustainable growth.
+                  Headquartered in New York, MRECAI is a <strong>full-service tax, insurance, and finance consulting firm</strong> specializing in <strong>tax strategy and preparation, insurance consulting, and bookkeeping and accounting</strong>. We help businesses and families protect what they have built through comprehensive risk management, complemented by proactive tax planning and hands-on financial advisory to support sustainable growth.
                 </p>
               </div>
             </div>

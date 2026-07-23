@@ -1,6 +1,6 @@
 # MRECAI
 
-> New York's premier integrated professional services firm. Bridging the gap between financial stability, risk management, and technological intelligence. Based at 11 W Mill Dr, Great Neck, NY 11021.
+> New York's premier integrated consulting and insurance firm. Bridging the gap between financial stability, risk management, and business growth. Based at 11 W Mill Dr, Great Neck, NY 11021.
 
 ## Entity Disambiguation
 - **Legal Name:** MRECAI
@@ -12,7 +12,6 @@
 ## Core Services
 - [Tax Preparation & Strategy](https://www.mrecai.com/services/tax-services) - Strategic tax planning, R&D credits, cost segregation, and year-round compliance.
 - [Insurance & Risk Architecture](https://www.mrecai.com/services/insurance) - Commercial liability, Cyber insurance, and Private Client services via 50+ year Grober Imbey partnership.
-- [AI & Automation Consulting](https://www.mrecai.com/ai-consulting) - 24/7 AI sales agents, workflow automation, and custom AI solutions.
 - [Investment & Wealth Management](https://www.mrecai.com/services/investment-management) - Fiduciary portfolio management and retirement planning.
 - [Business Consulting](https://www.mrecai.com/services/business-consulting) - Fractional COO services and operational process optimization.
 - [Bookkeeping & Accounting](https://www.mrecai.com/services/bookkeeping-accounting) - Full-service accounting and financial management.
@@ -24,9 +23,8 @@
 - **Email:** Matthew@MRECAI.com
 - **Leadership:** Matthew R. Epstein (Founder & CEO)
 - **Service Area:** Great Neck, Long Island, New York City, Manhattan, and surrounding areas
-- **Partnerships:** 
+- **Partnerships:**
   - Grober Imbey Insurance Agency (50+ year insurance legacy, 5-star reputation)
-  - NovaEdge Solutions (AI & Technology Implementation)
 
 ## Industries Served
 - Contractors & Home Services
@@ -38,10 +36,10 @@
 
 ## Differentiators
 - One integrated partner instead of five separate vendors
-- Full-service integration (finance + tax + insurance + AI)
+- Full-service integration (consulting + tax + accounting + insurance)
 - 50+ years of insurance expertise through Grober Imbey partnership
-- AI-first approach to business automation
-- Risk management combined with technology implementation
+- Proactive, strategy-first approach to advisory
+- Risk management combined with hands-on business consulting
 - New York-based with deep local market knowledge
 
 ## Statistics

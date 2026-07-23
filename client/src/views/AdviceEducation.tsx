@@ -15,16 +15,16 @@ const AdviceEducation = () => {
 
   // Icon mapping for display
   const iconMap: any = {
-    'ai-automation-frontier': FaRocket,
-    'digital-marketing-reputation': FaChartLine,
-    'future-of-business': FaLightbulb
+    'tax-strategy-playbook': FaLightbulb,
+    'business-risk-blueprint': FaRocket,
+    'financial-clarity-guide': FaChartLine
   };
 
   // Color mapping for display
   const colorMap: any = {
-    'ai-automation-frontier': 'from-primary-500 to-primary-600',
-    'digital-marketing-reputation': 'from-green-500 to-emerald-600',
-    'future-of-business': 'from-purple-500 to-pink-600'
+    'tax-strategy-playbook': 'from-primary-500 to-primary-600',
+    'business-risk-blueprint': 'from-green-500 to-emerald-600',
+    'financial-clarity-guide': 'from-purple-500 to-pink-600'
   };
 
   useEffect(() => {
@@ -101,48 +101,48 @@ const AdviceEducation = () => {
   // Fallback data if Supabase is not set up yet
   const fallbackWhitepapers = [
     {
-      id: 'ai-automation-frontier',
-      title: 'The New Frontier of Efficiency: How AI & Automation Are Transforming Every Industry',
-      description: 'A comprehensive 50+ page executive report analyzing AI and automation opportunities across 20+ industries. Includes ROI benchmarks from McKinsey, PwC, Gartner, Deloitte, and IBM.',
-      icon: FaRocket,
+      id: 'tax-strategy-playbook',
+      title: 'The Small Business Tax Strategy Playbook: Proven Ways to Lower Your Effective Rate',
+      description: 'A comprehensive 50+ page executive report on entity optimization, R&D credits, cost segregation, and retirement plan strategies that legally reduce what you owe.',
+      icon: FaLightbulb,
       pages: '50+ Pages',
-      topics: ['AI Implementation', 'Automation ROI', 'Industry Analysis', 'Case Studies', 'Implementation Framework'],
+      topics: ['Entity Optimization', 'Tax Credits', 'Cost Segregation', 'Case Studies', 'Planning Framework'],
       color: 'from-primary-500 to-primary-600',
       highlights: [
-        '$15.7 trillion in global GDP potential by 2030',
-        '45% of daily operations are automatable',
-        '250-400% ROI over two years for early adopters',
-        'Detailed analysis of 20+ industries'
+        'Average $15K-$50K in annual savings identified',
+        'Entity structure comparison worksheets',
+        'R&D credit and cost segregation primers',
+        'Year-round planning calendar'
       ]
     },
     {
-      id: 'digital-marketing-reputation',
-      title: 'Digital Marketing, Reviews & Social Presence: Building the Modern Reputation Engine',
-      description: 'A 45+ page flagship white paper on building digital trust, managing online reputation, and implementing the 5 pillars of modern growth for sustainable business success.',
-      icon: FaChartLine,
+      id: 'business-risk-blueprint',
+      title: 'The Business Risk Blueprint: Closing Coverage Gaps Before They Become Losses',
+      description: 'A 45+ page flagship white paper on auditing your insurance coverage, protecting business and personal assets, and building a risk architecture that scales with you.',
+      icon: FaRocket,
       pages: '45+ Pages',
-      topics: ['Digital Marketing', 'Reputation Management', 'SEO Strategy', 'Social Media', 'Analytics'],
+      topics: ['Coverage Gap Analysis', 'Liability Protection', 'Cyber Risk', 'Policy Optimization', 'Asset Protection'],
       color: 'from-green-500 to-emerald-600',
       highlights: [
-        '87% of consumers read reviews before buying',
-        'One-star difference = 5-9% revenue shift',
-        '70% more inquiries with consistent social posting',
-        'Complete implementation framework'
+        'The 10 most common coverage gaps we find',
+        'GL, E&O, and umbrella policy checklists',
+        'Cyber liability essentials for small business',
+        'Complete risk audit framework'
       ]
     },
     {
-      id: 'future-of-business',
-      title: 'The Future of Business: How AI and Automation Are Transforming Operations',
-      description: 'A 40+ page comprehensive guide to implementing ChatGPT, LLMs, and automation systems with detailed security, compliance, and ROI frameworks for modern businesses.',
-      icon: FaLightbulb,
+      id: 'financial-clarity-guide',
+      title: 'From Messy Books to Management Tool: The Owner\'s Guide to Financial Clarity',
+      description: 'A 40+ page comprehensive guide to professionalizing your bookkeeping, reading your financial statements, and using KPIs and cash flow forecasts to drive decisions.',
+      icon: FaChartLine,
       pages: '40+ Pages',
-      topics: ['ChatGPT Integration', 'Business Transformation', 'Compliance', 'Implementation', 'Security'],
+      topics: ['Financial Reporting', 'Cash Flow', 'KPI Tracking', 'Month-End Close', 'Budgeting'],
       color: 'from-purple-500 to-pink-600',
       highlights: [
-        'ChatGPT and LLM implementation strategies',
-        'Security and compliance guidelines',
-        'Industry-specific use cases',
-        'Step-by-step implementation roadmap'
+        'How to read a P&L like an operator',
+        'Cash flow forecasting templates',
+        'Industry-specific KPI benchmarks',
+        'Step-by-step month-end close roadmap'
       ]
     }
   ];
@@ -151,9 +151,9 @@ const AdviceEducation = () => {
     <>
       <SEO
         title="Advice & Education | White Papers & Industry Insights | MRECAI"
-        description="Download free white papers and industry insights on AI, automation, digital marketing, and business transformation. Expert guidance backed by research from McKinsey, PwC, and Gartner."
+        description="Download free white papers and industry insights on tax strategy, insurance, accounting, and business growth. Expert guidance for small business owners."
         canonical="/advice-education"
-        keywords="white papers, business education, AI insights, automation guide, digital marketing education, industry research"
+        keywords="white papers, business education, tax strategy insights, insurance guide, accounting education, industry research"
       />
 
       <div className="pt-20">
@@ -194,7 +194,7 @@ const AdviceEducation = () => {
                 Advice & <span className="bg-gradient-to-r from-primary-400 via-primary-300 to-primary-500 bg-clip-text text-transparent">Education</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-8">
-                Comprehensive white papers and industry insights to help you make informed decisions about AI, automation, and digital transformation
+                Comprehensive white papers and industry insights to help you make informed decisions about tax strategy, risk protection, and business growth
               </p>
               <div className="flex flex-wrap justify-center gap-6 text-sm">
                 <div className="flex items-center space-x-2">
@@ -228,7 +228,7 @@ const AdviceEducation = () => {
                 Download Our <span className="gradient-text">White Papers</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                In-depth research and analysis backed by data from McKinsey, PwC, Gartner, Deloitte, and IBM
+                In-depth research and analysis to help you keep more of what you earn and protect what you build
               </p>
             </motion.div>
 
@@ -356,15 +356,15 @@ const AdviceEducation = () => {
                 transition={{ delay: 0.1, duration: 0.5 }}
               >
                 <Link
-                  href="/tools/roi-calculator"
+                  href="/resources/tax-savings-checklist"
                   className="block bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all border border-gray-100 h-full"
                 >
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4">
                     <FaChartLine className="text-2xl text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-navy-900 mb-2">ROI Calculator</h3>
-                  <p className="text-gray-600 mb-4">Calculate your potential savings from AI and automation</p>
-                  <span className="text-primary-600 font-semibold">Try Calculator →</span>
+                  <h3 className="text-xl font-bold text-navy-900 mb-2">Tax Savings Checklist</h3>
+                  <p className="text-gray-600 mb-4">Find missed deductions and credits your business may be owed</p>
+                  <span className="text-primary-600 font-semibold">Try Checklist →</span>
                 </Link>
               </motion.div>
 

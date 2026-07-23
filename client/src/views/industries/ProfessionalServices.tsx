@@ -9,7 +9,7 @@ import { TrustBar, ProcessFlow } from '../../components/common';
 const faqs = [
     {
         question: 'How do you help agencies and consultants scale?',
-        answer: 'We focus on "High-Margin Scalability." This means auditing your project utilization, optimizing your partner compensation, and automating your back-office so you can focus on high-value client delivery.',
+        answer: 'We focus on "High-Margin Scalability." This means auditing your project utilization, optimizing your partner compensation, and streamlining your back-office so you can focus on high-value client delivery.',
     },
     {
         question: 'Can you provide fractional COO or strategy services?',
@@ -20,8 +20,8 @@ const faqs = [
         answer: 'We emphasize entity optimization (S-Corp elections), R&D tax credits for proprietary methodology development, and strategic executive compensation plans to minimize corporate and personal tax.',
     },
     {
-        question: 'Do you handle the technology stack for agencies?',
-        answer: 'Absolutely. We help you choose and implement the right CRM, project management, and automated sales tools to ensure your technical infrastructure supports your growth instead of hindering it.',
+        question: 'How do you improve project profitability for agencies?',
+        answer: 'We build project-level P&L tracking, standardized scoping and pricing frameworks, and utilization dashboards so you know exactly which engagements make money—and which quietly erode your margins.',
     },
     {
         question: 'How do you protect the leadership team of a professional firm?',
@@ -34,9 +34,9 @@ const ProfessionalServices = () => {
         <>
             <SEO
                 title="Accounting & Strategy for Agencies & Consultants | MRECAI"
-                description="High-margin scalability for professional service firms. Fractional COO strategy, strategic tax planning, and automated operations for agencies."
+                description="High-margin scalability for professional service firms. Fractional COO strategy, strategic tax planning, and profitable operations for agencies."
                 canonical="/industries/professional-services"
-                keywords="agency accounting, consulting firm strategy, fractional COO NYC, S-Corp election for consultants, agency project management automation, professional liability review"
+                keywords="agency accounting, consulting firm strategy, fractional COO NYC, S-Corp election for consultants, agency project profitability, professional liability review"
             />
 
             {/* Hero Section */}
@@ -69,7 +69,7 @@ const ProfessionalServices = () => {
 
                         <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 border border-white/20">
                             <p className="text-xl text-gray-200 leading-relaxed">
-                                As a service-based firm, your product is your people\'s time. We provide the <strong>high-margin strategy</strong>—from fractional COO services to automated CRM workflows—that ensures your firm is both scalable and profitable.
+                                As a service-based firm, your product is your people\'s time. We provide the <strong>high-margin strategy</strong>—from fractional COO services to project profitability systems—that ensures your firm is both scalable and profitable.
                             </p>
                         </div>
 
@@ -120,8 +120,8 @@ const ProfessionalServices = () => {
                             },
                             {
                                 icon: FaRocket,
-                                title: 'Sales & CRM Automation',
-                                description: 'Implementing GoHighLevel or HubSpot to automate lead intake, follow-ups, and client onboarding.',
+                                title: 'Project Profitability Systems',
+                                description: 'Standardized scoping, pricing, and reporting frameworks that keep every engagement profitable from kickoff to final invoice.',
                             },
                             {
                                 icon: FaShieldAlt,

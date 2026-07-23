@@ -60,7 +60,7 @@ export const getYelpReviews = async (): Promise<ApiResponse<Testimonial[]>> => {
   return response.data;
 };
 
-// AI Chat
+// Site chat assistant
 export const sendChatMessage = async (message: string, conversationHistory?: any[]): Promise<ApiResponse<any>> => {
   const response = await api.post('/ai-chat/message', { message, conversationHistory });
   return response.data;

@@ -25,10 +25,10 @@ describe('In60Seconds', () => {
       expect(screen.getByText(/New York/i)).toBeInTheDocument();
     });
 
-    it('should describe MRE as AI-first professional services firm', () => {
+    it('should describe MRE as a full-service tax, insurance, and finance consulting firm', () => {
       const { container } = render(<In60Seconds />);
 
-      expect(container.textContent).toMatch(/AI-first professional services firm/i);
+      expect(container.textContent).toMatch(/full-service tax, insurance, and finance consulting firm/i);
     });
   });
 
@@ -46,61 +46,70 @@ describe('In60Seconds', () => {
   });
 
   describe('Service Order and Structure', () => {
-    it('should display services in the correct order within AI & Automation Services', () => {
+    it('should display tax services before business consulting', () => {
       const { container } = render(<In60Seconds />);
       const text = container.textContent || '';
 
-      const aiPosition = text.indexOf('AI Consulting & Automation');
-      const automationPosition = text.indexOf('Business Process Automation');
+      const taxPosition = text.indexOf('Strategic Tax Planning');
+      const consultingPosition = text.indexOf('Business Management Consulting');
 
-      expect(aiPosition).toBeGreaterThan(-1);
-      expect(automationPosition).toBeGreaterThan(-1);
-      expect(aiPosition).toBeLessThan(automationPosition);
+      expect(taxPosition).toBeGreaterThan(-1);
+      expect(consultingPosition).toBeGreaterThan(-1);
+      expect(taxPosition).toBeLessThan(consultingPosition);
     });
 
-    it('should have AI & Automation Services section before Business Support Services', () => {
+    it('should have Tax & Insurance Services section before Finance & Advisory Services', () => {
       const { container } = render(<In60Seconds />);
       const text = container.textContent || '';
 
-      const aiPosition = text.indexOf('AI & Automation Services');
-      const businessPosition = text.indexOf('Business Support Services');
+      const taxInsurancePosition = text.indexOf('Tax & Insurance Services');
+      const financePosition = text.indexOf('Finance & Advisory Services');
 
-      expect(aiPosition).toBeGreaterThan(-1);
-      expect(businessPosition).toBeGreaterThan(-1);
-      expect(aiPosition).toBeLessThan(businessPosition);
+      expect(taxInsurancePosition).toBeGreaterThan(-1);
+      expect(financePosition).toBeGreaterThan(-1);
+      expect(taxInsurancePosition).toBeLessThan(financePosition);
     });
   });
 
-  describe('AI & Automation Services', () => {
-    it('should display all AI & Automation Services', () => {
+  describe('Tax & Insurance Services', () => {
+    it('should display all Tax & Insurance Services', () => {
       render(<In60Seconds />);
 
-      expect(screen.getByText(/AI Consulting & Automation/i)).toBeInTheDocument();
-      expect(screen.getByText(/Business Process Automation/i)).toBeInTheDocument();
+      expect(screen.getByText(/Strategic Tax Planning/i)).toBeInTheDocument();
+      expect(screen.getByText(/Tax Preparation & Accounting/i)).toBeInTheDocument();
+      expect(screen.getByText(/Insurance & Risk Architecture/i)).toBeInTheDocument();
     });
 
-    it('should display section heading for AI & Automation Services', () => {
+    it('should display section heading for Tax & Insurance Services', () => {
       render(<In60Seconds />);
 
-      expect(screen.getByText('AI & Automation Services')).toBeInTheDocument();
+      expect(screen.getByText('Tax & Insurance Services')).toBeInTheDocument();
+    });
+
+    it('should not mention AI or automation services', () => {
+      const { container } = render(<In60Seconds />);
+      const text = container.textContent || '';
+
+      expect(text).not.toMatch(/\bAI\b/);
+      expect(text).not.toMatch(/automation/i);
+      expect(text).not.toMatch(/artificial intelligence/i);
     });
   });
 
-  describe('Business Support Services', () => {
-    it('should display all Business Support Services', () => {
+  describe('Finance & Advisory Services', () => {
+    it('should display all Finance & Advisory Services', () => {
       render(<In60Seconds />);
 
-      expect(screen.getByText(/Tax & Accounting/i)).toBeInTheDocument();
-      expect(screen.getByText(/Insurance Consulting/i)).toBeInTheDocument();
-      expect(screen.getByText(/Business Consulting/i)).toBeInTheDocument();
-      expect(screen.getByText(/Investment Management/i)).toBeInTheDocument();
+      expect(screen.getByText(/Bookkeeping Services/i)).toBeInTheDocument();
+      expect(screen.getByText(/Investment & Wealth Planning/i)).toBeInTheDocument();
+      expect(screen.getByText(/Business Management Consulting/i)).toBeInTheDocument();
       expect(screen.getByText(/Estate Consulting/i)).toBeInTheDocument();
     });
 
-    it('should display section heading for Business Support Services', () => {
+    it('should display section heading for Finance & Advisory Services', () => {
       render(<In60Seconds />);
 
-      expect(screen.getByText('Business Support Services')).toBeInTheDocument();
+      expect(screen.getByText('Finance & Advisory Services')).toBeInTheDocument();
     });
   });
 

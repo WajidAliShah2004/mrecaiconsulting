@@ -30,9 +30,9 @@ const NewYorkNY = () => {
       link: '/services/insurance',
     },
     {
-      title: 'AI Automation in Manhattan',
-      description: 'AI implementation and business automation for Manhattan-based companies.',
-      link: '/services/ai-automation',
+      title: 'Bookkeeping & Accounting in Manhattan',
+      description: 'Full-cycle bookkeeping and real-time financial reporting for Manhattan-based companies.',
+      link: '/services/bookkeeping-accounting',
     },
     {
       title: 'Tax Strategy for NYC Businesses',
@@ -45,9 +45,9 @@ const NewYorkNY = () => {
     <>
       <SEO
         title="MRECAI | New York, NY | Manhattan Business Services"
-        description="Local business consulting, tax preparation, insurance, and AI automation services in New York, NY. Serving Manhattan, Upper East Side, and NYC metro area. Call (929) 702-2818."
+        description="Local business consulting, tax preparation, bookkeeping, and insurance services in New York, NY. Serving Manhattan, Upper East Side, and NYC metro area. Call (929) 702-2818."
         canonical="/locations/new-york-ny"
-        keywords="business consulting NYC, tax preparation New York, Manhattan bookkeeping, insurance services NYC, AI automation Manhattan, New York business services"
+        keywords="business consulting NYC, tax preparation New York, Manhattan bookkeeping, insurance services NYC, risk management Manhattan, New York business services"
         schema={{
           '@context': 'https://schema.org',
           '@graph': [
@@ -92,7 +92,7 @@ const NewYorkNY = () => {
 
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 border border-white/20">
               <p className="text-xl text-gray-200 leading-relaxed">
-                <strong>Local expertise for NYC businesses and families.</strong> MRECAI provides comprehensive business consulting, tax preparation, insurance, and AI automation services to clients throughout Manhattan, the Upper East Side, and the greater New York City metro area.
+                <strong>Local expertise for NYC businesses and families.</strong> MRECAI provides comprehensive business consulting, tax preparation, bookkeeping, and insurance services to clients throughout Manhattan, the Upper East Side, and the greater New York City metro area.
               </p>
             </div>
 

@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: 'What is the M.R.E. framework?',
-    answer: 'Map (understand your current state), Reduce (eliminate waste and noise), and Execute (implement systems and AI to drive growth).',
+    answer: 'Map (understand your current state), Reduce (eliminate waste and noise), and Execute (implement systems and processes to drive growth).',
   },
   {
     question: 'Do you implement the solutions you recommend?',
@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     question: 'What types of businesses do you work with?',
-    answer: 'We specialize in small to medium-sized businesses looking to professionalize their operations, optimize their tax position, and leverage automation.',
+    answer: 'We specialize in small to medium-sized businesses looking to professionalize their operations, optimize their tax position, and protect what they\'ve built.',
   },
   {
     question: 'How long are consulting engagements?',

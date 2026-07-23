@@ -8,9 +8,7 @@ const categories = [
   'Business Tips',
   'Insurance Advice',
   'Tax Planning',
-  'Technology',
-  'AI & Automation',
-  'Digital Marketing',
+  'Financial Planning',
   'General'
 ];
 
@@ -335,7 +333,7 @@ const BlogEditor = () => {
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               value={formData.tags}
               onChange={(e) => setFormData({ ...formData, tags: e.target.value })}
-              placeholder="AI, Business, Technology"
+              placeholder="Insurance, Tax, Business"
             />
           </div>
 

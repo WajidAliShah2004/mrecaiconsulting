@@ -14,12 +14,12 @@ const CaseStudies = () => {
       title: 'E-commerce Retailer Saves $47K Annually with Tax Strategy',
       client: 'Growing Online Retailer',
       challenge: 'Rapidly growing e-commerce business facing high tax burden and disorganized bookkeeping. Owner was spending 15+ hours/week on manual financial tasks.',
-      solution: 'Implemented S-Corp election, automated bookkeeping system, and strategic tax planning including R&D credits for software development.',
+      solution: 'Implemented S-Corp election, professional bookkeeping systems, and strategic tax planning including multi-state sales tax compliance and inventory accounting.',
       results: [
         '$47,000 in annual tax savings',
-        '15 hours/week saved through automation',
+        '15 hours/week saved through streamlined bookkeeping',
         'Clean monthly financials for better decision-making',
-        'Qualified for $28K in R&D tax credits',
+        'Recovered $28K in overpaid sales tax',
       ],
       metrics: {
         savings: '$47,000',
@@ -27,7 +27,7 @@ const CaseStudies = () => {
         roi: '12x',
       },
       testimonial: 'MRE transformed our back office from chaos to clarity. The tax savings alone paid for their services 10x over, and the time we saved let us focus on growth.',
-      services: ['Tax Strategy', 'Bookkeeping', 'AI Automation'],
+      services: ['Tax Strategy', 'Bookkeeping', 'Business Consulting'],
     },
     {
       id: 2,
@@ -74,23 +74,23 @@ const CaseStudies = () => {
     {
       id: 4,
       industry: 'Healthcare',
-      title: 'Medical Practice Automates Patient Intake, Saves 25 Hours/Week',
+      title: 'Medical Practice Streamlines Revenue Cycle, Saves 25 Hours/Week',
       client: 'Growing Medical Practice',
-      challenge: 'Growing medical practice overwhelmed with manual patient intake, insurance verification, and appointment scheduling. Staff spending excessive time on administrative tasks.',
-      solution: 'Implemented AI-powered intake automation, integrated with existing EHR system, automated insurance verification, and deployed 24/7 AI scheduling assistant.',
+      challenge: 'Growing medical practice overwhelmed with manual patient intake, insurance verification, and billing follow-up. Staff spending excessive time on administrative tasks while claim denials piled up.',
+      solution: 'Redesigned intake and billing workflows, implemented a denial management process, standardized insurance verification procedures, and trained staff on the new revenue cycle systems.',
       results: [
         '25 hours/week saved on administrative tasks',
-        '40% reduction in no-shows',
-        '99% patient satisfaction with new system',
+        '40% reduction in claim denials',
+        'Faster insurance reimbursement cycles',
         'Staff redeployed to patient care',
       ],
       metrics: {
         timeSaved: '25 hrs/week',
-        noShowReduction: '40%',
+        denialReduction: '40%',
         roi: '8x',
       },
-      testimonial: 'Our staff can finally focus on patient care instead of paperwork. The AI system handles intake better than we ever could manually.',
-      services: ['AI Automation', 'Technology Consulting', 'Process Optimization'],
+      testimonial: 'Our staff can finally focus on patient care instead of paperwork. The new billing systems work better than we ever managed on our own.',
+      services: ['Business Consulting', 'Revenue Cycle Support', 'Process Optimization'],
     },
     {
       id: 5,
@@ -98,7 +98,7 @@ const CaseStudies = () => {
       title: 'Contractor Improves Cash Flow by 60% with Financial Systems',
       client: 'NYC General Contractor',
       challenge: 'Construction company with inconsistent cash flow, delayed invoicing, and poor job costing visibility. Couldn\'t accurately bid on new projects.',
-      solution: 'Implemented job costing system, automated invoicing and payment tracking, established cash flow forecasting, and created KPI dashboard.',
+      solution: 'Implemented job costing system, streamlined invoicing and payment tracking, established cash flow forecasting, and created KPI dashboard.',
       results: [
         '60% improvement in cash flow',
         'Invoice processing time reduced from 5 days to 4 hours',
@@ -115,24 +115,24 @@ const CaseStudies = () => {
     },
     {
       id: 6,
-      industry: 'Technology',
-      title: 'SaaS Startup Secures $380K in R&D Tax Credits',
-      client: 'NYC SaaS Startup',
-      challenge: 'Fast-growing software company unaware of R&D tax credit eligibility. Burning cash on development without capturing available credits.',
-      solution: 'Assessed R&D activities, documented qualifying expenses, filed amended returns for prior years, and established ongoing R&D credit capture process.',
+      industry: 'Professional Services',
+      title: 'Engineering Firm Secures $380K in R&D Tax Credits',
+      client: 'NYC Design-Build Engineering Firm',
+      challenge: 'Fast-growing design-build firm unaware its engineering work qualified for R&D tax credits. Leaving significant money on the table every filing year.',
+      solution: 'Assessed qualifying design activities, documented eligible expenses, filed amended returns for prior years, and established ongoing R&D credit capture process.',
       results: [
         '$380,000 in R&D tax credits (3 years)',
         'Ongoing annual credits of $120K+',
-        'Improved runway by 8 months',
-        'Investor confidence increased',
+        'Working capital freed for hiring',
+        'Audit-ready documentation established',
       ],
       metrics: {
         credits: '$380K',
         annualRecurring: '$120K+',
-        runwayExtension: '8 months',
+        timeToComplete: '6 weeks',
       },
-      testimonial: 'We had no idea we qualified for R&D credits. MRE found us nearly $400K that went straight to our runway.',
-      services: ['Tax Strategy', 'R&D Tax Credits', 'Startup Consulting'],
+      testimonial: 'We had no idea our design work qualified for R&D credits. MRE found us nearly $400K that went straight back into the business.',
+      services: ['Tax Strategy', 'R&D Tax Credits', 'Business Consulting'],
     },
   ];
 
@@ -181,7 +181,7 @@ const CaseStudies = () => {
             </h1>
 
             <p className="text-xl text-gray-200 leading-relaxed mb-8">
-              See how we've helped businesses save money, improve efficiency, and achieve measurable growth through strategic consulting, tax planning, and technology implementation.
+              See how we've helped businesses save money, improve efficiency, and achieve measurable growth through strategic consulting, tax planning, and risk protection.
             </p>
 
             {/* Quick Stats */}

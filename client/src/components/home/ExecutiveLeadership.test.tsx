@@ -108,14 +108,14 @@ describe('ExecutiveLeadership', () => {
       it('should display Wajid\'s quote', () => {
         renderWithRouter(<ExecutiveLeadership />);
         
-        expect(screen.getByText(/technology should empower businesses, not complicate them/i)).toBeInTheDocument();
+        expect(screen.getByText(/great tools should empower businesses, not complicate them/i)).toBeInTheDocument();
       });
 
       it('should display Wajid\'s bio information', () => {
         renderWithRouter(<ExecutiveLeadership />);
         
         // Bio text appears in multiple places (paragraph and highlights)
-        const experienceTexts = screen.getAllByText(/15 years of software engineering experience/i);
+        const experienceTexts = screen.getAllByText(/15 years of systems/i);
         expect(experienceTexts.length).toBeGreaterThanOrEqual(1);
         
         const ceoTexts = screen.getAllByText(/ceo of novaedge solutions/i);
@@ -125,9 +125,11 @@ describe('ExecutiveLeadership', () => {
       it('should display Wajid\'s key highlights', () => {
         renderWithRouter(<ExecutiveLeadership />);
         
-        expect(screen.getByText(/cto of mrecai/i)).toBeInTheDocument();
-        expect(screen.getByText(/expert in ai, web, desktop, and mobile app development/i)).toBeInTheDocument();
-        expect(screen.getByText(/specializes in automation and digital transformation/i)).toBeInTheDocument();
+        // "CTO of MRECAI" appears in both the bio paragraph and the highlights list
+        const ctoTexts = screen.getAllByText(/cto of mrecai/i);
+        expect(ctoTexts.length).toBeGreaterThanOrEqual(1);
+        expect(screen.getByText(/oversees the firm's internal tools and client platforms/i)).toBeInTheDocument();
+        expect(screen.getByText(/specializes in streamlined, dependable operations/i)).toBeInTheDocument();
       });
 
       it('should display NovaEdge Solutions link', () => {

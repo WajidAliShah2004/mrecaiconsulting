@@ -1,17 +1,16 @@
-MRECAI - White Papers
+MRECAI - Downloads
 
-The following white papers are being prepared for download:
+Current downloadable resources:
 
-1. The New Frontier of Efficiency: How AI & Automation Are Transforming Every Industry
-2. Digital Marketing, Reviews & Social Presence: Building the Modern Reputation Engine  
-3. The Future of Business: How AI and Automation Are Transforming Operations
+1. Services Overview (services-overview.html) - consulting, tax, accounting, and insurance services.
 
-For immediate access to this content, please contact:
+Retired (no longer linked from the site; former AI/automation and digital
+marketing white papers kept for archive only):
+- ai-automation-frontier.html / .txt
+- future-of-business.html / .txt
+- digital-marketing-reputation.html / .txt
+
+For more information, please contact:
 Phone: 929-702-2818
 Email: Matthew@MRECAI.com
 Website: www.MRECAI.com
-
-All content is based on comprehensive research from McKinsey, PwC, Gartner, Deloitte, and IBM.
-
-The full white paper content is available in the allmeetings.txt file and needs to be professionally formatted as PDFs.
-

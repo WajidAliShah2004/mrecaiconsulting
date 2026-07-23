@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: 'Can you help with R&D tax credits?',
-    answer: 'Yes. If you develop software, products, or processes, you may qualify for R&D credits worth $250k–$500k+. We assess eligibility and coordinate with specialists.',
+    answer: 'Yes. If you develop new products, processes, or techniques, you may qualify for R&D credits worth $250k–$500k+. We assess eligibility and coordinate with specialists.',
   },
   {
     question: 'What about Section 179 and bonus depreciation?',
@@ -128,7 +128,7 @@ const TaxStrategy = () => {
                 {
                   icon: FaFileInvoiceDollar,
                   title: 'R&D Tax Credits',
-                  description: 'Software development, product innovation, or process improvements may qualify for $250k–$500k+ in credits. We assess eligibility.',
+                  description: 'Product development, engineering innovation, or process improvements may qualify for $250k–$500k+ in credits. We assess eligibility.',
                 },
                 {
                   icon: FaChartLine,
@@ -193,7 +193,7 @@ const TaxStrategy = () => {
               <h3 className="text-2xl font-bold text-navy-900 mb-4">Who Qualifies?</h3>
               <ul className="space-y-3 mb-8">
                 {[
-                  'Software development and engineering',
+                  'Engineering and technical design work',
                   'Product design and prototyping',
                   'Manufacturing process improvements',
                   'Scientific or technical innovation',

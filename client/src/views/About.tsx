@@ -10,10 +10,10 @@ const About = () => {
   return (
     <>
       <SEO
-        title="About MRECAI | AI Consulting & Business Services Leaders"
-        description="Learn about MRECAI. AI-first business transformation firm specializing in AI consulting, tax strategy, insurance, and business consulting. Serving 180+ clients since 2024."
+        title="About MRECAI | Tax, Insurance & Finance Consulting"
+        description="Learn about MRECAI. Full-service tax, insurance, and finance consulting firm specializing in tax strategy, insurance, bookkeeping, and financial consulting. Serving 180+ clients since 2024."
         canonical="/about"
-        keywords="about MRECAI, AI consulting company, tax planning firm, insurance consulting, business transformation, company history"
+        keywords="about MRECAI, business consulting company, tax planning firm, insurance consulting, bookkeeping services, company history"
         schema={{
           '@context': 'https://schema.org',
           '@graph': [
@@ -65,7 +65,7 @@ const About = () => {
                 About <span className="bg-gradient-to-r from-primary-400 via-primary-300 to-primary-500 bg-clip-text text-transparent">MRECAI</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-                AI-first business transformation through AI consulting, tax strategy, insurance, and business advisory
+                Full-service business transformation through management consulting, tax strategy, insurance, and financial advisory
               </p>
 
               {/* Stats Row */}
@@ -122,7 +122,7 @@ const About = () => {
                 {
                   icon: FaHandshake,
                   title: 'Strategic Partners',
-                  description: 'Discover our network of trusted partners across insurance, finance, and technology',
+                  description: 'Discover our network of trusted partners across insurance, finance, and accounting',
                   link: '/about/partners',
                   color: 'from-purple-500 to-pink-500'
                 }
@@ -187,11 +187,11 @@ const About = () => {
                 >
                   <div className="bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl p-8 text-white shadow-2xl">
                     <FaRocket className="text-5xl mb-4 opacity-80" />
-                    <h3 className="text-2xl font-bold mb-4">Driving Digital Transformation</h3>
+                    <h3 className="text-2xl font-bold mb-4">Driving Business Growth</h3>
                     <p className="text-lg leading-relaxed opacity-90">
-                      At MRECAI, our mission is to empower businesses with cutting-edge AI solutions
-                      and intelligent automation. We transform operations through smart systems and process
-                      optimization, backed by comprehensive tax, insurance, and business support services.
+                      At MRECAI, our mission is to empower businesses with expert guidance
+                      and dependable systems. We strengthen operations through smart processes and financial
+                      clarity, backed by comprehensive tax, insurance, and business support services.
                     </p>
                   </div>
                   {/* Decorative Element */}
@@ -211,7 +211,7 @@ const About = () => {
                     </div>
                     <div>
                       <h4 className="text-xl font-bold text-navy-900 mb-2">For Small & Medium Businesses</h4>
-                      <p className="text-gray-600">AI-powered automation and smart systems to scale efficiently</p>
+                      <p className="text-gray-600">Practical systems and hands-on advisory to scale efficiently</p>
                     </div>
                   </div>
 
@@ -221,7 +221,7 @@ const About = () => {
                     </div>
                     <div>
                       <h4 className="text-xl font-bold text-navy-900 mb-2">For Growth-Stage Companies</h4>
-                      <p className="text-gray-600">Growth strategy, process automation, and operational consulting</p>
+                      <p className="text-gray-600">Growth strategy, financial systems, and operational consulting</p>
                     </div>
                   </div>
 
@@ -230,7 +230,7 @@ const About = () => {
                       <FaAward className="text-primary-600 text-xl" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-bold text-navy-900 mb-2">Complete Business Support</h4>
+                      <h4 className="text-xl font-bold text-navy-900 mb-2">Complete Financial Support</h4>
                       <p className="text-gray-600">Tax planning, insurance consulting, and financial guidance included</p>
                     </div>
                   </div>
@@ -332,7 +332,7 @@ const About = () => {
                   Innovation
                 </h3>
                 <p className="text-gray-600 text-center leading-relaxed">
-                  We leverage cutting-edge AI, automation, and modern tech stacks to deliver transformative solutions that drive real business results.
+                  We bring fresh strategies, modern best practices, and creative problem-solving to deliver solutions that drive real business results.
                 </p>
                 <div className="absolute -bottom-2 -right-2 w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 group-hover:opacity-10 rounded-full blur-xl transition-opacity duration-300"></div>
               </motion.div>
@@ -364,8 +364,8 @@ const About = () => {
               {[
                 {
                   icon: FaCog,
-                  title: 'NovaEdge Solutions',
-                  description: 'Strategic technology partner providing AI development, software engineering, and digital transformation expertise.',
+                  title: 'Legal Partners',
+                  description: 'Experienced business law and estate planning attorneys supporting entity formation, contracts, and asset protection.',
                   gradient: 'from-purple-500 to-purple-600'
                 },
                 {
@@ -438,7 +438,7 @@ const About = () => {
                 {
                   year: '2024',
                   title: 'The Beginning',
-                  description: 'MRECAI was founded with a vision to provide personalized, expert consulting and insurance services to individuals, families, and businesses.',
+                  description: 'MRECAI was founded with a vision to provide personalized, expert tax, insurance, and finance consulting services to individuals, families, and businesses.',
                   color: 'from-primary-500 to-primary-600'
                 },
                 {
@@ -451,14 +451,14 @@ const About = () => {
                 {
                   year: '2024',
                   quarter: 'Q4',
-                  title: 'AI & Automation Focus',
-                  description: 'Pivoted to AI-first positioning, partnering with NovaEdge Solutions to deliver cutting-edge AI consulting and automation solutions.',
+                  title: 'Full-Service Expansion',
+                  description: 'Broadened our capabilities across tax planning, bookkeeping, and risk architecture to serve clients as a complete tax, insurance, and finance consulting partner.',
                   color: 'from-purple-500 to-pink-500'
                 },
                 {
                   year: '2025',
-                  title: 'Continued Innovation',
-                  description: 'Serving 180+ clients with comprehensive AI and automation solutions, complemented by tax, insurance, and business consulting support.',
+                  title: 'Continued Growth',
+                  description: 'Serving 180+ clients with comprehensive consulting, tax, accounting, and insurance solutions tailored to each stage of growth.',
                   color: 'from-orange-500 to-red-500'
                 }
               ].map((milestone, index) => (
@@ -519,38 +519,38 @@ const About = () => {
               {[
                 {
                   icon: FaCheckCircle,
-                  title: 'AI-First Approach',
-                  description: 'Cutting-edge AI consulting and automation solutions that transform business operations',
+                  title: 'Strategy-First Approach',
+                  description: 'Systems-driven consulting that turns operational chaos into scalable growth',
                   gradient: 'from-purple-500 to-purple-600'
                 },
                 {
                   icon: FaUsers,
                   title: 'Expert Advisory Team',
-                  description: 'AI specialists, tax strategists, and licensed insurance professionals',
+                  description: 'Business consultants, tax strategists, and licensed insurance professionals',
                   gradient: 'from-primary-500 to-primary-600'
                 },
                 {
                   icon: FaClock,
-                  title: 'Rapid Deployment',
-                  description: 'Fast turnaround on projects without compromising quality or innovation',
+                  title: 'Responsive Service',
+                  description: 'Fast turnaround on engagements without compromising quality',
                   gradient: 'from-blue-500 to-blue-600'
                 },
                 {
                   icon: FaRocket,
                   title: 'Integrated Solutions',
-                  description: 'From AI chatbots and automation to tax strategy and risk protection',
+                  description: 'From bookkeeping and tax strategy to insurance and risk protection',
                   gradient: 'from-orange-500 to-red-500'
                 },
                 {
                   icon: FaGlobe,
-                  title: 'Complete Business Partner',
-                  description: 'AI consulting plus tax planning and insurance consulting under one roof',
+                  title: 'Complete Financial Partner',
+                  description: 'Tax planning, insurance consulting, and financial consulting under one roof',
                   gradient: 'from-green-500 to-emerald-500'
                 },
                 {
                   icon: FaAward,
                   title: 'Proven Results',
-                  description: '180+ successful projects with measurable ROI and business transformation',
+                  description: '180+ successful engagements with measurable savings and growth',
                   gradient: 'from-pink-500 to-rose-500'
                 }
               ].map((feature, index) => (

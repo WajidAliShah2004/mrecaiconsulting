@@ -8,7 +8,7 @@ const ProcessFlow = () => {
         {
             icon: FaSearch,
             title: "Assess",
-            description: "Comprehensive audit of your financial, risk, and technology systems to identify gaps."
+            description: "Comprehensive audit of your financial, risk, and operational systems to identify gaps."
         },
         {
             icon: FaLightbulb,

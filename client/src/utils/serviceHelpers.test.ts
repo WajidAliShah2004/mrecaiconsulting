@@ -14,24 +14,24 @@ import {
 } from './serviceHelpers';
 
 describe('categorizeService', () => {
-  it('should categorize AI technology as primary service', () => {
-    expect(categorizeService('ai-technology')).toBe('primary');
+  it('should categorize business management consulting as primary service', () => {
+    expect(categorizeService('business-management')).toBe('primary');
   });
 
-  it('should categorize automation as primary service', () => {
-    expect(categorizeService('automation')).toBe('primary');
+  it('should categorize insurance consulting as primary service', () => {
+    expect(categorizeService('insurance-consulting')).toBe('primary');
   });
 
-  it('should categorize retired technology-services as secondary', () => {
-    expect(categorizeService('technology-services')).toBe('secondary');
+  it('should categorize retired ai-technology as secondary', () => {
+    expect(categorizeService('ai-technology')).toBe('secondary');
+  });
+
+  it('should categorize retired automation as secondary', () => {
+    expect(categorizeService('automation')).toBe('secondary');
   });
 
   it('should categorize retired digital-marketing as secondary', () => {
     expect(categorizeService('digital-marketing')).toBe('secondary');
-  });
-
-  it('should categorize retired graphic-design as secondary', () => {
-    expect(categorizeService('graphic-design')).toBe('secondary');
   });
 
   it('should categorize retired video-editing as secondary', () => {
@@ -42,8 +42,8 @@ describe('categorizeService', () => {
     expect(categorizeService('tax-accounting')).toBe('secondary');
   });
 
-  it('should categorize insurance-services as secondary service', () => {
-    expect(categorizeService('insurance-services')).toBe('secondary');
+  it('should categorize accounting-services as secondary service', () => {
+    expect(categorizeService('accounting-services')).toBe('secondary');
   });
 
   it('should categorize unknown services as secondary by default', () => {
@@ -59,30 +59,30 @@ describe('sortServicesByCategory', () => {
   it('should place primary services before secondary services', () => {
     const services = [
       { id: 'tax-accounting', title: 'Tax Services' },
-      { id: 'ai-technology', title: 'AI Consulting' },
-      { id: 'insurance-services', title: 'Insurance' },
-      { id: 'automation', title: 'Automation' }
+      { id: 'business-management', title: 'Business Management Consulting' },
+      { id: 'accounting-services', title: 'Bookkeeping & Accounting' },
+      { id: 'insurance-consulting', title: 'Insurance & Risk Architecture' }
     ];
 
     const sorted = sortServicesByCategory(services);
 
-    expect(sorted[0].id).toBe('ai-technology');
-    expect(sorted[1].id).toBe('automation');
+    expect(sorted[0].id).toBe('business-management');
+    expect(sorted[1].id).toBe('insurance-consulting');
     expect(sorted[2].id).toBe('tax-accounting');
-    expect(sorted[3].id).toBe('insurance-services');
+    expect(sorted[3].id).toBe('accounting-services');
   });
 
   it('should maintain order within same category', () => {
     const services = [
-      { id: 'automation', title: 'Automation' },
-      { id: 'ai-technology', title: 'AI Consulting' }
+      { id: 'insurance-consulting', title: 'Insurance & Risk Architecture' },
+      { id: 'business-management', title: 'Business Management Consulting' }
     ];
 
     const sorted = sortServicesByCategory(services);
 
     // All are primary, so order should be maintained
-    expect(sorted[0].id).toBe('automation');
-    expect(sorted[1].id).toBe('ai-technology');
+    expect(sorted[0].id).toBe('insurance-consulting');
+    expect(sorted[1].id).toBe('business-management');
   });
 
   it('should handle empty array', () => {
@@ -93,32 +93,32 @@ describe('sortServicesByCategory', () => {
 
   it('should handle array with only primary services', () => {
     const services = [
-      { id: 'ai-technology', title: 'AI Consulting' },
-      { id: 'automation', title: 'Automation' }
+      { id: 'business-management', title: 'Business Management Consulting' },
+      { id: 'insurance-consulting', title: 'Insurance & Risk Architecture' }
     ];
 
     const sorted = sortServicesByCategory(services);
     expect(sorted).toHaveLength(2);
-    expect(sorted[0].id).toBe('ai-technology');
-    expect(sorted[1].id).toBe('automation');
+    expect(sorted[0].id).toBe('business-management');
+    expect(sorted[1].id).toBe('insurance-consulting');
   });
 
   it('should handle array with only secondary services', () => {
     const services = [
       { id: 'tax-accounting', title: 'Tax Services' },
-      { id: 'insurance-services', title: 'Insurance' }
+      { id: 'accounting-services', title: 'Bookkeeping & Accounting' }
     ];
 
     const sorted = sortServicesByCategory(services);
     expect(sorted).toHaveLength(2);
     expect(sorted[0].id).toBe('tax-accounting');
-    expect(sorted[1].id).toBe('insurance-services');
+    expect(sorted[1].id).toBe('accounting-services');
   });
 
   it('should not mutate original array', () => {
     const services = [
       { id: 'tax-accounting', title: 'Tax Services' },
-      { id: 'ai-technology', title: 'AI Consulting' }
+      { id: 'business-management', title: 'Business Management Consulting' }
     ];
 
     const original = [...services];
@@ -130,13 +130,13 @@ describe('sortServicesByCategory', () => {
   it('should work with services containing additional properties', () => {
     const services = [
       { id: 'tax-accounting', title: 'Tax Services', description: 'Tax help', icon: 'tax-icon' },
-      { id: 'ai-technology', title: 'AI Consulting', description: 'AI solutions', icon: 'ai-icon' }
+      { id: 'business-management', title: 'Business Management Consulting', description: 'Systems-first consulting', icon: 'briefcase-icon' }
     ];
 
     const sorted = sortServicesByCategory(services);
 
-    expect(sorted[0].id).toBe('ai-technology');
-    expect(sorted[0].description).toBe('AI solutions');
+    expect(sorted[0].id).toBe('business-management');
+    expect(sorted[0].description).toBe('Systems-first consulting');
     expect(sorted[1].id).toBe('tax-accounting');
     expect(sorted[1].description).toBe('Tax help');
   });
@@ -144,10 +144,10 @@ describe('sortServicesByCategory', () => {
 
 describe('filterServicesByCategory', () => {
   const services = [
-    { id: 'ai-technology', title: 'AI Consulting' },
+    { id: 'business-management', title: 'Business Management Consulting' },
     { id: 'tax-accounting', title: 'Tax Services' },
-    { id: 'insurance-services', title: 'Insurance' },
-    { id: 'automation', title: 'Automation' }
+    { id: 'accounting-services', title: 'Bookkeeping & Accounting' },
+    { id: 'insurance-consulting', title: 'Insurance & Risk Architecture' }
   ];
 
   it('should filter only primary services', () => {
@@ -155,8 +155,8 @@ describe('filterServicesByCategory', () => {
 
     expect(primary).toHaveLength(2);
     expect(primary.map(s => s.id)).toEqual([
-      'ai-technology',
-      'automation'
+      'business-management',
+      'insurance-consulting'
     ]);
   });
 
@@ -166,14 +166,14 @@ describe('filterServicesByCategory', () => {
     expect(secondary).toHaveLength(2);
     expect(secondary.map(s => s.id)).toEqual([
       'tax-accounting',
-      'insurance-services'
+      'accounting-services'
     ]);
   });
 
   it('should return empty array when no services match category', () => {
     const onlyPrimary = [
-      { id: 'ai-technology', title: 'AI Consulting' },
-      { id: 'automation', title: 'Automation' }
+      { id: 'business-management', title: 'Business Management Consulting' },
+      { id: 'insurance-consulting', title: 'Insurance & Risk Architecture' }
     ];
 
     const secondary = filterServicesByCategory(onlyPrimary, 'secondary');
@@ -188,16 +188,16 @@ describe('filterServicesByCategory', () => {
 
   it('should preserve service properties in filtered results', () => {
     const servicesWithProps = [
-      { id: 'ai-technology', title: 'AI Consulting', description: 'AI solutions', order: 1 },
+      { id: 'business-management', title: 'Business Management Consulting', description: 'Systems-first consulting', order: 1 },
       { id: 'tax-accounting', title: 'Tax Services', description: 'Tax help', order: 2 }
     ];
 
     const primary = filterServicesByCategory(servicesWithProps, 'primary');
 
     expect(primary[0]).toEqual({
-      id: 'ai-technology',
-      title: 'AI Consulting',
-      description: 'AI solutions',
+      id: 'business-management',
+      title: 'Business Management Consulting',
+      description: 'Systems-first consulting',
       order: 1
     });
   });

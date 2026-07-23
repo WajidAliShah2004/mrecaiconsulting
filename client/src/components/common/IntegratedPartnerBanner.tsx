@@ -12,46 +12,46 @@ const IntegratedPartnerBanner = ({ context = 'general' }: IntegratedPartnerBanne
   const contextMessages = {
     tax: {
       title: 'More Than Just Tax Services',
-      description: 'Your tax strategy works better when it\'s integrated with your insurance, technology, and business operations. That\'s the MRE advantage.',
+      description: 'Your tax strategy works better when it\'s integrated with your insurance, accounting, and business operations. That\'s the MRE advantage.',
       benefits: [
         'Tax strategy aligned with your insurance coverage',
-        'Bookkeeping integrated with business automation',
+        'Bookkeeping integrated with proactive tax planning',
         'One team managing your complete financial picture',
       ],
     },
     insurance: {
       title: 'Insurance That Works With Your Business',
-      description: 'Your insurance needs change as your business grows. We coordinate your coverage with your tax strategy, technology, and financial planning.',
+      description: 'Your insurance needs change as your business grows. We coordinate your coverage with your tax strategy, accounting, and financial planning.',
       benefits: [
         'Coverage aligned with your business structure',
         'Risk management integrated with tax planning',
-        'One partner for insurance, tax, and technology',
+        'One partner for insurance, tax, and accounting',
       ],
     },
     technology: {
-      title: 'Technology That Connects Everything',
-      description: 'Our automation solutions integrate with your accounting, tax, and business operations—creating systems that actually work together.',
+      title: 'Systems That Connect Everything',
+      description: 'Our operational systems integrate your accounting, tax, and business operations—creating a financial picture that actually works together.',
       benefits: [
-        'Automation that connects to your bookkeeping',
-        'Technology aligned with your business goals',
-        'One team managing tech, tax, and operations',
+        'Reporting that connects to your bookkeeping',
+        'Systems aligned with your business goals',
+        'One team managing books, tax, and operations',
       ],
     },
     business: {
       title: 'Business Consulting With Full Integration',
-      description: 'We don\'t just give advice—we implement it across your tax, insurance, technology, and operations. Everything works together.',
+      description: 'We don\'t just give advice—we implement it across your tax, insurance, accounting, and operations. Everything works together.',
       benefits: [
-        'Strategy that spans tax, insurance, and tech',
+        'Strategy that spans tax, insurance, and accounting',
         'Implementation across all business functions',
         'One partner for your complete business needs',
       ],
     },
     general: {
       title: 'The Integrated Partner Advantage',
-      description: 'Unlike working with multiple vendors, we coordinate your tax, insurance, technology, and business strategy—all working together.',
+      description: 'Unlike working with multiple vendors, we coordinate your tax, insurance, accounting, and business strategy—all working together.',
       benefits: [
         'One team managing all your business services',
-        'Strategies that work across tax, insurance, and tech',
+        'Strategies that span tax, insurance, and accounting',
         'No more coordinating between multiple vendors',
       ],
     },
