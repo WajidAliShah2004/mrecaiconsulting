@@ -411,7 +411,7 @@ const Navbar = () => {
               {/* Quick-dial - replaces the contact strip below lg */}
               <a
                 href={`tel:${COMPANY_INFO.phone}`}
-                className="lg:hidden inline-flex items-center justify-center h-9 w-9 sm:h-10 sm:w-10 rounded-xl text-primary-600 bg-primary-50 hover:bg-primary-100 border border-primary-200 transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 flex-shrink-0"
+                className="lg:hidden inline-flex items-center justify-center h-10 w-10 rounded-xl text-primary-600 bg-primary-50 hover:bg-primary-100 border border-primary-200 transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 flex-shrink-0"
                 aria-label={`Call ${COMPANY_INFO.phone}`}
               >
                 <FaPhone className="text-sm" />
@@ -445,7 +445,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(!isOpen)}
                 whileTap={{ scale: 0.9 }}
                 whileHover={{ scale: 1.05 }}
-                className="xl:hidden inline-flex items-center justify-center h-9 w-9 sm:h-10 sm:w-10 rounded-xl transition-colors duration-300 text-white bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 shadow-lg hover:shadow-xl border-2 border-primary-400/50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 flex-shrink-0"
+                className="xl:hidden inline-flex items-center justify-center h-10 w-10 rounded-xl transition-colors duration-300 text-white bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 shadow-lg hover:shadow-xl border-2 border-primary-400/50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 flex-shrink-0"
                 aria-label={isOpen ? 'Close menu' : 'Open menu'}
                 aria-expanded={isOpen}
               >
