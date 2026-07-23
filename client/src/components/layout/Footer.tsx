@@ -18,7 +18,7 @@ import {
 } from 'react-icons/fa';
 import { SiTiktok } from 'react-icons/si';
 import { COMPANY_INFO, SOCIAL_LINKS } from '../../utils/constants';
-import logoImage from '../../../images/logo.jpeg';
+import logoImage from '../../../images/logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

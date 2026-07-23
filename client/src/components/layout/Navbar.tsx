@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes, FaPhone, FaEnvelope, FaChevronDown } from 'react-icons/fa';
 import { COMPANY_INFO } from '../../utils/constants';
-import logoImage from '../../../images/logo.jpeg';
+import logoImage from '../../../images/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

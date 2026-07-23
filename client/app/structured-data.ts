@@ -9,8 +9,8 @@ export const organizationJsonLd = {
   alternateName: ['MRE Consulting & Insurance', 'MRECAI NY', 'MRECAI NYC'],
   legalName: 'MRECAI',
   url: 'https://mrecai.com',
-  logo: 'https://mrecai.com/images/logo.jpeg',
-  image: 'https://mrecai.com/images/logo.jpeg',
+  logo: 'https://mrecai.com/images/logo.png',
+  image: 'https://mrecai.com/images/logo.png',
   description:
     'New York-based professional services firm integrating business consulting, insurance services, tax strategy, AI automation, investment management, and estate planning.',
   slogan: 'Integrated Tax, Insurance, and AI Consulting Services in NYC',

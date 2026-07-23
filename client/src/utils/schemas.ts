@@ -8,8 +8,8 @@ export const organizationSchema = {
   alternateName: ['MRE Consulting & Insurance', 'MRECAI NY', 'MRECAI NYC'],
   legalName: 'MRECAI',
   url: 'https://mrecai.com',
-  logo: 'https://mrecai.com/images/logo.jpeg',
-  image: 'https://mrecai.com/images/logo.jpeg',
+  logo: 'https://mrecai.com/images/logo.png',
+  image: 'https://mrecai.com/images/logo.png',
   description: 'New York-based professional services firm integrating business consulting, insurance services, tax strategy, AI automation, investment management, and estate planning. Serving NYC businesses with comprehensive financial and operational solutions.',
   foundingDate: '2024',
   founder: {
@@ -187,7 +187,7 @@ export const localBusinessSchema = {
   name: 'MRECAI',
   alternateName: 'MRECAI NY',
   slogan: 'Integrated Tax, Insurance, and AI Consulting Services in NYC',
-  image: 'https://mrecai.com/images/logo.jpeg',
+  image: 'https://mrecai.com/images/logo.png',
   '@id': 'https://mrecai.com',
   url: 'https://mrecai.com',
   telephone: '+1-929-702-2818',
@@ -240,7 +240,7 @@ export const websiteSchema = {
     name: 'MRECAI',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://mrecai.com/images/logo.jpeg',
+      url: 'https://mrecai.com/images/logo.png',
     },
   },
   potentialAction: {
@@ -483,12 +483,12 @@ export const articleSchema = (article: {
     name: 'MRECAI',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://mrecai.com/images/logo.jpeg',
+      url: 'https://mrecai.com/images/logo.png',
     },
   },
   datePublished: article.datePublished,
   dateModified: article.dateModified || article.datePublished,
-  image: article.image || 'https://mrecai.com/images/logo.jpeg',
+  image: article.image || 'https://mrecai.com/images/logo.png',
   url: article.url,
   mainEntityOfPage: {
     '@type': 'WebPage',
