@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import ContactPage from '@/pages/Contact';
 
-const title = "Contact MRECAI | AI Consulting & Software Inquiries";
-const description = "Contact MRE Consulting & Insurance for AI consulting, software development, and digital marketing. Call 929-702-2818 or email Matthew@MRECAI.com today.";
+const title = "Contact MRECAI | AI, Tax & Insurance Inquiries";
+const description = "Contact MRE Consulting & Insurance for AI consulting, tax planning, insurance, and business consulting. Call 929-702-2818 or email Matthew@MRECAI.com today.";
 const canonical = "/contact";
 
 export function generateMetadata(): Metadata {
   return {
     title: { absolute: title },
     description,
-    keywords: "contact MRECAI, AI consulting inquiry, software development quote, digital marketing consultation, technology services contact",
+    keywords: "contact MRECAI, AI consulting inquiry, tax planning consultation, insurance quote, business consulting contact",
     alternates: { canonical },
     openGraph: {
       title,
