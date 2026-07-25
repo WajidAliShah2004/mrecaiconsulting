@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import ServicesPage from '@/pages/Services';
 
 const title = "Tax, Insurance & Accounting Services | MRECAI";
-const description = "Strategic tax planning and preparation, insurance and risk management, bookkeeping and accounting, and financial consulting — all under one roof.";
+const description = "Strategic tax planning and preparation, insurance and risk management, bookkeeping and accounting — all under one roof.";
 const canonical = "/services";
 
 export function generateMetadata(): Metadata {

@@ -18,7 +18,7 @@ const Home = () => {
     <>
       <SEO
         title="Tax, Insurance & Accounting | MRECAI"
-        description="Premier tax, insurance, and accounting firm. Strategic tax planning and preparation, insurance and risk management, and bookkeeping, accounting, and financial consulting. 180+ clients, 4.9/5 rating. Book your free consultation."
+        description="Premier tax, insurance, and accounting firm. Strategic tax planning and preparation, insurance and risk management, and bookkeeping and accounting. 180+ clients, 4.9/5 rating. Book your free consultation."
         canonical="/"
         keywords="tax consulting, tax planning, tax preparation, insurance consulting, risk management, bookkeeping, accounting services"
         schema={{

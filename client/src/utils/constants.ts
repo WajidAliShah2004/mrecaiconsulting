@@ -90,7 +90,7 @@ export const REASONS_TO_CHOOSE = [
   {
     icon: FaBriefcase,
     title: 'Accounting Experts',
-    description: 'Bookkeeping, accounting, and financial consulting that give you clarity and control',
+    description: 'Bookkeeping and accounting that give you clarity and control',
     link: '/services/bookkeeping-accounting'
   },
   {

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://mrecai.com'),
   title: 'Tax, Insurance & Accounting | MRECAI',
   description:
-    'Full-service tax, insurance, and accounting firm in NYC. Strategic tax planning and preparation, comprehensive insurance and risk management, and bookkeeping, accounting, and financial consulting.',
+    'Full-service tax, insurance, and accounting firm in NYC. Strategic tax planning and preparation, comprehensive insurance and risk management, and bookkeeping and accounting.',
   authors: [{ name: 'MRECAI' }],
   robots: {
     index: true,
@@ -95,8 +95,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
             <h2>About Us</h2>
             <p>
-              MRECAI is a full-service tax, insurance, and accounting firm that integrates tax, accounting,
-              insurance, and financial consulting under one roof. Founded in 2024, we serve individuals, families,
+              MRECAI is a full-service tax, insurance, and accounting firm that integrates tax, insurance, and
+              accounting under one roof. Founded in 2024, we serve individuals, families,
               and small to mid-sized enterprises (SMEs) by eliminating operational silos and ensuring that financial
               health, asset protection, and tax strategy work in perfect synchronization.
             </p>
@@ -104,10 +104,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <h2>Why Choose MRECAI?</h2>
             <ul>
               <li>One partner instead of five separate vendors</li>
-              <li>Full-service integration (tax + insurance + finance)</li>
+              <li>Full-service integration (tax + insurance + accounting)</li>
               <li>50+ years of insurance expertise through Grober Imbey partnership</li>
               <li>Proactive, strategy-first approach to advisory</li>
-              <li>Risk management combined with hands-on business consulting</li>
+              <li>Risk management combined with hands-on accounting support</li>
             </ul>
 
             <h2>Contact Us</h2>

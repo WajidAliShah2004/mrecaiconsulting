@@ -100,7 +100,7 @@ const Services = () => {
               </h1>
 
               <p className="text-xl text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto">
-                Keep more of what you earn and protect what you have built. Strategic tax planning, comprehensive insurance coverage, and expert financial consulting under one roof.
+                Keep more of what you earn and protect what you have built. Strategic tax planning, comprehensive insurance coverage, and expert bookkeeping and accounting under one roof.
               </p>
             </motion.div>
           </div>
