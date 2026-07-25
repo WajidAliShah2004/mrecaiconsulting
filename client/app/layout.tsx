@@ -89,7 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <strong>Insurance & Risk Architecture:</strong> Personal and commercial insurance coverage and risk management
               </li>
               <li>
-                <strong>Finance Consulting:</strong> Cash flow management, financial analysis, operational systems, and strategic planning
+                <strong>Bookkeeping & Accounting:</strong> Full-cycle bookkeeping, financial reporting, and month-end close
               </li>
             </ul>
 

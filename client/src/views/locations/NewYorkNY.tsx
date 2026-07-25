@@ -15,9 +15,9 @@ const NewYorkNY = () => {
       link: '/services/tax-preparation',
     },
     {
-      title: 'Finance Consulting in NYC',
-      description: 'Cash flow strategy, financial forecasting, and operational systems for New York City businesses.',
-      link: '/services/business-consulting',
+      title: 'Bookkeeping Services in Manhattan',
+      description: 'Monthly bookkeeping, financial reporting, and accounting support for Manhattan businesses.',
+      link: '/services/bookkeeping-accounting',
     },
     {
       title: 'Insurance & Risk Architecture in NYC',
@@ -30,9 +30,9 @@ const NewYorkNY = () => {
       link: '/services/insurance',
     },
     {
-      title: 'Fractional COO & Financial Strategy',
-      description: 'Fractional COO support, KPI tracking, and profitability strategy for Manhattan-based companies.',
-      link: '/services/business-consulting',
+      title: 'Bookkeeping & Accounting in Manhattan',
+      description: 'Full-cycle bookkeeping and real-time financial reporting for Manhattan-based companies.',
+      link: '/services/bookkeeping-accounting',
     },
     {
       title: 'Tax Strategy for NYC Businesses',

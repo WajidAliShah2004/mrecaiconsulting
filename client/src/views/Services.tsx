@@ -25,7 +25,7 @@ const Services = () => {
           '@graph': [
             serviceSchemas.taxAccounting,
             serviceSchemas.insurance,
-            serviceSchemas.businessConsulting,
+            serviceSchemas.bookkeepingAccounting,
             breadcrumbSchema([
               { name: 'Home', url: '/' },
               { name: 'Services', url: '/services' },
@@ -121,10 +121,10 @@ const Services = () => {
                 OUR SERVICES
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                Tax, Insurance & <span className="gradient-text">Finance Consulting</span>
+                Tax, Insurance & <span className="gradient-text">Accounting</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Three integrated services under one roof — proactive tax strategy, comprehensive insurance & risk architecture, and expert finance consulting
+                Three integrated services under one roof — proactive tax strategy, comprehensive insurance & risk architecture, and full-cycle bookkeeping and accounting
               </p>
             </motion.div>
 
@@ -288,7 +288,7 @@ const Services = () => {
                     Integrated Expertise
                   </h4>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    From tax and insurance to finance consulting - we're your complete financial partner.
+                    From tax and insurance to bookkeeping and accounting - we're your complete financial partner.
                   </p>
                 </motion.div>
 
