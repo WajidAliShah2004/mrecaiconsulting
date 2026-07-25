@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import ContactPage from '@/pages/Contact';
 
 const title = "Contact MRECAI | Consulting, Tax & Insurance Inquiries";
-const description = "Contact MRECAI for tax planning, insurance, accounting, and finance consulting services. Call 929-702-2818 or email Matthew@MRECAI.com today.";
+const description = "Contact MRECAI for tax planning, insurance, and accounting services. Call 929-702-2818 or email Matthew@MRECAI.com today.";
 const canonical = "/contact";
 
 export function generateMetadata(): Metadata {

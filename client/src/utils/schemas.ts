@@ -172,7 +172,7 @@ export const localBusinessSchema = {
   '@type': ['ProfessionalService', 'LocalBusiness'],
   name: 'MRECAI',
   alternateName: 'MRECAI NY',
-  slogan: 'Integrated Tax, Insurance & Finance Consulting in NYC',
+  slogan: 'Integrated Tax, Insurance & Accounting in NYC',
   image: 'https://mrecai.com/images/logo.jpeg',
   '@id': 'https://mrecai.com',
   url: 'https://mrecai.com',
@@ -220,7 +220,7 @@ export const websiteSchema = {
   name: 'MRECAI',
   alternateName: 'MRECAI Consulting & Insurance',
   url: 'https://mrecai.com',
-  description: 'Professional tax, insurance, accounting, and finance consulting services',
+  description: 'Professional tax, insurance, and accounting services',
   publisher: {
     '@type': 'Organization',
     name: 'MRECAI',
@@ -393,7 +393,7 @@ export const personSchema = {
     'Financial Planning'
   ],
   alumniOf: 'Business Management',
-  description: 'Founder and President of MRECAI, a New York-based tax, insurance, and finance consulting firm specializing in integrated tax strategy, insurance, and accounting. Not affiliated with Matthew R. Epstein, Trial Attorney at U.S. Department of Labor.',
+  description: 'Founder and President of MRECAI, a New York-based tax, insurance, and accounting firm specializing in integrated tax strategy, insurance, and accounting. Not affiliated with Matthew R. Epstein, Trial Attorney at U.S. Department of Labor.',
 };
 
 export const breadcrumbSchema = (items: { name: string; url: string }[]) => ({

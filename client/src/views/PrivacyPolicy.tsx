@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
   const sections = [
     {
       title: "Scope & Acceptance",
-      content: "This Privacy Policy explains how we collect, use, disclose, and protect information when you visit our website, communicate with us, or use our tax, insurance, and finance consulting services (the \"Services\"). By interacting with the Services, you agree to this Policy to the maximum extent permitted by law."
+      content: "This Privacy Policy explains how we collect, use, disclose, and protect information when you visit our website, communicate with us, or use our tax, insurance, and accounting services (the \"Services\"). By interacting with the Services, you agree to this Policy to the maximum extent permitted by law."
     },
     {
       title: "What We Collect",

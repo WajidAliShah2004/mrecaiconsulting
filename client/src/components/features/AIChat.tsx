@@ -179,7 +179,7 @@ const AIChat = () => {
 
     // About Company
     if (lowerMessage.includes('about') || lowerMessage.includes('who are you') || lowerMessage.includes('company')) {
-      return 'About MRECAI:\n\n✓ Founded in 2024\n✓ 15+ years of experience\n✓ 500+ satisfied clients\n✓ 98% success rate\n✓ 24/7 service support\n\nWe empower individuals, families, and businesses with expert tax, insurance, and finance consulting solutions.\n\nLearn more: /about';
+      return 'About MRECAI:\n\n✓ Founded in 2024\n✓ 15+ years of experience\n✓ 500+ satisfied clients\n✓ 98% success rate\n✓ 24/7 service support\n\nWe empower individuals, families, and businesses with expert tax, insurance, and accounting solutions.\n\nLearn more: /about';
     }
 
     // Founder

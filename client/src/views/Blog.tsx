@@ -169,7 +169,7 @@ const Blog = () => {
     <>
       <SEO
         title="Blog & Insights | Expert Business Advice | MRECAI"
-        description="Expert advice and insights on tax planning, insurance, accounting, and finance consulting. Stay informed with the latest industry trends and best practices."
+        description="Expert advice and insights on tax planning, insurance, and accounting. Stay informed with the latest industry trends and best practices."
         canonical="/blog"
         keywords="business blog, consulting advice, insurance tips, tax planning, financial planning insights, business strategy"
         schema={{

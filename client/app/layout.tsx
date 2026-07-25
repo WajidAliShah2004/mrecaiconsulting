@@ -4,9 +4,9 @@ import '../src/index.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://mrecai.com'),
-  title: 'Tax, Insurance & Finance Consulting | MRECAI',
+  title: 'Tax, Insurance & Accounting | MRECAI',
   description:
-    'Full-service tax, insurance, and finance consulting firm in NYC. Strategic tax planning and preparation, comprehensive insurance and risk management, and bookkeeping, accounting, and financial consulting.',
+    'Full-service tax, insurance, and accounting firm in NYC. Strategic tax planning and preparation, comprehensive insurance and risk management, and bookkeeping, accounting, and financial consulting.',
   authors: [{ name: 'MRECAI' }],
   robots: {
     index: true,
@@ -72,7 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div style={{ padding: 40, fontFamily: 'Arial, sans-serif', maxWidth: 1200, margin: '0 auto' }}>
             <h1>MRECAI</h1>
             <p>
-              <strong>Tax, Insurance & Finance Consulting</strong>
+              <strong>Tax, Insurance & Accounting</strong>
             </p>
             <p>
               Phone: <a href="tel:+19297022818">+1-929-702-2818</a> | Email:{' '}
@@ -95,7 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
             <h2>About Us</h2>
             <p>
-              MRECAI is a full-service tax, insurance, and finance consulting firm that integrates tax, accounting,
+              MRECAI is a full-service tax, insurance, and accounting firm that integrates tax, accounting,
               insurance, and financial consulting under one roof. Founded in 2024, we serve individuals, families,
               and small to mid-sized enterprises (SMEs) by eliminating operational silos and ensuring that financial
               health, asset protection, and tax strategy work in perfect synchronization.

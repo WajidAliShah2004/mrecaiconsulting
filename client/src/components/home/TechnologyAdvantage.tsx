@@ -61,7 +61,7 @@ const TechnologyAdvantage = () => {
             The MRECAI Advantage
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Integrated tax, insurance, and finance consulting—working together under one roof
+            Integrated tax, insurance, and accounting—working together under one roof
           </p>
         </motion.div>
 

@@ -10,8 +10,8 @@ const About = () => {
   return (
     <>
       <SEO
-        title="About MRECAI | Tax, Insurance & Finance Consulting"
-        description="Learn about MRECAI. Full-service tax, insurance, and finance consulting firm specializing in tax strategy, insurance, bookkeeping, and financial consulting. Serving 180+ clients since 2024."
+        title="About MRECAI | Tax, Insurance & Accounting"
+        description="Learn about MRECAI. Full-service tax, insurance, and accounting firm specializing in tax strategy, insurance, bookkeeping, and financial consulting. Serving 180+ clients since 2024."
         canonical="/about"
         keywords="about MRECAI, business consulting company, tax planning firm, insurance consulting, bookkeeping services, company history"
         schema={{
@@ -438,7 +438,7 @@ const About = () => {
                 {
                   year: '2024',
                   title: 'The Beginning',
-                  description: 'MRECAI was founded with a vision to provide personalized, expert tax, insurance, and finance consulting services to individuals, families, and businesses.',
+                  description: 'MRECAI was founded with a vision to provide personalized, expert tax, insurance, and accounting services to individuals, families, and businesses.',
                   color: 'from-primary-500 to-primary-600'
                 },
                 {
@@ -452,7 +452,7 @@ const About = () => {
                   year: '2024',
                   quarter: 'Q4',
                   title: 'Full-Service Expansion',
-                  description: 'Broadened our capabilities across tax planning, bookkeeping, and risk architecture to serve clients as a complete tax, insurance, and finance consulting partner.',
+                  description: 'Broadened our capabilities across tax planning, bookkeeping, and risk architecture to serve clients as a complete tax, insurance, and accounting partner.',
                   color: 'from-purple-500 to-pink-500'
                 },
                 {

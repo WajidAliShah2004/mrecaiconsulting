@@ -233,7 +233,7 @@ const FAQ = () => {
     <>
       <SEO
         title="Frequently Asked Questions | FAQ | MRECAI"
-        description="Find answers to common questions about our services, pricing, process, and more. Get the information you need about tax services, insurance, finance consulting, and wealth planning."
+        description="Find answers to common questions about our services, pricing, process, and more. Get the information you need about tax services, insurance, and accounting."
         canonical="/faq"
         keywords="FAQ, frequently asked questions, business consulting questions, tax services FAQ, insurance questions, bookkeeping FAQ"
         schema={{

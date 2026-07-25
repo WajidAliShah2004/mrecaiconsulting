@@ -16,10 +16,10 @@ const Services = () => {
   return (
     <>
       <SEO
-        title="Tax, Insurance & Finance Consulting Services | MRECAI"
+        title="Tax, Insurance & Accounting Services | MRECAI"
         description="Expert strategic tax planning and preparation, insurance and risk management, bookkeeping and accounting, and wealth planning. 180+ successful projects delivered."
         canonical="/services"
-        keywords="tax consulting services, tax planning services, tax preparation, insurance consulting, risk management, finance consulting, bookkeeping and accounting, tax consultant NYC"
+        keywords="tax consulting services, tax planning services, tax preparation, insurance consulting, risk management, bookkeeping and accounting, tax consultant NYC"
         schema={{
           '@context': 'https://schema.org',
           '@graph': [

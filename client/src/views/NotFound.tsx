@@ -8,7 +8,7 @@ const NotFound = () => {
     <>
       <SEO
         title="404 - Page Not Found | MRECAI"
-        description="The page you're looking for doesn't exist. Return to MRECAI homepage for tax, insurance, and finance consulting services."
+        description="The page you're looking for doesn't exist. Return to MRECAI homepage for tax, insurance, and accounting services."
         canonical="/404"
       />
 

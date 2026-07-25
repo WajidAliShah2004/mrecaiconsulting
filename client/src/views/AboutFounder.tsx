@@ -249,7 +249,7 @@ const AboutFounder = () => {
                     <div className="bg-primary-50 border-l-4 border-primary-500 p-6 rounded-r-lg mb-8">
                       <FaQuoteLeft className="text-primary-500 text-3xl mb-4" />
                       <p className="text-lg text-gray-700 italic leading-relaxed">
-                        "My vision is to create a tax, insurance, and finance consulting firm that truly puts clients first,
+                        "My vision is to create a tax, insurance, and accounting firm that truly puts clients first,
                         leveraging expertise and innovation to deliver exceptional results while maintaining
                         the personal touch that makes all the difference."
                       </p>
@@ -263,7 +263,7 @@ const AboutFounder = () => {
                     </p>
 
                     <p className="text-gray-700 leading-relaxed mb-6">
-                      Now, as a <strong>licensed Property & Casualty and Life, Accident & Health Insurance Broker</strong>, Matthew leads MRECAI full-time — helping individuals and businesses achieve smarter financial decisions, stronger protection, and lasting success through comprehensive, personalized tax, insurance, and finance consulting solutions.
+                      Now, as a <strong>licensed Property & Casualty and Life, Accident & Health Insurance Broker</strong>, Matthew leads MRECAI full-time — helping individuals and businesses achieve smarter financial decisions, stronger protection, and lasting success through comprehensive, personalized tax, insurance, and accounting solutions.
                     </p>
 
                     <h3 className="text-2xl font-bold text-navy-900 mb-4 mt-8">My Journey — From Numbers to Innovation</h3>
@@ -498,7 +498,7 @@ const AboutFounder = () => {
                 >
                   <h3 className="text-2xl font-bold mb-4">Vision for MRECAI</h3>
                   <p className="text-lg leading-relaxed opacity-95 mb-4">
-                    To build the most trusted and innovative tax, insurance, and finance consulting firm, recognized for
+                    To build the most trusted and innovative tax, insurance, and accounting firm, recognized for
                     transforming businesses and protecting families through technology, expertise, and 
                     unwavering commitment to client success.
                   </p>

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import BlogPage from '@/pages/Blog';
 
 const title = "Blog & Insights | Expert Business Advice | MRECAI";
-const description = "Expert advice and insights on tax planning, insurance, accounting, and finance consulting. Stay informed with the latest industry trends and best practices.";
+const description = "Expert advice and insights on tax planning, insurance, and accounting. Stay informed with the latest industry trends and best practices.";
 const canonical = "/blog";
 
 export function generateMetadata(): Metadata {

@@ -31,7 +31,7 @@ const In60Seconds = () => {
           {/* SEO-Optimized Description */}
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              <strong>MRECAI</strong> is a full-service tax, insurance, and finance consulting firm based in <strong>New York</strong> that helps individuals, families and businesses in all 50 states.
+              <strong>MRECAI</strong> is a full-service tax, insurance, and accounting firm based in <strong>New York</strong> that helps individuals, families and businesses in all 50 states.
             </p>
 
             {/* OUR SERVICES - Tax, Insurance & Accounting */}

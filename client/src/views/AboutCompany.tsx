@@ -68,7 +68,7 @@ const AboutCompany = () => {
                 About <span className="bg-gradient-to-r from-primary-400 via-primary-300 to-primary-500 bg-clip-text text-transparent">Our Company</span>
               </h1>
               <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-                Building the future of tax, insurance, and finance consulting
+                Building the future of tax, insurance, and accounting
               </p>
             </motion.div>
           </div>
@@ -100,7 +100,7 @@ const AboutCompany = () => {
                 >
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
                     MRECAI is a forward-thinking firm dedicated to empowering individuals,
-                    families, and businesses with comprehensive tax, insurance, and finance consulting solutions. Founded in 2024,
+                    families, and businesses with comprehensive tax, insurance, and accounting solutions. Founded in 2024,
                     we bring together expertise in tax and accounting, insurance services,
                     financial consulting, and wealth planning through strategic partners.
                   </p>
@@ -189,7 +189,7 @@ const AboutCompany = () => {
                   {
                     icon: FaBullseye,
                     title: 'Vision',
-                    description: 'To be the most trusted tax, insurance, and finance consulting partner, recognized for transforming businesses through strategy, protection, and expertise.'
+                    description: 'To be the most trusted tax, insurance, and accounting partner, recognized for transforming businesses through strategy, protection, and expertise.'
                   },
                   {
                     icon: FaRocket,
@@ -423,7 +423,7 @@ const AboutCompany = () => {
                   year: '2024',
                   quarter: 'Q1',
                   title: 'The Beginning',
-                  description: 'MRECAI was founded with a vision to provide personalized, expert tax, insurance, and finance consulting services to individuals, families, and businesses.',
+                  description: 'MRECAI was founded with a vision to provide personalized, expert tax, insurance, and accounting services to individuals, families, and businesses.',
                   color: 'from-primary-500 to-primary-600'
                 },
                 {
