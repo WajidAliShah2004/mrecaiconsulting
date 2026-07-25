@@ -13,7 +13,7 @@ export const organizationJsonLd = {
   image: 'https://mrecai.com/images/logo.png',
   description:
     'New York-based tax, insurance, and accounting firm integrating tax strategy and preparation, insurance services, and bookkeeping and accounting.',
-  slogan: 'Integrated Tax, Insurance & Finance Consulting in NYC',
+  slogan: 'Integrated Tax, Insurance & Accounting in NYC',
   foundingDate: '2024',
   founder: {
     '@type': 'Person',
@@ -56,7 +56,7 @@ export const organizationJsonLd = {
     description: '50+ year insurance legacy with 5-star reputation',
   },
   disambiguatingDescription:
-    'MRECAI is a Great Neck, New York-based tax, insurance, and finance consulting firm specializing in integrated tax strategy, insurance, and accounting. Not affiliated with MRE Consulting, Ltd (Houston-based Salesforce/Infosys partner).',
+    'MRECAI is a Great Neck, New York-based tax, insurance, and accounting firm specializing in integrated tax strategy, insurance, and accounting. Not affiliated with MRE Consulting, Ltd (Houston-based Salesforce/Infosys partner).',
   sameAs: [
     'https://www.facebook.com/share/1CeUfmRx4F/',
     'https://www.linkedin.com/company/mre-consulting-insurance/',
@@ -102,7 +102,7 @@ export const personJsonLd = {
     'https://www.facebook.com/share/1CeUfmRx4F/',
   ],
   description:
-    'Founder and President of MRECAI, a New York-based tax, insurance, and finance consulting firm specializing in integrated tax strategy, insurance, and accounting. Not affiliated with Matthew R. Epstein, Trial Attorney at U.S. Department of Labor.',
+    'Founder and President of MRECAI, a New York-based tax, insurance, and accounting firm specializing in integrated tax strategy, insurance, and accounting. Not affiliated with Matthew R. Epstein, Trial Attorney at U.S. Department of Labor.',
 };
 
 export const webSiteJsonLd = {

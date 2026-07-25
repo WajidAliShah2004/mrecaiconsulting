@@ -89,7 +89,7 @@ export const REASONS_TO_CHOOSE = [
   },
   {
     icon: FaBriefcase,
-    title: 'Finance Consulting Experts',
+    title: 'Accounting Experts',
     description: 'Bookkeeping, accounting, and financial consulting that give you clarity and control',
     link: '/services/bookkeeping-accounting'
   },
@@ -102,7 +102,7 @@ export const REASONS_TO_CHOOSE = [
   {
     icon: FaHandshake,
     title: 'Complete Financial Partner',
-    description: 'Tax, insurance, and finance consulting - all under one roof',
+    description: 'Tax, insurance, and accounting - all under one roof',
     link: '/about'
   },
   {

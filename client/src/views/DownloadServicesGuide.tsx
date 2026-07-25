@@ -40,7 +40,7 @@ const DownloadServicesGuide = () => {
     <>
       <SEO
         title="Download Services Guide | Free PDF | MRECAI"
-        description="Download our comprehensive services guide to learn about our tax, insurance, accounting, and finance consulting solutions. Free PDF download."
+        description="Download our comprehensive services guide to learn about our tax, insurance, and accounting solutions. Free PDF download."
         canonical="/download-services-guide"
         keywords="services guide, business services PDF, tax services guide, insurance guide, free download"
       />

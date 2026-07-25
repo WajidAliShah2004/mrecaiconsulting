@@ -96,7 +96,7 @@ const HomeHero = () => {
                         >
                             Your Tax, Insurance & <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 via-white to-primary-400 bg-300% animate-gradient">
-                                Finance Consulting Partner
+                                Accounting Partner
                             </span>
                         </motion.h1>
                         <motion.p

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import AboutPage from '@/pages/About';
 
 const title = "About MRECAI | Consulting, Tax & Insurance Experts";
-const description = "Learn about MRECAI, an integrated firm offering tax strategy and preparation, insurance consulting, and bookkeeping, accounting, and finance consulting services.";
+const description = "Learn about MRECAI, an integrated firm offering tax strategy and preparation, insurance consulting, and bookkeeping and accounting services.";
 const canonical = "/about";
 
 export function generateMetadata(): Metadata {

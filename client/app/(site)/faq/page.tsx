@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import FAQPage from '@/pages/FAQ';
 
 const title = "Frequently Asked Questions | FAQ | MRECAI";
-const description = "Find answers to common questions about our services, pricing, and process — tax services, insurance, accounting, and finance consulting explained.";
+const description = "Find answers to common questions about our services, pricing, and process — tax services, insurance, and accounting explained.";
 const canonical = "/faq";
 
 export function generateMetadata(): Metadata {
