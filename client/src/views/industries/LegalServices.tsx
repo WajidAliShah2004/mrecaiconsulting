@@ -69,7 +69,7 @@ const LegalServices = () => {
 
                         <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 border border-white/20">
                             <p className="text-xl text-gray-200 leading-relaxed">
-                                Legal practices face unique risks, from IOLTA compliance to partner liability. We provide the <strong>specialized back-office</strong>—integrating finance, insurance, and client intake—that allows your partners to focus on the law.
+                                Legal practices face unique risks, from IOLTA compliance to partner liability. We provide the <strong>specialized back-office</strong>—integrating accounting, insurance, and client intake—that allows your partners to focus on the law.
                             </p>
                         </div>
 

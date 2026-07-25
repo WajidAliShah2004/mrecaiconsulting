@@ -255,7 +255,7 @@ const AboutFounder = () => {
                       </p>
                     </div>
                     <p className="text-gray-700 leading-relaxed mb-6">
-                      <strong>Matthew R. Epstein</strong> is an accomplished entrepreneur, consultant, and licensed insurance broker who blends financial expertise with strategic business insight. A graduate of the <strong>University at Buffalo</strong>, Matthew earned both his <strong>Bachelor's and Master's degrees in Accounting and Finance</strong>, graduating <strong>Summa Cum Laude</strong> and <strong>Magna Cum Laude</strong>.
+                      <strong>Matthew R. Epstein</strong> is an accomplished entrepreneur, consultant, and licensed insurance broker who blends financial expertise with strategic business insight. A graduate of the <strong>University at Buffalo</strong>, Matthew earned both his <strong>Bachelor's and Master's degrees in Accounting</strong>, graduating <strong>Summa Cum Laude</strong> and <strong>Magna Cum Laude</strong>.
                     </p>
 
                     <p className="text-gray-700 leading-relaxed mb-6">
@@ -268,15 +268,15 @@ const AboutFounder = () => {
 
                     <h3 className="text-2xl font-bold text-navy-900 mb-4 mt-8">My Journey — From Numbers to Innovation</h3>
                     <p className="text-gray-700 leading-relaxed mb-6">
-                      From the very beginning, I've always believed that success comes from understanding the numbers — and then daring to think beyond them. My journey started at the University at Buffalo, where I earned both my Bachelor's and Master's degrees in Accounting and Finance, graduating Summa Cum Laude and Magna Cum Laude. During my time there, I specialized in <strong>Accounting Systems and Internal Controls</strong>, developing an early passion for how technology could transform financial management and business decision-making.
+                      From the very beginning, I've always believed that success comes from understanding the numbers — and then daring to think beyond them. My journey started at the University at Buffalo, where I earned both my Bachelor's and Master's degrees in Accounting, graduating Summa Cum Laude and Magna Cum Laude. During my time there, I specialized in <strong>Accounting Systems and Internal Controls</strong>, developing an early passion for how technology could transform financial management and business decision-making.
                     </p>
 
                     <p className="text-gray-700 leading-relaxed mb-6">
-                      While still in school, I competed — and won — several <strong>PwC accounting competitions, technology innovation challenges, and startup pitch competitions</strong>. My entrepreneurial projects gained national recognition and were even featured in national media, reinforcing my belief that technology and finance aren't separate worlds — they're two sides of the same coin.
+                      While still in school, I competed — and won — several <strong>PwC accounting competitions, technology innovation challenges, and startup pitch competitions</strong>. My entrepreneurial projects gained national recognition and were even featured in national media, reinforcing my belief that technology and accounting aren't separate worlds — they're two sides of the same coin.
                     </p>
 
                     <p className="text-gray-700 leading-relaxed mb-6">
-                      After graduation, I refined my skills in the world of high finance and global business. I interned at <strong>Goldman Sachs</strong>, where I learned how large-scale financial systems truly operate, and later worked at <strong>PricewaterhouseCoopers (PwC)</strong>, where I deepened my understanding of audit, compliance, and corporate advisory. From there, I transitioned into the private sector, joining <strong>Merlin Entertainments</strong> as a Finance Manager, where I led financial operations, managed cross-functional teams, and implemented systems that drove efficiency, profitability, and growth.
+                      After graduation, I refined my skills in the world of large-scale business and global operations. I interned at <strong>Goldman Sachs</strong>, where I learned how large-scale financial systems truly operate, and later worked at <strong>PricewaterhouseCoopers (PwC)</strong>, where I deepened my understanding of audit, compliance, and corporate advisory. From there, I transitioned into the private sector, joining <strong>Merlin Entertainments</strong> as an Operations Manager, where I led financial operations, managed cross-functional teams, and implemented systems that drove efficiency, profitability, and growth.
                     </p>
 
                     <p className="text-gray-700 leading-relaxed mb-6">
@@ -318,8 +318,8 @@ const AboutFounder = () => {
                   icon: FaGraduationCap,
                   title: 'Education',
                   items: [
-                    'Master\'s Degree in Accounting & Finance - University at Buffalo (Magna Cum Laude)',
-                    'Bachelor\'s Degree in Accounting & Finance - University at Buffalo (Summa Cum Laude)',
+                    'Master\'s Degree in Accounting - University at Buffalo (Magna Cum Laude)',
+                    'Bachelor\'s Degree in Accounting - University at Buffalo (Summa Cum Laude)',
                     'Specialized in Accounting Systems and Internal Controls',
                     'Winner of multiple PwC accounting competitions and technology innovation challenges'
                   ],
@@ -329,9 +329,9 @@ const AboutFounder = () => {
                   icon: FaBriefcase,
                   title: 'Professional Experience',
                   items: [
-                    'Goldman Sachs - Intern (High finance and large-scale financial systems)',
+                    'Goldman Sachs - Intern (Large-scale financial systems)',
                     'PricewaterhouseCoopers (PwC) - Audit, compliance, and corporate advisory',
-                    'Merlin Entertainments - Finance Manager (Multi-site financial operations)',
+                    'Merlin Entertainments - Operations Manager (Multi-site financial operations)',
                     'Founded MRECAI in 2024, full-time since 2025'
                   ],
                   color: 'from-green-500 to-emerald-500'

@@ -4,7 +4,7 @@ description: "A practical guide to calculating quarterly tax payments, understan
 author: "Matthew R. Epstein"
 date: "2025-01-18"
 category: "Tax Strategy"
-tags: ["tax planning", "small business", "quarterly taxes", "tax savings", "business finance"]
+tags: ["tax planning", "small business", "quarterly taxes", "tax savings", "business accounting"]
 featured: true
 ---
 

@@ -132,7 +132,7 @@ export default function Products() {
                 Comprehensive Business Services
               </h2>
               <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-                MRECAI delivers integrated solutions across finance, risk management, and business consulting to help your business thrive.
+                MRECAI delivers integrated solutions across accounting, risk management, and business consulting to help your business thrive.
               </p>
             </div>
 

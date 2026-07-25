@@ -55,11 +55,11 @@ describe('IndustriesHub Page - Task 13 Tests', () => {
       expect(screen.getByText(/our integrated services apply/i)).toBeInTheDocument();
     });
 
-    it('should mention expertise in finance, risk management, and technology', () => {
+    it('should mention expertise in accounting, risk management, and technology', () => {
       renderWithRouter(<IndustriesHub />);
-      
+
       // Check that the statement mentions the three core service areas
-      const text = screen.getByText(/expertise in finance, risk management, and technology/i);
+      const text = screen.getByText(/expertise in accounting, risk management, and technology/i);
       expect(text).toBeInTheDocument();
     });
 

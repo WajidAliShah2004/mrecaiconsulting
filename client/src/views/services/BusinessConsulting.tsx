@@ -36,7 +36,7 @@ const BusinessConsulting = () => {
     <>
       <SEO
         title="Business Consulting & Management | Strategic Growth | MRECAI"
-        description="Comprehensive business management consulting. We connect finance, tax, insurance, and technology to turn chaos into systems and growth."
+        description="Comprehensive business management consulting. We connect accounting, tax, insurance, and technology to turn chaos into systems and growth."
         canonical="/services/business-management"
         keywords="business management consulting, strategic planning, operational efficiency, growth strategy, MRECAI"
         schema={{

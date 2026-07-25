@@ -25,10 +25,10 @@ describe('In60Seconds', () => {
       expect(screen.getByText(/New York/i)).toBeInTheDocument();
     });
 
-    it('should describe MRECAI as a full-service tax, insurance, and finance consulting firm', () => {
+    it('should describe MRECAI as a full-service tax, insurance, and accounting firm', () => {
       const { container } = render(<In60Seconds />);
 
-      expect(container.textContent).toMatch(/full-service tax, insurance, and finance consulting firm/i);
+      expect(container.textContent).toMatch(/full-service tax, insurance, and accounting firm/i);
     });
   });
 
@@ -43,48 +43,6 @@ describe('In60Seconds', () => {
       expect(text).not.toMatch(/Graphic Design/i);
       expect(text).not.toMatch(/Video Production/i);
     });
-  });
-
-  describe('Service Order and Structure', () => {
-    it('should display tax services before business consulting', () => {
-      const { container } = render(<In60Seconds />);
-      const text = container.textContent || '';
-
-      const taxPosition = text.indexOf('Strategic Tax Planning');
-      const consultingPosition = text.indexOf('Business Management Consulting');
-
-      expect(taxPosition).toBeGreaterThan(-1);
-      expect(consultingPosition).toBeGreaterThan(-1);
-      expect(taxPosition).toBeLessThan(consultingPosition);
-    });
-
-    it('should have Tax & Insurance Services section before Finance & Advisory Services', () => {
-      const { container } = render(<In60Seconds />);
-      const text = container.textContent || '';
-
-      const taxInsurancePosition = text.indexOf('Tax & Insurance Services');
-      const financePosition = text.indexOf('Finance & Advisory Services');
-
-      expect(taxInsurancePosition).toBeGreaterThan(-1);
-      expect(financePosition).toBeGreaterThan(-1);
-      expect(taxInsurancePosition).toBeLessThan(financePosition);
-    });
-  });
-
-  describe('Tax & Insurance Services', () => {
-    it('should display all Tax & Insurance Services', () => {
-      render(<In60Seconds />);
-
-      expect(screen.getByText(/Strategic Tax Planning/i)).toBeInTheDocument();
-      expect(screen.getByText(/Tax Preparation & Accounting/i)).toBeInTheDocument();
-      expect(screen.getByText(/Insurance & Risk Architecture/i)).toBeInTheDocument();
-    });
-
-    it('should display section heading for Tax & Insurance Services', () => {
-      render(<In60Seconds />);
-
-      expect(screen.getByText('Tax & Insurance Services')).toBeInTheDocument();
-    });
 
     it('should not mention AI or automation services', () => {
       const { container } = render(<In60Seconds />);
@@ -96,20 +54,32 @@ describe('In60Seconds', () => {
     });
   });
 
-  describe('Finance & Advisory Services', () => {
-    it('should display all Finance & Advisory Services', () => {
+  describe('Our Services', () => {
+    it('should display the "Our Services" section heading', () => {
       render(<In60Seconds />);
 
-      expect(screen.getByText(/Bookkeeping Services/i)).toBeInTheDocument();
-      expect(screen.getByText(/Investment & Wealth Planning/i)).toBeInTheDocument();
-      expect(screen.getByText(/Business Management Consulting/i)).toBeInTheDocument();
-      expect(screen.getByText(/Estate Consulting/i)).toBeInTheDocument();
+      expect(screen.getByText('Our Services')).toBeInTheDocument();
     });
 
-    it('should display section heading for Finance & Advisory Services', () => {
-      render(<In60Seconds />);
+    it('should display the three core services', () => {
+      const { container } = render(<In60Seconds />);
+      const text = container.textContent || '';
 
-      expect(screen.getByText('Finance & Advisory Services')).toBeInTheDocument();
+      expect(text).toMatch(/Tax Services/i);
+      expect(text).toMatch(/Insurance & Risk Architecture/i);
+      expect(text).toMatch(/Bookkeeping & Accounting/i);
+    });
+
+    it('should display tax services before bookkeeping & accounting', () => {
+      const { container } = render(<In60Seconds />);
+      const text = container.textContent || '';
+
+      const taxPosition = text.indexOf('Tax Services');
+      const bookkeepingPosition = text.indexOf('Bookkeeping & Accounting');
+
+      expect(taxPosition).toBeGreaterThan(-1);
+      expect(bookkeepingPosition).toBeGreaterThan(-1);
+      expect(taxPosition).toBeLessThan(bookkeepingPosition);
     });
   });
 
@@ -132,31 +102,9 @@ describe('In60Seconds', () => {
       expect(container.textContent).toMatch(/Our Advantage:/i);
       expect(container.textContent).toMatch(/One integrated partner/i);
     });
-
-    it('should render checkmark icons for all services', () => {
-      const { container } = render(<In60Seconds />);
-
-      // Count SVG checkmark icons (should be 7 total: 2 AI + 5 business)
-      const checkmarks = container.querySelectorAll('svg path[d*="M5 13l4 4L19 7"]');
-      expect(checkmarks.length).toBeGreaterThanOrEqual(7);
-    });
   });
 
   describe('Content Validation', () => {
-    it('should not have bold styling on "businesses" in the main paragraph', () => {
-      const { container } = render(<In60Seconds />);
-
-      // The word "businesses" should appear in the text but not be wrapped in <strong> tags
-      // when it appears in "families and businesses"
-      const mainParagraph = container.querySelector('p.text-xl');
-      expect(mainParagraph?.innerHTML).toMatch(/families and businesses/);
-
-      // Check that "families and businesses" phrase doesn't have businesses in strong tags
-      const text = mainParagraph?.innerHTML || '';
-      const familiesAndBusinessesMatch = text.match(/families and <strong>businesses<\/strong> in all 50 states/);
-      expect(familiesAndBusinessesMatch).toBeNull();
-    });
-
     it('should display MRECAI brand name', () => {
       render(<In60Seconds />);
 

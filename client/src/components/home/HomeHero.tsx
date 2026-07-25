@@ -82,7 +82,7 @@ const HomeHero = () => {
                             MRECAI
                         </span>
                         <span className="text-white/80 text-xs font-semibold uppercase tracking-wider">
-                            Tax • Insurance • Finance
+                            Tax • Insurance • Accounting
                         </span>
                     </motion.div>
 

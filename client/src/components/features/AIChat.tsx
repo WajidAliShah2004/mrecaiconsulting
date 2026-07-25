@@ -149,7 +149,7 @@ const AIChat = () => {
 
     // Tax & Accounting
     if (lowerMessage.includes('tax') || lowerMessage.includes('accounting') || lowerMessage.includes('bookkeeping') || lowerMessage.includes('payroll')) {
-      return 'Tax & Accounting Services:\n\n💰 Tax planning & preparation\n📊 Bookkeeping & payroll\n📈 Financial statement preparation\n🏛️ IRS representation\n💼 Business tax services\n👤 Individual tax services\n\nLet\'s optimize your finances! Book consultation: /book-now';
+      return 'Tax & Accounting Services:\n\n💰 Tax planning & preparation\n📊 Bookkeeping & payroll\n📈 Financial statement preparation\n🏛️ IRS representation\n💼 Business tax services\n👤 Individual tax services\n\nLet\'s optimize your books! Book consultation: /book-now';
     }
 
     // AI & Automation (no longer offered)
@@ -278,12 +278,12 @@ const AIChat = () => {
 
     // Workflow / Operations
     if (lowerMessage.includes('workflow') || lowerMessage.includes('automate')) {
-      return 'Operational & Financial Clarity:\n\n✓ Bookkeeping & accounting systems\n✓ Real-time financial reporting\n✓ Bank & credit card reconciliation\n✓ Cash flow visibility\n✓ Month-end close\n\nStreamline your finances! Learn more: /services/bookkeeping-accounting';
+      return 'Operational & Financial Clarity:\n\n✓ Bookkeeping & accounting systems\n✓ Real-time financial reporting\n✓ Bank & credit card reconciliation\n✓ Cash flow visibility\n✓ Month-end close\n\nStreamline your books! Learn more: /services/bookkeeping-accounting';
     }
 
     // Financial Planning
     if (lowerMessage.includes('financial planning') || lowerMessage.includes('wealth')) {
-      return 'We focus on three core services to strengthen your finances:\n\n💰 Tax planning & preparation\n🛡️ Insurance & risk architecture\n📒 Bookkeeping & accounting\n\nBook a consultation to build your plan: /book-now';
+      return 'We focus on three core services to strengthen your business:\n\n💰 Tax planning & preparation\n🛡️ Insurance & risk architecture\n📒 Bookkeeping & accounting\n\nBook a consultation to build your plan: /book-now';
     }
 
     // IRS/Tax Issues

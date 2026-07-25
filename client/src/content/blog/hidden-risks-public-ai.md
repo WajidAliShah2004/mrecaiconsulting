@@ -49,7 +49,7 @@ These tools are incredibly useful—but they come with hidden costs.
 
 **Industries at Risk**:
 - **Healthcare**: HIPAA violations can cost $50,000 per incident
-- **Finance**: PCI-DSS violations can result in losing the ability to process credit cards
+- **Financial Services**: PCI-DSS violations can result in losing the ability to process credit cards
 - **Legal**: Attorney-client privilege may be waived
 - **Accounting**: Client confidentiality requirements may be violated
 

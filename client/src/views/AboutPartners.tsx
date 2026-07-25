@@ -88,7 +88,7 @@ const AboutPartners = () => {
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 At MRECAI, we believe in the power of strategic partnerships. 
-                By collaborating with industry-leading organizations across insurance, finance, accounting,
+                By collaborating with industry-leading organizations across insurance, accounting,
                 and professional services, we're able to provide our clients with comprehensive solutions
                 and unparalleled expertise.
               </p>

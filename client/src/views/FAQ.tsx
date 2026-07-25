@@ -23,7 +23,7 @@ const FAQ = () => {
     {
       category: 'General',
       question: 'What services does MRECAI offer?',
-      answer: 'We offer comprehensive solutions including Tax Services, Insurance & Risk Architecture, Bookkeeping & Accounting, Business Management Consulting, Investment & Wealth Planning, and Estate Planning. We\'re your one-stop partner for tax, insurance, and finance needs.',
+      answer: 'We offer comprehensive solutions including Tax Services, Insurance & Risk Architecture, Bookkeeping & Accounting, Business Management Consulting, Investment & Wealth Planning, and Estate Planning. We\'re your one-stop partner for tax, insurance, and accounting needs.',
     },
     {
       category: 'General',
