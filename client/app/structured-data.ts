@@ -12,7 +12,7 @@ export const organizationJsonLd = {
   logo: 'https://mrecai.com/images/logo.png',
   image: 'https://mrecai.com/images/logo.png',
   description:
-    'New York-based tax, insurance, and finance consulting firm integrating tax strategy and preparation, insurance services, bookkeeping and accounting, investment management, and estate planning.',
+    'New York-based tax, insurance, and accounting firm integrating tax strategy and preparation, insurance services, and bookkeeping and accounting.',
   slogan: 'Integrated Tax, Insurance & Finance Consulting in NYC',
   foundingDate: '2024',
   founder: {

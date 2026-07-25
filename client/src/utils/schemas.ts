@@ -10,7 +10,7 @@ export const organizationSchema = {
   url: 'https://mrecai.com',
   logo: 'https://mrecai.com/images/logo.jpeg',
   image: 'https://mrecai.com/images/logo.jpeg',
-  description: 'New York-based tax, insurance, and finance consulting firm integrating tax strategy and preparation, insurance services, bookkeeping and accounting, investment management, and estate planning. Serving NYC businesses and families with comprehensive financial solutions.',
+  description: 'New York-based tax, insurance, and accounting firm integrating tax strategy and preparation, insurance services, and bookkeeping and accounting. Serving NYC businesses and families with comprehensive financial solutions.',
   foundingDate: '2024',
   founder: {
     '@type': 'Person',
@@ -164,7 +164,7 @@ export const organizationSchema = {
     url: 'https://groberimbey.com'
   },
   // Disambiguation from other entities
-  disambiguatingDescription: 'MRECAI is a Great Neck, New York-based professional services firm specializing in integrated business consulting, insurance, tax strategy, and accounting. Not affiliated with MRE Consulting, Ltd (Houston-based Salesforce/Infosys partner).',
+  disambiguatingDescription: 'MRECAI is a Great Neck, New York-based professional services firm specializing in integrated tax strategy, insurance, and accounting. Not affiliated with MRE Consulting, Ltd (Houston-based Salesforce/Infosys partner).',
 };
 
 export const localBusinessSchema = {
