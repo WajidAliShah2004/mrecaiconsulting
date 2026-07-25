@@ -13,7 +13,7 @@ const AIChat = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       id: '1',
-      text: 'Hi! I\'m the MRECAI Assistant. 👋\n\nI can help you with:\n• Insurance quotes & coverage\n• Tax planning & preparation\n• Bookkeeping & accounting\n• Scheduling consultations\n\nHow can I assist you today?',
+      text: 'Hi! I\'m the MRECAI Assistant. 👋\n\nI can help you with:\n• Insurance quotes & coverage\n• Tax planning & preparation\n• Finance consulting\n• Scheduling consultations\n\nHow can I assist you today?',
       sender: 'bot',
       timestamp: new Date(),
     },
@@ -104,7 +104,7 @@ const AIChat = () => {
 
     // Greetings
     if (lowerMessage.match(/^(hi|hello|hey|good morning|good afternoon|good evening)$/)) {
-      return 'Hello! 👋 Welcome to MRECAI. I\'m here to help you with:\n• Insurance quotes & coverage\n• Tax planning & preparation\n• Bookkeeping & accounting\n• Scheduling consultations\n\nWhat can I help you with today?';
+      return 'Hello! 👋 Welcome to MRECAI. I\'m here to help you with:\n• Insurance quotes & coverage\n• Tax planning & preparation\n• Finance consulting\n• Scheduling consultations\n\nWhat can I help you with today?';
     }
 
     // Hours/Availability
@@ -114,12 +114,12 @@ const AIChat = () => {
 
     // Services - General
     if (lowerMessage.includes('service') || lowerMessage.includes('what do you do') || lowerMessage.includes('what do you offer')) {
-      return 'We offer three core services:\n\n💰 Tax Services - Strategy, planning, filing & IRS representation\n🛡️ Insurance & Risk Architecture - Personal & commercial coverage\n📒 Bookkeeping & Accounting - Financial clarity & compliance\n\nVisit /services for detailed information!';
+      return 'We offer three core services:\n\n💰 Tax Services - Strategy, planning, filing & IRS representation\n🛡️ Insurance & Risk Architecture - Personal & commercial coverage\n📊 Finance Consulting - Cash flow strategy, systems & growth\n\nVisit /services for detailed information!';
     }
 
     // Digital Marketing (no longer offered)
     if (lowerMessage.includes('marketing') || lowerMessage.includes('seo') || lowerMessage.includes('social media') || lowerMessage.includes('advertising')) {
-      return 'We no longer offer digital marketing services. 🙏\n\nWhat we can help with instead:\n\n💰 Tax Services - Planning & preparation\n🛡️ Insurance & Risk Architecture\n📒 Bookkeeping & Accounting\n\nExplore our services: /services or book a consultation: /book-now';
+      return 'We no longer offer digital marketing services. 🙏\n\nWhat we can help with instead:\n\n💰 Tax Services - Planning & preparation\n🛡️ Insurance & Risk Architecture\n📊 Finance Consulting\n\nExplore our services: /services or book a consultation: /book-now';
     }
 
     // Insurance - General
@@ -154,7 +154,7 @@ const AIChat = () => {
 
     // AI & Automation (no longer offered)
     if (lowerMessage.match(/\bai\b/) || lowerMessage.includes('artificial intelligence') || lowerMessage.includes('chatbot') || lowerMessage.includes('automation')) {
-      return 'We no longer offer AI or automation services. 🙏\n\nWhat we can help with instead:\n\n💰 Tax Services - Planning & preparation\n🛡️ Insurance & Risk Architecture\n📒 Bookkeeping & Accounting\n\nExplore our services: /services or book a consultation: /book-now';
+      return 'We no longer offer AI or automation services. 🙏\n\nWhat we can help with instead:\n\n💰 Tax Services - Planning & preparation\n🛡️ Insurance & Risk Architecture\n📊 Finance Consulting\n\nExplore our services: /services or book a consultation: /book-now';
     }
 
     // Pricing
@@ -273,17 +273,17 @@ const AIChat = () => {
 
     // Web/Software Development (no longer offered)
     if (lowerMessage.includes('web') || lowerMessage.includes('website') || lowerMessage.includes('development') || lowerMessage.includes('software')) {
-      return 'We no longer offer web or software development services. 🙏\n\nWhat we can help with instead:\n\n💰 Tax Services - Planning & preparation\n🛡️ Insurance & Risk Architecture\n📒 Bookkeeping & Accounting\n\nExplore our services: /services or book a consultation: /book-now';
+      return 'We no longer offer web or software development services. 🙏\n\nWhat we can help with instead:\n\n💰 Tax Services - Planning & preparation\n🛡️ Insurance & Risk Architecture\n📊 Finance Consulting\n\nExplore our services: /services or book a consultation: /book-now';
     }
 
     // Workflow / Operations
     if (lowerMessage.includes('workflow') || lowerMessage.includes('automate')) {
-      return 'Operational & Financial Clarity:\n\n✓ Bookkeeping & accounting systems\n✓ Real-time financial reporting\n✓ Bank & credit card reconciliation\n✓ Cash flow visibility\n✓ Month-end close\n\nStreamline your finances! Learn more: /services/bookkeeping-accounting';
+      return 'Finance Consulting & Operational Clarity:\n\n✓ Operational systems development\n✓ Cash flow & profitability strategy\n✓ Financial forecasting & budgeting\n✓ KPI & metrics tracking\n✓ Fractional COO services\n\nStreamline your operations! Learn more: /services/business-consulting';
     }
 
     // Financial Planning
     if (lowerMessage.includes('financial planning') || lowerMessage.includes('wealth')) {
-      return 'We focus on three core services to strengthen your finances:\n\n💰 Tax planning & preparation\n🛡️ Insurance & risk architecture\n📒 Bookkeeping & accounting\n\nBook a consultation to build your plan: /book-now';
+      return 'We focus on three core services to strengthen your finances:\n\n💰 Tax planning & preparation\n🛡️ Insurance & risk architecture\n📊 Finance consulting\n\nBook a consultation to build your plan: /book-now';
     }
 
     // IRS/Tax Issues
@@ -343,7 +343,7 @@ const AIChat = () => {
 
     // Technology Companies
     if (lowerMessage.includes('tech company') || lowerMessage.includes('software company') || lowerMessage.includes('saas')) {
-      return 'Technology Company Services:\n\n✓ Tech E&O insurance\n✓ Cyber liability\n✓ R&D tax credit studies\n✓ Bookkeeping & accounting\n✓ Multi-state tax compliance\n\nComplete tech company support! Book consultation: /book-now';
+      return 'Technology Company Services:\n\n✓ Tech E&O insurance\n✓ Cyber liability\n✓ R&D tax credit studies\n✓ Finance consulting & cash flow strategy\n✓ Multi-state tax compliance\n\nComplete tech company support! Book consultation: /book-now';
     }
 
     // Response Time
@@ -378,7 +378,7 @@ const AIChat = () => {
 
     // Why Choose Us
     if (lowerMessage.includes('why choose') || lowerMessage.includes('why you') || lowerMessage.includes('what makes you different')) {
-      return 'Why Choose MRECAI:\n\n✓ 15+ years of experience (since 2009)\n✓ 500+ satisfied clients\n✓ 98% success rate\n✓ 24/7 service support\n✓ Expert team\n✓ Consulting, tax, accounting & insurance under one roof\n✓ Personalized service\n✓ Proven track record\n\nLearn more: /about';
+      return 'Why Choose MRECAI:\n\n✓ 15+ years of experience (since 2009)\n✓ 500+ satisfied clients\n✓ 98% success rate\n✓ 24/7 service support\n✓ Expert team\n✓ Tax, insurance & finance consulting under one roof\n✓ Personalized service\n✓ Proven track record\n\nLearn more: /about';
     }
 
     // Success Rate
@@ -393,7 +393,7 @@ const AIChat = () => {
 
     // Comparison/Competitors
     if (lowerMessage.includes('compare') || lowerMessage.includes('difference') || lowerMessage.includes('vs') || lowerMessage.includes('versus')) {
-      return 'What Sets Us Apart:\n\n✓ Integrated services (tax, insurance & accounting)\n✓ Tax & accounting expertise\n✓ 24/7 availability\n✓ Personalized attention\n✓ 15+ years experience\n✓ Strategic partnerships\n✓ Proven results (98% success rate)\n\nExperience the MRECAI difference! Book consultation: /book-now';
+      return 'What Sets Us Apart:\n\n✓ Integrated services (tax, insurance & finance consulting)\n✓ Tax & finance expertise\n✓ 24/7 availability\n✓ Personalized attention\n✓ 15+ years experience\n✓ Strategic partnerships\n✓ Proven results (98% success rate)\n\nExperience the MRECAI difference! Book consultation: /book-now';
     }
 
     // Credentials/Certifications

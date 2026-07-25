@@ -32,10 +32,10 @@ const bundles: ServiceBundle[] = [
     color: 'blue',
     gradient: 'from-blue-500 to-blue-600',
     services: [
-      'Bookkeeping & Accounting',
+      'Finance Consulting',
       'Tax Preparation',
       'Financial Reporting & Insights',
-      'QuickBooks Setup & Training',
+      'Systems & Process Setup',
     ],
     benefits: [
       'Clean, accurate financial records',
@@ -50,7 +50,7 @@ const bundles: ServiceBundle[] = [
       'Startups needing structure',
     ],
     pricing: 'Starting at $500/month',
-    route: '/services/bookkeeping-accounting',
+    route: '/services/business-consulting',
   },
   {
     id: 'tax-optimization',
@@ -115,7 +115,7 @@ const bundles: ServiceBundle[] = [
     id: 'comprehensive',
     name: 'Comprehensive Business Package',
     tagline: 'Complete Financial Management',
-    description: 'Our most complete offering - integrated tax, insurance, and accounting solutions working together seamlessly.',
+    description: 'Our most complete offering - integrated tax, insurance, and finance consulting solutions working together seamlessly.',
     icon: FaStar,
     color: 'gold',
     gradient: 'from-yellow-500 to-orange-500',

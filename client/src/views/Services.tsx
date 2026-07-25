@@ -25,7 +25,7 @@ const Services = () => {
           '@graph': [
             serviceSchemas.taxAccounting,
             serviceSchemas.insurance,
-            serviceSchemas.bookkeepingAccounting,
+            serviceSchemas.businessConsulting,
             breadcrumbSchema([
               { name: 'Home', url: '/' },
               { name: 'Services', url: '/services' },
@@ -109,7 +109,7 @@ const Services = () => {
         {/* Services Grid - Redesigned */}
         <section className="section-padding bg-gradient-to-b from-white to-gray-50">
           <div className="container-custom">
-            {/* Primary Services Section */}
+            {/* Services Section */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -118,123 +118,18 @@ const Services = () => {
               className="text-center mb-16"
             >
               <div className="inline-block px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-bold mb-4">
-                PRIMARY SERVICES
+                OUR SERVICES
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                Tax & <span className="gradient-text">Insurance Services</span>
+                Tax, Insurance & <span className="gradient-text">Finance Consulting</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Our core expertise in advanced tax strategy and insurance & risk architecture
+                Three integrated services under one roof — proactive tax strategy, comprehensive insurance & risk architecture, and expert finance consulting
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto mb-20">
-              {SERVICES_EXPANDED.filter(service => service.isPrimary).map((service, index) => (
-                <motion.div
-                  key={service.id}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1, duration: 0.5 }}
-                  onHoverStart={() => setActiveService(index)}
-                  onHoverEnd={() => setActiveService(null)}
-                  className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-primary-200"
-                >
-                  {/* Gradient Accent */}
-                  <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary-500 to-primary-600"></div>
-
-                  {/* Hover Background Effect */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary-500/5 to-primary-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-                  <div className="relative p-8">
-                    {/* Icon and Title */}
-                    <div className="flex items-start space-x-4 mb-6">
-                      <motion.div
-                        className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-primary-100 to-primary-50 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow"
-                        whileHover={{ rotate: 360, scale: 1.1 }}
-                        transition={{ duration: 0.6 }}
-                      >
-                        <service.icon className="text-3xl text-primary-600" />
-                      </motion.div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl font-bold text-navy-900 group-hover:text-primary-600 transition-colors mb-2">
-                          {service.title}
-                        </h3>
-                        <p className="text-gray-600 leading-relaxed">
-                          {service.description}
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Features List */}
-                    <div className="mb-6">
-                      <h4 className="font-bold text-navy-900 mb-3 flex items-center">
-                        <span className="w-1 h-5 bg-primary-500 rounded-full mr-2"></span>
-                        Key Features
-                      </h4>
-                      <ul className="space-y-2.5">
-                        {service.features.map((feature, i) => (
-                          <motion.li
-                            key={i}
-                            initial={{ opacity: 0, x: -10 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 + i * 0.05, duration: 0.3 }}
-                            className="flex items-start group/item"
-                          >
-                            <FaCheck className="text-primary-500 mr-3 mt-1 flex-shrink-0 group-hover/item:scale-110 transition-transform" />
-                            <span className="text-gray-700 leading-relaxed">{feature}</span>
-                          </motion.li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    {/* Action Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-gray-100">
-                      <Link
-                        href={service.link || '/book-now'}
-                        className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-lg hover:from-primary-600 hover:to-primary-700 transition-all shadow-md hover:shadow-lg group/btn"
-                      >
-                        <FaArrowRight className="mr-2" />
-                        <span>Learn More</span>
-                      </Link>
-                      <Link
-                        href="/book-now"
-                        className="flex-1 inline-flex items-center justify-center px-6 py-3 border-2 border-primary-500 text-primary-600 font-semibold rounded-lg hover:bg-primary-50 transition-all"
-                      >
-                        <FaCalendarAlt className="mr-2" />
-                        Book Now
-                      </Link>
-                    </div>
-                  </div>
-
-                  {/* Corner Decoration */}
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary-500/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Secondary Services Section */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-16"
-            >
-              <div className="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-bold mb-4">
-                ACCOUNTING SERVICES
-              </div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                Comprehensive <span className="gradient-text">Financial Support</span>
-              </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Full-cycle bookkeeping and accounting to keep your financials clean, compliant, and decision-ready
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
-              {SERVICES_EXPANDED.filter(service => !service.isPrimary).map((service, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+              {SERVICES_EXPANDED.map((service, index) => (
                 <motion.div
                   key={service.id}
                   initial={{ opacity: 0, y: 30 }}
@@ -393,7 +288,7 @@ const Services = () => {
                     Integrated Expertise
                   </h4>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    From tax and insurance to bookkeeping and accounting - we're your complete financial partner.
+                    From tax and insurance to finance consulting - we're your complete financial partner.
                   </p>
                 </motion.div>
 

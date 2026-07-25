@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaFileInvoiceDollar, FaCalculator, FaShieldAlt, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
+import { FaFileInvoiceDollar, FaBriefcase, FaShieldAlt, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
 import { IconType } from 'react-icons';
 
@@ -35,13 +35,13 @@ const pillars: TechPillar[] = [
     link: '/services/risk-architecture'
   },
   {
-    icon: FaCalculator,
-    title: 'Bookkeeping & Accounting',
-    description: 'Full-cycle accounting operations that professionalize your financial reporting and keep you compliant.',
-    features: ['Daily Bookkeeping', 'Financial Reporting', 'Bank Reconciliation', 'Month-End Close'],
+    icon: FaBriefcase,
+    title: 'Finance Consulting',
+    description: 'Financial and operational advisory that turns growing businesses into scalable, professional organizations.',
+    features: ['Cash Flow & Profitability', 'Operational Systems', 'KPI & Metrics Tracking', 'Fractional COO Services'],
     color: 'from-purple-500 to-purple-600',
     bgColor: 'bg-purple-50',
-    link: '/services/bookkeeping-accounting'
+    link: '/services/business-consulting'
   },
 ];
 
@@ -123,7 +123,7 @@ const TechnologyAdvantage = () => {
           className="text-center mt-12"
         >
           <p className="text-lg text-gray-700 mb-6">
-            <strong>The MRECAI Difference:</strong> One integrated partner for tax, insurance, and accounting
+            <strong>The MRECAI Difference:</strong> One integrated partner for tax, insurance, and finance consulting
           </p>
         </motion.div>
       </div>

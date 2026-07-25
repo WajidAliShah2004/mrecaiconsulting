@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaFileInvoiceDollar, FaCalculator, FaShieldAlt } from 'react-icons/fa';
+import { FaFileInvoiceDollar, FaBriefcase, FaShieldAlt } from 'react-icons/fa';
 
 const pillars = [
   {
@@ -19,9 +19,9 @@ const pillars = [
     bgColor: 'bg-pink-50',
   },
   {
-    icon: FaCalculator,
-    title: 'Bookkeeping & Accounting',
-    description: 'Full-cycle accounting operations that professionalize your financial reporting and keep you compliant.',
+    icon: FaBriefcase,
+    title: 'Finance Consulting',
+    description: 'Financial and operational guidance that turns growing businesses into scalable, professional organizations.',
     color: 'from-purple-500 to-purple-600',
     bgColor: 'bg-purple-50',
   },
@@ -87,7 +87,7 @@ const FourPillars = () => {
           className="text-center mt-12"
         >
           <p className="text-lg text-gray-700 mb-6">
-            <strong>The MRECAI Difference:</strong> One integrated partner for tax, insurance, and accounting
+            <strong>The MRECAI Difference:</strong> One integrated partner for tax, insurance, and finance consulting
           </p>
         </motion.div>
       </div>
