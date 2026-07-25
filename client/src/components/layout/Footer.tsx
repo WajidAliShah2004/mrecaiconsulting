@@ -44,7 +44,7 @@ const Footer = () => {
   const services = [
     'Tax Services',
     'Insurance & Risk Architecture',
-    'Finance Consulting'
+    'Bookkeeping & Accounting'
   ];
 
   const socialLinks = [
@@ -248,7 +248,7 @@ const Footer = () => {
               </div>
               <div className="md:col-span-3">
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Headquartered in New York, MRECAI is a <strong>full-service tax, insurance, and finance consulting firm</strong> specializing in <strong>tax strategy and preparation, insurance consulting, and finance consulting</strong>. We help businesses and families protect what they have built through comprehensive risk management, complemented by proactive tax planning and hands-on financial advisory to support sustainable growth.
+                  Headquartered in New York, MRECAI is a <strong>full-service tax, insurance, and finance consulting firm</strong> specializing in <strong>tax strategy and preparation, insurance consulting, and bookkeeping and accounting</strong>. We help businesses and families protect what they have built through comprehensive risk management, complemented by proactive tax planning and hands-on financial advisory to support sustainable growth.
                 </p>
               </div>
             </div>

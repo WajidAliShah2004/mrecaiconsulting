@@ -86,10 +86,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <strong>Tax Services:</strong> Tax preparation, planning, and strategy for individuals and businesses
               </li>
               <li>
-                <strong>Insurance & Risk Architecture:</strong> Personal and commercial insurance coverage and risk management
+                <strong>Insurance Services:</strong> Personal and commercial insurance coverage and risk management
               </li>
               <li>
-                <strong>Finance Consulting:</strong> Cash flow management, financial analysis, operational systems, and strategic planning
+                <strong>Bookkeeping & Accounting:</strong> Full-cycle bookkeeping, financial reporting, and month-end close
+              </li>
+              <li>
+                <strong>Financial & Business Consulting:</strong> Cash flow management, financial analysis, and strategic planning
+              </li>
+              <li>
+                <strong>Investment Management:</strong> Portfolio management and wealth planning
+              </li>
+              <li>
+                <strong>Estate Consulting:</strong> Estate planning and asset protection
               </li>
             </ul>
 

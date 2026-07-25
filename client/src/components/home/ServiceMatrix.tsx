@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaFileInvoiceDollar, FaBriefcase, FaShieldAlt, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
+import { FaFileInvoiceDollar, FaCalculator, FaShieldAlt, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
 
 const matrixItems = [
@@ -26,14 +26,14 @@ const matrixItems = [
         link: '/services/risk-architecture'
     },
     {
-        title: 'Finance Consulting',
-        description: 'Financial and operational advisory that turns growing businesses into scalable, professional organizations.',
-        icon: FaBriefcase,
+        title: 'Bookkeeping & Accounting',
+        description: 'Full-cycle bookkeeping and accounting that turn your financials into a clear, real-time management tool.',
+        icon: FaCalculator,
         color: 'text-purple-600',
         bgColor: 'bg-purple-50',
         borderColor: 'border-purple-100',
-        features: ['Cash Flow Strategy', 'Operational Systems', 'Fractional COO Services'],
-        link: '/services/business-consulting'
+        features: ['Daily Bookkeeping', 'Financial Reporting', 'Month-End Close'],
+        link: '/services/bookkeeping-accounting'
     }
 ];
 

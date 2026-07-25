@@ -131,9 +131,9 @@ const Manhattan = () => {
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
               {
-                title: 'Finance Consulting for Manhattan Businesses',
-                description: 'Cash flow strategy, financial forecasting, and operational systems for Manhattan-based companies.',
-                link: '/services/business-consulting',
+                title: 'Bookkeeping for Manhattan Businesses',
+                description: 'Monthly bookkeeping, financial reporting, and cash flow management for Manhattan-based companies.',
+                link: '/services/bookkeeping-accounting',
               },
               {
                 title: 'NYC Tax Preparation',
@@ -156,9 +156,9 @@ const Manhattan = () => {
                 link: '/services/tax-strategy',
               },
               {
-                title: 'Fractional COO & Financial Strategy',
-                description: 'Fractional COO support, KPI tracking, and profitability strategy for Manhattan startups and established firms.',
-                link: '/services/business-consulting',
+                title: 'Accounting & Financial Reporting',
+                description: 'Real-time financial reporting, reconciliations, and month-end close for Manhattan startups and established firms.',
+                link: '/services/bookkeeping-accounting',
               },
             ].map((service, index) => (
               <motion.div
