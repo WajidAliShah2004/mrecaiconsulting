@@ -193,16 +193,16 @@ const Services = () => {
                     <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-gray-100">
                       <Link
                         href={service.link || '/book-now'}
-                        className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-lg hover:from-primary-600 hover:to-primary-700 transition-all shadow-md hover:shadow-lg group/btn"
+                        className="flex-1 inline-flex items-center justify-center whitespace-nowrap px-4 py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-lg hover:from-primary-600 hover:to-primary-700 transition-all shadow-md hover:shadow-lg group/btn"
                       >
-                        <FaArrowRight className="mr-2" />
+                        <FaArrowRight className="mr-2 flex-shrink-0" />
                         <span>Learn More</span>
                       </Link>
                       <Link
                         href="/book-now"
-                        className="flex-1 inline-flex items-center justify-center px-6 py-3 border-2 border-primary-500 text-primary-600 font-semibold rounded-lg hover:bg-primary-50 transition-all"
+                        className="flex-1 inline-flex items-center justify-center whitespace-nowrap px-4 py-3 border-2 border-primary-500 text-primary-600 font-semibold rounded-lg hover:bg-primary-50 transition-all"
                       >
-                        <FaCalendarAlt className="mr-2" />
+                        <FaCalendarAlt className="mr-2 flex-shrink-0" />
                         Book Now
                       </Link>
                     </div>
