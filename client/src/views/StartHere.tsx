@@ -112,7 +112,7 @@ const StartHere = () => {
       return {
         title: 'Foundation & Cleanup Package',
         description: 'You need to stabilize operations before you can grow. We\'ll clean up your books, organize your systems, and create a solid foundation.',
-        services: ['Bookkeeping & Accounting', 'Business Consulting', 'Tax Preparation'],
+        services: ['Bookkeeping & Accounting', 'Tax Services', 'Insurance & Risk'],
         cta: 'Start with Foundation Services',
         route: '/services/bookkeeping-accounting',
       };
@@ -124,7 +124,7 @@ const StartHere = () => {
         description: 'Tax strategy is your priority. We\'ll minimize your tax burden through proactive planning and strategic entity structuring.',
         services: ['Tax Strategy & Planning', 'Strategic Tax Planning', 'Tax Preparation'],
         cta: 'Explore Tax Services',
-        route: '/services/tax-strategy',
+        route: '/services/tax-services',
       };
     }
 
@@ -132,7 +132,7 @@ const StartHere = () => {
       return {
         title: 'Risk Protection Package',
         description: 'Protecting your business is critical. We\'ll assess your risks, close coverage gaps, and ensure you\'re properly insured.',
-        services: ['Risk Architecture', 'Insurance Services', 'Business Consulting'],
+        services: ['Risk Architecture', 'Insurance Services', 'Bookkeeping & Accounting'],
         cta: 'Protect Your Business',
         route: '/services/risk-architecture',
       };
@@ -140,11 +140,11 @@ const StartHere = () => {
 
     if (counts.tech >= 2 || counts.growth >= 2) {
       return {
-        title: 'Growth & Operations Package',
-        description: 'You\'re ready to scale. We\'ll streamline your operations, strengthen your cash flow, and build systems that support rapid growth.',
-        services: ['Business Management Consulting', 'Operational Systems Development', 'KPI & Metrics Tracking'],
+        title: 'Financial Clarity & Growth Package',
+        description: 'You\'re ready to scale. We\'ll give you clean books, real-time reporting, and proactive tax planning so you can grow with confidence.',
+        services: ['Bookkeeping & Accounting', 'Tax Services', 'Insurance & Risk'],
         cta: 'Accelerate Your Growth',
-        route: '/services/business-consulting',
+        route: '/services/bookkeeping-accounting',
       };
     }
 
@@ -152,7 +152,7 @@ const StartHere = () => {
     return {
       title: 'Comprehensive Business Package',
       description: 'You need integrated support across multiple areas. Our full-service approach ensures everything works together seamlessly.',
-      services: ['Business Consulting', 'Tax Services', 'Insurance Services', 'Bookkeeping & Accounting'],
+      services: ['Tax Services', 'Insurance Services', 'Bookkeeping & Accounting'],
       cta: 'See All Services',
       route: '/services',
     };

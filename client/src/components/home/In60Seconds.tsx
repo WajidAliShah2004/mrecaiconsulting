@@ -34,21 +34,15 @@ const In60Seconds = () => {
               <strong>MRECAI</strong> is a full-service tax, insurance, and finance consulting firm based in <strong>New York</strong> that helps individuals, families and businesses in all 50 states.
             </p>
 
-            {/* PRIMARY SERVICES - Tax & Insurance */}
-            <div className="mb-6">
-              <h3 className="text-lg font-bold text-primary-700 mb-3 text-left">Tax & Insurance Services</h3>
+            {/* OUR SERVICES - Tax, Insurance & Accounting */}
+            <div className="mb-8">
+              <h3 className="text-lg font-bold text-primary-700 mb-3 text-left">Our Services</h3>
               <div className="grid md:grid-cols-2 gap-4 text-left">
                 <div className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-700"><strong>Strategic Tax Planning</strong> - Proactive planning that keeps more of what you earn</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-gray-700"><strong>Tax Preparation & Accounting</strong> - Precise filing, bookkeeping, and reporting</span>
+                  <span className="text-gray-700"><strong>Tax Services</strong> - Proactive planning and precise preparation that keep more of what you earn</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,43 +50,18 @@ const In60Seconds = () => {
                   </svg>
                   <span className="text-gray-700"><strong>Insurance & Risk Architecture</strong> - Personal and commercial coverage</span>
                 </div>
-              </div>
-            </div>
-
-            {/* SECONDARY SERVICES - Finance & Advisory */}
-            <div className="mb-8">
-              <h3 className="text-lg font-bold text-gray-700 mb-3 text-left">Finance & Advisory Services</h3>
-              <div className="grid md:grid-cols-2 gap-4 text-left">
                 <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-gray-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-700"><strong>Bookkeeping Services</strong> - Full-cycle books and month-end close</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-gray-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-gray-700"><strong>Investment & Wealth Planning</strong> - Delivered through CFP® and CFA strategic partners</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-gray-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-gray-700"><strong>Business Management Consulting</strong> - Financial strategy, systems, and fractional COO support</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-gray-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-gray-700"><strong>Estate Consulting</strong> - Planning and asset protection</span>
+                  <span className="text-gray-700"><strong>Bookkeeping & Accounting</strong> - Full-cycle books, reporting, and month-end close</span>
                 </div>
               </div>
             </div>
 
             <div className="bg-primary-50 border-l-4 border-primary-600 p-6 rounded-r-lg">
               <p className="text-lg text-gray-800 font-medium">
-                <strong>Our Advantage:</strong> One integrated partner for tax, insurance, and finance—eliminating the need for multiple vendors and ensuring everything works together seamlessly.
+                <strong>Our Advantage:</strong> One integrated partner for tax, insurance, and accounting—eliminating the need for multiple vendors and ensuring everything works together seamlessly.
               </p>
             </div>
           </div>

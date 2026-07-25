@@ -42,12 +42,9 @@ const Footer = () => {
   ];
 
   const services = [
-    'Strategic Tax Planning',
-    'Tax Preparation & Compliance',
+    'Tax Services',
     'Insurance & Risk Architecture',
-    'Bookkeeping & Accounting',
-    'Business Management Consulting',
-    'Investment Management'
+    'Bookkeeping & Accounting'
   ];
 
   const socialLinks = [

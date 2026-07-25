@@ -23,9 +23,9 @@ const Services = () => {
         schema={{
           '@context': 'https://schema.org',
           '@graph': [
-            serviceSchemas.businessConsulting,
             serviceSchemas.taxAccounting,
             serviceSchemas.insurance,
+            serviceSchemas.bookkeepingAccounting,
             breadcrumbSchema([
               { name: 'Home', url: '/' },
               { name: 'Services', url: '/services' },
@@ -223,13 +223,13 @@ const Services = () => {
               className="text-center mb-16"
             >
               <div className="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-bold mb-4">
-                FINANCE & BUSINESS SERVICES
+                ACCOUNTING SERVICES
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
                 Comprehensive <span className="gradient-text">Financial Support</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Bookkeeping and accounting, tax preparation, business consulting, and wealth planning to support your growth
+                Full-cycle bookkeeping and accounting to keep your financials clean, compliant, and decision-ready
               </p>
             </motion.div>
 
@@ -294,15 +294,6 @@ const Services = () => {
                       </ul>
                     </div>
 
-                    {/* Partner Disclosure (for Investment & Financial Management) */}
-                    {service.partnerDisclosure && (
-                      <div className="mb-6 p-4 bg-primary-50 border border-primary-100 rounded-lg">
-                        <p className="text-sm text-gray-700 italic leading-relaxed">
-                          <span className="font-semibold text-primary-700">Note:</span> {service.partnerDisclosure}
-                        </p>
-                      </div>
-                    )}
-
                     {/* Action Buttons */}
                     <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-gray-100">
                       <Link
@@ -351,10 +342,10 @@ const Services = () => {
                   </p>
                   <div className="flex justify-center">
                     <Link
-                      href="/services/tax-strategy"
+                      href="/services/tax-services"
                       className="inline-flex items-center px-8 py-4 bg-white text-purple-600 font-bold rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-105"
                     >
-                      Explore Tax Strategy Services
+                      Explore Tax Services
                       <FaArrowRight className="ml-2" />
                     </Link>
                   </div>
@@ -402,7 +393,7 @@ const Services = () => {
                     Integrated Expertise
                   </h4>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    From tax and insurance to accounting and business consulting support - we're your complete financial partner.
+                    From tax and insurance to bookkeeping and accounting - we're your complete financial partner.
                   </p>
                 </motion.div>
 

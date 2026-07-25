@@ -156,9 +156,9 @@ const Manhattan = () => {
                 link: '/services/tax-strategy',
               },
               {
-                title: 'Business Consulting',
-                description: 'Strategic guidance for Manhattan startups, growing businesses, and established firms.',
-                link: '/services/business-consulting',
+                title: 'Accounting & Financial Reporting',
+                description: 'Real-time financial reporting, reconciliations, and month-end close for Manhattan startups and established firms.',
+                link: '/services/bookkeeping-accounting',
               },
             ].map((service, index) => (
               <motion.div

@@ -3,7 +3,6 @@ import {
   FaShieldAlt,
   FaChartBar,
   FaBolt,
-  FaLightbulb,
   FaHandshake,
   FaChartLine,
   FaLock,
@@ -39,7 +38,7 @@ export const SOCIAL_LINKS = {
 export const SERVICES = [
   {
     id: 'tax-accounting',
-    title: 'Tax Planning & Preparation',
+    title: 'Tax Services',
     description: 'Proactive tax planning and precise preparation that keep more of what you earn.',
     icon: FaChartBar,
     features: [
@@ -71,18 +70,6 @@ export const SERVICES = [
       'Real-time financial reporting',
       'Bank & credit card reconciliation',
       'Month-end close'
-    ]
-  },
-  {
-    id: 'business-consulting',
-    title: 'Business Management Consulting',
-    description: 'Financial and operational guidance that turns growing businesses into scalable, professional organizations.',
-    icon: FaBriefcase,
-    features: [
-      'Operational systems development',
-      'Cash flow management',
-      'KPI & metrics tracking',
-      'Fractional COO services'
     ]
   }
 ];
@@ -136,71 +123,22 @@ export const BLOG_CATEGORIES = [
 
 // Expanded services with comprehensive details for the redesigned Services page
 export const SERVICES_EXPANDED = [
-  // PRIMARY SERVICES (Tax, Insurance & Finance)
+  // PRIMARY SERVICES (Tax & Insurance)
   {
-    id: 'accounting-services',
-    title: 'Bookkeeping & Accounting',
-    description: 'Full-cycle accounting operations to professionalize your financial reporting and ensure compliance.',
-    icon: FaCalculator,
-    link: '/services/bookkeeping-accounting',
-    features: [
-      'Daily bookkeeping and categorization',
-      'Real-time financial reporting',
-      'Accounts payable/receivable',
-      'Bank and credit card reconciliation',
-      'QuickBooks Online optimization',
-      'Month-end close'
-    ],
-    detailedDescription: 'Our bookkeeping and accounting services focus on transforming your messy books into a powerful management tool. We don\'t just record transactions; we provide the financial clarity needed to make informed business decisions.',
-    isPrimary: false
-  },
-  {
-    id: 'tax-preparation',
-    title: 'Tax Preparation & Compliance',
-    description: 'Precise tax preparation for individuals and businesses, focused on accuracy and audit-readiness.',
+    id: 'tax-services',
+    title: 'Tax Services',
+    description: 'Proactive tax planning and precise preparation that reduce your effective tax rate and keep you compliant and audit-ready.',
     icon: FaFileInvoiceDollar,
-    link: '/services/tax-preparation',
+    link: '/services/tax-services',
     features: [
-      'Federal and state tax returns',
-      'Multi-state filing compliance',
-      'IRS audit representation',
-      'Sales and use tax filings',
-      'Compliance consulting'
-    ],
-    detailedDescription: 'We handle the heavy lifting of tax compliance, ensuring your filings are accurate and submitted on time. Our goal is to minimize your stress and maximize your peace of mind during tax season.',
-    isPrimary: false
-  },
-  {
-    id: 'tax-strategy',
-    title: 'Advanced Tax Strategy',
-    description: 'Proactive tax planning to significantly reduce your effective tax rate through R&D credits, cost segregation, and entity optimization.',
-    icon: FaLightbulb,
-    link: '/services/tax-strategy',
-    features: [
-      'Strategic tax planning',
-      'R&D tax credit studies',
-      'Cost segregation analysis',
+      'Strategic tax planning & reduction',
+      'Federal & state tax preparation',
+      'R&D tax credits & cost segregation',
       'Entity structure optimization',
-      'Year-round tax advisory'
+      'Multi-state compliance & IRS representation'
     ],
-    detailedDescription: 'Tax strategy is different from tax preparation. We look ahead to identify significant savings opportunities before the tax year ends, helping you keep more of what you earn.',
+    detailedDescription: 'From year-round strategic planning to accurate, on-time preparation, our tax services help you keep more of what you earn while staying fully compliant and audit-ready.',
     isPrimary: true
-  },
-  {
-    id: 'business-management',
-    title: 'Business Management Consulting',
-    description: 'Systems-first consulting to turn operational chaos into a scalable, professional business.',
-    icon: FaBriefcase,
-    link: '/services/business-consulting',
-    features: [
-      'Operational systems development',
-      'Cash flow management',
-      'KPI and metrics tracking',
-      'Profitability optimization',
-      'Fractional COO services'
-    ],
-    detailedDescription: 'We help growing businesses professionalize their operations. Our consulting focus is on building the systems and leadership structures needed to scale from "founder-dependent" to "process-driven".',
-    isPrimary: false
   },
   {
     id: 'insurance-consulting',
@@ -218,22 +156,21 @@ export const SERVICES_EXPANDED = [
     detailedDescription: 'We don\'t just sell policies; we architect protection. By auditing your existing coverage against your specific risk profile, we ensure you have the right protection at the right price.',
     isPrimary: true
   },
-
   {
-    id: 'investment-management',
-    title: 'Investment & Wealth Planning',
-    description: 'Holistic wealth management delivered through strategic partners with CFP® and CFA credentials.',
-    icon: FaChartLine,
-    link: '/services/investment-management',
+    id: 'accounting-services',
+    title: 'Bookkeeping & Accounting',
+    description: 'Full-cycle accounting operations to professionalize your financial reporting and ensure compliance.',
+    icon: FaCalculator,
+    link: '/services/bookkeeping-accounting',
     features: [
-      'Portfolio management',
-      'Retirement planning',
-      'Fiduciary wealth advisory',
-      'Financial planning',
-      'Risk assessment'
+      'Daily bookkeeping and categorization',
+      'Real-time financial reporting',
+      'Accounts payable/receivable',
+      'Bank and credit card reconciliation',
+      'QuickBooks Online optimization',
+      'Month-end close'
     ],
-    detailedDescription: 'Through our strategic partnership with certified financial professionals, we provide top-tier investment management that syncs perfectly with your tax and business strategy.',
-    partnerDisclosure: 'Investment and financial management services are provided through our strategic partner, a Certified Financial Planner (CFP®) and Chartered Financial Analyst (CFA).',
+    detailedDescription: 'Our bookkeeping and accounting services focus on transforming your messy books into a powerful management tool. We don\'t just record transactions; we provide the financial clarity needed to make informed business decisions.',
     isPrimary: false
   },
 ];
