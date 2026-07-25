@@ -28,7 +28,7 @@ export default function TermsOfService() {
     },
     {
       title: "Services Description",
-      content: "MRECAI provides tax planning and preparation, insurance brokerage, financial consulting, and business management consulting services. All services are subject to availability and may be modified or discontinued at any time."
+      content: "MRECAI provides tax planning and preparation, insurance brokerage, and bookkeeping and accounting services. All services are subject to availability and may be modified or discontinued at any time."
     },
     {
       title: "SMS Messaging Terms & Conditions",

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import HomePage from '@/pages/Home';
 
 const title = "Tax, Insurance & Accounting | MRECAI";
-const description = "Full-service tax, insurance, and accounting firm in NYC. Strategic tax planning and preparation, insurance and risk management, and bookkeeping, accounting, and financial consulting.";
+const description = "Full-service tax, insurance, and accounting firm in NYC. Strategic tax planning and preparation, insurance and risk management, and bookkeeping and accounting.";
 const canonical = "/";
 
 export function generateMetadata(): Metadata {

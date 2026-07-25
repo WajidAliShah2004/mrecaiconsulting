@@ -11,7 +11,7 @@ const About = () => {
     <>
       <SEO
         title="About MRECAI | Tax, Insurance & Accounting"
-        description="Learn about MRECAI. Full-service tax, insurance, and accounting firm specializing in tax strategy, insurance, bookkeeping, and financial consulting. Serving 180+ clients since 2024."
+        description="Learn about MRECAI. Full-service tax, insurance, and accounting firm specializing in tax strategy, insurance, and bookkeeping and accounting. Serving 180+ clients since 2024."
         canonical="/about"
         keywords="about MRECAI, business consulting company, tax planning firm, insurance consulting, bookkeeping services, company history"
         schema={{
@@ -544,7 +544,7 @@ const About = () => {
                 {
                   icon: FaGlobe,
                   title: 'Complete Financial Partner',
-                  description: 'Tax planning, insurance consulting, and financial consulting under one roof',
+                  description: 'Tax planning, insurance consulting, and accounting under one roof',
                   gradient: 'from-green-500 to-emerald-500'
                 },
                 {

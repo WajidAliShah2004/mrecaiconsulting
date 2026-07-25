@@ -102,7 +102,7 @@ const AboutCompany = () => {
                     MRECAI is a forward-thinking firm dedicated to empowering individuals,
                     families, and businesses with comprehensive tax, insurance, and accounting solutions. Founded in 2024,
                     we bring together expertise in tax and accounting, insurance services,
-                    financial consulting, and wealth planning through strategic partners.
+                    and bookkeeping and accounting through strategic partners.
                   </p>
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
                     Our approach combines traditional consulting excellence with modern financial tools,

@@ -100,7 +100,7 @@ const Footer = () => {
               </Link>
 
               <p className="text-gray-300 mb-6 leading-relaxed">
-                Protecting and growing businesses and families with proactive tax planning, comprehensive insurance and risk management, and expert financial consulting.
+                Protecting and growing businesses and families with proactive tax planning, comprehensive insurance and risk management, and expert bookkeeping and accounting.
               </p>
 
               {/* Social Media */}
