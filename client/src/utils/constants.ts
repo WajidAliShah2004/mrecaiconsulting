@@ -61,15 +61,15 @@ export const SERVICES = [
     ]
   },
   {
-    id: 'bookkeeping-accounting',
-    title: 'Bookkeeping & Accounting',
-    description: 'Full-cycle accounting operations that professionalize your financial reporting and keep you compliant.',
-    icon: FaCalculator,
+    id: 'finance-consulting',
+    title: 'Finance Consulting',
+    description: 'Financial and operational guidance that turns growing businesses into scalable, professional organizations.',
+    icon: FaBriefcase,
     features: [
-      'Daily bookkeeping & categorization',
-      'Real-time financial reporting',
-      'Bank & credit card reconciliation',
-      'Month-end close'
+      'Cash flow & profitability strategy',
+      'Operational systems development',
+      'KPI & metrics tracking',
+      'Fractional COO services'
     ]
   }
 ];
@@ -90,8 +90,8 @@ export const REASONS_TO_CHOOSE = [
   {
     icon: FaBriefcase,
     title: 'Finance Consulting Experts',
-    description: 'Bookkeeping, accounting, and financial consulting that give you clarity and control',
-    link: '/services/bookkeeping-accounting'
+    description: 'Financial strategy, systems, and advisory that give you clarity and control',
+    link: '/services/business-consulting'
   },
   {
     icon: FaBolt,
@@ -157,20 +157,19 @@ export const SERVICES_EXPANDED = [
     isPrimary: true
   },
   {
-    id: 'accounting-services',
-    title: 'Bookkeeping & Accounting',
-    description: 'Full-cycle accounting operations to professionalize your financial reporting and ensure compliance.',
-    icon: FaCalculator,
-    link: '/services/bookkeeping-accounting',
+    id: 'finance-consulting',
+    title: 'Finance Consulting',
+    description: 'Financial and operational advisory that turns growing businesses into scalable, professional organizations.',
+    icon: FaBriefcase,
+    link: '/services/business-consulting',
     features: [
-      'Daily bookkeeping and categorization',
-      'Real-time financial reporting',
-      'Accounts payable/receivable',
-      'Bank and credit card reconciliation',
-      'QuickBooks Online optimization',
-      'Month-end close'
+      'Cash flow & profitability strategy',
+      'Financial forecasting & budgeting',
+      'Operational systems development',
+      'KPI and metrics tracking',
+      'Fractional COO services'
     ],
-    detailedDescription: 'Our bookkeeping and accounting services focus on transforming your messy books into a powerful management tool. We don\'t just record transactions; we provide the financial clarity needed to make informed business decisions.',
+    detailedDescription: 'Our finance consulting helps growing businesses professionalize their operations—building the financial systems, reporting, and leadership structures needed to scale with confidence.',
     isPrimary: false
   },
 ];

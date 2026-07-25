@@ -105,7 +105,7 @@ const HomeHero = () => {
                             transition={{ duration: 0.8, delay: 0.4 }}
                             className="text-base sm:text-lg md:text-xl text-gray-300 max-w-lg leading-relaxed font-light"
                         >
-                            Grow with confidence through strategic tax planning, comprehensive insurance protection, and full-cycle bookkeeping and accounting from one trusted partner.
+                            Grow with confidence through strategic tax planning, comprehensive insurance protection, and expert finance consulting from one trusted partner.
                         </motion.p>
                     </div>
 
