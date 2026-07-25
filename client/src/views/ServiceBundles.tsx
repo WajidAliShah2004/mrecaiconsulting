@@ -27,7 +27,7 @@ const bundles: ServiceBundle[] = [
     id: 'foundation',
     name: 'Foundation Package',
     tagline: 'Get Your Business Organized',
-    description: 'Perfect for businesses that need to clean up their books, organize their finances, and establish a solid foundation for growth.',
+    description: 'Perfect for businesses that need to clean up their books, organize their accounts, and establish a solid foundation for growth.',
     icon: FaCog,
     color: 'blue',
     gradient: 'from-blue-500 to-blue-600',

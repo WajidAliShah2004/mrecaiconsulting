@@ -114,7 +114,7 @@ IMPLEMENTATION: THE MRECAI 6-STEP SYSTEM
 3. INFRASTRUCTURE: Build/refine the foundations
 4. LAUNCH & OPTIMIZATION: Test and tune for conversion
 5. AUTOMATION & INTEGRATION: Reputation never sleeps
-6. MONITORING & REPORTING: Correlate activity to finance outcomes
+6. MONITORING & REPORTING: Correlate activity to revenue outcomes
 
 ================================================================================
 CONTACT INFORMATION

@@ -4,7 +4,7 @@
  * Provides utility functions for service categorization and sorting
  * to maintain consistent service ordering throughout the application.
  *
- * Primary Services (Tax, Insurance & Finance): Business Management Consulting,
+ * Primary Services (Tax, Insurance & Accounting): Business Management Consulting,
  * Insurance & Risk Architecture
  *
  * Secondary Services (Complementary): Tax Services, Bookkeeping & Accounting,

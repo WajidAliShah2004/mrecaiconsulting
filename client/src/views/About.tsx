@@ -122,7 +122,7 @@ const About = () => {
                 {
                   icon: FaHandshake,
                   title: 'Strategic Partners',
-                  description: 'Discover our network of trusted partners across insurance, finance, and accounting',
+                  description: 'Discover our network of trusted partners across insurance and accounting',
                   link: '/about/partners',
                   color: 'from-purple-500 to-pink-500'
                 }

@@ -96,7 +96,7 @@ const Services = () => {
               className="max-w-5xl mx-auto text-center"
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Integrated <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-200">Tax, Insurance & Finance Solutions</span>
+                Integrated <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-200">Tax, Insurance & Accounting Solutions</span>
               </h1>
 
               <p className="text-xl text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto">

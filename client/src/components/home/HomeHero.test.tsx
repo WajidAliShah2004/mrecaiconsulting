@@ -107,7 +107,7 @@ describe('HomeHero', () => {
       );
       
       expect(screen.getByText(/Your Tax, Insurance &/i)).toBeInTheDocument();
-      expect(screen.getByText(/Finance Consulting Partner/i)).toBeInTheDocument();
+      expect(screen.getByText(/Accounting Partner/i)).toBeInTheDocument();
     });
 
     it('should render the company badge', () => {

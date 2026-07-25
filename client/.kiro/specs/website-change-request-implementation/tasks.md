@@ -202,7 +202,7 @@ This implementation plan converts the design document into actionable coding tas
     - Add new section after hero, before industry grid
     - Include "Universal Coverage" badge
     - Heading: "We Work With Every Industry"
-    - Text: "We work with clients across every industry. No matter what sector you operate in, our integrated services apply. While we highlight specific industries below, our expertise in finance, risk management, and technology serves businesses of all types and sizes."
+    - Text: "We work with clients across every industry. No matter what sector you operate in, our integrated services apply. While we highlight specific industries below, our expertise in accounting, risk management, and technology serves businesses of all types and sizes."
     - Use motion animations for entrance
     - _Requirements: 15.1, 15.2, 15.3, 15.4_
   

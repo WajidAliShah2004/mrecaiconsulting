@@ -29,7 +29,7 @@ const questions: Question[] = [
     id: 1,
     question: "What's your biggest business challenge right now?",
     options: [
-      { text: 'Managing finances and cash flow', value: 'finance', icon: '💰' },
+      { text: 'Managing money and cash flow', value: 'accounting', icon: '💰' },
       { text: 'Reducing tax burden', value: 'tax', icon: '📊' },
       { text: 'Protecting my business from risks', value: 'insurance', icon: '🛡️' },
       { text: 'Growing and scaling operations', value: 'growth', icon: '🚀' },
@@ -99,7 +99,7 @@ const StartHere = () => {
     
     // Count answer patterns
     const counts = {
-      finance: answerValues.filter(a => a === 'finance').length,
+      accounting: answerValues.filter(a => a === 'accounting').length,
       tax: answerValues.filter(a => a === 'tax').length,
       insurance: answerValues.filter(a => ['insurance', 'risk'].includes(a)).length,
       growth: answerValues.filter(a => ['growth', 'marketing'].includes(a)).length,

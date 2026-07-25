@@ -7,7 +7,7 @@ author: "MRECAI Team"
 read_time: 8
 featured_image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop"
 published_at: "2026-01-05"
-tags: ["Cash Flow", "Financial Planning", "AI", "Business Finance"]
+tags: ["Cash Flow", "Financial Planning", "AI", "Business Accounting"]
 ---
 
 # Cash Flow Forecasting with AI: Stop Guessing, Start Predicting

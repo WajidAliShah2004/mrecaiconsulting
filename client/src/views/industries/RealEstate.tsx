@@ -36,7 +36,7 @@ const RealEstate = () => {
                 title="Accounting & Tax Strategy for Real Estate Investors | MRECAI"
                 description="Advanced tax engineering for real estate investors and developers. Cost segregation, 1031 exchanges, and property-level financial management."
                 canonical="/industries/real-estate"
-                keywords="real estate accounting, investor tax strategy, cost segregation NYC, 1031 exchange consulting, property management finance, real estate asset protection"
+                keywords="real estate accounting, investor tax strategy, cost segregation NYC, 1031 exchange consulting, property management accounting, real estate asset protection"
             />
 
             {/* Hero Section */}

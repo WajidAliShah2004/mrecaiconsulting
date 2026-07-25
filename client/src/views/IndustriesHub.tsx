@@ -198,7 +198,7 @@ const IndustriesHub = () => {
                             transition={{ delay: 0.4 }}
                             className="text-lg text-gray-600 leading-relaxed"
                         >
-                            We work with clients across every industry. No matter what sector you operate in, our integrated services apply. While we highlight specific industries below, our expertise in finance, risk management, and technology serves businesses of all types and sizes.
+                            We work with clients across every industry. No matter what sector you operate in, our integrated services apply. While we highlight specific industries below, our expertise in accounting, risk management, and technology serves businesses of all types and sizes.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -394,7 +394,7 @@ const IndustriesHub = () => {
 
                             <div className="space-y-4">
                                 {[
-                                    { title: 'Integrated Finance & Tax', desc: 'Seamless compliance and strategic planning' },
+                                    { title: 'Integrated Accounting & Tax', desc: 'Seamless compliance and strategic planning' },
                                     { title: 'Risk & Insurance Management', desc: 'Comprehensive protection strategies' },
                                     { title: 'Bookkeeping & Accounting', desc: 'Clean books and real-time financial reporting' },
                                     { title: 'Legacy Heritage', desc: '50+ years of combined experience' }

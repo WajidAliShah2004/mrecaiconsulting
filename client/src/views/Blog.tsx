@@ -76,7 +76,7 @@ const Blog = () => {
       published_at: '2024-01-10',
       created_at: '2024-01-10',
       updated_at: '2024-01-10',
-      tags: ['Tax', 'Finance', 'Planning']
+      tags: ['Tax', 'Accounting', 'Planning']
     },
     {
       id: '3',
@@ -108,7 +108,7 @@ const Blog = () => {
       published_at: '2023-12-28',
       created_at: '2023-12-28',
       updated_at: '2023-12-28',
-      tags: ['Cash Flow', 'Finance', 'Strategy']
+      tags: ['Cash Flow', 'Accounting', 'Strategy']
     },
     {
       id: '5',
@@ -124,7 +124,7 @@ const Blog = () => {
       published_at: '2023-12-20',
       created_at: '2023-12-20',
       updated_at: '2023-12-20',
-      tags: ['Accounting', 'Finance', 'Business']
+      tags: ['Accounting', 'Bookkeeping', 'Business']
     },
     {
       id: '6',

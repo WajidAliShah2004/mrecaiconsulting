@@ -423,7 +423,7 @@ Add after hero section, before industry grid:
       <p className="text-xl text-gray-700 leading-relaxed">
         We work with clients across every industry. No matter what sector you operate in, 
         our integrated services apply. While we highlight specific industries below, 
-        our expertise in finance, risk management, and technology serves businesses 
+        our expertise in accounting, risk management, and technology serves businesses 
         of all types and sizes.
       </p>
     </motion.div>

@@ -65,7 +65,7 @@ www.MRECAI.com | 929-702-2818 | Matthew@MRECAI.com
 EXECUTIVE SUMMARY
 ================================================================================
 
-Most growing businesses manage their finances in silos: one vendor for
+Most growing businesses manage their books in silos: one vendor for
 bookkeeping, another for taxes, a third for insurance, and no one looking
 at the whole picture. The result is missed deductions, coverage gaps, and
 strategy built on incomplete information.
@@ -85,7 +85,7 @@ THE OPPORTUNITY FOR BUSINESSES
 
 Mid-sized and small enterprises stand to benefit most. Historically,
 coordinated financial strategy was reserved for companies large enough to
-staff a full finance department. Today, an integrated advisory partner gives
+staff a full accounting department. Today, an integrated advisory partner gives
 firms of any size CFO-level visibility at a fraction of the cost.
 
 INTEGRATION CREATES VALUE IN THREE DIMENSIONS:
@@ -290,7 +290,7 @@ IMPLEMENTATION: THE MRECAI 6-STEP SYSTEM
 3. INFRASTRUCTURE: Build/refine the foundations
 4. LAUNCH & OPTIMIZATION: Test and tune for conversion
 5. CONSISTENCY & INTEGRATION: Reputation never sleeps
-6. MONITORING & REPORTING: Correlate activity to finance outcomes
+6. MONITORING & REPORTING: Correlate activity to revenue outcomes
 
 ================================================================================
 CONTACT INFORMATION
@@ -332,7 +332,7 @@ vendors — they will be the ones with the clearest financial picture.
 
 Integrated financial strategy — where consulting, accounting, tax, and
 insurance decisions are made together — is redefining how businesses operate,
-scale, and compete. What once required a full internal finance department can
+scale, and compete. What once required a full internal accounting department can
 now be achieved through a single coordinated advisory partner, often yielding
 faster growth, fewer errors, and higher profitability.
 

@@ -18,13 +18,13 @@ describe('TechnologyAdvantage', () => {
     it('should render the section header', () => {
       renderWithRouter(<TechnologyAdvantage />);
       expect(screen.getByText(/The MRECAI Advantage/i)).toBeInTheDocument();
-      expect(screen.getByText(/Integrated tax, insurance, and finance consulting/i)).toBeInTheDocument();
+      expect(screen.getByText(/Integrated tax, insurance, and accounting/i)).toBeInTheDocument();
     });
 
     it('should render the bottom CTA text', () => {
       renderWithRouter(<TechnologyAdvantage />);
       expect(screen.getByText(/The MRECAI Difference:/i)).toBeInTheDocument();
-      expect(screen.getByText(/One integrated partner for tax, insurance, and wealth strategy/i)).toBeInTheDocument();
+      expect(screen.getByText(/One integrated partner for tax, insurance, and accounting/i)).toBeInTheDocument();
     });
   });
 

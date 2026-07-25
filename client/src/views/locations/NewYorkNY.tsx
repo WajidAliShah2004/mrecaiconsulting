@@ -225,7 +225,7 @@ const NewYorkNY = () => {
                 {
                   icon: FaPhone,
                   title: 'Same-Day Response',
-                  description: 'Quick response times for urgent matters affecting your NYC business or personal finances.',
+                  description: 'Quick response times for urgent matters affecting your NYC business or personal accounts.',
                 },
               ].map((item, index) => (
                 <motion.div
