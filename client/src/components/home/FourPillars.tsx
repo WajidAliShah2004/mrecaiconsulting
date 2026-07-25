@@ -1,13 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaBriefcase, FaCalculator, FaShieldAlt, FaChartLine } from 'react-icons/fa';
+import { FaFileInvoiceDollar, FaCalculator, FaShieldAlt } from 'react-icons/fa';
 
 const pillars = [
   {
-    icon: FaCalculator,
-    title: 'Tax Strategy & Accounting',
-    description: 'Proactive tax planning, precise preparation, and full-cycle bookkeeping that keep more of what you earn.',
+    icon: FaFileInvoiceDollar,
+    title: 'Tax Services',
+    description: 'Proactive tax planning and precise preparation that reduce your effective tax rate and keep more of what you earn.',
     color: 'from-blue-500 to-blue-600',
     bgColor: 'bg-blue-50',
   },
@@ -19,16 +19,9 @@ const pillars = [
     bgColor: 'bg-pink-50',
   },
   {
-    icon: FaChartLine,
-    title: 'Investment & Wealth Planning',
-    description: 'Holistic wealth management delivered through strategic partners with CFP® and CFA credentials.',
-    color: 'from-green-500 to-green-600',
-    bgColor: 'bg-green-50',
-  },
-  {
-    icon: FaBriefcase,
-    title: 'Business Management Consulting',
-    description: 'Financial and operational guidance that turns growing businesses into scalable, professional organizations.',
+    icon: FaCalculator,
+    title: 'Bookkeeping & Accounting',
+    description: 'Full-cycle accounting operations that professionalize your financial reporting and keep you compliant.',
     color: 'from-purple-500 to-purple-600',
     bgColor: 'bg-purple-50',
   },
@@ -47,15 +40,15 @@ const FourPillars = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
-            Our 4-Pillar Advantage
+            Our 3-Pillar Advantage
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive tax, insurance, and finance consulting solutions to protect and scale your business
+            Integrated tax, insurance, and accounting solutions to protect and scale your business
           </p>
         </motion.div>
 
         {/* Pillars Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {pillars.map((pillar, index) => (
             <motion.div
               key={index}
@@ -94,7 +87,7 @@ const FourPillars = () => {
           className="text-center mt-12"
         >
           <p className="text-lg text-gray-700 mb-6">
-            <strong>The MRECAI Difference:</strong> One integrated partner for tax, insurance, and wealth strategy
+            <strong>The MRECAI Difference:</strong> One integrated partner for tax, insurance, and accounting
           </p>
         </motion.div>
       </div>

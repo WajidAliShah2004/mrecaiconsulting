@@ -20,9 +20,9 @@ const NewYorkNY = () => {
       link: '/services/bookkeeping-accounting',
     },
     {
-      title: 'Business Consulting in NYC',
-      description: 'Strategic business consulting for New York City entrepreneurs and growing companies.',
-      link: '/services/business-consulting',
+      title: 'Insurance & Risk Architecture in NYC',
+      description: 'Commercial and personal risk audits and coverage planning for New York City businesses and families.',
+      link: '/services/risk-architecture',
     },
     {
       title: 'Insurance Services in New York',

@@ -74,7 +74,6 @@ const Navbar = () => {
     { name: 'Tax Services', path: '/services/tax-services' },
     { name: 'Insurance & Risk', path: '/services/risk-architecture' },
     { name: 'Bookkeeping & Accounting', path: '/services/bookkeeping-accounting' },
-    { name: 'Business Consulting', path: '/services/business-consulting' },
   ];
 
   const isAboutActive = pathname.startsWith('/about') || pathname === '/testimonials';

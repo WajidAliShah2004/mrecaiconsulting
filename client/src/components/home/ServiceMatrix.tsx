@@ -1,29 +1,19 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaBriefcase, FaCalculator, FaShieldAlt, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
+import { FaFileInvoiceDollar, FaCalculator, FaShieldAlt, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
 
 const matrixItems = [
     {
-        title: 'Business Consulting',
-        description: 'Strategic guidance and operational systems that professionalize your business, sharpen decision-making, and set the stage for scalable growth.',
-        icon: FaBriefcase,
-        color: 'text-purple-600',
-        bgColor: 'bg-purple-50',
-        borderColor: 'border-purple-100',
-        features: ['Strategic Planning', 'Operational Systems', 'Fractional COO Services'],
-        link: '/services/business-consulting'
-    },
-    {
-        title: 'Tax & Accounting',
-        description: 'Strategic tax planning, precise preparation, and full-cycle bookkeeping that turn your financials into a management tool.',
-        icon: FaCalculator,
+        title: 'Tax Services',
+        description: 'Strategic tax planning and precise preparation that reduce your effective tax rate and keep you compliant and audit-ready.',
+        icon: FaFileInvoiceDollar,
         color: 'text-blue-600',
         bgColor: 'bg-blue-50',
         borderColor: 'border-blue-100',
-        features: ['Strategic Tax Planning', 'Tax Preparation', 'Bookkeeping & Accounting'],
-        link: '/services/tax-strategy'
+        features: ['Strategic Tax Planning', 'Tax Preparation', 'R&D Credits & Cost Segregation'],
+        link: '/services/tax-services'
     },
     {
         title: 'Insurance & Risk',
@@ -34,6 +24,16 @@ const matrixItems = [
         borderColor: 'border-pink-100',
         features: ['Risk Audits', 'Commercial Coverage', 'Personal Lines'],
         link: '/services/risk-architecture'
+    },
+    {
+        title: 'Bookkeeping & Accounting',
+        description: 'Full-cycle bookkeeping and accounting that turn your financials into a clear, real-time management tool.',
+        icon: FaCalculator,
+        color: 'text-purple-600',
+        bgColor: 'bg-purple-50',
+        borderColor: 'border-purple-100',
+        features: ['Daily Bookkeeping', 'Financial Reporting', 'Month-End Close'],
+        link: '/services/bookkeeping-accounting'
     }
 ];
 

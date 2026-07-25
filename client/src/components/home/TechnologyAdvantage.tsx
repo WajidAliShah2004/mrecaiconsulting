@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaBriefcase, FaCalculator, FaShieldAlt, FaChartLine, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
+import { FaFileInvoiceDollar, FaCalculator, FaShieldAlt, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
 import { IconType } from 'react-icons';
 
@@ -17,13 +17,13 @@ interface TechPillar {
 
 const pillars: TechPillar[] = [
   {
-    icon: FaCalculator,
-    title: 'Tax Strategy & Accounting',
-    description: 'Proactive tax planning, precise preparation, and full-cycle bookkeeping that keep more of what you earn.',
-    features: ['Strategic Tax Planning', 'Tax Preparation', 'Bookkeeping & Accounting', 'Financial Reporting'],
+    icon: FaFileInvoiceDollar,
+    title: 'Tax Services',
+    description: 'Proactive tax planning and precise preparation that reduce your effective tax rate and keep more of what you earn.',
+    features: ['Strategic Tax Planning', 'Tax Preparation', 'R&D Credits & Cost Segregation', 'Multi-State Compliance'],
     color: 'from-blue-500 to-blue-600',
     bgColor: 'bg-blue-50',
-    link: '/services/tax-strategy'
+    link: '/services/tax-services'
   },
   {
     icon: FaShieldAlt,
@@ -35,22 +35,13 @@ const pillars: TechPillar[] = [
     link: '/services/risk-architecture'
   },
   {
-    icon: FaChartLine,
-    title: 'Investment & Wealth Planning',
-    description: 'Holistic wealth management delivered through strategic partners with CFP® and CFA credentials.',
-    features: ['Portfolio Management', 'Retirement Planning', 'Fiduciary Wealth Advisory', 'Financial Planning'],
-    color: 'from-green-500 to-green-600',
-    bgColor: 'bg-green-50',
-    link: '/services/investment-management'
-  },
-  {
-    icon: FaBriefcase,
-    title: 'Business Management Consulting',
-    description: 'Strategic guidance and operational systems that turn growing businesses into scalable, professional organizations.',
-    features: ['Operational Systems Development', 'Cash Flow Management', 'Fractional COO Services'],
+    icon: FaCalculator,
+    title: 'Bookkeeping & Accounting',
+    description: 'Full-cycle accounting operations that professionalize your financial reporting and keep you compliant.',
+    features: ['Daily Bookkeeping', 'Financial Reporting', 'Bank Reconciliation', 'Month-End Close'],
     color: 'from-purple-500 to-purple-600',
     bgColor: 'bg-purple-50',
-    link: '/services/business-consulting'
+    link: '/services/bookkeeping-accounting'
   },
 ];
 
@@ -75,7 +66,7 @@ const TechnologyAdvantage = () => {
         </motion.div>
 
         {/* Pillars Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {pillars.map((pillar, index) => (
             <motion.div
               key={index}
@@ -132,7 +123,7 @@ const TechnologyAdvantage = () => {
           className="text-center mt-12"
         >
           <p className="text-lg text-gray-700 mb-6">
-            <strong>The MRECAI Difference:</strong> One integrated partner for tax, insurance, and wealth strategy
+            <strong>The MRECAI Difference:</strong> One integrated partner for tax, insurance, and accounting
           </p>
         </motion.div>
       </div>

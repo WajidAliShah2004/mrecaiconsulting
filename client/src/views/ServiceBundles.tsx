@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { FaCheckCircle, FaArrowRight, FaStar, FaShieldAlt, FaChartLine, FaRocket, FaCog } from 'react-icons/fa';
+import { FaCheckCircle, FaArrowRight, FaStar, FaShieldAlt, FaChartLine, FaCog } from 'react-icons/fa';
 import SEO from '../components/common/SEO';
 import CTAButton from '../components/common/CTAButton';
 
@@ -34,13 +34,13 @@ const bundles: ServiceBundle[] = [
     services: [
       'Bookkeeping & Accounting',
       'Tax Preparation',
-      'Business Consulting',
+      'Financial Reporting & Insights',
       'QuickBooks Setup & Training',
     ],
     benefits: [
       'Clean, accurate financial records',
       'Tax compliance and preparation',
-      'Strategic business guidance',
+      'Real-time financial reporting',
       'Organized systems and processes',
     ],
     idealFor: [
@@ -80,7 +80,7 @@ const bundles: ServiceBundle[] = [
     ],
     pricing: 'Starting at $750/month',
     popular: true,
-    route: '/services/tax-strategy',
+    route: '/services/tax-services',
   },
   {
     id: 'risk-protection',
@@ -112,39 +112,10 @@ const bundles: ServiceBundle[] = [
     route: '/services/risk-architecture',
   },
   {
-    id: 'growth-consulting',
-    name: 'Growth & Operations Package',
-    tagline: 'Scale Your Business with Systems',
-    description: 'Hands-on management consulting to streamline operations, strengthen cash flow, and scale your business efficiently.',
-    icon: FaRocket,
-    color: 'purple',
-    gradient: 'from-purple-500 to-purple-600',
-    services: [
-      'Business Management Consulting',
-      'Operational Systems Development',
-      'KPI & Metrics Tracking',
-      'Fractional COO Services',
-    ],
-    benefits: [
-      'Documented, repeatable processes',
-      'Streamlined operations',
-      'Increased efficiency',
-      'Scalable systems',
-    ],
-    idealFor: [
-      'Owner-dependent businesses',
-      'Companies ready to scale',
-      'Businesses with manual processes',
-      'Growth-focused entrepreneurs',
-    ],
-    pricing: 'Starting at $1,000/month',
-    route: '/services/business-consulting',
-  },
-  {
     id: 'comprehensive',
     name: 'Comprehensive Business Package',
-    tagline: 'Complete Business Management',
-    description: 'Our most complete offering - integrated finance, tax, insurance, and management consulting solutions working together seamlessly.',
+    tagline: 'Complete Financial Management',
+    description: 'Our most complete offering - integrated tax, insurance, and accounting solutions working together seamlessly.',
     icon: FaStar,
     color: 'gold',
     gradient: 'from-yellow-500 to-orange-500',
@@ -152,7 +123,6 @@ const bundles: ServiceBundle[] = [
       'All Foundation Services',
       'All Tax Optimization Services',
       'All Risk Protection Services',
-      'All Growth & Operations Services',
     ],
     benefits: [
       'One integrated team',
@@ -177,9 +147,9 @@ const ServiceBundles = () => {
     <>
       <SEO
         title="Service Bundles - Packaged Solutions | MRECAI"
-        description="Choose from our pre-packaged service bundles designed for different business needs. Foundation, Tax Optimization, Risk Protection, Growth & Operations, or Comprehensive packages."
+        description="Choose from our pre-packaged service bundles designed for different business needs. Foundation, Tax Optimization, Risk Protection, or Comprehensive packages."
         canonical="/service-bundles"
-        keywords="service packages, business bundles, tax and accounting packages, insurance bundles, business consulting packages"
+        keywords="service packages, business bundles, tax and accounting packages, insurance bundles"
       />
 
       <div className="pt-20 min-h-screen bg-gradient-to-br from-gray-50 to-white">

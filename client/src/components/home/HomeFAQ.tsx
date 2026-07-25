@@ -8,7 +8,7 @@ import { faqSchema } from '../../utils/schemas';
 const faqs = [
   {
     question: 'What does MRECAI do?',
-    answer: 'We provide tax preparation and strategy consulting, insurance solutions, bookkeeping and accounting, and financial and business consulting—so clients can stay compliant, improve profitability, and reduce risk. We integrate tax, insurance, and finance under one roof.',
+    answer: 'We provide tax preparation and strategy consulting, insurance solutions, and bookkeeping and accounting—so clients can stay compliant, improve profitability, and reduce risk. We integrate tax, insurance, and accounting under one roof.',
   },
   {
     question: 'What if I don\'t live in New York?',

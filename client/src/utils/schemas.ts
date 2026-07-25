@@ -131,14 +131,6 @@ export const organizationSchema = {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Business Consulting',
-          description: 'Financial and strategic business consulting, planning, and operational optimization',
-        },
-      },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
           name: 'Bookkeeping & Accounting',
           description: 'Full-cycle bookkeeping, financial reporting, and month-end close for growing businesses',
         },
