@@ -72,109 +72,6 @@ const AboutFounder = () => {
           </div>
         </section>
 
-        {/* CTO Section */}
-        <section className="section-padding bg-white">
-          <div className="container-custom">
-            <div className="max-w-6xl mx-auto">
-              <div className="grid md:grid-cols-5 gap-12 items-start">
-                {/* Photo Column */}
-                <motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  className="md:col-span-2"
-                >
-                  <div className="relative">
-                    {/* CTO photo */}
-                    <div className="aspect-[3/4] bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl shadow-2xl overflow-hidden">
-                      <img 
-                        src={ctoImage.src} 
-                        alt="Wajid Ali Shah - Chief Technology Officer"
-                        className="w-full h-full object-cover"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-                    {/* Decorative elements */}
-                    <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-purple-500/20 rounded-full blur-2xl"></div>
-                    <div className="absolute -top-4 -left-4 w-24 h-24 bg-purple-400/20 rounded-full blur-xl"></div>
-                  </div>
-
-                  {/* Contact Card */}
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.2, duration: 0.6 }}
-                    className="mt-8 bg-gradient-to-br from-purple-900 to-purple-800 rounded-xl p-6 text-white shadow-xl"
-                  >
-                    <h3 className="text-xl font-bold mb-4">NovaEdge Solutions</h3>
-                    <div className="space-y-3">
-                      <a href="https://www.upwork.com/agencies/1913615184399103598/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 hover:text-purple-300 transition-colors">
-                        <SiUpwork className="text-purple-400" />
-                        <span>Visit NovaEdge Solutions</span>
-                      </a>
-                    </div>
-                  </motion.div>
-                </motion.div>
-
-                {/* Bio Column */}
-                <motion.div
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  className="md:col-span-3"
-                >
-                  <div className="mb-6">
-                    <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-2">Wajid Ali Shah</h2>
-                    <p className="text-2xl text-purple-600 font-semibold mb-4">Chief Technology Officer</p>
-                    <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full"></div>
-                  </div>
-
-                  <div className="prose prose-lg max-w-none">
-                    <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-r-lg mb-8">
-                      <FaQuoteLeft className="text-purple-500 text-3xl mb-4" />
-                      <p className="text-lg text-gray-700 italic leading-relaxed">
-                        "Technology should empower businesses, not complicate them. We build reliable systems that work seamlessly behind the scenes."
-                      </p>
-                    </div>
-
-                    <h3 className="text-2xl font-bold text-navy-900 mb-4">About Wajid Ali Shah</h3>
-                    <p className="text-gray-700 leading-relaxed mb-6">
-                      With 15 years of software engineering experience, <strong>Wajid Ali Shah</strong> serves as the Chief Technology Officer of MRECAI and CEO of NovaEdge Solutions. His expertise spans web, desktop, and mobile application development—delivering the dependable infrastructure that keeps MRECAI's client service running smoothly.
-                    </p>
-                    <p className="text-gray-700 leading-relaxed mb-6">
-                      Throughout his career, Wajid has architected comprehensive technology solutions across diverse industries, from startups to established enterprises. He specializes in transforming complex business challenges into elegant, efficient systems that drive measurable results and operational excellence.
-                    </p>
-                    <p className="text-gray-700 leading-relaxed mb-6">
-                      At MRECAI, Wajid leads the internal platforms and infrastructure that support our consulting, tax, and insurance teams—so every client benefits from fast, secure, and dependable service.
-                    </p>
-
-                    <div className="space-y-4 mb-8">
-                      {[
-                        'CTO of MRECAI',
-                        'CEO of NovaEdge Solutions',
-                        '15 years of software engineering experience',
-                        'Expert in web, desktop, and mobile app development',
-                        'Specializes in secure, scalable business systems',
-                        'Leads MRECAI\'s internal platforms and infrastructure',
-                        'Architect of enterprise-grade technology solutions'
-                      ].map((item, index) => (
-                        <div key={index} className="flex items-center space-x-3">
-                          <FaCheckCircle className="text-purple-500 flex-shrink-0" />
-                          <span className="text-gray-700 font-medium">{item}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </motion.div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Founder Profile */}
         <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
           <div className="container-custom">
@@ -552,6 +449,109 @@ const AboutFounder = () => {
                   ))}
                 </div>
               </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTO Section */}
+        <section className="section-padding bg-white">
+          <div className="container-custom">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid md:grid-cols-5 gap-12 items-start">
+                {/* Photo Column */}
+                <motion.div
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className="md:col-span-2"
+                >
+                  <div className="relative">
+                    {/* CTO photo */}
+                    <div className="aspect-[3/4] bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl shadow-2xl overflow-hidden">
+                      <img 
+                        src={ctoImage.src} 
+                        alt="Wajid Ali Shah - Chief Technology Officer"
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    {/* Decorative elements */}
+                    <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-purple-500/20 rounded-full blur-2xl"></div>
+                    <div className="absolute -top-4 -left-4 w-24 h-24 bg-purple-400/20 rounded-full blur-xl"></div>
+                  </div>
+
+                  {/* Contact Card */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2, duration: 0.6 }}
+                    className="mt-8 bg-gradient-to-br from-purple-900 to-purple-800 rounded-xl p-6 text-white shadow-xl"
+                  >
+                    <h3 className="text-xl font-bold mb-4">NovaEdge Solutions</h3>
+                    <div className="space-y-3">
+                      <a href="https://www.upwork.com/agencies/1913615184399103598/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 hover:text-purple-300 transition-colors">
+                        <SiUpwork className="text-purple-400" />
+                        <span>Visit NovaEdge Solutions</span>
+                      </a>
+                    </div>
+                  </motion.div>
+                </motion.div>
+
+                {/* Bio Column */}
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className="md:col-span-3"
+                >
+                  <div className="mb-6">
+                    <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-2">Wajid Ali Shah</h2>
+                    <p className="text-2xl text-purple-600 font-semibold mb-4">Chief Technology Officer</p>
+                    <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full"></div>
+                  </div>
+
+                  <div className="prose prose-lg max-w-none">
+                    <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-r-lg mb-8">
+                      <FaQuoteLeft className="text-purple-500 text-3xl mb-4" />
+                      <p className="text-lg text-gray-700 italic leading-relaxed">
+                        "Technology should empower businesses, not complicate them. We build reliable systems that work seamlessly behind the scenes."
+                      </p>
+                    </div>
+
+                    <h3 className="text-2xl font-bold text-navy-900 mb-4">About Wajid Ali Shah</h3>
+                    <p className="text-gray-700 leading-relaxed mb-6">
+                      With 15 years of software engineering experience, <strong>Wajid Ali Shah</strong> serves as the Chief Technology Officer of MRECAI and CEO of NovaEdge Solutions. His expertise spans web, desktop, and mobile application development—delivering the dependable infrastructure that keeps MRECAI's client service running smoothly.
+                    </p>
+                    <p className="text-gray-700 leading-relaxed mb-6">
+                      Throughout his career, Wajid has architected comprehensive technology solutions across diverse industries, from startups to established enterprises. He specializes in transforming complex business challenges into elegant, efficient systems that drive measurable results and operational excellence.
+                    </p>
+                    <p className="text-gray-700 leading-relaxed mb-6">
+                      At MRECAI, Wajid leads the internal platforms and infrastructure that support our consulting, tax, and insurance teams—so every client benefits from fast, secure, and dependable service.
+                    </p>
+
+                    <div className="space-y-4 mb-8">
+                      {[
+                        'CTO of MRECAI',
+                        'CEO of NovaEdge Solutions',
+                        '15 years of software engineering experience',
+                        'Expert in web, desktop, and mobile app development',
+                        'Specializes in secure, scalable business systems',
+                        'Leads MRECAI\'s internal platforms and infrastructure',
+                        'Architect of enterprise-grade technology solutions'
+                      ].map((item, index) => (
+                        <div key={index} className="flex items-center space-x-3">
+                          <FaCheckCircle className="text-purple-500 flex-shrink-0" />
+                          <span className="text-gray-700 font-medium">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
             </div>
           </div>
         </section>

@@ -23,7 +23,7 @@ const FAQ = () => {
     {
       category: 'General',
       question: 'What services does MRECAI offer?',
-      answer: 'We offer comprehensive solutions including Tax Services, Insurance & Risk Architecture, Bookkeeping & Accounting, Business Management Consulting, Investment & Wealth Planning, and Estate Planning. We\'re your one-stop partner for tax, insurance, and accounting needs.',
+      answer: 'Our three integrated core services are Tax Services, Insurance & Risk Architecture, and Bookkeeping & Accounting. We also provide business consulting, and — through our strategic partner network — investment & wealth planning (via CFP®/CFA advisors), private-client and commercial insurance (via Grober Imbey), and US tax & accounting support (via PSG Global). One coordinated team handles it all.',
     },
     {
       category: 'General',
@@ -39,6 +39,11 @@ const FAQ = () => {
       category: 'General',
       question: 'What makes MRECAI different from other firms?',
       answer: 'We\'re an integrated partner offering consulting, tax, accounting, insurance, and growth services—all working together. Instead of managing multiple vendors, you get one team, one strategy, and one partner you can trust.',
+    },
+    {
+      category: 'General',
+      question: 'Who are MRECAI\'s strategic partners?',
+      answer: 'MRECAI coordinates a vetted partner network so specialized work is handled by specialists: insurance and private-client coverage through Grober Imbey Insurance Agency, investment & wealth planning through CFP®/CFA advisors, and US tax & accounting through PSG Global Tax & Accounting Services LLC (a US CPA–led firm founded by Parineet Sehgal). MRECAI stays your single point of contact and keeps every piece aligned.',
     },
 
     // Bookkeeping & Accounting
@@ -60,7 +65,12 @@ const FAQ = () => {
     {
       category: 'Bookkeeping & Accounting',
       question: 'Can you work with my existing CPA or tax preparer?',
-      answer: 'Absolutely. We coordinate with your existing tax professional to ensure seamless year-end reporting and tax preparation. Clean books make tax season easier for everyone.',
+      answer: 'Absolutely. We coordinate with your existing tax professional to ensure seamless year-end reporting and tax preparation. Prefer a single team? Through our accounting partner PSG Global, we can also handle US tax preparation and filing end-to-end. Either way, clean books make tax season easier for everyone.',
+    },
+    {
+      category: 'Bookkeeping & Accounting',
+      question: 'Can you support US accounting for international founders?',
+      answer: 'Yes. Through our partnership with PSG Global Tax & Accounting Services LLC, we support businesses, entrepreneurs, and international founders with US accounting, bookkeeping, and compliance. PSG Global is US CPA–led and experienced with founders operating across 6+ countries.',
     },
 
     // Tax Services
@@ -88,6 +98,11 @@ const FAQ = () => {
       category: 'Tax Services',
       question: 'Do I need an LLC or S-Corp?',
       answer: 'It depends on your income, expenses, and goals. We analyze your situation and recommend the structure that minimizes taxes while fitting your operations.',
+    },
+    {
+      category: 'Tax Services',
+      question: 'Who prepares and files my tax returns?',
+      answer: 'MRECAI leads your year-round tax strategy, and preparation and filing are handled by our US CPA–led accounting partner, PSG Global Tax & Accounting Services LLC. You get proactive planning and accurate federal and state filing from one coordinated team — including support for businesses and international founders with US tax obligations.',
     },
 
     // Insurance
