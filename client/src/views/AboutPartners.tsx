@@ -506,6 +506,142 @@ const AboutPartners = () => {
           </div>
         </section>
 
+        {/* Featured Accounting Partner: PSG Tax & Accounting */}
+        <section className="section-padding bg-white">
+          <div className="container-custom">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12"
+            >
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl mb-4 shadow-lg">
+                <FaCalculator className="text-3xl text-white" />
+              </div>
+              <h2 className="text-4xl font-bold mb-4">
+                Accounting <span className="gradient-text">Partner</span>
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Strategic partnership with a trusted tax and accounting firm
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="max-w-5xl mx-auto"
+            >
+              <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
+                {/* Header */}
+                <div className="bg-gradient-to-r from-green-500 to-emerald-600 p-8 text-white">
+                  <h3 className="text-3xl font-bold mb-2">PSG Tax &amp; Accounting</h3>
+                  <p className="text-green-100 text-lg mb-1">Trusted Tax &amp; Accounting for Businesses and Individuals</p>
+                  <p className="text-green-50">Danbury, CT</p>
+                </div>
+
+                {/* Content */}
+                <div className="p-8 md:p-12">
+                  {/* Who They Are */}
+                  <div className="mb-10">
+                    <h4 className="text-2xl font-bold text-navy-900 mb-4 flex items-center">
+                      <span className="w-1 h-8 bg-green-500 rounded-full mr-3"></span>
+                      Who PSG Is
+                    </h4>
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                      PSG Tax &amp; Accounting is a Danbury, Connecticut-based firm providing tax and
+                      accounting services to businesses and individuals throughout the region.
+                    </p>
+                    <p className="text-gray-700 leading-relaxed">
+                      Their team combines hands-on, personalized service with the technical expertise
+                      needed to keep clients compliant, organized, and confident in their numbers all
+                      year round.
+                    </p>
+                  </div>
+
+                  {/* Areas of Expertise */}
+                  <div className="mb-10">
+                    <h4 className="text-2xl font-bold text-navy-900 mb-4 flex items-center">
+                      <span className="w-1 h-8 bg-green-500 rounded-full mr-3"></span>
+                      Areas of Expertise
+                    </h4>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      {[
+                        {
+                          title: 'Tax Preparation & Filing',
+                          description: 'Accurate, timely preparation of federal and state returns for businesses and individuals'
+                        },
+                        {
+                          title: 'Bookkeeping & Accounting',
+                          description: 'Full-service bookkeeping, financial statements, and month-end close support'
+                        },
+                        {
+                          title: 'Payroll Services',
+                          description: 'Reliable payroll processing and compliance for small and growing businesses'
+                        },
+                        {
+                          title: 'Tax Planning & Advisory',
+                          description: 'Proactive planning to minimize liabilities and support smart business decisions'
+                        }
+                      ].map((item, index) => (
+                        <div key={index} className="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl border border-green-100">
+                          <h5 className="font-bold text-navy-900 mb-2">{item.title}</h5>
+                          <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* How Partnership Works */}
+                  <div className="mb-10">
+                    <h4 className="text-2xl font-bold text-navy-900 mb-4 flex items-center">
+                      <span className="w-1 h-8 bg-green-500 rounded-full mr-3"></span>
+                      How the Partnership Works
+                    </h4>
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                      When you work with MRECAI, our team handles the strategy behind your business,
+                      tax, and risk planning. PSG Tax &amp; Accounting handles the tax preparation,
+                      bookkeeping, and accounting execution — creating a seamless experience that feels
+                      like working with a single full-service firm.
+                    </p>
+                    <p className="text-gray-700 leading-relaxed font-semibold mb-3">
+                      Together, MRECAI + PSG deliver:
+                    </p>
+                    <ul className="space-y-2">
+                      {[
+                        'One coordinated team handling consulting, tax, and accounting needs',
+                        'Clean, up-to-date books that inform every strategic decision',
+                        'Proactive tax planning aligned with your broader financial strategy',
+                        'A single point of accountability from planning through filing'
+                      ].map((item, index) => (
+                        <li key={index} className="flex items-start">
+                          <span className="text-green-500 mr-3 mt-1">•</span>
+                          <span className="text-gray-700">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Visit Website */}
+                  <div className="bg-gradient-to-r from-green-50 to-white rounded-xl p-8 border border-green-100 text-center">
+                    <h4 className="text-xl font-bold text-navy-900 mb-4">Learn More About PSG</h4>
+                    <a
+                      href="https://psgtaxaccounting.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-xl hover:shadow-xl transition-all"
+                    >
+                      Visit PSG Tax &amp; Accounting
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
         {/* Legal Partners */}
         <section className="section-padding bg-white">
           <div className="container-custom">
