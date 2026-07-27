@@ -382,8 +382,8 @@ const About = () => {
                 },
                 {
                   icon: FaCalculator,
-                  title: 'Accounting Partners',
-                  description: 'Professional tax preparation, bookkeeping, and financial compliance services.',
+                  title: 'PSG Global Tax & Accounting',
+                  description: 'US CPA–led tax, accounting, and business advisory partner for businesses, entrepreneurs, and international founders.',
                   gradient: 'from-green-600 to-emerald-600'
                 }
               ].map((partner, index) => (
@@ -445,7 +445,7 @@ const About = () => {
                   year: '2024',
                   quarter: 'Q2',
                   title: 'Rapid Growth',
-                  description: 'Expanded our client base and service offerings, establishing strategic partnerships with industry leaders including Grober Imbey Insurance Agency.',
+                  description: 'Expanded our client base and service offerings, establishing strategic partnerships with industry leaders including Grober Imbey Insurance Agency and PSG Global Tax & Accounting.',
                   color: 'from-green-500 to-emerald-500'
                 },
                 {

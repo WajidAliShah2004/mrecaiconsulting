@@ -506,7 +506,7 @@ const AboutPartners = () => {
           </div>
         </section>
 
-        {/* Featured Accounting Partner: PSG Tax & Accounting */}
+        {/* Featured Accounting Partner: PSG Global Tax & Accounting Services LLC */}
         <section className="section-padding bg-white">
           <div className="container-custom">
             <motion.div
@@ -523,7 +523,7 @@ const AboutPartners = () => {
                 Accounting <span className="gradient-text">Partner</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Strategic partnership with a trusted tax and accounting firm
+                Strategic partnership with a trusted US tax and accounting firm
               </p>
             </motion.div>
 
@@ -537,9 +537,9 @@ const AboutPartners = () => {
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
                 {/* Header */}
                 <div className="bg-gradient-to-r from-green-500 to-emerald-600 p-8 text-white">
-                  <h3 className="text-3xl font-bold mb-2">PSG Tax &amp; Accounting</h3>
-                  <p className="text-green-100 text-lg mb-1">Trusted Tax &amp; Accounting for Businesses and Individuals</p>
-                  <p className="text-green-50">Danbury, CT</p>
+                  <h3 className="text-3xl font-bold mb-2">PSG Global Tax &amp; Accounting Services LLC</h3>
+                  <p className="text-green-100 text-lg mb-1">Your trusted partner for US tax, accounting, and business advisory services</p>
+                  <p className="text-green-50">New York, United States</p>
                 </div>
 
                 {/* Content */}
@@ -548,16 +548,18 @@ const AboutPartners = () => {
                   <div className="mb-10">
                     <h4 className="text-2xl font-bold text-navy-900 mb-4 flex items-center">
                       <span className="w-1 h-8 bg-green-500 rounded-full mr-3"></span>
-                      Who PSG Is
+                      Who PSG Global Is
                     </h4>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      PSG Tax &amp; Accounting is a Danbury, Connecticut-based firm providing tax and
-                      accounting services to businesses and individuals throughout the region.
+                      PSG Global Tax &amp; Accounting Services LLC helps businesses, entrepreneurs, and
+                      international founders navigate US accounting, taxation, and compliance with
+                      confidence.
                     </p>
                     <p className="text-gray-700 leading-relaxed">
-                      Their team combines hands-on, personalized service with the technical expertise
-                      needed to keep clients compliant, organized, and confident in their numbers all
-                      year round.
+                      With professional experience across KPMG, EY Global, and McKinsey International,
+                      their team combines global expertise with a personalized, founder-focused approach —
+                      making financial management easier, reducing compliance risk, and supporting
+                      long-term business growth.
                     </p>
                   </div>
 
@@ -570,20 +572,20 @@ const AboutPartners = () => {
                     <div className="grid md:grid-cols-2 gap-6">
                       {[
                         {
-                          title: 'Tax Preparation & Filing',
-                          description: 'Accurate, timely preparation of federal and state returns for businesses and individuals'
+                          title: 'US Tax Filing & Compliance',
+                          description: 'Accurate, timely US federal and state tax filings that keep your business compliant'
                         },
                         {
-                          title: 'Bookkeeping & Accounting',
-                          description: 'Full-service bookkeeping, financial statements, and month-end close support'
+                          title: 'Accounting & Bookkeeping',
+                          description: 'Organized, up-to-date books and financial records maintained year-round'
                         },
                         {
-                          title: 'Payroll Services',
-                          description: 'Reliable payroll processing and compliance for small and growing businesses'
+                          title: 'Business Formation & Setup',
+                          description: 'Guidance for startups and international founders establishing a US business'
                         },
                         {
-                          title: 'Tax Planning & Advisory',
-                          description: 'Proactive planning to minimize liabilities and support smart business decisions'
+                          title: 'Business Advisory',
+                          description: 'Proactive, growth-focused advisory tailored to your goals and compliance requirements'
                         }
                       ].map((item, index) => (
                         <div key={index} className="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl border border-green-100">
@@ -591,6 +593,39 @@ const AboutPartners = () => {
                           <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
                         </div>
                       ))}
+                    </div>
+                  </div>
+
+                  {/* Founder */}
+                  <div className="mb-10">
+                    <h4 className="text-2xl font-bold text-navy-900 mb-4 flex items-center">
+                      <span className="w-1 h-8 bg-green-500 rounded-full mr-3"></span>
+                      Meet the Founder
+                    </h4>
+                    <div className="bg-gradient-to-br from-green-50 to-white rounded-xl p-6 md:p-8 border border-green-100">
+                      <p className="text-xl font-bold text-navy-900 mb-1">Parineet Sehgal</p>
+                      <p className="text-green-700 font-semibold mb-4">
+                        US CPA · Chartered Accountant (India) · Dip-IFRS (ACCA–UK) · QuickBooks ProAdvisor
+                      </p>
+                      <p className="text-gray-700 leading-relaxed mb-6">
+                        Parineet founded PSG Global to help founders simplify accounting, taxation, and
+                        compliance while building strong financial foundations for growth. Whether clients
+                        operate within the United States or manage businesses internationally, the focus is
+                        on keeping financial operations organized, compliant, and scalable.
+                      </p>
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        {[
+                          { stat: '1,000+', label: 'Returns Filed' },
+                          { stat: '150+', label: 'Clients Served' },
+                          { stat: '6+', label: 'Countries Served' },
+                          { stat: '10+', label: 'Years Experience' }
+                        ].map((item, index) => (
+                          <div key={index} className="text-center">
+                            <div className="text-2xl font-bold gradient-text">{item.stat}</div>
+                            <div className="text-sm text-gray-600">{item.label}</div>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
 
@@ -602,19 +637,19 @@ const AboutPartners = () => {
                     </h4>
                     <p className="text-gray-700 leading-relaxed mb-4">
                       When you work with MRECAI, our team handles the strategy behind your business,
-                      tax, and risk planning. PSG Tax &amp; Accounting handles the tax preparation,
-                      bookkeeping, and accounting execution — creating a seamless experience that feels
-                      like working with a single full-service firm.
+                      tax, and risk planning. PSG Global handles the US tax, accounting, and compliance
+                      execution — creating a seamless experience that feels like working with a single
+                      full-service firm.
                     </p>
                     <p className="text-gray-700 leading-relaxed font-semibold mb-3">
-                      Together, MRECAI + PSG deliver:
+                      Together, MRECAI + PSG Global deliver:
                     </p>
                     <ul className="space-y-2">
                       {[
                         'One coordinated team handling consulting, tax, and accounting needs',
                         'Clean, up-to-date books that inform every strategic decision',
-                        'Proactive tax planning aligned with your broader financial strategy',
-                        'A single point of accountability from planning through filing'
+                        'US tax filing and compliance aligned with your broader business strategy',
+                        'A single point of accountability from formation through filing'
                       ].map((item, index) => (
                         <li key={index} className="flex items-start">
                           <span className="text-green-500 mr-3 mt-1">•</span>
@@ -626,14 +661,14 @@ const AboutPartners = () => {
 
                   {/* Visit Website */}
                   <div className="bg-gradient-to-r from-green-50 to-white rounded-xl p-8 border border-green-100 text-center">
-                    <h4 className="text-xl font-bold text-navy-900 mb-4">Learn More About PSG</h4>
+                    <h4 className="text-xl font-bold text-navy-900 mb-4">Learn More About PSG Global</h4>
                     <a
                       href="https://psgtaxaccounting.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-xl hover:shadow-xl transition-all"
                     >
-                      Visit PSG Tax &amp; Accounting
+                      Visit PSG Global Tax &amp; Accounting
                     </a>
                   </div>
                 </div>
