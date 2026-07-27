@@ -1,14 +1,15 @@
 /**
  * Property Test: Team Member Ordering Consistency
- * 
+ *
  * Feature: website-change-request-implementation
- * Property 6: For any page that displays team members, Wajid should appear 
- * before Matthew in the display order
- * 
- * Validates: Requirements 8.2
- * 
+ * Property 6: For any page that displays team members, Matthew (CEO/Founder)
+ * should appear before Wajid (CTO) in the display order. The full intended
+ * order of MRECAI leadership is Matthew (CEO) → Jessie (CMO) → Wajid (CTO).
+ *
+ * Validates: Requirements 8.2 (updated 2026-07-27 — CEO now leads the section)
+ *
  * This property test verifies that:
- * - Wajid (CTO) appears before Matthew (CEO) in team listings
+ * - Matthew (CEO/Founder) appears before Wajid (CTO) in team listings
  * - Team member ordering is consistent across all pages
  * - The organizational structure is clearly represented
  */
@@ -94,7 +95,7 @@ function hasTeamMemberListings(text: string): boolean {
     /\bteam\s+members?\b/i,
     /\b(CEO|CTO|CMO|CFO)\b/i,
   ];
-  
+
   return teamIndicators.some(pattern => pattern.test(text));
 }
 
@@ -109,7 +110,7 @@ function findTeamMemberPositions(text: string): {
   let wajidPos = -1;
   let matthewPos = -1;
   let jessiePos = -1;
-  
+
   // Find Wajid's position
   for (const pattern of teamMemberPatterns.wajid) {
     const match = text.match(pattern);
@@ -119,7 +120,7 @@ function findTeamMemberPositions(text: string): {
       }
     }
   }
-  
+
   // Find Matthew's position
   for (const pattern of teamMemberPatterns.matthew) {
     const match = text.match(pattern);
@@ -129,7 +130,7 @@ function findTeamMemberPositions(text: string): {
       }
     }
   }
-  
+
   // Find Jessie's position
   for (const pattern of teamMemberPatterns.jessie) {
     const match = text.match(pattern);
@@ -139,7 +140,7 @@ function findTeamMemberPositions(text: string): {
       }
     }
   }
-  
+
   return { wajid: wajidPos, matthew: matthewPos, jessie: jessiePos };
 }
 
@@ -152,64 +153,75 @@ function extractTeamMemberElements(container: HTMLElement): Array<{
   position: number;
 }> {
   const teamMembers: Array<{ element: Element; name: string; position: number }> = [];
-  
+
   // Look for team member sections (typically divs or articles with team member content)
   const allElements = container.querySelectorAll('div, article, section');
-  
+
   allElements.forEach((element, index) => {
     const text = element.textContent || '';
-    
-    // Check if element contains a team member name
-    if (teamMemberPatterns.wajid.some(p => p.test(text))) {
+
+    // Only label elements that uniquely identify a single team member.
+    // Wrapper elements containing more than one name are skipped so the
+    // labeling does not depend on which name is checked first.
+    const hasWajid = teamMemberPatterns.wajid.some(p => p.test(text));
+    const hasMatthew = teamMemberPatterns.matthew.some(p => p.test(text));
+    const hasJessie = teamMemberPatterns.jessie.some(p => p.test(text));
+    const matchCount = [hasWajid, hasMatthew, hasJessie].filter(Boolean).length;
+
+    if (matchCount !== 1) {
+      return;
+    }
+
+    if (hasWajid) {
       teamMembers.push({ element, name: 'Wajid', position: index });
-    } else if (teamMemberPatterns.matthew.some(p => p.test(text))) {
+    } else if (hasMatthew) {
       teamMembers.push({ element, name: 'Matthew', position: index });
-    } else if (teamMemberPatterns.jessie.some(p => p.test(text))) {
+    } else if (hasJessie) {
       teamMembers.push({ element, name: 'Jessie', position: index });
     }
   });
-  
+
   return teamMembers;
 }
 
 describe('Property 6: Team Member Ordering Consistency', () => {
   /**
-   * Property Test: Wajid appears before Matthew
-   * 
+   * Property Test: Matthew appears before Wajid
+   *
    * **Validates: Requirements 8.2**
-   * 
+   *
    * This test verifies that on any page displaying team members,
-   * Wajid (CTO) appears before Matthew (CEO) in the display order.
+   * Matthew (CEO/Founder) appears before Wajid (CTO) in the display order.
    */
-  it('should display Wajid before Matthew on pages with team listings', () => {
+  it('should display Matthew before Wajid on pages with team listings', () => {
     fc.assert(
       fc.property(
         fc.constantFrom(...pages),
         (pageConfig) => {
           const { container } = renderPageWithRouter(pageConfig.component);
           const pageText = container.textContent || '';
-          
+
           // Check if page has team member listings
           if (hasTeamMemberListings(pageText)) {
             const positions = findTeamMemberPositions(pageText);
-            
-            // If both Wajid and Matthew are present, verify order
-            if (positions.wajid !== -1 && positions.matthew !== -1) {
-              if (positions.wajid >= positions.matthew) {
+
+            // If both Matthew and Wajid are present, verify order
+            if (positions.matthew !== -1 && positions.wajid !== -1) {
+              if (positions.matthew >= positions.wajid) {
                 throw new Error(
                   `Page ${pageConfig.name} has incorrect team member order. ` +
-                  `Wajid appears at position ${positions.wajid}, ` +
-                  `Matthew appears at position ${positions.matthew}. ` +
-                  `Wajid should appear before Matthew.`
+                  `Matthew appears at position ${positions.matthew}, ` +
+                  `Wajid appears at position ${positions.wajid}. ` +
+                  `Matthew should appear before Wajid.`
                 );
               }
             }
           }
-          
+
           expect(true).toBe(true);
         }
       ),
-      { 
+      {
         numRuns: 100,
         verbose: true,
       }
@@ -218,7 +230,7 @@ describe('Property 6: Team Member Ordering Consistency', () => {
 
   /**
    * Property Test: Consistency across multiple renders
-   * 
+   *
    * This test verifies that team member ordering remains consistent
    * across multiple renders of the same page (idempotency check).
    */
@@ -229,7 +241,7 @@ describe('Property 6: Team Member Ordering Consistency', () => {
         fc.integer({ min: 2, max: 3 }),
         (pageConfig, renderCount) => {
           const orderResults: Array<{ wajid: number; matthew: number; jessie: number }> = [];
-          
+
           // Render the page multiple times
           for (let i = 0; i < renderCount; i++) {
             const { container } = renderPageWithRouter(pageConfig.component);
@@ -237,7 +249,7 @@ describe('Property 6: Team Member Ordering Consistency', () => {
             const positions = findTeamMemberPositions(pageText);
             orderResults.push(positions);
           }
-          
+
           // Verify all renders have the same ordering
           if (orderResults.length > 1) {
             const firstRender = orderResults[0];
@@ -245,11 +257,11 @@ describe('Property 6: Team Member Ordering Consistency', () => {
               expect(result).toEqual(firstRender);
             });
           }
-          
+
           expect(true).toBe(true);
         }
       ),
-      { 
+      {
         numRuns: 50,
         verbose: true,
       }
@@ -258,21 +270,21 @@ describe('Property 6: Team Member Ordering Consistency', () => {
 
   /**
    * Unit Test: Home page team member order
-   * 
+   *
    * This test specifically verifies that the Home page, which contains
    * the ExecutiveLeadership component, displays team members in correct order.
    */
   it('should display team members in correct order on Home page', () => {
     const { container } = renderPageWithRouter(Home);
     const pageText = container.textContent || '';
-    
+
     const positions = findTeamMemberPositions(pageText);
-    
-    // Verify Wajid appears before Matthew
-    if (positions.wajid !== -1 && positions.matthew !== -1) {
-      expect(positions.wajid).toBeLessThan(positions.matthew);
+
+    // Verify Matthew appears before Wajid
+    if (positions.matthew !== -1 && positions.wajid !== -1) {
+      expect(positions.matthew).toBeLessThan(positions.wajid);
     }
-    
+
     // Verify both are present (Home page should have team section)
     expect(positions.wajid).toBeGreaterThan(-1);
     expect(positions.matthew).toBeGreaterThan(-1);
@@ -280,91 +292,92 @@ describe('Property 6: Team Member Ordering Consistency', () => {
 
   /**
    * Unit Test: About page team member order
-   * 
+   *
    * This test verifies that the About page (if it displays team members)
    * maintains correct ordering.
    */
   it('should display team members in correct order on About page if present', () => {
     const { container } = renderPageWithRouter(About);
     const pageText = container.textContent || '';
-    
+
     const positions = findTeamMemberPositions(pageText);
-    
+
     // If both are present, verify order
-    if (positions.wajid !== -1 && positions.matthew !== -1) {
-      expect(positions.wajid).toBeLessThan(positions.matthew);
+    if (positions.matthew !== -1 && positions.wajid !== -1) {
+      expect(positions.matthew).toBeLessThan(positions.wajid);
     }
   });
 
   /**
    * Unit Test: DOM element ordering
-   * 
+   *
    * This test verifies that team member elements in the DOM are ordered
    * correctly (not just text position).
    */
   it('should have team member DOM elements in correct order', () => {
     const { container } = renderPageWithRouter(Home);
-    
+
     const teamMembers = extractTeamMemberElements(container);
-    
-    // Find Wajid and Matthew in the team members array
-    const wajidMember = teamMembers.find(tm => tm.name === 'Wajid');
+
+    // Find Matthew and Wajid in the team members array
     const matthewMember = teamMembers.find(tm => tm.name === 'Matthew');
-    
+    const wajidMember = teamMembers.find(tm => tm.name === 'Wajid');
+
     // If both are present, verify DOM order
-    if (wajidMember && matthewMember) {
-      expect(wajidMember.position).toBeLessThan(matthewMember.position);
+    if (matthewMember && wajidMember) {
+      expect(matthewMember.position).toBeLessThan(wajidMember.position);
     }
   });
 
   /**
    * Unit Test: Team section structure
-   * 
+   *
    * This test verifies that the team section has the expected structure
    * with team members in the correct order.
    */
   it('should have team section with members in correct order', () => {
     const { container } = renderPageWithRouter(Home);
-    
+
     // Look for team section
     const teamSection = Array.from(container.querySelectorAll('section, [class*="team"], [class*="leadership"]'))
       .find(section => {
         const text = section.textContent || '';
         return hasTeamMemberListings(text);
       });
-    
+
     if (teamSection) {
       const sectionText = teamSection.textContent || '';
       const positions = findTeamMemberPositions(sectionText);
-      
+
       // Verify order within the team section
-      if (positions.wajid !== -1 && positions.matthew !== -1) {
-        expect(positions.wajid).toBeLessThan(positions.matthew);
+      if (positions.matthew !== -1 && positions.wajid !== -1) {
+        expect(positions.matthew).toBeLessThan(positions.wajid);
       }
     }
   });
 
   /**
-   * Unit Test: CTO appears before CEO
-   * 
-   * This test verifies that when titles are used, CTO appears before CEO.
+   * Unit Test: CEO/Founder appears before CTO
+   *
+   * This test verifies that when titles are used, the President & Founder
+   * (CEO) title appears before the Chief Technology Officer (CTO) title.
    */
-  it('should display CTO before CEO when titles are shown', () => {
+  it('should display CEO/Founder before CTO when titles are shown', () => {
     const { container } = renderPageWithRouter(Home);
     const pageText = container.textContent || '';
-    
+
     // Find positions of titles
-    const ctoMatch = pageText.match(/\bCTO\b/i);
-    const ceoMatch = pageText.match(/\bCEO\b/i);
-    
-    if (ctoMatch && ceoMatch && ctoMatch.index !== undefined && ceoMatch.index !== undefined) {
-      expect(ctoMatch.index).toBeLessThan(ceoMatch.index);
+    const founderMatch = pageText.match(/President\s*&\s*Founder/i);
+    const ctoMatch = pageText.match(/Chief Technology Officer/i);
+
+    if (founderMatch && ctoMatch && founderMatch.index !== undefined && ctoMatch.index !== undefined) {
+      expect(founderMatch.index).toBeLessThan(ctoMatch.index);
     }
   });
 
   /**
    * Property Test: Team member order in different contexts
-   * 
+   *
    * This test verifies that team member ordering is correct whether
    * they appear in cards, lists, or other layouts.
    */
@@ -374,21 +387,21 @@ describe('Property 6: Team Member Ordering Consistency', () => {
         fc.constantFrom(...pages),
         (pageConfig) => {
           const { container } = renderPageWithRouter(pageConfig.component);
-          
+
           // Check in different container types
           const containerTypes = ['div', 'article', 'section', 'ul', 'ol'];
-          
+
           containerTypes.forEach(containerType => {
             const containers = container.querySelectorAll(containerType);
-            
+
             containers.forEach(cont => {
               const text = cont.textContent || '';
-              
+
               if (hasTeamMemberListings(text)) {
                 const positions = findTeamMemberPositions(text);
-                
-                if (positions.wajid !== -1 && positions.matthew !== -1) {
-                  if (positions.wajid >= positions.matthew) {
+
+                if (positions.matthew !== -1 && positions.wajid !== -1) {
+                  if (positions.matthew >= positions.wajid) {
                     throw new Error(
                       `Page ${pageConfig.name} has incorrect team member order in ${containerType} element`
                     );
@@ -397,11 +410,11 @@ describe('Property 6: Team Member Ordering Consistency', () => {
               }
             });
           });
-          
+
           expect(true).toBe(true);
         }
       ),
-      { 
+      {
         numRuns: 100,
         verbose: true,
       }
@@ -410,17 +423,17 @@ describe('Property 6: Team Member Ordering Consistency', () => {
 
   /**
    * Unit Test: All team members are present
-   * 
+   *
    * This test verifies that when team members are displayed,
    * all expected team members are present.
    */
   it('should display all team members when team section is present', () => {
     const { container } = renderPageWithRouter(Home);
     const pageText = container.textContent || '';
-    
+
     if (hasTeamMemberListings(pageText)) {
       const positions = findTeamMemberPositions(pageText);
-      
+
       // All three team members should be present
       expect(positions.wajid).toBeGreaterThan(-1);
       expect(positions.matthew).toBeGreaterThan(-1);
@@ -430,19 +443,19 @@ describe('Property 6: Team Member Ordering Consistency', () => {
 
   /**
    * Unit Test: Team member information is preserved
-   * 
+   *
    * This test verifies that team member information (names, titles, bios)
    * is preserved during reordering.
    */
   it('should preserve team member information after reordering', () => {
     const { container } = renderPageWithRouter(Home);
     const pageText = container.textContent || '';
-    
+
     // Check for key information about each team member using the correct patterns
     const hasWajidInfo = teamMemberPatterns.wajid.some(p => p.test(pageText)) && /\bCTO\b/i.test(pageText);
     const hasMatthewInfo = teamMemberPatterns.matthew.some(p => p.test(pageText)) && (/\bPresident\b/i.test(pageText) || /\bFounder\b/i.test(pageText));
     const hasJessieInfo = teamMemberPatterns.jessie.some(p => p.test(pageText)) && /\bCMO\b/i.test(pageText);
-    
+
     if (hasTeamMemberListings(pageText)) {
       expect(hasWajidInfo).toBe(true);
       expect(hasMatthewInfo).toBe(true);
@@ -452,31 +465,31 @@ describe('Property 6: Team Member Ordering Consistency', () => {
 
   /**
    * Property Test: No reverse ordering
-   * 
-   * This test explicitly checks that Matthew never appears before Wajid
+   *
+   * This test explicitly checks that Wajid never appears before Matthew
    * on any page with team listings.
    */
-  it('should never have Matthew appear before Wajid', () => {
+  it('should never have Wajid appear before Matthew', () => {
     fc.assert(
       fc.property(
         fc.constantFrom(...pages),
         (pageConfig) => {
           const { container } = renderPageWithRouter(pageConfig.component);
           const pageText = container.textContent || '';
-          
+
           if (hasTeamMemberListings(pageText)) {
             const positions = findTeamMemberPositions(pageText);
-            
-            // If both are present, Matthew should NOT come before Wajid
-            if (positions.wajid !== -1 && positions.matthew !== -1) {
-              expect(positions.matthew).toBeGreaterThan(positions.wajid);
+
+            // If both are present, Wajid should NOT come before Matthew
+            if (positions.matthew !== -1 && positions.wajid !== -1) {
+              expect(positions.wajid).toBeGreaterThan(positions.matthew);
             }
           }
-          
+
           expect(true).toBe(true);
         }
       ),
-      { 
+      {
         numRuns: 100,
         verbose: true,
       }
@@ -485,44 +498,44 @@ describe('Property 6: Team Member Ordering Consistency', () => {
 
   /**
    * Unit Test: Visual order matches DOM order
-   * 
+   *
    * This test verifies that the visual display order matches the DOM order
    * (no CSS tricks that reverse the order).
    */
   it('should have visual order match DOM order', () => {
     const { container } = renderPageWithRouter(Home);
-    
+
     // Get team member elements
     const teamMembers = extractTeamMemberElements(container);
-    
+
     // Sort by DOM position
     const sortedByDOM = [...teamMembers].sort((a, b) => a.position - b.position);
-    
-    // Find Wajid and Matthew in sorted list
-    const wajidIndex = sortedByDOM.findIndex(tm => tm.name === 'Wajid');
+
+    // Find Matthew and Wajid in sorted list
     const matthewIndex = sortedByDOM.findIndex(tm => tm.name === 'Matthew');
-    
-    // If both are present, Wajid should come first in DOM order
-    if (wajidIndex !== -1 && matthewIndex !== -1) {
-      expect(wajidIndex).toBeLessThan(matthewIndex);
+    const wajidIndex = sortedByDOM.findIndex(tm => tm.name === 'Wajid');
+
+    // If both are present, Matthew should come first in DOM order
+    if (matthewIndex !== -1 && wajidIndex !== -1) {
+      expect(matthewIndex).toBeLessThan(wajidIndex);
     }
   });
 
   /**
-   * Unit Test: Expected order is Wajid, Matthew, Jessie
-   * 
+   * Unit Test: Expected order is Matthew, Jessie, Wajid
+   *
    * This test verifies the complete expected ordering of all three team members.
    */
-  it('should have complete team order: Wajid, Matthew, Jessie', () => {
+  it('should have complete team order: Matthew, Jessie, Wajid', () => {
     const { container } = renderPageWithRouter(Home);
     const pageText = container.textContent || '';
-    
+
     const positions = findTeamMemberPositions(pageText);
-    
+
     // Verify complete ordering
-    if (positions.wajid !== -1 && positions.matthew !== -1 && positions.jessie !== -1) {
-      expect(positions.wajid).toBeLessThan(positions.matthew);
+    if (positions.matthew !== -1 && positions.jessie !== -1 && positions.wajid !== -1) {
       expect(positions.matthew).toBeLessThan(positions.jessie);
+      expect(positions.jessie).toBeLessThan(positions.wajid);
     }
   });
 });

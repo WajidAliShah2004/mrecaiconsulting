@@ -115,7 +115,7 @@ const About = () => {
                 {
                   icon: FaUserTie,
                   title: 'Meet Our People',
-                  description: 'Learn about our leadership team including Wajid Ali Shah (CTO), Matthew R. Epstein (President & Founder), and Jessie Gwilt (CMO)',
+                  description: 'Learn about our leadership team including Matthew R. Epstein (President & Founder), Jessie Gwilt (CMO), and Wajid Ali Shah (CTO)',
                   link: '/about/founder',
                   color: 'from-primary-500 to-primary-600'
                 },

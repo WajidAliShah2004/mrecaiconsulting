@@ -34,60 +34,80 @@ describe('ExecutiveLeadership', () => {
   });
 
   describe('Team Member Ordering (Requirements 8.1, 8.2)', () => {
-    it('should display Wajid Ali Shah (CTO) before Matthew R. Epstein (CEO) in DOM order', () => {
+    it('should display Matthew R. Epstein (CEO) before Wajid Ali Shah (CTO) in DOM order', () => {
       renderWithRouter(<ExecutiveLeadership />);
-      
+
       // Get all team member headings
       const teamMemberHeadings = screen.getAllByRole('heading', { level: 3 });
-      
-      // Find indices of Wajid and Matthew
-      const wajidIndex = teamMemberHeadings.findIndex(heading => 
-        heading.textContent?.includes('Wajid Ali Shah')
-      );
-      const matthewIndex = teamMemberHeadings.findIndex(heading => 
+
+      // Find indices of Matthew and Wajid
+      const matthewIndex = teamMemberHeadings.findIndex(heading =>
         heading.textContent?.includes('Matthew R. Epstein')
       );
-      
-      // Verify Wajid appears before Matthew
-      expect(wajidIndex).toBeGreaterThanOrEqual(0);
+      const wajidIndex = teamMemberHeadings.findIndex(heading =>
+        heading.textContent?.includes('Wajid Ali Shah')
+      );
+
+      // Verify Matthew appears before Wajid
       expect(matthewIndex).toBeGreaterThanOrEqual(0);
-      expect(wajidIndex).toBeLessThan(matthewIndex);
+      expect(wajidIndex).toBeGreaterThanOrEqual(0);
+      expect(matthewIndex).toBeLessThan(wajidIndex);
     });
 
-    it('should display team members in correct order: Wajid, Matthew, Jessie', () => {
+    it('should display team members in correct order: Matthew, Jessie, Wajid', () => {
       renderWithRouter(<ExecutiveLeadership />);
-      
+
       // Get all team member headings
       const teamMemberHeadings = screen.getAllByRole('heading', { level: 3 });
-      
-      // Extract names from headings
+
+      // Extract names from headings (MRECAI leadership only)
       const names = teamMemberHeadings
         .map(heading => heading.textContent)
         .filter(text => text?.includes('Wajid') || text?.includes('Matthew') || text?.includes('Jessie'));
-      
-      // Verify order
-      expect(names[0]).toContain('Wajid Ali Shah');
-      expect(names[1]).toContain('Matthew R. Epstein');
-      expect(names[2]).toContain('Jessie Gwilt');
+
+      // Verify order: CEO, then CMO, then CTO
+      expect(names[0]).toContain('Matthew R. Epstein');
+      expect(names[1]).toContain('Jessie Gwilt');
+      expect(names[2]).toContain('Wajid Ali Shah');
     });
 
-    it('should display CTO section before CEO section in the DOM', () => {
+    it('should display CEO/Founder section before CTO section in the DOM', () => {
       const { container } = renderWithRouter(<ExecutiveLeadership />);
-      
-      // Get all sections by finding elements with CTO and CEO titles (appear multiple times)
-      const ctoTitles = screen.getAllByText('Chief Technology Officer');
+
+      // Get all sections by finding elements with CEO and CTO titles (appear multiple times)
       const ceoTitles = screen.getAllByText('President & Founder');
-      
+      const ctoTitles = screen.getAllByText('Chief Technology Officer');
+
       // Use the first occurrence of each (main content section)
-      const ctoTitle = ctoTitles[0];
       const ceoTitle = ceoTitles[0];
-      
+      const ctoTitle = ctoTitles[0];
+
       // Compare positions in DOM
       const allElements = Array.from(container.querySelectorAll('*'));
-      const ctoPosition = allElements.indexOf(ctoTitle as Element);
       const ceoPosition = allElements.indexOf(ceoTitle as Element);
-      
-      expect(ctoPosition).toBeLessThan(ceoPosition);
+      const ctoPosition = allElements.indexOf(ctoTitle as Element);
+
+      expect(ceoPosition).toBeLessThan(ctoPosition);
+    });
+
+    it('should display Parineet Sehgal (PSG Global) after the MRECAI leadership, labeled as a partner', () => {
+      renderWithRouter(<ExecutiveLeadership />);
+
+      // Parineet is an external accounting partner, shown after the CTO
+      const teamMemberHeadings = screen.getAllByRole('heading', { level: 3 });
+      const wajidIndex = teamMemberHeadings.findIndex(heading =>
+        heading.textContent?.includes('Wajid Ali Shah')
+      );
+      const parineetIndex = teamMemberHeadings.findIndex(heading =>
+        heading.textContent?.includes('Parineet Sehgal')
+      );
+
+      expect(parineetIndex).toBeGreaterThanOrEqual(0);
+      expect(parineetIndex).toBeGreaterThan(wajidIndex);
+
+      // Clearly labeled as an accounting partner, not MRECAI staff
+      expect(screen.getByText(/accounting partner/i)).toBeInTheDocument();
+      expect(screen.getAllByText(/strategic partner · psg global/i).length).toBeGreaterThanOrEqual(1);
     });
   });
 

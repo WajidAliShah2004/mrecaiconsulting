@@ -603,10 +603,21 @@ const AboutPartners = () => {
                       Meet the Founder
                     </h4>
                     <div className="bg-gradient-to-br from-green-50 to-white rounded-xl p-6 md:p-8 border border-green-100">
-                      <p className="text-xl font-bold text-navy-900 mb-1">Parineet Sehgal</p>
-                      <p className="text-green-700 font-semibold mb-4">
-                        US CPA · Chartered Accountant (India) · Dip-IFRS (ACCA–UK) · QuickBooks ProAdvisor
-                      </p>
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-6 mb-6">
+                        <div className="w-28 h-28 flex-shrink-0 rounded-full overflow-hidden border-4 border-green-500/30 shadow-xl mx-auto sm:mx-0">
+                          <img
+                            src="/images/ParineetSehgal.jpg"
+                            alt="Parineet Sehgal - Founder, PSG Global Tax & Accounting Services LLC"
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                        <div className="text-center sm:text-left">
+                          <p className="text-xl font-bold text-navy-900 mb-1">Parineet Sehgal</p>
+                          <p className="text-green-700 font-semibold">
+                            US CPA · Chartered Accountant (India) · Dip-IFRS (ACCA–UK) · QuickBooks ProAdvisor
+                          </p>
+                        </div>
+                      </div>
                       <p className="text-gray-700 leading-relaxed mb-6">
                         Parineet founded PSG Global to help founders simplify accounting, taxation, and
                         compliance while building strong financial foundations for growth. Whether clients
