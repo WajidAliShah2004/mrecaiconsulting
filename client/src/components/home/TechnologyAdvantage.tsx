@@ -19,7 +19,7 @@ const pillars: TechPillar[] = [
   {
     icon: FaFileInvoiceDollar,
     title: 'Tax Services',
-    description: 'Proactive tax planning and precise preparation that reduce your effective tax rate and keep more of what you earn.',
+    description: 'Proactive tax planning and precise preparation that reduce your effective tax rate and help you keep more of what you earn.',
     features: ['Strategic Tax Planning', 'Tax Preparation', 'R&D Credits & Cost Segregation', 'Multi-State Compliance'],
     color: 'from-blue-500 to-blue-600',
     bgColor: 'bg-blue-50',
@@ -61,7 +61,7 @@ const TechnologyAdvantage = () => {
             The MRECAI Advantage
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Integrated tax, insurance, and accounting—working together under one roof
+            Integrated tax, insurance, and accounting—working together under one roof.
           </p>
         </motion.div>
 
@@ -123,8 +123,14 @@ const TechnologyAdvantage = () => {
           className="text-center mt-12"
         >
           <p className="text-lg text-gray-700 mb-6">
-            <strong>The MRECAI Difference:</strong> One integrated partner for tax, insurance, and accounting
+            <strong>The MRECAI Difference:</strong> One integrated partner for tax, insurance, and accounting.
           </p>
+          <Link
+            href="/services"
+            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+          >
+            View All Services <FaArrowRight className="ml-2" />
+          </Link>
         </motion.div>
       </div>
     </section>

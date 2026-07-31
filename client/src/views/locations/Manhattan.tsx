@@ -12,7 +12,7 @@ const Manhattan = () => {
     <>
       <SEO
         title="Business Services in Manhattan | MRECAI"
-        description="Professional business consulting, bookkeeping, tax preparation, and insurance services in Manhattan, NYC. Great Neck office. Call (929) 702-2818 for a free consultation."
+        description="Professional business consulting, bookkeeping, tax preparation, and insurance services in Manhattan, NYC. Great Neck office. Call (929) 919-3574 for a free consultation."
         canonical="/locations/manhattan"
         keywords="Manhattan business consulting, bookkeeping Manhattan, tax preparation Manhattan, insurance services Manhattan, Upper East Side business services"
         schema={{
@@ -81,8 +81,8 @@ const Manhattan = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
                 <FaPhone className="text-primary-400 text-2xl mb-2" />
                 <div className="text-sm text-gray-300">Schedule a Meeting</div>
-                <a href="tel:929-702-2818" className="font-semibold text-lg hover:text-primary-300 transition-colors">
-                  (929) 702-2818
+                <a href="tel:929-919-3574" className="font-semibold text-lg hover:text-primary-300 transition-colors">
+                  (929) 919-3574
                 </a>
                 <div className="text-sm text-gray-300 mt-2">
                   In-person or virtual consultations available
@@ -245,11 +245,11 @@ const Manhattan = () => {
                 Book Free Consultation
               </Link>
               <a
-                href="tel:929-702-2818"
+                href="tel:929-919-3574"
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white border-2 border-white rounded-xl hover:bg-white hover:text-navy-900 transition-all duration-300"
               >
                 <FaPhone className="mr-2" />
-                (929) 702-2818
+                (929) 919-3574
               </a>
             </div>
           </motion.div>

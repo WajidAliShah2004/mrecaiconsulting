@@ -45,7 +45,7 @@ const NewYorkNY = () => {
     <>
       <SEO
         title="MRECAI | New York, NY | Manhattan Business Services"
-        description="Local business consulting, tax preparation, bookkeeping, and insurance services in New York, NY. Serving Manhattan, Upper East Side, and NYC metro area. Call (929) 702-2818."
+        description="Local business consulting, tax preparation, bookkeeping, and insurance services in New York, NY. Serving Manhattan, Upper East Side, and NYC metro area. Call (929) 919-3574."
         canonical="/locations/new-york-ny"
         keywords="business consulting NYC, tax preparation New York, Manhattan bookkeeping, insurance services NYC, risk management Manhattan, New York business services"
         schema={{
@@ -108,8 +108,8 @@ const NewYorkNY = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
                 <FaPhone className="text-primary-400 text-2xl mb-2" />
                 <div className="text-sm text-gray-300">Call Us</div>
-                <a href="tel:929-702-2818" className="font-semibold hover:text-primary-300 transition-colors">
-                  (929) 702-2818
+                <a href="tel:929-919-3574" className="font-semibold hover:text-primary-300 transition-colors">
+                  (929) 919-3574
                 </a>
               </div>
 
@@ -314,11 +314,11 @@ const NewYorkNY = () => {
                 Book Free Consultation
               </Link>
               <a
-                href="tel:929-702-2818"
+                href="tel:929-919-3574"
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white border-2 border-white rounded-xl hover:bg-white hover:text-navy-900 transition-all duration-300"
               >
                 <FaPhone className="mr-2" />
-                Call: (929) 702-2818
+                Call: (929) 919-3574
               </a>
             </div>
           </motion.div>

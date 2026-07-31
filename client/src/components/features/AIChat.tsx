@@ -109,7 +109,7 @@ const AIChat = () => {
 
     // Hours/Availability
     if (lowerMessage.includes('hour') || lowerMessage.includes('open') || lowerMessage.includes('available') || lowerMessage.includes('when')) {
-      return 'We offer 24/7 service support! 🕐\n\nYou can reach us anytime:\n📞 Phone: 929-702-2818\n📧 Email: Matthew@MRECAI.com\n📅 Book online: /book-now\n\nOur team is always here to help!';
+      return 'We offer 24/7 service support! 🕐\n\nYou can reach us anytime:\n📞 Phone: 929-919-3574\n📧 Email: Matthew@MRECAI.com\n📅 Book online: /book-now\n\nOur team is always here to help!';
     }
 
     // Services - General
@@ -124,7 +124,7 @@ const AIChat = () => {
 
     // Insurance - General
     if (lowerMessage.includes('insurance') || lowerMessage.includes('coverage') || lowerMessage.includes('policy')) {
-      return 'We offer comprehensive insurance services:\n\n🏠 Homeowners Insurance\n🚗 Auto Insurance (Personal & Commercial)\n🏢 Commercial Insurance\n☂️ Personal Umbrella Coverage\n🏘️ Condo Insurance\n💼 Professional Liability\n\nGet a quote: /intake-forms\nQuestions? Call: 929-702-2818';
+      return 'We offer comprehensive insurance services:\n\n🏠 Homeowners Insurance\n🚗 Auto Insurance (Personal & Commercial)\n🏢 Commercial Insurance\n☂️ Personal Umbrella Coverage\n🏘️ Condo Insurance\n💼 Professional Liability\n\nGet a quote: /intake-forms\nQuestions? Call: 929-919-3574';
     }
 
     // Home Insurance
@@ -159,22 +159,22 @@ const AIChat = () => {
 
     // Pricing
     if (lowerMessage.includes('price') || lowerMessage.includes('cost') || lowerMessage.includes('fee') || lowerMessage.includes('how much')) {
-      return 'Our pricing is customized to your specific needs:\n\n✓ Free initial consultation\n✓ Transparent pricing\n✓ No hidden fees\n✓ Competitive rates\n✓ Flexible payment options\n\nBook a FREE consultation to discuss pricing: /book-now\nOr call us: 929-702-2818';
+      return 'Our pricing is customized to your specific needs:\n\n✓ Free initial consultation\n✓ Transparent pricing\n✓ No hidden fees\n✓ Competitive rates\n✓ Flexible payment options\n\nBook a FREE consultation to discuss pricing: /book-now\nOr call us: 929-919-3574';
     }
 
     // Contact
     if (lowerMessage.includes('contact') || lowerMessage.includes('phone') || lowerMessage.includes('email') || lowerMessage.includes('reach')) {
-      return 'Contact us anytime:\n\n📞 Phone: 929-702-2818 (24/7)\n📧 Email: Matthew@MRECAI.com\n🌐 Contact Form: /contact\n📅 Book Consultation: /book-now\n\nWe typically respond within 24 hours!';
+      return 'Contact us anytime:\n\n📞 Phone: 929-919-3574 (24/7)\n📧 Email: Matthew@MRECAI.com\n🌐 Contact Form: /contact\n📅 Book Consultation: /book-now\n\nWe typically respond within 24 hours!';
     }
 
     // Booking/Appointment
     if (lowerMessage.includes('book') || lowerMessage.includes('appointment') || lowerMessage.includes('schedule') || lowerMessage.includes('consultation') || lowerMessage.includes('meeting')) {
-      return 'Schedule a FREE consultation:\n\n📅 Online booking: /book-now\n📞 Call us: 929-702-2818\n📧 Email: Matthew@MRECAI.com\n\nChoose a time that works for you - we\'re flexible and here to help!';
+      return 'Schedule a FREE consultation:\n\n📅 Online booking: /book-now\n📞 Call us: 929-919-3574\n📧 Email: Matthew@MRECAI.com\n\nChoose a time that works for you - we\'re flexible and here to help!';
     }
 
     // Quote/Estimate
     if (lowerMessage.includes('quote') || lowerMessage.includes('estimate')) {
-      return 'Get a personalized quote:\n\n📝 Fill out intake form: /intake-forms\n📞 Call for immediate quote: 929-702-2818\n📅 Book consultation: /book-now\n\nWe\'ll review your needs and provide a customized quote within 24 hours!';
+      return 'Get a personalized quote:\n\n📝 Fill out intake form: /intake-forms\n📞 Call for immediate quote: 929-919-3574\n📅 Book consultation: /book-now\n\nWe\'ll review your needs and provide a customized quote within 24 hours!';
     }
 
     // About Company
@@ -189,12 +189,12 @@ const AIChat = () => {
 
     // Partners
     if (lowerMessage.includes('partner') || lowerMessage.includes('carrier')) {
-      return 'Our Strategic Partners:\n\n🛡️ Grober Imbey Insurance Agency (GIA)\n💰 Financial Advisors\n📊 Accounting Partners\n⚖️ Legal Partners\n\nWe work with industry leaders to provide you the best service. Learn more: /about/partners';
+      return 'Our Strategic Partners:\n\n🛡️ Grober Imbey Insurance Agency (GIA)\n💰 Financial Advisors\n📊 Accounting Partners\n💻 NovaEdge Solutions\n\nWe work with industry leaders to provide you the best service. Learn more: /about/partners';
     }
 
     // Location
     if (lowerMessage.includes('location') || lowerMessage.includes('where') || lowerMessage.includes('address') || lowerMessage.includes('office')) {
-      return 'We serve clients nationwide!\n\n📍 Primary service areas: New York, New Jersey, Tri-State region\n🌎 Remote consultations available\n📞 Phone: 929-702-2818\n📧 Email: Matthew@MRECAI.com\n\nContact us regardless of your location!';
+      return 'We serve clients nationwide!\n\n📍 Primary service areas: New York, New Jersey, Tri-State region\n🌎 Remote consultations available\n📞 Phone: 929-919-3574\n📧 Email: Matthew@MRECAI.com\n\nContact us regardless of your location!';
     }
 
     // Process/How it works
@@ -214,7 +214,7 @@ const AIChat = () => {
 
     // Free consultation
     if (lowerMessage.includes('free') || lowerMessage.includes('no obligation')) {
-      return 'Yes! We offer FREE consultations:\n\n✓ No obligation\n✓ No pressure\n✓ Expert advice\n✓ Personalized recommendations\n✓ 24/7 availability\n\nBook your free consultation now: /book-now\nOr call: 929-702-2818';
+      return 'Yes! We offer FREE consultations:\n\n✓ No obligation\n✓ No pressure\n✓ Expert advice\n✓ Personalized recommendations\n✓ 24/7 availability\n\nBook your free consultation now: /book-now\nOr call: 929-919-3574';
     }
 
     // Help/Support
@@ -224,17 +224,17 @@ const AIChat = () => {
 
     // Thank you
     if (lowerMessage.includes('thank') || lowerMessage.includes('thanks')) {
-      return 'You\'re welcome! 😊\n\nIs there anything else I can help you with today?\n\nRemember:\n📞 Call: 929-702-2818\n📅 Book: /book-now\n📧 Email: Matthew@MRECAI.com';
+      return 'You\'re welcome! 😊\n\nIs there anything else I can help you with today?\n\nRemember:\n📞 Call: 929-919-3574\n📅 Book: /book-now\n📧 Email: Matthew@MRECAI.com';
     }
 
     // Goodbye
     if (lowerMessage.match(/^(bye|goodbye|see you|talk later)$/)) {
-      return 'Thank you for chatting with us! 👋\n\nFeel free to reach out anytime:\n📞 929-702-2818\n📧 Matthew@MRECAI.com\n\nHave a great day!';
+      return 'Thank you for chatting with us! 👋\n\nFeel free to reach out anytime:\n📞 929-919-3574\n📧 Matthew@MRECAI.com\n\nHave a great day!';
     }
 
     // Strategic Partners - Specific
     if (lowerMessage.includes('novaedge') || lowerMessage.includes('nova edge')) {
-      return 'Our Strategic Partners:\n\n✓ Insurance, financial, accounting & legal partners\n✓ Industry leaders working alongside our team\n\nLearn more about who we work with: /about/partners';
+      return 'Our Strategic Partners:\n\n✓ NovaEdge Solutions - our technology partner\n✓ Insurance, financial & accounting partners\n✓ Industry leaders working alongside our team\n\nLearn more about who we work with: /about/partners';
     }
 
     if (lowerMessage.includes('gia') || lowerMessage.includes('grober') || lowerMessage.includes('imbey')) {
@@ -303,7 +303,7 @@ const AIChat = () => {
 
     // Claims Support
     if (lowerMessage.includes('claim') || lowerMessage.includes('file a claim')) {
-      return 'Insurance Claims Support:\n\n✓ Claims guidance & advocacy\n✓ Documentation assistance\n✓ Carrier communication\n✓ Settlement negotiation\n✓ 24/7 support\n\nWe\'re here to help with your claim! Call: 929-702-2818';
+      return 'Insurance Claims Support:\n\n✓ Claims guidance & advocacy\n✓ Documentation assistance\n✓ Carrier communication\n✓ Settlement negotiation\n✓ 24/7 support\n\nWe\'re here to help with your claim! Call: 929-919-3574';
     }
 
     // Policy Review
@@ -313,7 +313,7 @@ const AIChat = () => {
 
     // Multi-state
     if (lowerMessage.includes('multi-state') || lowerMessage.includes('multiple states')) {
-      return 'Multi-State Coverage:\n\n✓ Nationwide service available\n✓ Multi-state insurance solutions\n✓ Complex coverage coordination\n✓ Compliance across states\n✓ Expert guidance\n\nWe handle complex multi-state needs! Call: 929-702-2818';
+      return 'Multi-State Coverage:\n\n✓ Nationwide service available\n✓ Multi-state insurance solutions\n✓ Complex coverage coordination\n✓ Compliance across states\n✓ Expert guidance\n\nWe handle complex multi-state needs! Call: 929-919-3574';
     }
 
     // High Net Worth
@@ -348,27 +348,27 @@ const AIChat = () => {
 
     // Response Time
     if (lowerMessage.includes('how fast') || lowerMessage.includes('how quick') || lowerMessage.includes('response time')) {
-      return 'Our Response Times:\n\n✓ Phone: Immediate (24/7)\n✓ Email: Within 24 hours\n✓ Quote requests: Within 24 hours\n✓ Intake forms: Within 24 hours\n✓ Consultations: Same or next day\n\nWe prioritize quick responses! Contact us: 929-702-2818';
+      return 'Our Response Times:\n\n✓ Phone: Immediate (24/7)\n✓ Email: Within 24 hours\n✓ Quote requests: Within 24 hours\n✓ Intake forms: Within 24 hours\n✓ Consultations: Same or next day\n\nWe prioritize quick responses! Contact us: 929-919-3574';
     }
 
     // Payment Options
     if (lowerMessage.includes('payment') || lowerMessage.includes('pay') || lowerMessage.includes('billing')) {
-      return 'Payment Options:\n\n✓ Flexible payment plans\n✓ Monthly installments\n✓ Annual payments (discounts available)\n✓ Multiple payment methods\n✓ Transparent billing\n\nDiscuss payment options: /book-now or call 929-702-2818';
+      return 'Payment Options:\n\n✓ Flexible payment plans\n✓ Monthly installments\n✓ Annual payments (discounts available)\n✓ Multiple payment methods\n✓ Transparent billing\n\nDiscuss payment options: /book-now or call 929-919-3574';
     }
 
     // Referral/Recommendation
     if (lowerMessage.includes('referral') || lowerMessage.includes('recommend') || lowerMessage.includes('refer')) {
-      return 'Referral Program:\n\n✓ We appreciate referrals!\n✓ Referral rewards available\n✓ Help friends & family\n✓ Grow together\n\nRefer someone or ask about our program: 929-702-2818';
+      return 'Referral Program:\n\n✓ We appreciate referrals!\n✓ Referral rewards available\n✓ Help friends & family\n✓ Grow together\n\nRefer someone or ask about our program: 929-919-3574';
     }
 
     // Emergency/Urgent
     if (lowerMessage.includes('emergency') || lowerMessage.includes('urgent') || lowerMessage.includes('asap')) {
-      return '🚨 For urgent matters:\n\n📞 Call immediately: 929-702-2818\n✓ 24/7 availability\n✓ Immediate assistance\n✓ Emergency support\n\nWe\'re here to help right now!';
+      return '🚨 For urgent matters:\n\n📞 Call immediately: 929-919-3574\n✓ 24/7 availability\n✓ Immediate assistance\n✓ Emergency support\n\nWe\'re here to help right now!';
     }
 
     // Languages
     if (lowerMessage.includes('language') || lowerMessage.includes('spanish') || lowerMessage.includes('bilingual')) {
-      return 'Language Support:\n\nWe can assist you in multiple languages!\n\n📞 Call us: 929-702-2818\n📧 Email: Matthew@MRECAI.com\n\nLet us know your language preference and we\'ll accommodate!';
+      return 'Language Support:\n\nWe can assist you in multiple languages!\n\n📞 Call us: 929-919-3574\n📧 Email: Matthew@MRECAI.com\n\nLet us know your language preference and we\'ll accommodate!';
     }
 
     // Blog/Resources
@@ -413,7 +413,7 @@ const AIChat = () => {
 
     // Careers/Jobs
     if (lowerMessage.includes('career') || lowerMessage.includes('job') || lowerMessage.includes('hiring') || lowerMessage.includes('work for you')) {
-      return 'Career Opportunities:\n\nInterested in joining our team?\n\n📧 Send your resume to: Matthew@MRECAI.com\n📞 Call to inquire: 929-702-2818\n\nWe\'re always looking for talented professionals!';
+      return 'Career Opportunities:\n\nInterested in joining our team?\n\n📧 Send your resume to: Matthew@MRECAI.com\n📞 Call to inquire: 929-919-3574\n\nWe\'re always looking for talented professionals!';
     }
 
     // Partnership Opportunities
@@ -503,7 +503,7 @@ const AIChat = () => {
           setHasUnreadMessages(true);
         }
       } catch (error) {
-        const errorText = 'I\'m not sure about that, but I can connect you with our team! Call us at 929-702-2818 or book a consultation at /book-now for personalized assistance.';
+        const errorText = 'I\'m not sure about that, but I can connect you with our team! Call us at 929-919-3574 or book a consultation at /book-now for personalized assistance.';
         const errorMessage: ChatMessage = {
           id: (Date.now() + 1).toString(),
           text: errorText,

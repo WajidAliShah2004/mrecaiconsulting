@@ -214,7 +214,7 @@ describe('CTAButton', () => {
       );
       
       const link = container.querySelector('a');
-      expect(link).toHaveAttribute('href', 'tel:929-702-2818');
+      expect(link).toHaveAttribute('href', 'tel:929-919-3574');
     });
 
     it('should render as anchor tag for mailto: links', () => {

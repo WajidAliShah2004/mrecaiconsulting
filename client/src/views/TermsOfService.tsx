@@ -36,7 +36,7 @@ export default function TermsOfService() {
       items: [
         "Program Description: You will receive SMS messages related to appointment scheduling, appointment reminders, customer support responses, and service updates. Message frequency varies based on your interaction with our services.",
         "Opt-Out Instructions: You can cancel the SMS service at any time by texting STOP to our number. After you send STOP, we will send you a confirmation message that you have been unsubscribed. You will no longer receive SMS messages from us unless you opt in again.",
-        "Help & Support: If you are experiencing issues with the messaging program, reply with HELP for assistance, or contact us directly at mathew@mrecai.com or 929-702-2818.",
+        "Help & Support: If you are experiencing issues with the messaging program, reply with HELP for assistance, or contact us directly at mathew@mrecai.com or 929-919-3574.",
         "Message & Data Rates: Message and data rates may apply for any messages sent to you from us and to us from you. Please contact your wireless provider for details about your text and data plan.",
         "Carrier Liability: Carriers are not liable for delayed or undelivered messages.",
         "Consent Requirements: You represent that you are the owner or authorized user of the mobile number you provide and that you voluntarily opt in to receive messages. Consent is not required to purchase or use our services.",

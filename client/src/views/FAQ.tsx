@@ -470,7 +470,7 @@ const FAQ = () => {
                   Book Free Consultation
                 </Link>
                 <a
-                  href="tel:929-702-2818"
+                  href="tel:929-919-3574"
                   className="inline-flex items-center justify-center px-8 py-4 border-2 border-white rounded-xl hover:bg-white hover:text-navy-900 transition-all font-bold"
                 >
                   Call: (929) 919-3574

@@ -291,7 +291,7 @@ const DownloadServicesGuide = () => {
                           Have questions? Give us a call and we'll help you right away.
                         </p>
                         <a
-                          href="tel:929-702-2818"
+                          href="tel:929-919-3574"
                           className="text-primary-600 font-semibold hover:text-primary-700 text-sm"
                         >
                           (929) 919-3574 →

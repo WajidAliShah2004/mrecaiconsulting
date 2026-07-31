@@ -19,7 +19,7 @@ import {
 
 export const COMPANY_INFO = {
   name: 'MRECAI',
-  phone: '929-702-2818',
+  phone: '929-919-3574',
   email: 'Matthew@MRECAI.com',
   address: '11 W Mill Dr, Great Neck, NY 11021',
   calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL || 'https://calendly.com/mrecai-consulting',
@@ -39,7 +39,7 @@ export const SERVICES = [
   {
     id: 'tax-accounting',
     title: 'Tax Services',
-    description: 'Proactive tax planning and precise preparation that keep more of what you earn.',
+    description: 'Proactive tax planning and precise preparation that help you keep more of what you earn.',
     icon: FaChartBar,
     features: [
       'Tax planning & preparation',
@@ -78,37 +78,37 @@ export const REASONS_TO_CHOOSE = [
   {
     icon: FaCalculator,
     title: 'Strategic Tax Expertise',
-    description: 'Proactive tax planning and preparation that keeps more of what you earn',
+    description: 'Proactive tax planning and preparation that helps you keep more of what you earn.',
     link: '/services/tax-strategy'
   },
   {
     icon: FaShieldAlt,
     title: 'Insurance & Risk Protection',
-    description: 'Comprehensive coverage and risk architecture for business and personal assets',
+    description: 'Comprehensive coverage and risk architecture for business and personal assets.',
     link: '/services/risk-architecture'
   },
   {
     icon: FaBriefcase,
     title: 'Accounting Experts',
-    description: 'Bookkeeping and accounting that give you clarity and control',
+    description: 'Bookkeeping and accounting that give you clarity and control.',
     link: '/services/bookkeeping-accounting'
   },
   {
     icon: FaBolt,
     title: 'Responsive Service',
-    description: 'Fast turnaround on engagements without compromising quality',
+    description: 'Fast turnaround on engagements without compromising quality.',
     link: '/services'
   },
   {
     icon: FaHandshake,
     title: 'Complete Financial Partner',
-    description: 'Tax, insurance, and accounting - all under one roof',
+    description: 'Tax, insurance, and accounting - all under one roof.',
     link: '/about'
   },
   {
     icon: FaChartLine,
     title: 'Proven Track Record',
-    description: '180+ successful projects across diverse industries',
+    description: '180+ successful projects across diverse industries.',
     link: '/testimonials'
   }
 ];

@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: 'What\'s the first step to working together?',
-    answer: 'A short consultation to understand your goals, current pain points, and the fastest path to improvement. We\'ll review your situation and recommend the highest-impact starting point. Book a free consultation at mrecai.com/book-now or call +1-929-702-2818.',
+    answer: 'A short consultation to understand your goals, current pain points, and the fastest path to improvement. We\'ll review your situation and recommend the highest-impact starting point. Book a free consultation at mrecai.com/book-now or call +1-929-919-3574.',
   },
   {
     question: 'Can you help clean up messy bookkeeping?',

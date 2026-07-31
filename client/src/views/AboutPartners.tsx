@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { FaHome, FaChevronRight, FaShieldAlt, FaChartLine, FaCalculator, FaGavel, FaHandshake, FaAward, FaGlobe, FaUsers, FaCheckCircle } from 'react-icons/fa';
+import { FaHome, FaChevronRight, FaShieldAlt, FaChartLine, FaCalculator, FaLaptopCode, FaHandshake, FaAward, FaGlobe, FaUsers, FaCheckCircle } from 'react-icons/fa';
 import SEO from '../components/common/SEO';
 import { breadcrumbSchema } from '../utils/schemas';
 
@@ -11,9 +11,9 @@ const AboutPartners = () => {
     <>
       <SEO
         title="Strategic Partners | MRECAI Trusted Network"
-        description="Discover MRECAI's network of strategic partners including top insurance carriers, financial advisors, accountants, and legal professionals."
+        description="Discover MRECAI's network of strategic partners including top insurance carriers, financial advisors, accountants, and technology experts."
         canonical="/about/partners"
-        keywords="strategic partners, insurance carriers, financial advisors, business partners, legal partners"
+        keywords="strategic partners, insurance carriers, financial advisors, business partners, technology partners"
         schema={{
           '@context': 'https://schema.org',
           '@graph': [
@@ -688,7 +688,7 @@ const AboutPartners = () => {
           </div>
         </section>
 
-        {/* Legal Partners */}
+        {/* Technology Partner: NovaEdge Solutions */}
         <section className="section-padding bg-white">
           <div className="container-custom">
             <motion.div
@@ -698,54 +698,43 @@ const AboutPartners = () => {
               transition={{ duration: 0.6 }}
               className="text-center mb-12"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-navy-500 to-navy-600 rounded-xl mb-4 shadow-lg">
-                <FaGavel className="text-3xl text-white" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl mb-4 shadow-lg">
+                <FaLaptopCode className="text-3xl text-white" />
               </div>
               <h2 className="text-4xl font-bold mb-4">
-                Legal <span className="gradient-text">Partners</span>
+                Technology <span className="gradient-text">Partner</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Experienced legal professionals providing business law, estate planning, and contract services.
+                NovaEdge Solutions builds and maintains the secure platforms and infrastructure behind MRECAI's client service.
               </p>
             </motion.div>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              {[
-                {
-                  name: 'Business Law Firms',
-                  description: 'Legal counsel for business formation, contracts, and corporate governance',
-                  services: ['Entity Formation', 'Contract Review', 'Compliance', 'M&A Support']
-                },
-                {
-                  name: 'Estate Planning Attorneys',
-                  description: 'Comprehensive estate planning and asset protection services',
-                  services: ['Wills & Trusts', 'Asset Protection', 'Probate', 'Elder Law']
-                }
-              ].map((partner, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1, duration: 0.5 }}
-                  whileHover={{ y: -6 }}
-                  className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all border border-gray-100"
-                >
-                  <div className="w-14 h-14 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
-                    <FaGavel className="text-navy-600 text-2xl" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-navy-900 mb-3">{partner.name}</h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">{partner.description}</p>
-                  <div className="grid grid-cols-2 gap-3">
-                    {partner.services.map((service, idx) => (
-                      <div key={idx} className="flex items-start text-sm text-gray-700">
-                        <span className="text-primary-500 mr-2 mt-0.5">•</span>
-                        <span>{service}</span>
-                      </div>
-                    ))}
-                  </div>
-                </motion.div>
-              ))}
+            <div className="max-w-3xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                whileHover={{ y: -6 }}
+                className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all border border-gray-100"
+              >
+                <div className="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                  <FaLaptopCode className="text-purple-600 text-2xl" />
+                </div>
+                <h3 className="text-2xl font-bold text-navy-900 mb-3">NovaEdge Solutions</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Led by MRECAI CTO Wajid Ali Shah, NovaEdge Solutions delivers the web, desktop, and mobile
+                  systems that keep our consulting, tax, and insurance operations running reliably at scale.
+                </p>
+                <div className="grid grid-cols-2 gap-3">
+                  {['Secure Client Platforms', 'Internal Tools & Automation', 'Reporting Infrastructure', 'Web & Mobile Development'].map((service, idx) => (
+                    <div key={idx} className="flex items-start text-sm text-gray-700">
+                      <span className="text-primary-500 mr-2 mt-0.5">•</span>
+                      <span>{service}</span>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>

@@ -236,7 +236,7 @@ const AboutCompany = () => {
                 Our <span className="gradient-text">Core Values</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                The principles that guide every decision and action we take
+                The principles that guide everything we do
               </p>
             </motion.div>
 
@@ -254,7 +254,7 @@ const AboutCompany = () => {
                   <FaBullseye className="text-white text-2xl" />
                 </div>
                 <h3 className="text-xl font-bold text-navy-900 mb-3">Excellence</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">We strive for excellence in everything we do, delivering top-tier service and results.</p>
+                <p className="text-gray-600 text-sm leading-relaxed">We strive for excellence in everything we do, delivering top-tier service and results that exceed expectations.</p>
               </motion.div>
 
               {/* Integrity */}
@@ -270,7 +270,7 @@ const AboutCompany = () => {
                   <FaHandshake className="text-white text-2xl" />
                 </div>
                 <h3 className="text-xl font-bold text-navy-900 mb-3">Integrity</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">Honesty and transparency guide our relationships with clients and partners.</p>
+                <p className="text-gray-600 text-sm leading-relaxed">Honesty and transparency guide our relationships with clients and partners, building trust that lasts.</p>
               </motion.div>
 
               {/* Innovation */}
@@ -286,7 +286,7 @@ const AboutCompany = () => {
                   <FaLightbulb className="text-white text-2xl" />
                 </div>
                 <h3 className="text-xl font-bold text-navy-900 mb-3">Innovation</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">We embrace fresh thinking and creative solutions to solve challenges.</p>
+                <p className="text-gray-600 text-sm leading-relaxed">We bring fresh strategies, modern best practices, and creative problem-solving to deliver solutions that drive real business results.</p>
               </motion.div>
 
               {/* Client-Focused */}

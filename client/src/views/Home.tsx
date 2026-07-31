@@ -3,10 +3,10 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FaQuoteLeft, FaStar, FaPhone, FaEnvelope, FaBullseye, FaRocket, FaBriefcase, FaCheck } from 'react-icons/fa';
-import { SERVICES, REASONS_TO_CHOOSE, COMPANY_INFO } from '../utils/constants';
+import { REASONS_TO_CHOOSE, COMPANY_INFO } from '../utils/constants';
 import SEO from '../components/common/SEO';
 import { organizationSchema, localBusinessSchema, websiteSchema, personSchema } from '../utils/schemas';
-import { In60Seconds, HomeFAQ, Partners, ExecutiveLeadership, HomeHero, TechnologyAdvantage } from '../components/home';
+import { HomeFAQ, Partners, ExecutiveLeadership, HomeHero, TechnologyAdvantage } from '../components/home';
 import { ProcessFlow } from '../components/common';
 
 const Home = () => {
@@ -167,14 +167,11 @@ const Home = () => {
         </div >
       </section >
 
-      {/* NEW: In 60 Seconds - Firm Overview Block */}
-      <In60Seconds />
+      {/* MRECAI Advantage - replaces the former "What We Do" overview */}
+      <TechnologyAdvantage />
 
       {/* NEW: Process Flow (How It Works) */}
       <ProcessFlow />
-
-      {/* NEW: MRECAI Advantage - Consolidated Section */}
-      <TechnologyAdvantage />
 
       {/* NEW: Executive Leadership (Matthew R. Epstein) */}
       <ExecutiveLeadership />
@@ -210,15 +207,6 @@ const Home = () => {
             >
               Why Choose <span className="gradient-text">MRECAI</span>
             </motion.h2>
-            <motion.p
-              className="text-lg text-gray-600 max-w-2xl mx-auto"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              Your complete tax, insurance, and accounting partner
-            </motion.p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -351,241 +339,6 @@ const Home = () => {
             ))}
           </div>
         </div >
-      </section >
-
-      {/* Services Overview - Enhanced Card Flip Animation */}
-      <section className="section-padding bg-gradient-to-b from-white to-gray-50 relative overflow-hidden" >
-        {/* Floating Shapes Background */}
-        {
-          [...Array(5)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-32 h-32 rounded-full bg-primary-500/5"
-              style={{
-                left: `${20 + i * 20}%`,
-                top: `${10 + i * 15}%`,
-              }}
-              animate={{
-                y: [0, -20, 0],
-                scale: [1, 1.1, 1],
-                opacity: [0.3, 0.5, 0.3],
-              }}
-              transition={{
-                duration: 4 + i,
-                repeat: Infinity,
-                ease: 'easeInOut',
-                delay: i * 0.5
-              }}
-            />
-          ))
-        }
-
-        <div className="container-custom relative z-10">
-          <div className="text-center mb-12 space-y-4" data-aos="fade-up">
-            <motion.div
-              className="inline-block"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <span className="text-primary-600 font-semibold text-sm uppercase tracking-wider bg-primary-50 px-4 py-2 rounded-full">
-                What We Offer
-              </span>
-            </motion.div>
-
-            <motion.h2
-              className="text-4xl md:text-5xl font-bold"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              Our <span className="gradient-text">Services</span>
-            </motion.h2>
-
-            <motion.p
-              className="text-lg text-gray-600 max-w-2xl mx-auto"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-            >
-              Comprehensive solutions tailored to your unique needs and goals
-            </motion.p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {SERVICES.map((service, index) => (
-              <motion.div
-                key={service.id}
-                initial={{ opacity: 0, y: 60, scale: 0.9, rotateY: -20 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1, rotateY: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{
-                  delay: index * 0.08,
-                  duration: 0.6,
-                  type: "spring",
-                  stiffness: 100
-                }}
-                whileHover={{
-                  y: -10,
-                  scale: 1.03,
-                  rotateY: 5,
-                  transition: { duration: 0.3, type: "spring", stiffness: 300 }
-                }}
-                style={{ transformStyle: 'preserve-3d' }}
-                className="group relative bg-white p-5 rounded-2xl shadow-md hover:shadow-2xl transition-shadow duration-300 border border-gray-100 hover:border-primary-200 overflow-hidden cursor-pointer"
-              >
-                {/* Animated Gradient Background on Hover */}
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-br from-primary-500/10 to-primary-600/5 opacity-0"
-                  whileHover={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
-                />
-
-                {/* Pulsing Glow Effect */}
-                <motion.div
-                  className="absolute inset-0 rounded-2xl"
-                  animate={{
-                    boxShadow: [
-                      '0 0 0 0 rgba(0, 168, 232, 0)',
-                      '0 0 0 3px rgba(0, 168, 232, 0.1)',
-                      '0 0 0 0 rgba(0, 168, 232, 0)',
-                    ],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    delay: index * 0.2
-                  }}
-                />
-
-                {/* Icon with Background */}
-                <div className="relative mb-4">
-                  <motion.div
-                    className="w-14 h-14 bg-gradient-to-br from-primary-100 to-primary-50 rounded-xl flex items-center justify-center shadow-sm"
-                    whileHover={{
-                      rotate: 360,
-                      scale: 1.15,
-                      transition: { duration: 0.6, ease: "easeOut" }
-                    }}
-                  >
-                    <motion.div
-                      animate={{
-                        rotate: [0, 10, -10, 0],
-                      }}
-                      transition={{
-                        duration: 3,
-                        repeat: Infinity,
-                        ease: "easeInOut",
-                        delay: index * 0.3
-                      }}
-                    >
-                      <service.icon className="text-2xl text-primary-600" />
-                    </motion.div>
-                  </motion.div>
-
-                  {/* Decorative Glow Element */}
-                  <motion.div
-                    className="absolute -top-1 -right-1 w-6 h-6 bg-primary-500/10 rounded-full blur-lg"
-                    animate={{
-                      scale: [1, 1.5, 1],
-                      opacity: [0.3, 0.6, 0.3],
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      delay: index * 0.2
-                    }}
-                  />
-                </div>
-
-                <h3 className="text-lg font-bold mb-2 text-navy-900 group-hover:text-primary-600 transition-colors relative z-10">
-                  {service.title}
-                </h3>
-
-                <p className="text-gray-600 text-sm mb-3 line-clamp-2 leading-relaxed relative z-10">
-                  {service.description}
-                </p>
-
-                {/* Features List */}
-                <ul className="space-y-1.5 mb-4 relative z-10">
-                  {service.features.map((feature, i) => (
-                    <motion.li
-                      key={i}
-                      className="flex items-start text-sm text-gray-600"
-                      initial={{ opacity: 0, x: -10 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.08 + i * 0.05 }}
-                    >
-                      <FaCheck className="text-primary-500 mr-2 mt-1 flex-shrink-0 text-xs" />
-                      <span>{feature}</span>
-                    </motion.li>
-                  ))}
-                </ul>
-
-                <Link
-                  href="/services"
-                  className="inline-flex items-center text-primary-600 hover:text-primary-700 font-semibold text-sm group-hover:gap-2 transition-all relative z-10"
-                >
-                  <span>Learn More</span>
-                  <motion.span
-                    animate={{ x: [0, 4, 0] }}
-                    transition={{
-                      duration: 1.5,
-                      repeat: Infinity,
-                      ease: "easeInOut"
-                    }}
-                  >
-                    →
-                  </motion.span>
-                </Link>
-
-                {/* Corner Accent with Animation */}
-                <motion.div
-                  className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary-500/5 to-transparent rounded-bl-full opacity-0"
-                  whileHover={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
-                />
-
-                {/* Shimmer Effect */}
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"
-                  animate={{
-                    x: ['-100%', '200%'],
-                  }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    repeatDelay: 3,
-                    ease: 'easeInOut'
-                  }}
-                />
-              </motion.div>
-            ))}
-          </div>
-
-          <motion.div
-            className="text-center mt-8"
-            data-aos="fade-up"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.5 }}
-          >
-            <Link
-              href="/services"
-              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              <span>View All Services</span>
-              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
-          </motion.div>
-        </div>
       </section >
 
       {/* Testimonials Preview - Enhanced 3D Cards */}

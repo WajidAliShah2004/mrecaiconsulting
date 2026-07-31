@@ -185,7 +185,7 @@ const Contact = () => {
     <>
       <SEO
         title="Contact MRECAI | Tax, Insurance & Accounting Inquiry"
-        description="Contact MRECAI for tax planning, insurance, and accounting services. Call 929-702-2818 or email Matthew@MRECAI.com. Free consultation available."
+        description="Contact MRECAI for tax planning, insurance, and accounting services. Call 929-919-3574 or email Matthew@MRECAI.com. Free consultation available."
         canonical="/contact"
         keywords="contact MRECAI, business consulting inquiry, tax planning consultation, insurance quote, accounting services contact"
         schema={{

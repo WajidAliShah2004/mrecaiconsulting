@@ -2,13 +2,14 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { FaHome, FaChevronRight, FaLinkedin, FaEnvelope, FaPhone, FaGraduationCap, FaAward, FaBriefcase, FaLightbulb, FaQuoteLeft, FaCheckCircle } from 'react-icons/fa';
+import { FaHome, FaChevronRight, FaLinkedin, FaEnvelope, FaPhone, FaGraduationCap, FaAward, FaBriefcase, FaLightbulb, FaQuoteLeft, FaCheckCircle, FaGlobe } from 'react-icons/fa';
 import { SiUpwork } from 'react-icons/si';
 import SEO from '../components/common/SEO';
 import { personSchema, breadcrumbSchema } from '../utils/schemas';
 import founderImage from '../../images/Matthew-Founder-1.png';
 import ctoImage from '../../images/WajidCto.png';
 import cmoImage from '../../images/JessieGwilt.jpeg';
+import psgFounderImage from '../../images/ParineetSehgal.jpg';
 
 const AboutFounder = () => {
   return (
@@ -116,9 +117,9 @@ const AboutFounder = () => {
                         <FaEnvelope className="text-primary-400" />
                         <span>Matthew@mrecai.com</span>
                       </a>
-                      <a href="tel:929-702-2818" className="flex items-center space-x-3 hover:text-primary-400 transition-colors">
+                      <a href="tel:929-919-3574" className="flex items-center space-x-3 hover:text-primary-400 transition-colors">
                         <FaPhone className="text-primary-400" />
-                        <span>929-702-2818</span>
+                        <span>929-919-3574</span>
                       </a>
                       <a href="https://www.linkedin.com/company/mre-consulting-insurance/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 hover:text-primary-400 transition-colors">
                         <FaLinkedin className="text-primary-400" />
@@ -369,89 +370,6 @@ const AboutFounder = () => {
           </div>
         </section>
 
-        {/* Vision & Philosophy */}
-        <section className="section-padding bg-white">
-          <div className="container-custom">
-            <div className="max-w-5xl mx-auto">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className="text-center mb-12"
-              >
-                <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                  Vision & <span className="gradient-text">Philosophy</span>
-                </h2>
-              </motion.div>
-
-              <div className="grid md:grid-cols-2 gap-8">
-                <motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  className="bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl p-8 text-white shadow-xl"
-                >
-                  <h3 className="text-2xl font-bold mb-4">Vision for MRECAI</h3>
-                  <p className="text-lg leading-relaxed opacity-95 mb-4">
-                    To build the most trusted and innovative tax, insurance, and accounting firm, recognized for
-                    transforming businesses and protecting families through technology, expertise, and 
-                    unwavering commitment to client success.
-                  </p>
-                  <p className="text-lg leading-relaxed opacity-95">
-                    By 2030, we aim to serve over 1,000 clients, expand our service offerings, and become
-                    the go-to partner for businesses seeking expert guidance and lasting protection.
-                  </p>
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  className="bg-gradient-to-br from-navy-900 to-navy-800 rounded-2xl p-8 text-white shadow-xl"
-                >
-                  <h3 className="text-2xl font-bold mb-4">Personal Philosophy</h3>
-                  <p className="text-lg leading-relaxed opacity-95 mb-4">
-                    "Success is not just about achieving goals—it's about building relationships, creating 
-                    value, and making a positive impact on the lives of those we serve."
-                  </p>
-                  <p className="text-lg leading-relaxed opacity-95">
-                    I believe in leading with integrity, embracing innovation, and never compromising on 
-                    quality. Every client interaction is an opportunity to exceed expectations and build 
-                    lasting trust.
-                  </p>
-                </motion.div>
-              </div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className="mt-8 bg-gradient-to-r from-gray-50 to-white rounded-2xl p-8 border border-gray-200"
-              >
-                <h3 className="text-2xl font-bold text-navy-900 mb-6 text-center">Core Leadership Principles</h3>
-                <div className="grid md:grid-cols-3 gap-6">
-                  {[
-                    { title: 'Client-First Mindset', description: 'Every decision is made with client success in mind' },
-                    { title: 'Continuous Innovation', description: 'Always seeking better ways to serve and deliver value' },
-                    { title: 'Transparent Communication', description: 'Honesty and clarity in all interactions' }
-                  ].map((principle, index) => (
-                    <div key={index} className="text-center">
-                      <div className="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <span className="text-white font-bold text-xl">{index + 1}</span>
-                      </div>
-                      <h4 className="font-bold text-navy-900 mb-2">{principle.title}</h4>
-                      <p className="text-gray-600 text-sm">{principle.description}</p>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
 
         {/* CTO Section */}
         <section className="section-padding bg-white">
@@ -545,6 +463,100 @@ const AboutFounder = () => {
                       ].map((item, index) => (
                         <div key={index} className="flex items-center space-x-3">
                           <FaCheckCircle className="text-purple-500 flex-shrink-0" />
+                          <span className="text-gray-700 font-medium">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Accounting Partner: Parineet Sehgal (PSG Global) */}
+        <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
+          <div className="container-custom">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid md:grid-cols-5 gap-12 items-start">
+                {/* Photo Column */}
+                <motion.div
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className="md:col-span-2"
+                >
+                  <div className="relative">
+                    <div className="aspect-[3/4] bg-gradient-to-br from-green-100 to-emerald-200 rounded-2xl shadow-2xl overflow-hidden">
+                      <img
+                        src={psgFounderImage.src}
+                        alt="Parineet Sehgal - Founder & CEO, PSG Global Tax & Accounting Services LLC"
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-green-500/20 rounded-full blur-2xl"></div>
+                    <div className="absolute -top-4 -left-4 w-24 h-24 bg-emerald-400/20 rounded-full blur-xl"></div>
+                  </div>
+
+                  {/* Partner Card */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2, duration: 0.6 }}
+                    className="mt-8 bg-gradient-to-br from-green-900 to-emerald-800 rounded-xl p-6 text-white shadow-xl"
+                  >
+                    <h3 className="text-xl font-bold mb-4">PSG Global Tax &amp; Accounting</h3>
+                    <div className="space-y-3">
+                      <a href="https://psgtaxaccounting.com" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 hover:text-green-300 transition-colors">
+                        <FaGlobe className="text-green-400" />
+                        <span>Visit PSG Global</span>
+                      </a>
+                    </div>
+                  </motion.div>
+                </motion.div>
+
+                {/* Bio Column */}
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className="md:col-span-3"
+                >
+                  <div className="mb-6">
+                    <span className="inline-block text-green-700 font-bold text-xs uppercase tracking-widest bg-green-50 px-4 py-2 rounded-full mb-4">
+                      Accounting Partner
+                    </span>
+                    <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-2">Parineet Sehgal</h2>
+                    <p className="text-2xl text-green-600 font-semibold mb-4">Founder &amp; CEO, PSG Global Tax &amp; Accounting Services LLC</p>
+                    <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full"></div>
+                  </div>
+
+                  <div className="prose prose-lg max-w-none">
+                    <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg mb-8">
+                      <FaQuoteLeft className="text-green-500 text-3xl mb-4" />
+                      <p className="text-lg text-gray-700 italic leading-relaxed">
+                        "Stay compliant. Stay organized. Grow confidently with PSG Global."
+                      </p>
+                    </div>
+
+                    <h3 className="text-2xl font-bold text-navy-900 mb-4">About Parineet Sehgal</h3>
+                    <p className="text-gray-700 leading-relaxed mb-6">
+                      Through MRECAI's strategic partnership with PSG Global, clients gain a dedicated US CPA–led tax and accounting team. <strong>Parineet Sehgal</strong> founded PSG Global to help businesses, entrepreneurs, and international founders navigate US accounting, taxation, and compliance with confidence.
+                    </p>
+
+                    <div className="space-y-4 mb-8">
+                      {[
+                        'US CPA (Washington State) · Chartered Accountant (India)',
+                        'Dip-IFRS (ACCA–UK) · QuickBooks ProAdvisor',
+                        '10+ years across KPMG, EY Global, and McKinsey International',
+                        'Serving businesses and international founders across 6+ countries'
+                      ].map((item, index) => (
+                        <div key={index} className="flex items-center space-x-3">
+                          <FaCheckCircle className="text-green-500 flex-shrink-0" />
                           <span className="text-gray-700 font-medium">{item}</span>
                         </div>
                       ))}

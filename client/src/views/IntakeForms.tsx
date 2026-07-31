@@ -366,8 +366,8 @@ const IntakeForms = () => {
                       Matthew@mrecai.com
                     </a>
                     <span className="text-gray-400 mx-2">|</span>
-                    <a href="tel:929-702-2818" className="text-primary-600 hover:text-primary-700 font-semibold">
-                      929-702-2818
+                    <a href="tel:929-919-3574" className="text-primary-600 hover:text-primary-700 font-semibold">
+                      929-919-3574
                     </a>
                   </div>
                 </div>
@@ -398,10 +398,10 @@ const IntakeForms = () => {
                   Book Free Consultation
                 </a>
                 <a
-                  href="tel:929-702-2818"
+                  href="tel:929-919-3574"
                   className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/40 rounded-xl hover:bg-white hover:text-navy-900 transition-all font-bold"
                 >
-                  Call Now: 929-702-2818
+                  Call Now: 929-919-3574
                 </a>
               </div>
             </motion.div>

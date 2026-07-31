@@ -185,7 +185,7 @@ export default function PrivacyPolicy() {
               </div>
               <div>
                 <p className="font-semibold text-navy-900">Phone:</p>
-                <p>929-702-2818</p>
+                <p>929-919-3574</p>
               </div>
               <div>
                 <p className="font-semibold text-navy-900">Website:</p>

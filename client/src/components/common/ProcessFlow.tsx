@@ -23,7 +23,7 @@ const ProcessFlow = () => {
         {
             icon: FaChartLine,
             title: "Optimize",
-            description: "Monthly cadence and quarterly strategy sessions to ensure sustainable growth."
+            description: "Monthly bookkeeping, reporting, and check-ins, plus quarterly strategy sessions to ensure sustainable growth."
         }
     ];
 

@@ -131,7 +131,7 @@ const Navbar = () => {
       >
         <div className={`max-w-[1600px] mx-auto px-4 ${isOpen ? 'pb-4' : ''}`}>
           <div
-            className={`flex items-center justify-between gap-2 sm:gap-3 transition-[height] duration-300 ${isScrolled ? 'h-11 sm:h-12' : 'h-12 sm:h-14'
+            className={`flex items-center justify-between gap-2 sm:gap-3 transition-[height] duration-300 ${isScrolled ? 'h-12 sm:h-14' : 'h-14 sm:h-16'
               }`}
           >
             {/* Logo - Left Side */}
@@ -146,7 +146,7 @@ const Navbar = () => {
                   <img
                     src={logoImage.src}
                     alt="MRECAI"
-                    className={`relative w-auto max-w-none object-contain transition-[height] duration-300 ${isScrolled ? 'h-7 sm:h-8 lg:h-9' : 'h-8 sm:h-9 lg:h-10'
+                    className={`relative w-auto max-w-none object-contain transition-[height] duration-300 ${isScrolled ? 'h-10 sm:h-11 lg:h-12' : 'h-12 sm:h-14'
                       }`}
                     width={logoImage.width}
                     height={logoImage.height}
@@ -183,22 +183,24 @@ const Navbar = () => {
                   onMouseEnter={() => setAboutDropdownOpen(true)}
                   onMouseLeave={() => setAboutDropdownOpen(false)}
                 >
-                  <motion.button
-                    className={`px-2 2xl:px-3 py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg flex items-center gap-1 relative ${isAboutActive
-                      ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
-                      : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
-                      }`}
-                    whileHover={{ y: -2, scale: 1.05 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                  >
-                    <span>About</span>
+                  <Link href="/about">
                     <motion.div
-                      animate={{ rotate: aboutDropdownOpen ? 180 : 0 }}
-                      transition={{ duration: 0.3 }}
+                      className={`px-2 2xl:px-3 py-2 font-bold text-xs 2xl:text-sm transition-all duration-300 rounded-lg flex items-center gap-1 relative cursor-pointer ${isAboutActive
+                        ? 'text-white bg-gradient-to-r from-primary-500 to-primary-600 shadow-lg shadow-primary-500/30'
+                        : 'text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-gray-50 hover:to-primary-50'
+                        }`}
+                      whileHover={{ y: -2, scale: 1.05 }}
+                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
                     >
-                      <FaChevronDown className="text-[9px]" />
+                      <span>About</span>
+                      <motion.div
+                        animate={{ rotate: aboutDropdownOpen ? 180 : 0 }}
+                        transition={{ duration: 0.3 }}
+                      >
+                        <FaChevronDown className="text-[9px]" />
+                      </motion.div>
                     </motion.div>
-                  </motion.button>
+                  </Link>
 
                   <AnimatePresence>
                     {aboutDropdownOpen && (

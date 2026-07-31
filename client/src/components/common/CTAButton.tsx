@@ -41,7 +41,7 @@ const CTAButton = ({
   // Default content based on type
   const defaultContent = {
     book: { text: 'Get Started', icon: FaCalendarAlt, to: '/book-now' },
-    call: { text: 'Book Consultation', icon: FaPhone, href: 'tel:929-702-2818' },
+    call: { text: 'Book Consultation', icon: FaPhone, href: 'tel:929-919-3574' },
     email: { text: 'Email Us', icon: FaEnvelope, href: 'mailto:info@mrecai.com' },
     learn: { text: 'Learn More', icon: FaArrowRight, to: '/services' },
     download: { text: 'Download Guide', icon: FaArrowRight, to: '/download-services-guide' },

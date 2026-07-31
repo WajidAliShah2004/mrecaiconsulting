@@ -38,7 +38,7 @@ export const organizationSchema = {
   },
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+1-929-702-2818',
+    telephone: '+1-929-919-3574',
     contactType: 'customer service',
     email: 'Matthew@MRECAI.com',
     availableLanguage: ['en'],
@@ -176,7 +176,7 @@ export const localBusinessSchema = {
   image: 'https://mrecai.com/images/logo.jpeg',
   '@id': 'https://mrecai.com',
   url: 'https://mrecai.com',
-  telephone: '+1-929-702-2818',
+  telephone: '+1-929-919-3574',
   email: 'Matthew@MRECAI.com',
   priceRange: '$$',
   address: {
@@ -370,7 +370,7 @@ export const personSchema = {
   },
   url: 'https://mrecai.com/about/founder',
   email: 'Matthew@MRECAI.com',
-  telephone: '+1-929-702-2818',
+  telephone: '+1-929-919-3574',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Great Neck',

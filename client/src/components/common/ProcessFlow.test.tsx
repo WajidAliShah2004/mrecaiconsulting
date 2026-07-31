@@ -91,7 +91,7 @@ describe('ProcessFlow', () => {
     it('should render Optimize step description correctly', () => {
       render(<ProcessFlow />);
       
-      expect(screen.getByText('Monthly cadence and quarterly strategy sessions to ensure sustainable growth.')).toBeInTheDocument();
+      expect(screen.getByText('Monthly bookkeeping, reporting, and check-ins, plus quarterly strategy sessions to ensure sustainable growth.')).toBeInTheDocument();
     });
   });
 

@@ -515,11 +515,11 @@ const Services = () => {
 
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <a
-                    href="tel:929-702-2818"
+                    href="tel:929-919-3574"
                     className="inline-flex items-center px-8 py-4 border-2 border-white/40 rounded-xl backdrop-blur-sm hover:bg-white hover:text-navy-900 transition-all font-bold"
                   >
                     <FaPhone className="mr-3" />
-                    Call: 929-702-2818
+                    Call: 929-919-3574
                   </a>
                 </motion.div>
               </div>
