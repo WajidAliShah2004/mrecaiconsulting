@@ -65,7 +65,7 @@ const About = () => {
                 About <span className="bg-gradient-to-r from-primary-400 via-primary-300 to-primary-500 bg-clip-text text-transparent">MRECAI</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-                Full-service business transformation through management consulting, tax strategy, insurance, and financial advisory
+                Full-service business transformation through management consulting, tax strategy, insurance, and financial advisory.
               </p>
 
               {/* Stats Row */}
@@ -106,7 +106,7 @@ const About = () => {
                 Explore <span className="gradient-text">More</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Meet our founder and discover our strategic partnerships
+                Meet our founder and discover our strategic partnerships.
               </p>
             </motion.div>
 
