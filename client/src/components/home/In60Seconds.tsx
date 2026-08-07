@@ -42,7 +42,7 @@ const In60Seconds = () => {
                   <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-700"><strong>Tax Services</strong> - Proactive planning and precise preparation that help you keep more of what you earn</span>
+                  <span className="text-gray-700"><strong>Tax Services</strong> - Proactive planning and precise preparation to maximize your bottom line</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -61,7 +61,7 @@ const In60Seconds = () => {
 
             <div className="bg-primary-50 border-l-4 border-primary-600 p-6 rounded-r-lg">
               <p className="text-lg text-gray-800 font-medium">
-                <strong>Our Advantage:</strong> One integrated partner for tax, insurance, and accounting—eliminating the need for multiple vendors and ensuring everything works together seamlessly.
+                <strong>Our Advantage:</strong> One integrated partner for tax, insurance, and accounting, ensuring a seamless operation for you and your business.
               </p>
             </div>
           </div>

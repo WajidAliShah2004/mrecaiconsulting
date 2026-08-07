@@ -8,7 +8,7 @@ const ProcessFlow = () => {
         {
             icon: FaSearch,
             title: "Assess",
-            description: "Comprehensive audit of your financial, risk, and operational systems to identify gaps."
+            description: "Comprehensive audit of your financial, risk and operational systems to optimize opportunities."
         },
         {
             icon: FaLightbulb,
@@ -18,7 +18,7 @@ const ProcessFlow = () => {
         {
             icon: FaTools,
             title: "Implement",
-            description: "Done-for-you setup of the strategies and systems your situation requires."
+            description: "Design and implementation of ideal strategies and systems for your situation."
         },
         {
             icon: FaChartLine,
@@ -35,7 +35,7 @@ const ProcessFlow = () => {
                         Our 4-Step <span className="text-primary-600">Growth Process</span>
                     </h2>
                     <p className="text-lg text-gray-600">
-                        We've eliminated the friction of working with multiple siloed vendors. Here is exactly what happens after you book your strategy call.
+                        Here is the process once you schedule your strategy call with us.
                     </p>
                 </div>
 

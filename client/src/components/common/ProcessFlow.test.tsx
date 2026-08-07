@@ -41,7 +41,7 @@ describe('ProcessFlow', () => {
     it('should render generalized Implement step description', () => {
       render(<ProcessFlow />);
       
-      const generalizedDescription = 'Done-for-you setup of the strategies and systems your situation requires.';
+      const generalizedDescription = 'Design and implementation of ideal strategies and systems for your situation.';
       expect(screen.getByText(generalizedDescription)).toBeInTheDocument();
     });
 
@@ -56,21 +56,21 @@ describe('ProcessFlow', () => {
       const { container } = render(<ProcessFlow />);
       
       // The Implement description should be general, not mentioning specific deliverables
-      const implementSection = screen.getByText(/Done-for-you setup/i).closest('div');
+      const implementSection = screen.getByText(/Design and implementation/i).closest('div');
       expect(implementSection?.textContent).not.toMatch(/tax strategies/i);
     });
 
     it('should NOT mention specific deliverables like "insurance policies"', () => {
       const { container } = render(<ProcessFlow />);
       
-      const implementSection = screen.getByText(/Done-for-you setup/i).closest('div');
+      const implementSection = screen.getByText(/Design and implementation/i).closest('div');
       expect(implementSection?.textContent).not.toMatch(/insurance policies/i);
     });
 
     it('should NOT mention specific deliverables like "AI automations"', () => {
       const { container } = render(<ProcessFlow />);
       
-      const implementSection = screen.getByText(/Done-for-you setup/i).closest('div');
+      const implementSection = screen.getByText(/Design and implementation/i).closest('div');
       expect(implementSection?.textContent).not.toMatch(/AI automations/i);
     });
   });
@@ -79,7 +79,7 @@ describe('ProcessFlow', () => {
     it('should render Assess step description correctly', () => {
       render(<ProcessFlow />);
       
-      expect(screen.getByText('Comprehensive audit of your financial, risk, and operational systems to identify gaps.')).toBeInTheDocument();
+      expect(screen.getByText('Comprehensive audit of your financial, risk and operational systems to optimize opportunities.')).toBeInTheDocument();
     });
 
     it('should render Plan step description correctly', () => {

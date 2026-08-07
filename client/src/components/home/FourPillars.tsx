@@ -7,7 +7,7 @@ const pillars = [
   {
     icon: FaFileInvoiceDollar,
     title: 'Tax Services',
-    description: 'Proactive tax planning and precise preparation that reduce your effective tax rate and keep more of what you earn.',
+    description: 'Proactive tax planning and precise preparation to reduce your effective tax rate.',
     color: 'from-blue-500 to-blue-600',
     bgColor: 'bg-blue-50',
   },

@@ -10,7 +10,7 @@ import { TrustBar, ProcessFlow } from '../../components/common';
 const faqs = [
   {
     question: 'How do you help minimize my tax liability?',
-    answer: 'We go beyond basic filing by identifying proactive deductions, entity optimization strategies, and timing-based tax savings that align with the latest 2025 tax laws.',
+    answer: 'We go beyond basic filing by identifying proactive deductions, entity optimization strategies, and timing-based tax savings that align with the latest tax laws.',
   },
   {
     question: 'What types of tax returns do you handle?',
@@ -22,11 +22,11 @@ const faqs = [
   },
   {
     question: 'Do you offer year-round tax support?',
-    answer: 'Absolutely. We believe tax planning is a year-round activity. We provide ongoing advisory to ensure you are never surprised by your tax bill at the end of the year.',
+    answer: 'Absolutely. We believe tax planning is a year-round activity. We provide ongoing advisory to ensure no year-end surprises.',
   },
   {
     question: 'How does bookkeeping integrate with your tax services?',
-    answer: 'Our hybrid model ensures your books are tax-ready every month. This synergy eliminates year-end scrambling and ensures every possible deduction is captured in real-time.',
+    answer: 'Our hybrid model ensures your books are tax-ready every month. This synergy eliminates year-end scrambling and captures every possible deduction in real-time.',
   },
 ];
 

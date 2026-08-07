@@ -19,7 +19,7 @@ const pillars: TechPillar[] = [
   {
     icon: FaFileInvoiceDollar,
     title: 'Tax Services',
-    description: 'Proactive tax planning and precise preparation that reduce your effective tax rate and help you keep more of what you earn.',
+    description: 'Proactive tax planning and precise preparation to reduce your effective tax rate.',
     features: ['Strategic Tax Planning', 'Tax Preparation', 'R&D Credits & Cost Segregation', 'Multi-State Compliance'],
     color: 'from-blue-500 to-blue-600',
     bgColor: 'bg-blue-50',
