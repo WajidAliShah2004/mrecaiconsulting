@@ -207,6 +207,15 @@ const Home = () => {
             >
               Why Choose <span className="gradient-text">MRECAI</span>
             </motion.h2>
+            <motion.p
+              className="text-lg text-gray-600 max-w-2xl mx-auto"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              Your complete tax, insurance, and accounting partner
+            </motion.p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
