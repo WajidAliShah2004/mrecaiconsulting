@@ -131,7 +131,7 @@ const Navbar = () => {
       >
         <div className={`max-w-[1600px] mx-auto px-4 ${isOpen ? 'pb-4' : ''}`}>
           <div
-            className={`flex items-center justify-between gap-2 sm:gap-3 transition-[height] duration-300 ${isScrolled ? 'h-16 sm:h-[4.5rem]' : 'h-[4.5rem] sm:h-20'
+            className={`flex items-center justify-between gap-2 sm:gap-3 transition-[height] duration-300 ${isScrolled ? 'h-20 sm:h-24' : 'h-24 sm:h-28'
               }`}
           >
             {/* Logo - Left Side */}
@@ -146,7 +146,7 @@ const Navbar = () => {
                   <img
                     src={logoImage.src}
                     alt="MRECAI"
-                    className={`relative w-auto max-w-none object-contain transition-[height] duration-300 ${isScrolled ? 'h-14 sm:h-16' : 'h-16 sm:h-[4.5rem]'
+                    className={`relative w-auto max-w-none object-contain transition-[height] duration-300 ${isScrolled ? 'h-16 sm:h-20' : 'h-20 sm:h-24'
                       }`}
                     width={logoImage.width}
                     height={logoImage.height}

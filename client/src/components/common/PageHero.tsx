@@ -53,7 +53,7 @@ const PageHero: React.FC<PageHeroProps> = ({
                 <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-[0.03] bg-[length:30px_30px]" />
             </div>
 
-            <div className="container-custom relative z-10 pt-32 pb-20 text-center">
+            <div className="container-custom relative z-10 pt-32 lg:pt-40 pb-20 text-center">
                 {/* Breadcrumbs */}
                 {breadcrumbs && (
                     <motion.nav

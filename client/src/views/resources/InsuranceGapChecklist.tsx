@@ -69,7 +69,7 @@ const InsuranceGapChecklist = () => {
                 keywords="insurance gap checklist, commercial insurance audit, business risk management NYC, cyber liability check"
             />
 
-            <div className="min-h-screen pt-24 bg-gray-50 pb-20">
+            <div className="min-h-screen pt-28 sm:pt-32 lg:pt-40 bg-gray-50 pb-20">
                 <div className="container-custom max-w-5xl">
                     {/* Header */}
                     <div className="text-center mb-12">

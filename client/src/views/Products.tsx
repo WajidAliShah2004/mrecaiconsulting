@@ -11,7 +11,7 @@ export default function Products() {
   return (
     <PageTransition>
       {/* Hero Section */}
-      <section className="relative pt-32 md:pt-36 pb-12 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900 text-white overflow-hidden">
+      <section className="relative pt-32 lg:pt-40 md:pt-36 pb-12 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900 text-white overflow-hidden">
         {/* Animated Background */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-0 left-0 w-full h-full" style={{

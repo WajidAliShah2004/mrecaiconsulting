@@ -75,7 +75,7 @@ const TaxSavingsChecklist = () => {
                 keywords="tax savings checklist, small business tax deductions 2026, S-Corp tax benefits, cost segregation NYC"
             />
 
-            <div className="min-h-screen pt-24 bg-gray-50 pb-20">
+            <div className="min-h-screen pt-28 sm:pt-32 lg:pt-40 bg-gray-50 pb-20">
                 <div className="container-custom max-w-5xl">
                     {/* Header */}
                     <div className="text-center mb-12">
